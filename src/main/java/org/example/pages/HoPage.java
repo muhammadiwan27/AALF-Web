@@ -356,6 +356,30 @@ public class HoPage {
     WebElement btnConfirmCreateBonMerah;
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadBonMerah;
+    @FindBy(xpath = "(//a[normalize-space()='004/RKPD/01/2024'])[1]")
+    WebElement btnViewRkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewRkpd;
+    @FindBy(xpath = "(//a[normalize-space()='004/ST/01/2024'])[1]")
+    WebElement btnViewSuratTugas;
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewSuratTugas;
+    @FindBy(xpath = "(//a[normalize-space()='BH004/02/24'])[1]")
+    WebElement btnViewBonHijau;
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewBonHijau;
+    @FindBy(xpath = "(//a[normalize-space()='003/LKPD/01/2024'])[1]")
+    WebElement btnViewLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewLkpd;
+    @FindBy(xpath = "(//a[normalize-space()='BP003/01/24'])[1]")
+    WebElement btnViewBonPutih;
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewBonPutih;
+    @FindBy(xpath = "(//a[normalize-space()='BK002/02/24'])[1]")
+    WebElement btnViewBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewBonKuning;
 
 
 
@@ -546,7 +570,20 @@ public class HoPage {
     public void BtnCreateBonMerah() { btnCreateBonMerah.click();}
     public void BtnConfirmCreateBonMerah() { btnConfirmCreateBonMerah.click();}
     public void BtnCancelDownloadBonMerah() { btnCancelDownloadBonMerah.click();}
+    public void BtnViewRkpd() { btnViewRkpd.click();}
+    public void BtnBackViewRkpd() { btnBackViewRkpd.click();}
+    public void BtnViewSuratTugas() { btnViewSuratTugas.click();}
+    public void BtnBackViewSuratTugas() { btnBackViewSuratTugas.click();}
+    public void BtnViewBonHijau() { btnViewBonHijau.click();}
+    public void BtnBackViewBonHijau() { btnBackViewBonHijau.click();}
+    public void BtnViewLkpd() { btnViewLkpd.click();}
+    public void BtnBackViewLkpd() { btnBackViewLkpd.click();}
+    public void BtnViewBonPutih() { btnViewBonPutih.click();}
+    public void BtnBackViewBonPutih() { btnBackViewBonPutih.click();}
+    public void BtnViewBonKuning() { btnViewBonKuning.click();}
+    public void BtnBackViewBonKuning() { btnBackViewBonKuning.click();}
 }
+
 
 
 

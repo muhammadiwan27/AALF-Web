@@ -1205,5 +1205,173 @@ public class TestHo {
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button create document bon merah");
     }
+
+//View RKPD
+    @When("User click id rkpd")
+    public void user_click_id_rkpd() {
+        Hooks.delay(2);
+        hoPage.BtnViewRkpd();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_UP);
+            robot.keyRelease(KeyEvent.VK_PAGE_UP);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(3);
+        hoPage.BtnBackViewRkpd();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click id rkpd");
+    }
+
+//View Surat Tugas
+    @When("User click id surat tugas")
+    public void user_click_id_surat_tugas() {
+        Hooks.delay(2);
+        hoPage.BtnViewSuratTugas();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_UP);
+            robot.keyRelease(KeyEvent.VK_PAGE_UP);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(3);
+        hoPage.BtnBackViewSuratTugas();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click id surat tugas");
+    }
+
+//View Bon Hijau
+    @When("User click id bon hijau")
+    public void user_click_id_bon_hijau() {
+        Hooks.delay(2);
+        hoPage.BtnViewBonHijau();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_UP);
+            robot.keyRelease(KeyEvent.VK_PAGE_UP);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(3);
+        hoPage.BtnBackViewBonHijau();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click id bon hijau");
+    }
+
+//View LKPD
+    @When("User click id lkpd")
+    public void user_click_id_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnViewLkpd();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_UP);
+            robot.keyRelease(KeyEvent.VK_PAGE_UP);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(3);
+        hoPage.BtnBackViewLkpd();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click id lkpd");
+    }
+
+//View Bon Putih
+    @When("User click id bon putih")
+    public void user_click_id_bon_putih() {
+        Hooks.delay(2);
+        hoPage.BtnViewBonPutih();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_UP);
+            robot.keyRelease(KeyEvent.VK_PAGE_UP);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(3);
+        hoPage.BtnBackViewBonPutih();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click id bon putih");
+    }
+
+//View Bon Kuning
+    @When("User click id bon kuning")
+    public void user_click_id_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnViewBonKuning();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_UP);
+            robot.keyRelease(KeyEvent.VK_PAGE_UP);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(3);
+        hoPage.BtnBackViewBonKuning();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click id bon kuning");
+    }
 }
 

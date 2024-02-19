@@ -160,3 +160,22 @@ Feature: Ho Page Test
     And User input amount received bon merah
     And User input final value bon merah
     Then User click button create document bon merah
+
+  Scenario: View Document RKPD
+    When User click id rkpd
+
+  Scenario: View Document Surat Tugas
+    When User click id surat tugas
+
+  Scenario: View Document Bon Hijau
+    When User click id bon hijau
+
+  Scenario: View Document LKPD
+    When User click id lkpd
+
+  Scenario: View Document Bon Putih
+    When User click id bon putih
+
+  Scenario: View Document Bon Kuning
+    When User click id bon kuning
+

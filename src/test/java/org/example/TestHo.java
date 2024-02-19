@@ -1009,7 +1009,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button create document bon putih");
     }
 
- //Create Document Bon Hijau
+//Create Document Bon Hijau
     @When("User click button create finance documents for bon hijau")
     public void user_click_button_create_finance_documents_for_bon_hijau() {
         Hooks.delay(2);
@@ -1074,6 +1074,136 @@ public class TestHo {
         hoPage.BtnCancelDownloadBonHijau();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button create document bon hijau");
+    }
+
+//Create Document Bon Kuning
+    @When("User click button create finance documents for bon kuning")
+    public void user_click_button_create_finance_documents_for_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnCreateFinanceDocuments();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button create finance documents for bon kuning");
+    }
+
+    @And("User select document bon kuning")
+    public void user_select_document_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.SelectDocumentBonKuning();
+        Hooks.delay(2);
+        hoPage.BtnSelectFinanceDocuments();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select document bon kuning");
+    }
+
+    @And("User select id bon putih bon kuning")
+    public void user_select_id_bon_putih_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnSearchIdBonPutihBonKuning();
+        Hooks.delay(2);
+        hoPage.SelectIdBonPutihBonKuning();
+        Hooks.delay(2);
+        hoPage.BtnSelectIdBonPutihBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select id bon putih bon kuning");
+    }
+
+    @And("User checklist team incurred expenses reimbursement bon kuning")
+    public void user_checklist_team_incurred_expenses_reimbursement_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.ChecklistTeamIncurredExpensesReimbursement1BonKuning();
+        Hooks.delay(2);
+        hoPage.ChecklistTeamIncurredExpensesReimbursement2BonKuning();
+        Hooks.delay(2);
+        hoPage.ChecklistTeamIncurredExpensesReimbursement3BonKuning();
+        Hooks.delay(2);
+        hoPage.ChecklistTeamIncurredExpensesReimbursement4BonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User checklist team incurred expenses reimbursement bon kuning");
+    }
+
+    @Then("User click button create document bon kuning")
+    public void user_click_button_create_document_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnCreateBonKuning();
+        Hooks.delay(2);
+        hoPage.BtnConfirmCreateBonKuning();
+        Hooks.delay(3);
+        hoPage.BtnCancelDownloadBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create document bon kuning");
+    }
+
+//Create Document Bon Merah
+    @When("User click button create finance documents for bon merah")
+    public void user_click_button_create_finance_documents_for_bon_merah() {
+        Hooks.delay(2);
+        hoPage.BtnCreateFinanceDocuments();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button create finance documents for bon merah");
+    }
+
+    @And("User select document bon merah")
+    public void user_select_document_bon_merah() {
+        Hooks.delay(2);
+        hoPage.SelectDocumentBonMerah();
+        Hooks.delay(2);
+        hoPage.BtnSelectFinanceDocuments();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select document bon merah");
+    }
+
+    @And("User input description bon merah")
+    public void user_input_description_bon_merah() {
+        Hooks.delay(2);
+        hoPage.InputDescriptionBonMerah("Setoran untuk biaya jasa penanganan kasus");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input description bon merah");
+    }
+
+    @And("User select receipt date bon merah")
+    public void user_select_receipt_date_bon_merah() {
+        Hooks.delay(2);
+        hoPage.SelectReceiptDateBonMerah();
+        Hooks.delay(2);
+        hoPage.BtnSelectTodayReceiptDateBonMerah();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select receipt date bon merah");
+    }
+
+    @And("User input account number bon merah")
+    public void user_input_account_number_bon_merah() {
+        Hooks.delay(2);
+        hoPage.InputAccountNumberBonMerah("27384967382");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input account number bon merah");
+    }
+
+    @And("User input amount received bon merah")
+    public void user_input_amount_received_bon_merah() {
+        Hooks.delay(2);
+        hoPage.InputAmountReceivedBonMerah("52000000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input amount received bon merah");
+    }
+
+    @And("User input final value bon merah")
+    public void user_input_final_value_bon_merah() {
+        Hooks.delay(2);
+        hoPage.InputFinalValueBonMerah("52000000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input final value bon merah");
+    }
+
+    @Then("User click button create document bon merah")
+    public void user_click_button_create_document_bon_merah() {
+        Hooks.delay(2);
+        hoPage.BtnCreateBonMerah();
+        Hooks.delay(2);
+        hoPage.BtnConfirmCreateBonMerah();
+        Hooks.delay(3);
+        hoPage.BtnCancelDownloadBonMerah();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create document bon merah");
     }
 }
 

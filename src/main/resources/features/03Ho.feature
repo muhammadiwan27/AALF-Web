@@ -143,3 +143,20 @@ Feature: Ho Page Test
     And User input note trip expenses bon hijau
     And User upload recipient trip expenses bon hijau
     Then User click button create document bon hijau
+
+  Scenario: Create Document Bon Kuning
+    When User click button create finance documents for bon kuning
+    And User select document bon kuning
+    And User select id bon putih bon kuning
+    And User checklist team incurred expenses reimbursement bon kuning
+    Then User click button create document bon kuning
+
+  Scenario: Create Document Bon Merah
+    When User click button create finance documents for bon merah
+    And User select document bon merah
+    And User input description bon merah
+    And User select receipt date bon merah
+    And User input account number bon merah
+    And User input amount received bon merah
+    And User input final value bon merah
+    Then User click button create document bon merah

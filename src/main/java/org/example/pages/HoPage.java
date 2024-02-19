@@ -314,7 +314,48 @@ public class HoPage {
     WebElement btnConfirmCreateBonHijau;
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadBonHijau;
-
+    @FindBy(xpath = "(//option[@value='bon-kuning'])[1]")
+    WebElement selectDocumentBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
+    WebElement btnSearchIdBonPutihBonKuning;
+    @FindBy(xpath = "(//option[@value='BP003/01/24'])[1]")
+    WebElement selectIdBonPutihBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnSelectIdBonPutihBonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[1]")
+    WebElement checklistTeamIncurredExpensesReimbursement1BonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[2]")
+    WebElement checklistTeamIncurredExpensesReimbursement2BonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[3]")
+    WebElement checklistTeamIncurredExpensesReimbursement3BonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[4]")
+    WebElement checklistTeamIncurredExpensesReimbursement4BonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnCreateBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmCreateBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
+    WebElement btnCancelDownloadBonKuning;
+    @FindBy(xpath = "(//option[@value='bon-merah'])[1]")
+    WebElement selectDocumentBonMerah;
+    @FindBy(xpath = "(//input[@id='diterima'])[5]")
+    WebElement inputDescriptionBonMerah;
+    @FindBy(xpath = "(//input[@placeholder='Receipt date'])[1]")
+    WebElement selectReceiptDateBonMerah;
+    @FindBy(xpath = "//button[normalize-space()='Today']")
+    WebElement btnSelectTodayReceiptDateBonMerah;
+    @FindBy(xpath = "(//input[@id='akun'])[1]")
+    WebElement inputAccountNumberBonMerah;
+    @FindBy(xpath = "(//input[@placeholder='Conversion value'])[1]")
+    WebElement inputAmountReceivedBonMerah;
+    @FindBy(xpath = "(//input[@placeholder='Conversion value'])[2]")
+    WebElement inputFinalValueBonMerah;
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnCreateBonMerah;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmCreateBonMerah;
+    @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
+    WebElement btnCancelDownloadBonMerah;
 
 
 
@@ -484,7 +525,39 @@ public class HoPage {
     public void BtnCreateBonHijau() { btnCreateBonHijau.click();}
     public void BtnConfirmCreateBonHijau() { btnConfirmCreateBonHijau.click();}
     public void BtnCancelDownloadBonHijau() { btnCancelDownloadBonHijau.click();}
+    public void SelectDocumentBonKuning() { selectDocumentBonKuning.click();}
+    public void BtnSearchIdBonPutihBonKuning() { btnSearchIdBonPutihBonKuning.click();}
+    public void SelectIdBonPutihBonKuning() { selectIdBonPutihBonKuning.click();}
+    public void BtnSelectIdBonPutihBonKuning() { btnSelectIdBonPutihBonKuning.click();}
+    public void ChecklistTeamIncurredExpensesReimbursement1BonKuning() { checklistTeamIncurredExpensesReimbursement1BonKuning.click();}
+    public void ChecklistTeamIncurredExpensesReimbursement2BonKuning() { checklistTeamIncurredExpensesReimbursement2BonKuning.click();}
+    public void ChecklistTeamIncurredExpensesReimbursement3BonKuning() { checklistTeamIncurredExpensesReimbursement3BonKuning.click();}
+    public void ChecklistTeamIncurredExpensesReimbursement4BonKuning() { checklistTeamIncurredExpensesReimbursement4BonKuning.click();}
+    public void BtnCreateBonKuning() { btnCreateBonKuning.click();}
+    public void BtnConfirmCreateBonKuning() { btnConfirmCreateBonKuning.click();}
+    public void BtnCancelDownloadBonKuning() { btnCancelDownloadBonKuning.click();}
+    public void SelectDocumentBonMerah() { selectDocumentBonMerah.click();}
+    public void InputDescriptionBonMerah(String inputDescriptionBonMerah) { this.inputDescriptionBonMerah.sendKeys(inputDescriptionBonMerah);}
+    public void SelectReceiptDateBonMerah() { selectReceiptDateBonMerah.click();}
+    public void BtnSelectTodayReceiptDateBonMerah() { btnSelectTodayReceiptDateBonMerah.click();}
+    public void InputAccountNumberBonMerah(String inputAccountNumberBonMerah) { this.inputAccountNumberBonMerah.sendKeys(inputAccountNumberBonMerah);}
+    public void InputAmountReceivedBonMerah(String inputAmountReceivedBonMerah) { this.inputAmountReceivedBonMerah.sendKeys(inputAmountReceivedBonMerah);}
+    public void InputFinalValueBonMerah(String inputFinalValueBonMerah) { this.inputFinalValueBonMerah.sendKeys(inputFinalValueBonMerah);}
+    public void BtnCreateBonMerah() { btnCreateBonMerah.click();}
+    public void BtnConfirmCreateBonMerah() { btnConfirmCreateBonMerah.click();}
+    public void BtnCancelDownloadBonMerah() { btnCancelDownloadBonMerah.click();}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

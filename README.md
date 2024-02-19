@@ -1,4 +1,4 @@
-Testing for AALF Web with Selenium
+Testing for AALF Web
 
 Overview
 

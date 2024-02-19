@@ -1373,5 +1373,33 @@ public class TestHo {
         }
         extentTest.log(LogStatus.PASS, "User click id bon kuning");
     }
+
+//View Business Trip Recap
+    @When("User click button view business trip recap")
+    public void user_click_button_view_business_trip_recap() {
+        Hooks.delay(2);
+        hoPage.BtnViewBusinessTripRecap();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_UP);
+            robot.keyRelease(KeyEvent.VK_PAGE_UP);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(3);
+        hoPage.BtnBackViewBusinessTripRecap();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click button view business trip recap");
+    }
 }
 

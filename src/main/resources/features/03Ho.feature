@@ -179,3 +179,6 @@ Feature: Ho Page Test
   Scenario: View Document Bon Kuning
     When User click id bon kuning
 
+  Scenario: View Business Trip Recap
+    When User click button view business trip recap
+

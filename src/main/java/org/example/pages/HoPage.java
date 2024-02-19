@@ -380,6 +380,10 @@ public class HoPage {
     WebElement btnViewBonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBonKuning;
+    @FindBy(xpath = "(//a)[164]")
+    WebElement btnViewBusinessTripRecap;
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewBusinessTripRecap;
 
 
 
@@ -582,6 +586,8 @@ public class HoPage {
     public void BtnBackViewBonPutih() { btnBackViewBonPutih.click();}
     public void BtnViewBonKuning() { btnViewBonKuning.click();}
     public void BtnBackViewBonKuning() { btnBackViewBonKuning.click();}
+    public void BtnViewBusinessTripRecap() { btnViewBusinessTripRecap.click();}
+    public void BtnBackViewBusinessTripRecap() { btnBackViewBusinessTripRecap.click();}
 }
 
 

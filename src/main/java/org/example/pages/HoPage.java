@@ -381,9 +381,19 @@ public class HoPage {
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBonKuning;
     @FindBy(xpath = "(//a)[164]")
-    WebElement btnViewBusinessTripRecap;
+    WebElement btnViewBusinessTripRecap1;
+    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[9]/div[1]/a[1]")
+    WebElement btnViewBusinessTripRecap2;
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBusinessTripRecap;
+    @FindBy(xpath = "(//a[contains(text(),'Edit')])[1]")
+    WebElement btnEditRkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditRkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditRkpd;
+
+
 
 
 
@@ -586,8 +596,13 @@ public class HoPage {
     public void BtnBackViewBonPutih() { btnBackViewBonPutih.click();}
     public void BtnViewBonKuning() { btnViewBonKuning.click();}
     public void BtnBackViewBonKuning() { btnBackViewBonKuning.click();}
-    public void BtnViewBusinessTripRecap() { btnViewBusinessTripRecap.click();}
+    public void BtnViewBusinessTripRecap1() { btnViewBusinessTripRecap1.click();}
     public void BtnBackViewBusinessTripRecap() { btnBackViewBusinessTripRecap.click();}
+    public void BtnViewBusinessTripRecap2() { btnViewBusinessTripRecap2.click();}
+    public void BtnEditRkpd() { btnEditRkpd.click();}
+    public void InputDeleteScopeOfWorkDetailsRkpd() { inputScopeOfWorkDetailsRkpd.clear();}
+    public void BtnSaveEditRkpd() { btnSaveEditRkpd.click();}
+    public void BtnConfirmSaveEditRkpd() { btnConfirmSaveEditRkpd.click();}
 }
 
 

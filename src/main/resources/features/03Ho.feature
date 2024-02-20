@@ -180,5 +180,12 @@ Feature: Ho Page Test
     When User click id bon kuning
 
   Scenario: View Business Trip Recap
-    When User click button view business trip recap
+    When User click button view business trip recap 1
+
+  Scenario: Edit Document RKPD
+    When User click button view business trip recap 2
+    And User click button edit document rkpd
+    And User edit data document rkpd
+    Then User save edit document rkpd
+
 

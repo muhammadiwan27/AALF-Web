@@ -1378,7 +1378,7 @@ public class TestHo {
     @When("User click button view business trip recap")
     public void user_click_button_view_business_trip_recap() {
         Hooks.delay(2);
-        hoPage.BtnViewBusinessTripRecap();
+        hoPage.BtnViewBusinessTripRecap1();
         Hooks.delay(2);
         try {
             Robot robot = new Robot();
@@ -1400,6 +1400,42 @@ public class TestHo {
             throw new RuntimeException(e);
         }
         extentTest.log(LogStatus.PASS, "User click button view business trip recap");
+    }
+
+//Edit Document RKPD
+    @When("User click button view business trip recap 2")
+    public void user_click_button_view_business_trip_recap_2() {
+        Hooks.delay(2);
+        hoPage.BtnViewBusinessTripRecap2();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button view business trip recap 2");
+    }
+
+    @And("User click button edit document rkpd")
+    public void user_click_button_edit_document_rkpd() {
+        Hooks.delay(2);
+        hoPage.BtnEditRkpd();
+        Hooks.delay(3);
+        extentTest.log(LogStatus.PASS, "User click button edit document rkpd");
+    }
+
+    @And("User edit data document rkpd")
+    public void user_edit_data_document_rkpd() {
+        hoPage.InputDeleteScopeOfWorkDetailsRkpd();
+        Hooks.delay(2);
+        hoPage.InputScopeOfWorkDetailsRkpd("Kerjakan segera dengan seluruh tim yang telah ditunjuk");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit data document rkpd");
+    }
+
+    @Then("User save edit document rkpd")
+    public void user_save_edit_document_rkpd() {
+        Hooks.delay(3);
+        hoPage.BtnSaveEditRkpd();
+        Hooks.delay(2);
+        hoPage.BtnConfirmSaveEditRkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit document rkpd");
     }
 }
 

@@ -1375,8 +1375,8 @@ public class TestHo {
     }
 
 //View Business Trip Recap
-    @When("User click button view business trip recap")
-    public void user_click_button_view_business_trip_recap() {
+    @When("User click button view business trip recap 1")
+    public void user_click_button_view_business_trip_recap_1() {
         Hooks.delay(2);
         hoPage.BtnViewBusinessTripRecap1();
         Hooks.delay(2);
@@ -1399,7 +1399,7 @@ public class TestHo {
         } catch (AWTException e) {
             throw new RuntimeException(e);
         }
-        extentTest.log(LogStatus.PASS, "User click button view business trip recap");
+        extentTest.log(LogStatus.PASS, "User click button view business trip recap 1");
     }
 
 //Edit Document RKPD

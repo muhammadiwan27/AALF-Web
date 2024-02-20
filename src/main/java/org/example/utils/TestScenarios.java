@@ -19,7 +19,21 @@ public enum TestScenarios {
     T17("JP Approval Activity"),
     T18("Revision Activity"),
     T19("Partner Approval Activity"),
-    T20("Create Document RKPD");
+    T20("Create Document RKPD"),
+    T21("Create Document Surat Tugas"),
+    T22("Create Document LKPD"),
+    T23("Create Document Bon Putih"),
+    T24("Create Document Bon Hijau"),
+    T25("Create Document Bon Kuning"),
+    T26("Create Document Bon Merah"),
+    T27("View Document RKPD"),
+    T28("View Document Surat Tugas"),
+    T29("View Document Bon Hijau"),
+    T30("View Document Surat LKPD"),
+    T31("View Document Surat Bon Putih"),
+    T32("View Document Bon Kuning"),
+    T33("View Business Trip Recap"),
+    T34("Edit Document RKPD");
 
 
 

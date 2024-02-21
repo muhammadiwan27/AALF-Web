@@ -1116,13 +1116,21 @@ public class TestHo {
     @And("User checklist team incurred expenses reimbursement bon kuning")
     public void user_checklist_team_incurred_expenses_reimbursement_bon_kuning() {
         Hooks.delay(2);
-        hoPage.ChecklistTeamIncurredExpensesReimbursement1BonKuning();
+        hoPage.ChecklistProfessionalFee1BonKuning();
         Hooks.delay(2);
-        hoPage.ChecklistTeamIncurredExpensesReimbursement2BonKuning();
+        hoPage.ChecklistCourtMoney1BonKuning();
         Hooks.delay(2);
-        hoPage.ChecklistTeamIncurredExpensesReimbursement3BonKuning();
+        hoPage.ChecklistAllowance1BonKuning();
         Hooks.delay(2);
-        hoPage.ChecklistTeamIncurredExpensesReimbursement4BonKuning();
+        hoPage.ChecklistMealAllowance1BonKuning();
+        Hooks.delay(2);
+        hoPage.ChecklistProfessionalFee2BonKuning();
+        Hooks.delay(2);
+        hoPage.ChecklistCourtMoney2BonKuning();
+        Hooks.delay(2);
+        hoPage.ChecklistAllowance2BonKuning();
+        Hooks.delay(2);
+        hoPage.ChecklistMealAllowance2BonKuning();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User checklist team incurred expenses reimbursement bon kuning");
     }

@@ -324,18 +324,26 @@ public class HoPage {
     WebElement selectDocumentBonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdBonPutihBonKuning;
-    @FindBy(xpath = "(//option[@value='BP003/01/24'])[1]")
+    @FindBy(xpath = "(//option[@value='BP005/02/24'])[1]")
     WebElement selectIdBonPutihBonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdBonPutihBonKuning;
     @FindBy(xpath = "(//input[@type='checkbox'])[1]")
-    WebElement checklistTeamIncurredExpensesReimbursement1BonKuning;
+    WebElement checklistProfessionalFee1BonKuning;
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")
-    WebElement checklistTeamIncurredExpensesReimbursement2BonKuning;
+    WebElement checklistCourtMoney1BonKuning;
     @FindBy(xpath = "(//input[@type='checkbox'])[3]")
-    WebElement checklistTeamIncurredExpensesReimbursement3BonKuning;
+    WebElement checklistAllowance1BonKuning;
     @FindBy(xpath = "(//input[@type='checkbox'])[4]")
-    WebElement checklistTeamIncurredExpensesReimbursement4BonKuning;
+    WebElement checklistMealAllowance1BonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[5]")
+    WebElement checklistProfessionalFee2BonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[6]")
+    WebElement checklistCourtMoney2BonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[7]")
+    WebElement checklistAllowance2BonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[8]")
+    WebElement checklistMealAllowance2BonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateBonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
@@ -588,10 +596,14 @@ public class HoPage {
     public void BtnSearchIdBonPutihBonKuning() { btnSearchIdBonPutihBonKuning.click();}
     public void SelectIdBonPutihBonKuning() { selectIdBonPutihBonKuning.click();}
     public void BtnSelectIdBonPutihBonKuning() { btnSelectIdBonPutihBonKuning.click();}
-    public void ChecklistTeamIncurredExpensesReimbursement1BonKuning() { checklistTeamIncurredExpensesReimbursement1BonKuning.click();}
-    public void ChecklistTeamIncurredExpensesReimbursement2BonKuning() { checklistTeamIncurredExpensesReimbursement2BonKuning.click();}
-    public void ChecklistTeamIncurredExpensesReimbursement3BonKuning() { checklistTeamIncurredExpensesReimbursement3BonKuning.click();}
-    public void ChecklistTeamIncurredExpensesReimbursement4BonKuning() { checklistTeamIncurredExpensesReimbursement4BonKuning.click();}
+    public void ChecklistProfessionalFee1BonKuning() { checklistProfessionalFee1BonKuning.click();}
+    public void ChecklistCourtMoney1BonKuning() { checklistCourtMoney1BonKuning.click();}
+    public void ChecklistAllowance1BonKuning() { checklistAllowance1BonKuning.click();}
+    public void ChecklistMealAllowance1BonKuning() { checklistMealAllowance1BonKuning.click();}
+    public void ChecklistProfessionalFee2BonKuning() { checklistProfessionalFee2BonKuning.click();}
+    public void ChecklistCourtMoney2BonKuning() { checklistCourtMoney2BonKuning.click();}
+    public void ChecklistAllowance2BonKuning() { checklistAllowance2BonKuning.click();}
+    public void ChecklistMealAllowance2BonKuning() { checklistMealAllowance2BonKuning.click();}
     public void BtnCreateBonKuning() { btnCreateBonKuning.click();}
     public void BtnConfirmCreateBonKuning() { btnConfirmCreateBonKuning.click();}
     public void BtnCancelDownloadBonKuning() { btnCancelDownloadBonKuning.click();}

@@ -214,7 +214,7 @@ public class HoPage {
     WebElement selectDocumentSuratTugas;
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdRkpd;
-    @FindBy(xpath = "(//option[@value='1'])[1]")
+    @FindBy(xpath = "(//option[@value='0'])[1]")
     WebElement selectIdRkpd;
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdRkpd;
@@ -232,7 +232,7 @@ public class HoPage {
     WebElement selectDocumentLkpd;
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdSt;
-    @FindBy(xpath = "(//option[@value='1'])[1]")
+    @FindBy(xpath = "(//option[@value='0'])[1]")
     WebElement selectIdSt;
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdSt;
@@ -272,7 +272,7 @@ public class HoPage {
     WebElement selectDocumentBonPutih;
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdLkpdBonPutih;
-    @FindBy(xpath = "(//option[@value='004/LKPD/02/2024'])[1]")
+    @FindBy(xpath = "(//option[@value='007/LKPD/02/2024'])[1]")
     WebElement selectIdLkpdBonPutih;
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdLkpdBonPutih;
@@ -298,16 +298,22 @@ public class HoPage {
     WebElement btnSelectFinanceDocuments;
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdStBonHijau;
-    @FindBy(xpath = "(//option[@value='004/LKPD/02/2024'])[1]")
+    @FindBy(xpath = "(//option[@value='006/ST/02/2024'])[1]")
     WebElement selectIdStBonHijau;
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdStBonHijau;
-    @FindBy(xpath = "(//input[@type='checkbox'])[1]")
-    WebElement inputAmountTripExpensesBonHijau;
-    @FindBy(xpath = "(//input[@type='checkbox'])[1]")
-    WebElement inputNoteTripExpensesBonHijau;
-    @FindBy(xpath = "(//input[@type='checkbox'])[1]")
-    WebElement btnUploadRecipientTripExpensesBonHijau;
+    @FindBy(xpath = "(//input[@placeholder='Amount'])[1]")
+    WebElement inputAmountTripExpensesBonHijau1;
+    @FindBy(xpath = "(//input[@id='caseName'])[3]")
+    WebElement inputNoteTripExpensesBonHijau1;
+    @FindBy(xpath = "(//input[@placeholder='Amount'])[3]")
+    WebElement inputAmountTripExpensesBonHijau2;
+    @FindBy(xpath = "(//input[@id='caseName'])[6]")
+    WebElement inputNoteTripExpensesBonHijau2;
+    @FindBy(xpath = "(//input[@type='file'])[1]")
+    WebElement btnUploadRecipientTripExpensesBonHijau1;
+    @FindBy(xpath = "(//input[@type='file'])[2]")
+    WebElement btnUploadRecipientTripExpensesBonHijau2;
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateBonHijau;
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
@@ -382,10 +388,22 @@ public class HoPage {
     WebElement btnBackViewBonKuning;
     @FindBy(xpath = "(//a)[164]")
     WebElement btnViewBusinessTripRecap1;
+    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[6]/td[9]/div[1]/a[2]")
+    WebElement btnViewBusinessTripExpensesRecap;
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewBusinessTripExpensesRecap;
     @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[9]/div[1]/a[1]")
     WebElement btnViewBusinessTripRecap2;
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBusinessTripRecap;
+    @FindBy(xpath = "(//a[contains(text(),'Edit')])[4]")
+    WebElement btnEditBonKuning;
+    @FindBy(xpath = "(//input[@type='checkbox'])[4]")
+    WebElement unchecklistMealAllowanceEditBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditBonKuning;
     @FindBy(xpath = "(//a[contains(text(),'Edit')])[1]")
     WebElement btnEditRkpd;
     @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
@@ -557,9 +575,12 @@ public class HoPage {
     public void BtnSearchIdStBonHijau() { btnSearchIdStBonHijau.click();}
     public void SelectIdStBonHijau() { selectIdStBonHijau.click();}
     public void BtnSelectIdStBonHijau() { btnSelectIdStBonHijau.click();}
-    public void InputAmountTripExpensesBonHijau(String inputAmountTripExpensesBonHijau) { this.inputAmountTripExpensesBonHijau.sendKeys(inputAmountTripExpensesBonHijau);}
-    public void InputNoteTripExpensesBonHijau(String inputNoteTripExpensesBonHijau) { this.inputNoteTripExpensesBonHijau.sendKeys(inputNoteTripExpensesBonHijau);}
-    public void BtnUploadRecipientTripExpensesBonHijau(String btnUploadRecipientTripExpensesBonHijau) { this.btnUploadRecipientTripExpensesBonHijau.sendKeys(btnUploadRecipientTripExpensesBonHijau);}
+    public void InputAmountTripExpensesBonHijau1(String inputAmountTripExpensesBonHijau1) { this.inputAmountTripExpensesBonHijau1.sendKeys(inputAmountTripExpensesBonHijau1);}
+    public void InputAmountTripExpensesBonHijau2(String inputAmountTripExpensesBonHijau2) { this.inputAmountTripExpensesBonHijau2.sendKeys(inputAmountTripExpensesBonHijau2);}
+    public void InputNoteTripExpensesBonHijau1(String inputNoteTripExpensesBonHijau1) { this.inputNoteTripExpensesBonHijau1.sendKeys(inputNoteTripExpensesBonHijau1);}
+    public void InputNoteTripExpensesBonHijau2(String inputNoteTripExpensesBonHijau2) { this.inputNoteTripExpensesBonHijau2.sendKeys(inputNoteTripExpensesBonHijau2);}
+    public void BtnUploadRecipientTripExpensesBonHijau1(String btnUploadRecipientTripExpensesBonHijau1) { this.btnUploadRecipientTripExpensesBonHijau1.sendKeys(btnUploadRecipientTripExpensesBonHijau1);}
+    public void BtnUploadRecipientTripExpensesBonHijau2(String btnUploadRecipientTripExpensesBonHijau2) { this.btnUploadRecipientTripExpensesBonHijau2.sendKeys(btnUploadRecipientTripExpensesBonHijau2);}
     public void BtnCreateBonHijau() { btnCreateBonHijau.click();}
     public void BtnConfirmCreateBonHijau() { btnConfirmCreateBonHijau.click();}
     public void BtnCancelDownloadBonHijau() { btnCancelDownloadBonHijau.click();}
@@ -598,7 +619,13 @@ public class HoPage {
     public void BtnBackViewBonKuning() { btnBackViewBonKuning.click();}
     public void BtnViewBusinessTripRecap1() { btnViewBusinessTripRecap1.click();}
     public void BtnBackViewBusinessTripRecap() { btnBackViewBusinessTripRecap.click();}
+    public void BtnViewBusinessTripExpensesRecap() { btnViewBusinessTripExpensesRecap.click();}
+    public void BtnBackViewBusinessTripExpensesRecap() { btnBackViewBusinessTripExpensesRecap.click();}
     public void BtnViewBusinessTripRecap2() { btnViewBusinessTripRecap2.click();}
+    public void BtnEditBonKuning() { btnEditBonKuning.click();}
+    public void UnchecklistMealAllowanceEditBonKuning() { unchecklistMealAllowanceEditBonKuning.click();}
+    public void BtnSaveEditBonKuning() { btnSaveEditBonKuning.click();}
+    public void BtnConfirmSaveEditBonKuning() { btnConfirmSaveEditBonKuning.click();}
     public void BtnEditRkpd() { btnEditRkpd.click();}
     public void InputDeleteScopeOfWorkDetailsRkpd() { inputScopeOfWorkDetailsRkpd.clear();}
     public void BtnSaveEditRkpd() { btnSaveEditRkpd.click();}

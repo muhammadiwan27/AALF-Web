@@ -182,6 +182,15 @@ Feature: Ho Page Test
   Scenario: View Business Trip Recap
     When User click button view business trip recap 1
 
+  Scenario: View Business Trip Expenses Recap
+    When User click button view business trip expenses recap
+
+  Scenario: Edit Document Bon Kuning
+    When User click button view business trip expenses recap for edit bon kuning
+    And User click button edit document bon kuning
+    And User edit data document bon kuning
+    Then User save edit document bon kuning
+
   Scenario: Edit Document RKPD
     When User click button view business trip recap 2
     And User click button edit document rkpd

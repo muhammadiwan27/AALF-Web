@@ -1043,7 +1043,9 @@ public class TestHo {
     @And("User input amount trip expenses bon hijau")
     public void user_input_amount_trip_expenses_bon_hijau() {
         Hooks.delay(2);
-        hoPage.InputAmountTripExpensesBonHijau("2500000");
+        hoPage.InputAmountTripExpensesBonHijau1("2500000");
+        Hooks.delay(2);
+        hoPage.InputAmountTripExpensesBonHijau2("1525000");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input amount trip expenses bon hijau");
     }
@@ -1051,7 +1053,9 @@ public class TestHo {
     @And("User input note trip expenses bon hijau")
     public void user_input_note_trip_expenses_bon_hijau() {
         Hooks.delay(2);
-        hoPage.InputNoteTripExpensesBonHijau("Segera di infokan");
+        hoPage.InputNoteTripExpensesBonHijau1("Ticket penerbangan pesawat");
+        Hooks.delay(2);
+        hoPage.InputNoteTripExpensesBonHijau2("Untuk penginapan");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note trip expenses bon hijau");
     }
@@ -1059,7 +1063,9 @@ public class TestHo {
     @And("User upload recipient trip expenses bon hijau")
     public void user_upload_recipient_trip_expenses_bon_hijau() {
         Hooks.delay(2);
-        hoPage.BtnUploadRecipientTripExpensesBonHijau("C:\\Users\\M1403QA\\Downloads\\ENFP - Bingo.png");
+        hoPage.BtnUploadRecipientTripExpensesBonHijau1("C:\\Users\\M1403QA\\Downloads\\ENFP - Bingo.png");
+        Hooks.delay(2);
+        hoPage.BtnUploadRecipientTripExpensesBonHijau2("C:\\Users\\M1403QA\\Downloads\\Proses kerja HO - Bon Kuning.png");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User upload recipient trip expenses bon hijau");
     }
@@ -1402,6 +1408,71 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button view business trip recap 1");
     }
 
+//View Business Trip Expenses Recap
+    @When("User click button view business trip expenses recap")
+    public void user_click_button_view_business_trip_expenses_recap() {
+        Hooks.delay(2);
+        hoPage.BtnViewBusinessTripExpensesRecap();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_UP);
+            robot.keyRelease(KeyEvent.VK_PAGE_UP);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(3);
+        hoPage.BtnBackViewBusinessTripExpensesRecap();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click button view business trip expenses recap");
+    }
+
+//Edit Document Bon Kuning
+    @When("User click button view business trip expenses recap for edit bon kuning")
+    public void user_click_button_view_business_trip_expenses_recap_for_edit_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnViewBusinessTripExpensesRecap();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button view business trip expenses recap for edit bon kuning");
+    }
+
+    @And("User click button edit document bon kuning")
+    public void user_click_button_edit_document_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnEditBonKuning();
+        Hooks.delay(3);
+        extentTest.log(LogStatus.PASS, "User click button edit document bon kuning");
+    }
+
+    @And("User edit data document bon kuning")
+    public void user_edit_data_document_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.UnchecklistMealAllowanceEditBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit data document bon kuning");
+    }
+
+    @Then("User save edit document bon kuning")
+    public void user_save_edit_document_bon_kuning() {
+        Hooks.delay(3);
+        hoPage.BtnSaveEditBonKuning();
+        Hooks.delay(2);
+        hoPage.BtnConfirmSaveEditBonKuning();
+        Hooks.delay(2);
+        hoPage.BtnCancelDownloadBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit document bon kuning");
+    }
+
 //Edit Document RKPD
     @When("User click button view business trip recap 2")
     public void user_click_button_view_business_trip_recap_2() {
@@ -1435,7 +1506,8 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnConfirmSaveEditRkpd();
         Hooks.delay(2);
+        hoPage.BtnCancelDownloadRkpd();
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User save edit document rkpd");
     }
 }
-

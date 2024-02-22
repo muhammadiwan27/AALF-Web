@@ -798,7 +798,7 @@ public class TestHo {
         hoPage.BtnConfirmCreateRkpd();
         Hooks.delay(3);
         hoPage.BtnCancelDownloadRkpd();
-        Hooks.delay(2);
+        Hooks.delay(5);
         extentTest.log(LogStatus.PASS, "User click button create document rkpd");
     }
 
@@ -850,7 +850,7 @@ public class TestHo {
         hoPage.BtnConfirmCreateSuratTugas();
         Hooks.delay(3);
         hoPage.BtnCancelDownloadSuratTugas();
-        Hooks.delay(3);
+        Hooks.delay(5);
         extentTest.log(LogStatus.PASS, "User click button create document surat tugas");
     }
 

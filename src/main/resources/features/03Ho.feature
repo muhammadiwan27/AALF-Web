@@ -196,5 +196,3 @@ Feature: Ho Page Test
     And User click button edit document rkpd
     And User edit data document rkpd
     Then User save edit document rkpd
-
-

@@ -394,7 +394,7 @@ public class HoPage {
     WebElement btnViewBonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBonKuning;
-    @FindBy(xpath = "(//a)[164]")
+    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[4]/td[9]/div[1]/a[1]")
     WebElement btnViewBusinessTripRecap1;
     @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[6]/td[9]/div[1]/a[2]")
     WebElement btnViewBusinessTripExpensesRecap;
@@ -402,7 +402,7 @@ public class HoPage {
     WebElement btnBackViewBusinessTripExpensesRecap;
     @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[9]/div[1]/a[1]")
     WebElement btnViewBusinessTripRecap2;
-    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    @FindBy(xpath = "//button[normalize-space()='Back']")
     WebElement btnBackViewBusinessTripRecap;
     @FindBy(xpath = "(//a[contains(text(),'Edit')])[4]")
     WebElement btnEditBonKuning;

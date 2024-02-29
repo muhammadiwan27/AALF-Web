@@ -191,8 +191,24 @@ Feature: Ho Page Test
     And User edit data document bon kuning
     Then User save edit document bon kuning
 
-  Scenario: Edit Document RKPD
-    When User click button view business trip recap 2
-    And User click button edit document rkpd
-    And User edit data document rkpd
-    Then User save edit document rkpd
+  Scenario: Delete Document Bon Kuning
+    When User click button delete document bon kuning
+    Then User click button confirm delete document bon kuning
+
+  Scenario: Edit Document Bon Putih
+    When User click button edit document bon putih
+    And User edit data document bon putih
+    Then User save edit document bon putih
+
+  Scenario: Delete Document Bon Putih
+    When User click button delete document bon putih
+    Then User click button confirm delete document bon putih
+
+  Scenario: Edit Document Bon Hijau
+    When User click button edit document bon hijau
+    And User edit data document bon hijau
+    Then User save edit document bon hijau
+
+  Scenario: Delete Document Bon Hijau
+    When User click button delete document bon hijau
+    Then User click button confirm delete document bon hijau

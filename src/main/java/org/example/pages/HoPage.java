@@ -396,12 +396,10 @@ public class HoPage {
     WebElement btnBackViewBonKuning;
     @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[4]/td[9]/div[1]/a[1]")
     WebElement btnViewBusinessTripRecap1;
-    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[6]/td[9]/div[1]/a[2]")
+    @FindBy(xpath = "//tbody/tr[4]/td[9]/div[1]/a[2]/img[1]")
     WebElement btnViewBusinessTripExpensesRecap;
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBusinessTripExpensesRecap;
-    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[9]/div[1]/a[1]")
-    WebElement btnViewBusinessTripRecap2;
     @FindBy(xpath = "//button[normalize-space()='Back']")
     WebElement btnBackViewBusinessTripRecap;
     @FindBy(xpath = "(//a[contains(text(),'Edit')])[4]")
@@ -412,12 +410,44 @@ public class HoPage {
     WebElement btnSaveEditBonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveEditBonKuning;
-    @FindBy(xpath = "(//a[contains(text(),'Edit')])[1]")
-    WebElement btnEditRkpd;
-    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
-    WebElement btnSaveEditRkpd;
+    @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[4]")
+    WebElement btnDeleteBonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
-    WebElement btnConfirmSaveEditRkpd;
+    WebElement btnConfirmDeleteBonKuning;
+    @FindBy(xpath = "(//a[contains(text(),'Edit')])[3]")
+    WebElement btnEditBonPutih;
+    @FindBy(xpath = "(//input[@type='checkbox'])[4]")
+    WebElement unchecklistMealAllowanceEditBonPutih;
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditBonPutih;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditBonPutih;
+    @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[3]")
+    WebElement btnDeleteBonPutih;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteBonPutih;
+    @FindBy(xpath = "(//a[contains(text(),'Edit')])[3]")
+    WebElement btnEditBonHijau;
+    @FindBy(xpath = "(//button[normalize-space()='Add'])[1]")
+    WebElement btnAddTripExpensesEditBonHijau;
+    @FindBy(xpath = "(//input[@id='caseName'])[7]")
+    WebElement inputListOfExpensesTripExpensesEditBonHijau;
+    @FindBy(xpath = "(//input[@id='caseName'])[7]")
+    WebElement inputAmountTripExpensesEditBonHijau;
+    @FindBy(xpath = "(//input[@id='caseName'])[9]")
+    WebElement inputNoteTripExpensesEditBonHijau;
+    @FindBy(xpath = "(//input[@type='file'])[3]")
+    WebElement btnUploadRecipientTripExpensesEditBonHijau;
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditBonHijau;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditBonHijau;
+    @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[3]")
+    WebElement btnDeleteBonHijau;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteBonHijau;
+
+
 
 
 
@@ -633,16 +663,39 @@ public class HoPage {
     public void BtnBackViewBusinessTripRecap() { btnBackViewBusinessTripRecap.click();}
     public void BtnViewBusinessTripExpensesRecap() { btnViewBusinessTripExpensesRecap.click();}
     public void BtnBackViewBusinessTripExpensesRecap() { btnBackViewBusinessTripExpensesRecap.click();}
-    public void BtnViewBusinessTripRecap2() { btnViewBusinessTripRecap2.click();}
     public void BtnEditBonKuning() { btnEditBonKuning.click();}
     public void UnchecklistMealAllowanceEditBonKuning() { unchecklistMealAllowanceEditBonKuning.click();}
     public void BtnSaveEditBonKuning() { btnSaveEditBonKuning.click();}
     public void BtnConfirmSaveEditBonKuning() { btnConfirmSaveEditBonKuning.click();}
-    public void BtnEditRkpd() { btnEditRkpd.click();}
-    public void InputDeleteScopeOfWorkDetailsRkpd() { inputScopeOfWorkDetailsRkpd.clear();}
-    public void BtnSaveEditRkpd() { btnSaveEditRkpd.click();}
-    public void BtnConfirmSaveEditRkpd() { btnConfirmSaveEditRkpd.click();}
+    public void BtnDeleteBonKuning() { btnDeleteBonKuning.click();}
+    public void BtnConfirmDeleteBonKuning() { btnConfirmDeleteBonKuning.click();}
+    public void BtnEditBonPutih() { btnEditBonPutih.click();}
+    public void UnchecklistMealAllowanceEditBonPutih() { unchecklistMealAllowanceEditBonPutih.click();}
+    public void BtnSaveEditBonPutih() { btnSaveEditBonPutih.click();}
+    public void BtnConfirmSaveEditBonPutih() { btnConfirmSaveEditBonPutih.click();}
+    public void BtnDeleteBonPutih() { btnDeleteBonPutih.click();}
+    public void BtnConfirmDeleteBonPutih() { btnConfirmDeleteBonPutih.click();}
+    public void BtnEditBonHijau() { btnEditBonHijau.click();}
+    public void BtnAddTripExpensesEditBonHijau() { btnAddTripExpensesEditBonHijau.click();}
+    public void InputListOfExpensesTripExpensesEditBonHijau(String inputListOfExpensesTripExpensesEditBonHijau) { this.inputListOfExpensesTripExpensesEditBonHijau.sendKeys(inputListOfExpensesTripExpensesEditBonHijau);}
+    public void InputAmountTripExpensesEditBonHijau(String inputAmountTripExpensesEditBonHijau) { this.inputAmountTripExpensesEditBonHijau.sendKeys(inputAmountTripExpensesEditBonHijau);}
+    public void InputNoteTripExpensesEditBonHijau(String inputNoteTripExpensesEditBonHijau) { this.inputNoteTripExpensesEditBonHijau.sendKeys(inputNoteTripExpensesEditBonHijau);}
+    public void BtnUploadRecipientTripExpensesEditBonHijau(String btnUploadRecipientTripExpensesEditBonHijau) { this.btnUploadRecipientTripExpensesEditBonHijau.sendKeys(btnUploadRecipientTripExpensesEditBonHijau);}
+    public void BtnSaveEditBonHijau() { btnSaveEditBonHijau.click();}
+    public void BtnConfirmSaveEditBonHijau() { btnConfirmSaveEditBonHijau.click();}
+    public void BtnDeleteBonHijau() { btnDeleteBonHijau.click();}
+    public void BtnConfirmDeleteBonHijau() { btnConfirmDeleteBonHijau.click();}
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

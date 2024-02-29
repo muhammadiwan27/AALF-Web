@@ -35,7 +35,11 @@ public enum TestScenarios {
     T33("View Business Trip Recap"),
     T34("View Business Trip Expenses Recap"),
     T35("Edit Document Bon Kuning"),
-    T36("Edit Document RKPD");
+    T36("Delete Document Bon Kuning"),
+    T37("Edit Document Bon Putih"),
+    T38("Delete Document Bon Putih"),
+    T39("Edit Document Bon Hijau"),
+    T40("Delete Document Bon Hijau");
 
 
 

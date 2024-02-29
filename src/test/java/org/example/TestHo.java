@@ -1481,41 +1481,120 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save edit document bon kuning");
     }
 
-//Edit Document RKPD
-    @When("User click button view business trip recap 2")
-    public void user_click_button_view_business_trip_recap_2() {
+//Delete Document Bon Kuning
+    @When("User click button delete document bon kuning")
+    public void user_click_button_delete_document_bon_kuning() {
         Hooks.delay(2);
-        hoPage.BtnViewBusinessTripRecap2();
+        hoPage.BtnDeleteBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button view business trip recap 2");
+        extentTest.log(LogStatus.PASS, "User click button delete document bon kuning");
     }
 
-    @And("User click button edit document rkpd")
-    public void user_click_button_edit_document_rkpd() {
-        Hooks.delay(2);
-        hoPage.BtnEditRkpd();
+    @Then("User click button confirm delete document bon kuning")
+    public void user_click_button_confirm_delete_document_bon_kuning() {
         Hooks.delay(3);
-        extentTest.log(LogStatus.PASS, "User click button edit document rkpd");
+        hoPage.BtnConfirmDeleteBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete document bon kuning");
     }
 
-    @And("User edit data document rkpd")
-    public void user_edit_data_document_rkpd() {
-        hoPage.InputDeleteScopeOfWorkDetailsRkpd();
+//Edit Document Bon Putih
+    @When("User click button edit document bon putih")
+    public void user_click_button_edit_document_bon_putih() {
         Hooks.delay(2);
-        hoPage.InputScopeOfWorkDetailsRkpd("Kerjakan segera dengan seluruh tim yang telah ditunjuk");
+        hoPage.BtnEditBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User edit data document rkpd");
+        extentTest.log(LogStatus.PASS, "User click button edit document bon putih");
     }
 
-    @Then("User save edit document rkpd")
-    public void user_save_edit_document_rkpd() {
+    @And("User edit data document bon putih")
+    public void user_edit_data_document_bon_putih() {
+        Hooks.delay(2);
+        hoPage.UnchecklistMealAllowanceEditBonPutih();
         Hooks.delay(3);
-        hoPage.BtnSaveEditRkpd();
+        extentTest.log(LogStatus.PASS, "User edit data document bon putih");
+    }
+
+    @Then("User save edit document bon putih")
+    public void user_save_edit_document_bon_putih() {
+        Hooks.delay(3);
+        hoPage.BtnSaveEditBonPutih();
         Hooks.delay(2);
-        hoPage.BtnConfirmSaveEditRkpd();
+        hoPage.BtnConfirmSaveEditBonPutih();
         Hooks.delay(2);
-        hoPage.BtnCancelDownloadRkpd();
+        hoPage.BtnCancelDownloadBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User save edit document rkpd");
+        extentTest.log(LogStatus.PASS, "User save edit document bon putih");
+    }
+
+//Delete Document Bon Putih
+    @When("User click button delete document bon putih")
+    public void user_click_button_delete_document_bon_putih() {
+        Hooks.delay(2);
+        hoPage.BtnDeleteBonPutih();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete document bon putih");
+    }
+
+    @Then("User click button confirm delete document bon putih")
+    public void user_click_button_confirm_delete_document_bon_putih() {
+        Hooks.delay(3);
+        hoPage.BtnConfirmDeleteBonPutih();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete document bon putih");
+    }
+
+//Edit Document Bon Hijau
+    @When("User click button edit document bon hijau")
+    public void user_click_button_edit_document_bon_hijau() {
+        Hooks.delay(2);
+        hoPage.BtnEditBonHijau();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button edit document bon hijau");
+    }
+
+    @And("User edit data document bon hijau")
+    public void user_edit_data_document_bon_hijau() {
+        Hooks.delay(2);
+        hoPage.BtnAddTripExpensesEditBonHijau();
+        Hooks.delay(3);
+        hoPage.InputListOfExpensesTripExpensesEditBonHijau("Shopping");
+        Hooks.delay(3);
+        hoPage.InputAmountTripExpensesEditBonHijau("1050000");
+        Hooks.delay(3);
+        hoPage.InputNoteTripExpensesEditBonHijau("Untuk kebutuhan belanja");
+        Hooks.delay(3);
+        hoPage.BtnUploadRecipientTripExpensesEditBonHijau("C:\\Users\\M1403QA\\Downloads\\WhatsApp Image 2024-02-20 at 17.26.10_42cde6da.jpg");
+        Hooks.delay(3);
+        extentTest.log(LogStatus.PASS, "User edit data document bon hijau");
+    }
+
+    @Then("User save edit document bon hijau")
+    public void user_save_edit_document_bon_hijau() {
+        Hooks.delay(3);
+        hoPage.BtnSaveEditBonHijau();
+        Hooks.delay(2);
+        hoPage.BtnConfirmSaveEditBonHijau();
+        Hooks.delay(2);
+        hoPage.BtnCancelDownloadBonHijau();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit document bon hijau");
+    }
+
+//Delete Document Bon Hijau
+    @When("User click button delete document bon hijau")
+    public void user_click_button_delete_document_bon_hijau() {
+        Hooks.delay(2);
+        hoPage.BtnDeleteBonHijau();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete document bon hijau");
+    }
+
+    @Then("User click button confirm delete document bon hijau")
+    public void user_click_button_confirm_delete_document_bon_hijau() {
+        Hooks.delay(3);
+        hoPage.BtnConfirmDeleteBonHijau();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete document bon hijau");
     }
 }

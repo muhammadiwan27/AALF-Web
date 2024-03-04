@@ -1597,4 +1597,108 @@ public class TestHo {
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button confirm delete document bon hijau");
     }
+
+//Edit Document LKPD
+    @When("User click button view business trip recap for edit administrative document")
+    public void user_click_button_view_business_trip_recap_for_edit_administrative_document() {
+        Hooks.delay(2);
+        hoPage.BtnViewBusinessTripRecap();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button view business trip recap for edit administrative document");
+    }
+
+    @And("User click button edit document lkpd")
+    public void user_click_button_edit_document_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnEditLkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button edit document lkpd");
+    }
+
+    @And("User edit data document lkpd")
+    public void user_edit_data_document_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnChooseResultReportEditLkpd();
+        Hooks.delay(3);
+        hoPage.SelectActivityResultReportEditLkpd();
+        Hooks.delay(3);
+        hoPage.BtnSelectActivityResultReportEditLkpd();
+        Hooks.delay(3);
+        extentTest.log(LogStatus.PASS, "User edit data document lkpd");
+    }
+
+    @Then("User save edit document lkpd")
+    public void user_save_edit_document_lkpd() {
+        Hooks.delay(3);
+        hoPage.BtnSaveEditLkpd();
+        Hooks.delay(2);
+        hoPage.BtnConfirmSaveEditLkpd();
+        Hooks.delay(2);
+        hoPage.BtnCancelDownloadLkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit document lkpd");
+    }
+
+//Delete Document LKPD
+    @When("User click button delete document lkpd")
+    public void user_click_button_delete_document_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnDeleteLkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete document lkpd");
+    }
+
+    @Then("User click button confirm delete document lkpd")
+    public void user_click_button_confirm_delete_document_lkpd() {
+        Hooks.delay(3);
+        hoPage.BtnConfirmDeleteLkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete document lkpd");
+    }
+
+//Edit Document Surat Tugas
+    @When("User click button edit document surat tugas")
+    public void user_click_button_edit_document_surat_tugas() {
+        Hooks.delay(2);
+        hoPage.BtnEditSuratTugas();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button edit document surat tugas");
+    }
+
+    @And("User edit data document surat tugas")
+    public void user_edit_data_document_surat_tugas() {
+        Hooks.delay(2);
+        hoPage.UnchecklistTicketListOfExpensesEditSuratTugas();
+        Hooks.delay(3);
+        extentTest.log(LogStatus.PASS, "User edit data document surat tugas");
+    }
+
+    @Then("User save edit document surat tugas")
+    public void user_save_edit_document_surat_tugas() {
+        Hooks.delay(3);
+        hoPage.BtnSaveEditSuratTugas();
+        Hooks.delay(2);
+        hoPage.BtnConfirmSaveEditSuratTugas();
+        Hooks.delay(2);
+        hoPage.BtnCancelDownloadSuratTugas();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit document surat tugas");
+    }
+
+//Delete Document Surat Tugas
+    @When("User click button delete document surat tugas")
+    public void user_click_button_delete_document_surat_tugas() {
+        Hooks.delay(2);
+        hoPage.BtnDeleteSuratTugas();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete document surat tugas");
+    }
+
+    @Then("User click button confirm delete document surat tugas")
+    public void user_click_button_confirm_delete_document_surat_tugas() {
+        Hooks.delay(3);
+        hoPage.BtnConfirmDeleteSuratTugas();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete document surat tugas");
+    }
 }

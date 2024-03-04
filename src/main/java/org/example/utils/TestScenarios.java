@@ -39,7 +39,11 @@ public enum TestScenarios {
     T37("Edit Document Bon Putih"),
     T38("Delete Document Bon Putih"),
     T39("Edit Document Bon Hijau"),
-    T40("Delete Document Bon Hijau");
+    T40("Delete Document Bon Hijau"),
+    T41("Edit Document LKPD"),
+    T42("Delete Document LKPD"),
+    T43("Edit Document Surat Tugas"),
+    T44("Delete Document Surat Tugas");
 
 
 

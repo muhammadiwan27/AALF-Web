@@ -212,3 +212,22 @@ Feature: Ho Page Test
   Scenario: Delete Document Bon Hijau
     When User click button delete document bon hijau
     Then User click button confirm delete document bon hijau
+
+  Scenario: Edit Document LKPD
+    When User click button view business trip recap for edit administrative document
+    And User click button edit document lkpd
+    And User edit data document lkpd
+    Then User save edit document lkpd
+
+  Scenario: Delete Document Bon LKPD
+    When User click button delete document lkpd
+    Then User click button confirm delete document lkpd
+
+  Scenario: Edit Document Surat Tugas
+    When User click button edit document surat tugas
+    And User edit data document surat tugas
+    Then User save edit document surat tugas
+
+  Scenario: Delete Document Surat Tugas
+    When User click button delete document surat tugas
+    Then User click button confirm delete document surat tugas

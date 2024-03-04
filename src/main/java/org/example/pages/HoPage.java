@@ -446,6 +446,36 @@ public class HoPage {
     WebElement btnDeleteBonHijau;
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteBonHijau;
+    @FindBy(xpath = "//tbody/tr[1]/td[9]/div[1]/a[1]/img[1]")
+    WebElement btnViewBusinessTripRecap;
+    @FindBy(xpath = "(//a[contains(text(),'Edit')])[3]")
+    WebElement btnEditLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Choose Activity'])[1]")
+    WebElement btnChooseResultReportEditLkpd;
+    @FindBy(xpath = "(//option[@value='3'])[1]")
+    WebElement selectActivityResultReportEditLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnSelectActivityResultReportEditLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditLkpd;
+    @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[3]")
+    WebElement btnDeleteLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteLkpd;
+    @FindBy(xpath = "(//a[@class='btn btn-sm variant-filled-primary rounded ms-auto lg:w-[120px] '][normalize-space()='Edit'])[1]")
+    WebElement btnEditSuratTugas;
+    @FindBy(xpath = "(//input[@type='checkbox'])[1]")
+    WebElement unchecklistTicketListOfExpensesEditSuratTugas;
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditSuratTugas;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditSuratTugas;
+    @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[2]")
+    WebElement btnDeleteSuratTugas;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteSuratTugas;
 
 
 
@@ -685,7 +715,28 @@ public class HoPage {
     public void BtnConfirmSaveEditBonHijau() { btnConfirmSaveEditBonHijau.click();}
     public void BtnDeleteBonHijau() { btnDeleteBonHijau.click();}
     public void BtnConfirmDeleteBonHijau() { btnConfirmDeleteBonHijau.click();}
+    public void BtnViewBusinessTripRecap() { btnViewBusinessTripRecap.click();}
+    public void BtnEditLkpd() { btnEditLkpd.click();}
+    public void BtnChooseResultReportEditLkpd() { btnChooseResultReportEditLkpd.click();}
+    public void SelectActivityResultReportEditLkpd() { selectActivityResultReportEditLkpd.click();}
+    public void BtnSelectActivityResultReportEditLkpd() { btnSelectActivityResultReportEditLkpd.click();}
+    public void BtnSaveEditLkpd() { btnSaveEditLkpd.click();}
+    public void BtnConfirmSaveEditLkpd() { btnConfirmSaveEditLkpd.click();}
+    public void BtnDeleteLkpd() { btnDeleteLkpd.click();}
+    public void BtnConfirmDeleteLkpd() { btnConfirmDeleteLkpd.click();}
+    public void BtnEditSuratTugas() { btnEditSuratTugas.click();}
+    public void UnchecklistTicketListOfExpensesEditSuratTugas() { unchecklistTicketListOfExpensesEditSuratTugas.click();}
+    public void BtnSaveEditSuratTugas() { btnSaveEditSuratTugas.click();}
+    public void BtnConfirmSaveEditSuratTugas() { btnConfirmSaveEditSuratTugas.click();}
+    public void BtnDeleteSuratTugas() { btnDeleteSuratTugas.click();}
+    public void BtnConfirmDeleteSuratTugas() { btnConfirmDeleteSuratTugas.click();}
 }
+
+
+
+
+
+
 
 
 

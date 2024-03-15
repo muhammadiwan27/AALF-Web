@@ -210,6 +210,30 @@ public class HoPage {
     WebElement btnConfirmCreateRkpd;
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadRkpd;
+    @FindBy(xpath = "(//a[contains(text(),'Need Approve By JP')])[1]")
+    WebElement btnJpApprovalRkpd;
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalRkpd;
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApprovalRkpd;
+    @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
+    WebElement inputNoteJpApprovalRkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveJpApprovalRkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmJpSaveApprovalRkpd;
+    @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[1]")
+    WebElement btnPartnerApprovalRkpd;
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalRkpd;
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApprovalRkpd;
+    @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
+    WebElement inputNotePartnerApprovalRkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSavePartrnerApprovalRkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmPartnerSaveApprovalRkpd;
     @FindBy(xpath = "(//option[@value='surat-tugas'])[1]")
     WebElement selectDocumentSuratTugas;
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
@@ -228,6 +252,18 @@ public class HoPage {
     WebElement btnConfirmCreateSuratTugas;
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadSuratTugas;
+    @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[2]")
+    WebElement btnPartnerApprovalSuratTugas;
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalSuratTugas;
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApprovalSuratTugas;
+    @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
+    WebElement inputNotePartnerApprovalSuratTugas;
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSavePartnerApprovalSuratTugas;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmPartnerSaveApprovalSuratTugas;
     @FindBy(xpath = "(//option[@value='lkpd'])[1]")
     WebElement selectDocumentLkpd;
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
@@ -597,6 +633,18 @@ public class HoPage {
     public void BtnCreateRkpd() { btnCreateRkpd.click();}
     public void BtnConfirmCreateRkpd() { btnConfirmCreateRkpd.click();}
     public void BtnCancelDownloadRkpd() { btnCancelDownloadRkpd.click();}
+    public void BtnJpApprovalRkpd() { btnJpApprovalRkpd.click();}
+    public void BtnSelectJpApprovalRkpd() { btnSelectJpApprovalRkpd.click();}
+    public void SelectJpApprovalRkpd() { selectJpApprovalRkpd.click();}
+    public void InputNoteJpApprovalRkpd(String inputNoteJpApprovalRkpd) { this.inputNoteJpApprovalRkpd.sendKeys(inputNoteJpApprovalRkpd);}
+    public void BtnSaveJpApprovalRkpd() { btnSaveJpApprovalRkpd.click();}
+    public void BtnConfirmJpSaveApprovalRkpd() { btnConfirmJpSaveApprovalRkpd.click();}
+    public void BtnPartnerApprovalRkpd() { btnPartnerApprovalRkpd.click();}
+    public void BtnSelectPartnerApprovalRkpd() { btnSelectPartnerApprovalRkpd.click();}
+    public void SelectPartnerApprovalRkpd() { selectPartnerApprovalRkpd.click();}
+    public void InputNotePartnerApprovalRkpd(String inputNotePartnerApprovalRkpd) { this.inputNotePartnerApprovalRkpd.sendKeys(inputNotePartnerApprovalRkpd);}
+    public void BtnSavePartnerApprovalRkpd() { btnSavePartrnerApprovalRkpd.click();}
+    public void BtnConfirmPartnerSaveApprovalRkpd() { btnConfirmPartnerSaveApprovalRkpd.click();}
     public void SelectDocumentSuratTugas() { selectDocumentSuratTugas.click();}
     public void BtnSearchIdRkpd() { btnSearchIdRkpd.click();}
     public void SelectIdRkpd() { selectIdRkpd.click();}
@@ -606,6 +654,12 @@ public class HoPage {
     public void BtnCreateSuratTugas() { btnCreateSuratTugas.click();}
     public void BtnConfirmCreateSuratTugas() { btnConfirmCreateSuratTugas.click();}
     public void BtnCancelDownloadSuratTugas() { btnCancelDownloadSuratTugas.click();}
+    public void BtnPartnerApprovalSuratTugas() { btnPartnerApprovalSuratTugas.click();}
+    public void BtnSelectPartnerApprovalSuratTugas() { btnSelectPartnerApprovalSuratTugas.click();}
+    public void SelectPartnerApprovalSuratTugas() { selectPartnerApprovalSuratTugas.click();}
+    public void InputNotePartnerApprovalSuratTugas(String inputNotePartnerApprovalSuratTugas) { this.inputNotePartnerApprovalSuratTugas.sendKeys(inputNotePartnerApprovalSuratTugas);}
+    public void BtnSavePartnerApprovalSuratTugas() { btnSavePartnerApprovalSuratTugas.click();}
+    public void BtnConfirmPartnerSaveApprovalSuratTugas() { btnConfirmPartnerSaveApprovalSuratTugas.click();}
     public void SelectDocumentLkpd() { selectDocumentLkpd.click();}
     public void BtnSearchIdSt() { btnSearchIdSt.click();}
     public void SelectIdSt() { selectIdSt.click();}
@@ -731,6 +785,9 @@ public class HoPage {
     public void BtnDeleteSuratTugas() { btnDeleteSuratTugas.click();}
     public void BtnConfirmDeleteSuratTugas() { btnConfirmDeleteSuratTugas.click();}
 }
+
+
+
 
 
 

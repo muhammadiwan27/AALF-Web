@@ -110,12 +110,30 @@ Feature: Ho Page Test
     And User select assigned member rkpd
     Then User click button create document rkpd
 
+  Scenario: JP Approval Document RKPD
+    When User click button jp approval document rkpd
+    And User select jp approval document rkpd
+    And User input note jp approval rkpd
+    Then User click button save jp approval rkpd
+
+  Scenario: Partner Approval Document RKPD
+    When User click button partner approval document rkpd
+    And User select partner approval document rkpd
+    And User input note partner approval rkpd
+    Then User click button save partner approval rkpd
+
   Scenario: Create Document Surat Tugas
     When User click button create administrative documents for surat tugas
     And User select document surat tugas
     And User select id rkpd surat tugas
     And User checklist list of expenses surat tugas
     Then User click button create document surat tugas
+
+  Scenario: Partner Approval Document Surat Tugas
+    When User click button partner approval document surat tugas
+    And User select partner approval document surat tugas
+    And User input note partner approval surat tugas
+    Then User click button save partner approval surat tugas
 
   Scenario: Create Document LKPD
     When User click button create administrative documents for lkpd

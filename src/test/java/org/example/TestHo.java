@@ -1063,6 +1063,80 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button create document lkpd");
     }
 
+//JP Approval Document LKPD
+    @When("User click button jp approval document lkpd")
+    public void User_click_button_jp_approval_document_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnJpApprovalLkpd();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button partner approval document lkpd");
+    }
+
+    @And("User select jp approval document lkpd")
+    public void user_select_jp_approval_document_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnSelectJpApprovalLkpd();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalLkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select partner approval document lkpd");
+    }
+
+    @And("User input note jp approval lkpd")
+    public void user_input_note_jp_approval_lkpd() {
+        Hooks.delay(2);
+        hoPage.InputNoteJpApprovalLkpd("Lanjutkan untuk approval partner");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note partner approval lkpd");
+    }
+
+    @Then("User click button save jp approval lkpd")
+    public void user_click_button_save_jp_approval_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnSaveJpApprovalLkpd();
+        Hooks.delay(2);
+        hoPage.BtnConfirmJpSaveApprovalLkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval lkpd");
+    }
+
+//Partner Approval Document LKPD
+    @When("User click button partner approval document lkpd")
+    public void User_click_button_partner_approval_document_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnPartnerApprovalLkpd();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button partner approval document lkpd");
+    }
+
+    @And("User select partner approval document lkpd")
+    public void user_select_partner_approval_document_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnSelectPartnerApprovalLkpd();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalLkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select partner approval document lkpd");
+    }
+
+    @And("User input note partner approval lkpd")
+    public void user_input_note_partner_approval_lkpd() {
+        Hooks.delay(2);
+        hoPage.InputNotePartnerApprovalLkpd("Lanjutkan untuk bikin LKPD");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note partner approval lkpd");
+    }
+
+    @Then("User click button save partner approval lkpd")
+    public void user_click_button_save_partner_approval_lkpd() {
+        Hooks.delay(2);
+        hoPage.BtnSavePartnerApprovalLkpd();
+        Hooks.delay(2);
+        hoPage.BtnConfirmPartnerSaveApprovalLkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval lkpd");
+    }
+
 //Create Document Bon Putih
     @When("User click button create administrative documents for bon putih")
     public void user_click_button_create_administrative_documents_for_bon_putih() {

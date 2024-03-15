@@ -146,6 +146,18 @@ Feature: Ho Page Test
     And User input note for next agenda lkpd
     Then User click button create document lkpd
 
+  Scenario: JP Approval Document LKPD
+    When User click button jp approval document lkpd
+    And User select jp approval document lkpd
+    And User input note jp approval lkpd
+    Then User click button save jp approval lkpd
+
+  Scenario: Partner Approval Document LKPD
+    When User click button partner approval document lkpd
+    And User select partner approval document lkpd
+    And User input note partner approval lkpd
+    Then User click button save partner approval lkpd
+
   Scenario: Create Document Bon Putih
     When User click button create administrative documents for bon putih
     And User select document bon putih

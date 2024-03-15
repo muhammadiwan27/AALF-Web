@@ -231,7 +231,7 @@ public class HoPage {
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalRkpd;
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
-    WebElement btnSavePartrnerApprovalRkpd;
+    WebElement btnSavePartnerApprovalRkpd;
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalRkpd;
     @FindBy(xpath = "(//option[@value='surat-tugas'])[1]")
@@ -304,6 +304,30 @@ public class HoPage {
     WebElement btnConfirmCreateLkpd;
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadLkpd;
+    @FindBy(xpath = "(//a[contains(text(),'Need Approve By JP')])[1]")
+    WebElement btnJpApprovalLkpd;
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalLkpd;
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApprovalLkpd;
+    @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
+    WebElement inputNoteJpApprovalLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveJpApprovalLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmJpSaveApprovalLkpd;
+    @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[1]")
+    WebElement btnPartnerApprovalLkpd;
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalLkpd;
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApprovalLkpd;
+    @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
+    WebElement inputNotePartnerApprovalLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSavePartnerApprovalLkpd;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmPartnerSaveApprovalLkpd;
     @FindBy(xpath = "(//option[@value='bon-putih'])[1]")
     WebElement selectDocumentBonPutih;
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
@@ -643,7 +667,7 @@ public class HoPage {
     public void BtnSelectPartnerApprovalRkpd() { btnSelectPartnerApprovalRkpd.click();}
     public void SelectPartnerApprovalRkpd() { selectPartnerApprovalRkpd.click();}
     public void InputNotePartnerApprovalRkpd(String inputNotePartnerApprovalRkpd) { this.inputNotePartnerApprovalRkpd.sendKeys(inputNotePartnerApprovalRkpd);}
-    public void BtnSavePartnerApprovalRkpd() { btnSavePartrnerApprovalRkpd.click();}
+    public void BtnSavePartnerApprovalRkpd() { btnSavePartnerApprovalRkpd.click();}
     public void BtnConfirmPartnerSaveApprovalRkpd() { btnConfirmPartnerSaveApprovalRkpd.click();}
     public void SelectDocumentSuratTugas() { selectDocumentSuratTugas.click();}
     public void BtnSearchIdRkpd() { btnSearchIdRkpd.click();}
@@ -680,6 +704,18 @@ public class HoPage {
     public void BtnCreateLkpd() { btnCreateLkpd.click();}
     public void BtnConfirmCreateLkpd() { btnConfirmCreateLkpd.click();}
     public void BtnCancelDownloadLkpd() { btnCancelDownloadLkpd.click();}
+    public void BtnJpApprovalLkpd() { btnJpApprovalLkpd.click();}
+    public void BtnSelectJpApprovalLkpd() { btnSelectJpApprovalLkpd.click();}
+    public void SelectJpApprovalLkpd() { selectJpApprovalLkpd.click();}
+    public void InputNoteJpApprovalLkpd(String inputNoteJpApprovalLkpd) { this.inputNoteJpApprovalLkpd.sendKeys(inputNoteJpApprovalLkpd);}
+    public void BtnSaveJpApprovalLkpd() { btnSaveJpApprovalLkpd.click();}
+    public void BtnConfirmJpSaveApprovalLkpd() { btnConfirmJpSaveApprovalLkpd.click();}
+    public void BtnPartnerApprovalLkpd() { btnPartnerApprovalLkpd.click();}
+    public void BtnSelectPartnerApprovalLkpd() { btnSelectPartnerApprovalLkpd.click();}
+    public void SelectPartnerApprovalLkpd() { selectPartnerApprovalLkpd.click();}
+    public void InputNotePartnerApprovalLkpd(String inputNotePartnerApprovalLkpd) { this.inputNotePartnerApprovalLkpd.sendKeys(inputNotePartnerApprovalLkpd);}
+    public void BtnSavePartnerApprovalLkpd() { btnSavePartnerApprovalLkpd.click();}
+    public void BtnConfirmPartnerSaveApprovalLkpd() { btnConfirmPartnerSaveApprovalLkpd.click();}
     public void SelectDocumentBonPutih() { selectDocumentBonPutih.click();}
     public void BtnSearchIdLkpdBonPutih() { btnSearchIdLkpdBonPutih.click();}
     public void SelectIdLkpdBonPutih() { selectIdLkpdBonPutih.click();}
@@ -785,7 +821,6 @@ public class HoPage {
     public void BtnDeleteSuratTugas() { btnDeleteSuratTugas.click();}
     public void BtnConfirmDeleteSuratTugas() { btnConfirmDeleteSuratTugas.click();}
 }
-
 
 
 

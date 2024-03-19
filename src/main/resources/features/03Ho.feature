@@ -165,6 +165,18 @@ Feature: Ho Page Test
     And User checklist reimbursement bon putih
     Then User click button create document bon putih
 
+  Scenario: JP Approval Document Bon Putih
+    When User click button jp approval document Bon Putih
+    And User select jp approval document Bon Putih
+    And User input note jp approval Bon Putih
+    Then User click button save jp approval Bon Putih
+
+  Scenario: Partner Approval Document Bon Putih
+    When User click button partner approval document Bon Putih
+    And User select partner approval document Bon Putih
+    And User input note partner approval Bon Putih
+    Then User click button save partner approval Bon Putih
+
   Scenario: Create Document Bon Hijau
     When User click button create finance documents for bon hijau
     And User select document bon hijau

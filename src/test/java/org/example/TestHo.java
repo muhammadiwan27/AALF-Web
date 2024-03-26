@@ -1069,7 +1069,7 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnJpApprovalLkpd();
         Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User click button partner approval document lkpd");
+        extentTest.log(LogStatus.PASS, "User click button jp approval document lkpd");
     }
 
     @And("User select jp approval document lkpd")
@@ -1079,7 +1079,7 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.SelectJpApprovalLkpd();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select partner approval document lkpd");
+        extentTest.log(LogStatus.PASS, "User select jp approval document lkpd");
     }
 
     @And("User input note jp approval lkpd")
@@ -1087,7 +1087,7 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.InputNoteJpApprovalLkpd("Lanjutkan untuk approval partner");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note partner approval lkpd");
+        extentTest.log(LogStatus.PASS, "User input note jp approval lkpd");
     }
 
     @Then("User click button save jp approval lkpd")
@@ -1097,7 +1097,7 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnConfirmJpSaveApprovalLkpd();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button save partner approval lkpd");
+        extentTest.log(LogStatus.PASS, "User click button save jp approval lkpd");
     }
 
 //Partner Approval Document LKPD
@@ -1192,6 +1192,80 @@ public class TestHo {
         hoPage.BtnCancelDownloadBonPutih();
         Hooks.delay(3);
         extentTest.log(LogStatus.PASS, "User click button create document bon putih");
+    }
+
+//JP Approval Document Bon Putih
+    @When("User click button jp approval document bon putih")
+    public void User_click_button_jp_approval_document_bon_putih() {
+        Hooks.delay(2);
+        hoPage.BtnJpApprovalBonPutih();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button jp approval document bon putih");
+    }
+
+    @And("User select jp approval document bon putih")
+    public void user_select_jp_approval_document_bon_putih() {
+        Hooks.delay(2);
+        hoPage.BtnSelectJpApprovalBonPutih();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalBonPutih();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select jp approval document bon putih");
+    }
+
+    @And("User input note jp approval bon putih")
+    public void user_input_note_jp_approval_bon_putih() {
+        Hooks.delay(2);
+        hoPage.InputNoteJpApprovalBonPutih("Lanjutkan untuk approval partner");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note jp approval bon putih");
+    }
+
+    @Then("User click button save jp approval bon putih")
+    public void user_click_button_save_jp_approval_bon_putih() {
+        Hooks.delay(2);
+        hoPage.BtnSaveJpApprovalBonPutih();
+        Hooks.delay(2);
+        hoPage.BtnConfirmJpSaveApprovalBonPutih();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval bon");
+    }
+
+//Partner Approval Document Bon Putih
+    @When("User click button partner approval document bon putih")
+    public void User_click_button_partner_approval_document_bon_putih() {
+        Hooks.delay(2);
+        hoPage.BtnPartnerApprovalBonPutih();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button partner approval document bon putih");
+    }
+
+    @And("User select partner approval document bon putih")
+    public void user_select_partner_approval_document_bon_putih() {
+        Hooks.delay(2);
+        hoPage.BtnSelectPartnerApprovalBonPutih();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalBonPutih();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select partner approval document bon putih");
+    }
+
+    @And("User input note partner approval bon putih")
+    public void user_input_note_partner_approval_bon_putih() {
+        Hooks.delay(2);
+        hoPage.InputNotePartnerApprovalBonPutih("Mantap Ganku");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note partner approval bon putih");
+    }
+
+    @Then("User click button save partner approval bon putih")
+    public void user_click_button_save_partner_approval_bon_putih() {
+        Hooks.delay(2);
+        hoPage.BtnSavePartnerApprovalBonPutih();
+        Hooks.delay(2);
+        hoPage.BtnConfirmPartnerSaveApprovalBonPutih();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval bon putih");
     }
 
 //Create Document Bon Hijau

@@ -186,6 +186,18 @@ Feature: Ho Page Test
     And User upload recipient trip expenses bon hijau
     Then User click button create document bon hijau
 
+  Scenario: JP Approval Document Bon Hijau
+    When User click button jp approval document bon hijau
+    And User select jp approval document bon hijau
+    And User input note jp approval bon hijau
+    Then User click button save jp approval bon hijau
+
+  Scenario: Partner Approval Document Bon Hijau
+    When User click button partner approval document bon hijau
+    And User select partner approval document bon hijau
+    And User input note partner approval bon hijau
+    Then User click button save partner approval bon hijau
+
   Scenario: Create Document Bon Kuning
     When User click button create finance documents for bon kuning
     And User select document bon kuning

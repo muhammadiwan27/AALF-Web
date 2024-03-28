@@ -205,6 +205,18 @@ Feature: Ho Page Test
     And User checklist team incurred expenses reimbursement bon kuning
     Then User click button create document bon kuning
 
+  Scenario: JP Approval Document Bon Kuning
+    When User click button jp approval document bon kuning
+    And User select jp approval document bon kuning
+    And User input note jp approval bon kuning
+    Then User click button save jp approval bon kuning
+
+  Scenario: Partner Approval Document Bon Kuning
+    When User click button partner approval document bon kuning
+    And User select partner approval document bon kuning
+    And User input note partner approval bon kuning
+    Then User click button save partner approval bon kuning
+
   Scenario: Create Document Bon Merah
     When User click button create finance documents for bon merah
     And User select document bon merah

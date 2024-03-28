@@ -1480,6 +1480,80 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button create document bon kuning");
     }
 
+//JP Approval Document Bon Kuning
+    @When("User click button jp approval document bon kuning")
+    public void User_click_button_jp_approval_document_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnJpApprovalBonKuning();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button jp approval document bon kuning");
+    }
+
+    @And("User select jp approval document bon kuning")
+    public void user_select_jp_approval_document_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnSelectJpApprovalBonKuning();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select jp approval document bon kuning");
+    }
+
+    @And("User input note jp approval bon kuning")
+    public void user_input_note_jp_approval_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.InputNoteJpApprovalBonKuning("Lanjutkan untuk approval partner");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note jp approval bon kuning");
+    }
+
+    @Then("User click button save jp approval bon kuning")
+    public void user_click_button_save_jp_approval_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnSaveJpApprovalBonKuning();
+        Hooks.delay(2);
+        hoPage.BtnConfirmJpSaveApprovalBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval bon kuning");
+    }
+
+//Partner Approval Document Bon Kuning
+    @When("User click button partner approval document bon kuning")
+    public void User_click_button_partner_approval_document_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnPartnerApprovalBonKuning();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button partner approval document bon kuning");
+    }
+
+    @And("User select partner approval document bon kuning")
+    public void user_select_partner_approval_document_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnSelectPartnerApprovalBonKuning();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select partner approval document bon kuning");
+    }
+
+    @And("User input note partner approval bon kuning")
+    public void user_input_note_partner_approval_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.InputNotePartnerApprovalBonKuning("Mantap semuanya");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note partner approval bon kuning");
+    }
+
+    @Then("User click button save partner approval bon kuning")
+    public void user_click_button_save_partner_approval_bon_kuning() {
+        Hooks.delay(2);
+        hoPage.BtnSavePartnerApprovalBonKuning();
+        Hooks.delay(2);
+        hoPage.BtnConfirmPartnerSaveApprovalBonKuning();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval bon kuning");
+    }
+
 //Create Document Bon Merah
     @When("User click button create finance documents for bon merah")
     public void user_click_button_create_finance_documents_for_bon_merah() {

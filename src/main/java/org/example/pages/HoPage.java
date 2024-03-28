@@ -458,6 +458,30 @@ public class HoPage {
     WebElement btnConfirmCreateBonKuning;
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadBonKuning;
+    @FindBy(xpath = "(//a[contains(text(),'Need Approve By JP')])[1]")
+    WebElement btnJpApprovalBonKuning;
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalBonKuning;
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApprovalBonKuning;
+    @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
+    WebElement inputNoteJpApprovalBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveJpApprovalBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmJpSaveApprovalBonKuning;
+    @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[1]")
+    WebElement btnPartnerApprovalBonKuning;
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalBonKuning;
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApprovalBonKuning;
+    @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
+    WebElement inputNotePartnerApprovalBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSavePartnerApprovalBonKuning;
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmPartnerSaveApprovalBonKuning;
     @FindBy(xpath = "(//option[@value='bon-merah'])[1]")
     WebElement selectDocumentBonMerah;
     @FindBy(xpath = "(//input[@id='diterima'])[5]")
@@ -829,6 +853,18 @@ public class HoPage {
     public void BtnCreateBonKuning() { btnCreateBonKuning.click();}
     public void BtnConfirmCreateBonKuning() { btnConfirmCreateBonKuning.click();}
     public void BtnCancelDownloadBonKuning() { btnCancelDownloadBonKuning.click();}
+    public void BtnJpApprovalBonKuning() { btnJpApprovalBonKuning.click();}
+    public void BtnSelectJpApprovalBonKuning() { btnSelectJpApprovalBonKuning.click();}
+    public void SelectJpApprovalBonKuning() { selectJpApprovalBonKuning.click();}
+    public void InputNoteJpApprovalBonKuning(String inputNoteJpApprovalBonKuning) { this.inputNoteJpApprovalBonKuning.sendKeys(inputNoteJpApprovalBonKuning);}
+    public void BtnSaveJpApprovalBonKuning() { btnSaveJpApprovalBonKuning.click();}
+    public void BtnConfirmJpSaveApprovalBonKuning() { btnConfirmJpSaveApprovalBonKuning.click();}
+    public void BtnPartnerApprovalBonKuning() { btnPartnerApprovalBonKuning.click();}
+    public void BtnSelectPartnerApprovalBonKuning() { btnSelectPartnerApprovalBonKuning.click();}
+    public void SelectPartnerApprovalBonKuning() { selectPartnerApprovalBonKuning.click();}
+    public void InputNotePartnerApprovalBonKuning(String inputNotePartnerApprovalBonKuning) { this.inputNotePartnerApprovalBonKuning.sendKeys(inputNotePartnerApprovalBonKuning);}
+    public void BtnSavePartnerApprovalBonKuning() { btnSavePartnerApprovalBonKuning.click();}
+    public void BtnConfirmPartnerSaveApprovalBonKuning() { btnConfirmPartnerSaveApprovalBonKuning.click();}
     public void SelectDocumentBonMerah() { selectDocumentBonMerah.click();}
     public void InputDescriptionBonMerah(String inputDescriptionBonMerah) { this.inputDescriptionBonMerah.sendKeys(inputDescriptionBonMerah);}
     public void SelectReceiptDateBonMerah() { selectReceiptDateBonMerah.click();}
@@ -893,19 +929,6 @@ public class HoPage {
     public void BtnDeleteSuratTugas() { btnDeleteSuratTugas.click();}
     public void BtnConfirmDeleteSuratTugas() { btnConfirmDeleteSuratTugas.click();}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

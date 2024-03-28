@@ -2,4 +2,4 @@ Testing for AALF Web
 
 Overview
 
-This repository contains automated tests for the AALF web application using Selenium. These tests aim to ensure the functionality, reliability, and performance of the AALF web application by simulating user interactions and verifying expected behavior.
+This repository contains automated test for the AALF web application using Selenium. These tests aim to ensure the functionality, reliability, and performance of the AALF web application by simulating user interactions and verifying expected behavior.

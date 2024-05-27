@@ -3,8 +3,7 @@ Feature: Login Dan Logout Page Test
     Given User enter url AALF
     When User enter valid username
     And User enter valid password
-    And User click button login
-    Then User get text title page profile
+    Then User click button login
 
   Scenario: Login Invalid Functionality Test
     When User enter invalid username

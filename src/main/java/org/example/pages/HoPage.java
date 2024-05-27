@@ -14,600 +14,918 @@ public class HoPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "(//a[contains(@class,'svelte-decg9x')])[2]")
+    @FindBy(xpath = "(//a[@class='bg-secondary-50 mb-2 h-8 nav-active bg-primary-active-token svelte-1miuvmz'])[1]")
     WebElement tabHo;
+
     @FindBy(xpath = "(//p[@class='text-sm font-bold'])[1]")
     WebElement txtHo;
+
     @FindBy(xpath = "(//input[@placeholder='\uD83D\uDD0D Search'])[1]")
     WebElement inputSearchHoBerjalan;
+
     @FindBy(xpath = "(//a[contains(@class,'btn-icon btn-icon-sm relative')])[1]")
     WebElement btnHoWorkingPlan;
+
     @FindBy(xpath = "//h1[normalize-space()='HO Working Plan']")
     WebElement txtHoWorkingPlan;
+
+    @FindBy(xpath = "(//a[normalize-space()='Detail'])[1]")
+    WebElement btnDetailCost;
+
+    @FindBy(xpath = "(//a[normalize-space()='Edit'])[1]")
+    WebElement btnEditHo;
+
+    @FindBy(xpath = "(//textarea[@id='ringkasan'])[1]")
+    WebElement inputCaseSummaryEditHo;
+
+    @FindBy(xpath = "(//button[@type='button'][normalize-space()='Save'])[1]")
+    WebElement btnSaveEditHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditHo;
+
+    @FindBy(xpath = "(//h1[normalize-space()='Detail Cost hodev001'])[1]")
+    WebElement txtDetailCost;
+
+    @FindBy(xpath = "(//a[normalize-space()='Back'])[1]")
+    WebElement btnBackDetailCost;
+
     @FindBy(xpath = "(//a[normalize-space()='Task'])[1]")
     WebElement btnAddTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Select SOW'])[1]")
     WebElement btnSow;
+
     @FindBy(xpath = "(//option[@value='Arbitrase'])[1]")
-    WebElement selectSow1;
+    WebElement selectSowTask;
+
     @FindBy(xpath = "(//option[@value='Meeting Klien'])[1]")
-    WebElement selectSow2;
+    WebElement selectSowActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectSow;
-    @FindBy(xpath = "//input[@placeholder='Deadline']")
+
+    @FindBy(xpath = "(//input[@placeholder='Deadline'])[1]")
     WebElement btnDeadline;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
     WebElement btnSelectTodayDeadline;
+
     @FindBy(xpath = "(//button[normalize-space()='Select PIC'])[1]")
     WebElement btnPicTask;
-    @FindBy(xpath = "(//small[normalize-space()='(Junior Partner)'])[1]")
+
+    @FindBy(xpath = "(//small[normalize-space()='(Master)'])[1]")
     WebElement selectPicTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectPicTask;
+
     @FindBy(xpath = "(//input[@id='taskFoto'])[1]")
     WebElement btnUploadTaskPhotos;
+
     @FindBy(xpath = "(//input[@id='taskDokumen'])[1]")
     WebElement btnUploadTaskDocuments;
+
     @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
     WebElement inputNoteTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveTask;
+
     @FindBy(xpath = "(//a[normalize-space()='Activity'])[1]")
     WebElement btnAddActivity;
+
     @FindBy(xpath = "(//input[@placeholder='Start date'])[1]")
     WebElement btnStartDateActivity;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
     WebElement btnSelectTodayStartDateActivity;
+
     @FindBy(xpath = "(//input[@placeholder='End date'])[1]")
     WebElement btnEndDateActivity;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
     WebElement btnSelectTodayEndDateActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Select Team'])[1]")
     WebElement btnPicActivity;
+
     @FindBy(xpath = "(//small[normalize-space()='(Junior Partner)'])[1]")
     WebElement selectPicActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectPicActivity;
+
     @FindBy(xpath = "(//input[@id='foto'])[1]")
     WebElement btnUploadActivityPhotos;
+
     @FindBy(xpath = "(//input[@id='dokumen'])[1]")
     WebElement btnUploadActivityDocuments;
+
     @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
     WebElement inputNoteActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveActivity;
+
     @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[8]/div[1]/a[3]")
     WebElement btnEditTask;
+
     @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
     WebElement inputEditNoteTask;
+
     @FindBy(xpath = "//tbody/tr[2]/td[8]/div[1]/a[1]/img[1]")
     WebElement btnViewTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewTask;
+
     @FindBy(xpath = "//tbody/tr[2]/td[9]/a[1]")
-    WebElement btnKerjakanTask;
+    WebElement btnProceedTheTask;
+
     @FindBy(xpath = "(//input[@placeholder='Start date'])[1]")
-    WebElement btnStartDateCompleteTask;
+    WebElement btnStartDateProceedTheTask;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
-    WebElement btnSelectTodayStartDateCompleteTask;
+    WebElement btnSelectTodayStartDateProceedTheTask;
+
     @FindBy(xpath = "(//input[@placeholder='End date'])[1]")
-    WebElement btnEndDateCompleteTask;
+    WebElement btnEndDateProceedTheTask;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
-    WebElement btnSelectTodayEndDateCompleteTask;
+    WebElement btnSelectTodayEndDateProceedTheTask;
+
     @FindBy(xpath = "(//input[@id='foto'])[1]")
-    WebElement btnUploadActivityPhotosCompleteTheTask;
+    WebElement btnUploadActivityPhotosProceedTheTask;
+
     @FindBy(xpath = "(//input[@id='dokumen'])[1]")
-    WebElement btnUploadActivityDocumentsCompleteTheTask;
+    WebElement btnUploadActivityDocumentsProceedTheTask;
+
     @FindBy(xpath = "(//textarea[@placeholder='Enter any additional order notes...'])[1]")
-    WebElement inputNoteCompleteTheTask;
+    WebElement inputNoteProceedTheTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
-    WebElement btnSaveCompleteTheTask;
+    WebElement btnSaveProceedTheTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
-    WebElement btnConfirmSaveCompleteTheTask;
+    WebElement btnConfirmSaveProceedTheTask;
+
     @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[5]/div[3]/a[1]")
     WebElement btnJpApprovalTask;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectJpApprovalTask;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectJpApprovalTask;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNoteJpApprovalTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveJpApprovalTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmJpSaveApprovalTask;
+
     @FindBy(xpath = "//div[contains(@class,'flex justify-center gap-6 show')]//img[contains(@alt,'revisi')]")
     WebElement btnPartnerApprovalTask;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerApprovalTask;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectPartnerApproveApprovalTask;
+
     @FindBy(xpath = "(//option[@value='revisi'])[1]")
     WebElement selectPartnerRevisiApprovalTask;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSavePartnerApprovalTask;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalTask;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerRevisionTask;
+
     @FindBy(xpath = "(//a[normalize-space()='Revisi'])[1]")
     WebElement btnRevisiTask;
+
     @FindBy(xpath = "//tbody/tr[1]/td[5]/div[3]/a[1]/img[1]")
     WebElement btnJpApprovalActivity;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectJpApprovalActivity;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectJpApprovalActivity;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNoteJpApprovalActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveJpApprovalActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmJpSaveApprovalActivity;
+
     @FindBy(xpath = "//div[contains(@class,'flex justify-center gap-6 show')]//img[contains(@alt,'revisi')]")
     WebElement btnPartnerApprovalActivity;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerApprovalActivity;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectPartnerApproveApprovalActivity;
+
     @FindBy(xpath = "(//option[@value='revisi'])[1]")
     WebElement selectPartnerRevisiApprovalActivity;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSavePartnerApprovalActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalActivity;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerRevisionActivity;
+
     @FindBy(xpath = "(//a[contains(@class,'btn btn-sm bg-primary-500 text-white text-center flex')][normalize-space()='Revisi'])[1]")
     WebElement btnRevisiActivity;
+
     @FindBy(xpath = "(//button[normalize-space()='Create Documents'])[1]")
     WebElement btnCreateAdministrativeDocuments;
+
     @FindBy(xpath = "(//option[@value='rkpd'])[1]")
     WebElement selectDocumentRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Ok'])[1]")
     WebElement btnSelectAdministrativeDocuments;
+
     @FindBy(xpath = "(//button[normalize-space()='Select SOW'])[1]")
     WebElement btnSowRkpd;
+
     @FindBy(xpath = "(//option[@value='Pendampingan'])[1]")
     WebElement selectSowRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectSowRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select Region'])[1]")
     WebElement btnRegionRkpd;
+
     @FindBy(xpath = "(//option[@value='Dalam Kota'])[1]")
     WebElement selectRegionRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectRegionRkpd;
+
     @FindBy(xpath = "(//input[@placeholder='Start date'])[1]")
     WebElement btnStartDateRkpd;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
     WebElement btnSelectTodayStartDateRkpd;
+
     @FindBy(xpath = "(//input[@placeholder='End date'])[1]")
     WebElement btnEndDateRkpd;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
     WebElement btnSelectTodayEndDateRkpd;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here '])[1]")
     WebElement inputScopeOfWorkDetailsRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select Team'])[1]")
     WebElement btnAssignedMemberRkppd;
+
     @FindBy(xpath = "(//div[contains(@class,'listbox-label-content flex-1')])[3]")
     WebElement selectAssignedMember1Rkpd;
+
     @FindBy(xpath = "(//div[contains(@class,'listbox-label-content flex-1')])[5]")
     WebElement selectAssignedMember2Rkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectAssignedMemberRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmCreateRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadRkpd;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By JP')])[1]")
     WebElement btnJpApprovalRkpd;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectJpApprovalRkpd;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectJpApprovalRkpd;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNoteJpApprovalRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveJpApprovalRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmJpSaveApprovalRkpd;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[1]")
     WebElement btnPartnerApprovalRkpd;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerApprovalRkpd;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectPartnerApprovalRkpd;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSavePartnerApprovalRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalRkpd;
+
     @FindBy(xpath = "(//option[@value='surat-tugas'])[1]")
     WebElement selectDocumentSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdRkpd;
+
     @FindBy(xpath = "(//option[@value='0'])[1]")
     WebElement selectIdRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdRkpd;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[1]")
     WebElement checklistListofExpensesTicket;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")
     WebElement checklistListofExpensesHotelCost;
+
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmCreateSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadSuratTugas;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[2]")
     WebElement btnPartnerApprovalSuratTugas;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerApprovalSuratTugas;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectPartnerApprovalSuratTugas;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSavePartnerApprovalSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalSuratTugas;
+
     @FindBy(xpath = "(//option[@value='lkpd'])[1]")
     WebElement selectDocumentLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdSt;
+
     @FindBy(xpath = "(//option[@value='0'])[1]")
     WebElement selectIdSt;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdSt;
+
     @FindBy(xpath = "(//button[normalize-space()='Choose Activity'])[1]")
     WebElement btnChooseActivityLkpd;
+
     @FindBy(xpath = "(//option[@value='1'])[1]")
     WebElement chooseActivityLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectActivityLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select SOW'])[1]")
     WebElement btnSowNextAgendaLkpd;
+
     @FindBy(xpath = "(//option[@value='Final Report'])[1]")
     WebElement selectSowNextAgendaLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectSowNextAgendaLkpd;
+
     @FindBy(xpath = "//input[@placeholder='Deadline']")
     WebElement btnDeadlineNextAgendaLkpd;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
     WebElement btnSelectTodayDeadlineNextAgendaLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select PIC'])[1]")
     WebElement btnPicNextAgendaLkpd;
+
     @FindBy(xpath = "(//div[contains(@class,'listbox-label flex items-center space-x-4')])[1]")
     WebElement selectPic1NextAgendaLkpd;
+
     @FindBy(xpath = "(//div[contains(@class,'listbox-label flex items-center space-x-4')])[3]")
     WebElement selectPic2NextAgendaLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectPicNextAgendaLkpd;
+
     @FindBy(xpath = "(//textarea[@placeholder='Note '])[1]")
     WebElement inputNoteNextAgendaLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmCreateLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadLkpd;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By JP')])[1]")
     WebElement btnJpApprovalLkpd;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectJpApprovalLkpd;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectJpApprovalLkpd;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNoteJpApprovalLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveJpApprovalLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmJpSaveApprovalLkpd;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[1]")
     WebElement btnPartnerApprovalLkpd;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerApprovalLkpd;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectPartnerApprovalLkpd;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSavePartnerApprovalLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalLkpd;
+
     @FindBy(xpath = "(//option[@value='bon-putih'])[1]")
     WebElement selectDocumentBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdLkpdBonPutih;
+
     @FindBy(xpath = "(//option[@value='007/LKPD/02/2024'])[1]")
     WebElement selectIdLkpdBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdLkpdBonPutih;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[1]")
     WebElement checklistReimbursement1BonPutih;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")
     WebElement checklistReimbursement2BonPutih;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[3]")
     WebElement checklistReimbursement3BonPutih;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[4]")
     WebElement checklistReimbursement4BonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmCreateBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadBonPutih;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By JP')])[1]")
     WebElement btnJpApprovalBonPutih;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectJpApprovalBonPutih;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectJpApprovalBonPutih;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNoteJpApprovalBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveJpApprovalBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmJpSaveApprovalBonPutih;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[1]")
     WebElement btnPartnerApprovalBonPutih;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerApprovalBonPutih;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectPartnerApprovalBonPutih;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSavePartnerApprovalBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Finance Documents'])[1]")
     WebElement btnCreateFinanceDocuments;
+
     @FindBy(xpath = "(//option[@value='bon-hijau'])[1]")
     WebElement selectDocumentBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Ok'])[1]")
     WebElement btnSelectFinanceDocuments;
+
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdStBonHijau;
+
     @FindBy(xpath = "(//option[@value='006/ST/02/2024'])[1]")
     WebElement selectIdStBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdStBonHijau;
+
     @FindBy(xpath = "(//input[@placeholder='Amount'])[1]")
     WebElement inputAmountTripExpensesBonHijau1;
+
     @FindBy(xpath = "(//input[@id='caseName'])[3]")
     WebElement inputNoteTripExpensesBonHijau1;
+
     @FindBy(xpath = "(//input[@placeholder='Amount'])[3]")
     WebElement inputAmountTripExpensesBonHijau2;
+
     @FindBy(xpath = "(//input[@id='caseName'])[6]")
     WebElement inputNoteTripExpensesBonHijau2;
+
     @FindBy(xpath = "(//input[@type='file'])[1]")
     WebElement btnUploadRecipientTripExpensesBonHijau1;
+
     @FindBy(xpath = "(//input[@type='file'])[2]")
     WebElement btnUploadRecipientTripExpensesBonHijau2;
+
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmCreateBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadBonHijau;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By JP')])[1]")
     WebElement btnJpApprovalBonHijau;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectJpApprovalBonHijau;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectJpApprovalBonHijau;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNoteJpApprovalBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveJpApprovalBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmJpSaveApprovalBonHijau;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[1]")
     WebElement btnPartnerApprovalBonHijau;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerApprovalBonHijau;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectPartnerApprovalBonHijau;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSavePartnerApprovalBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalBonHijau;
+
     @FindBy(xpath = "(//option[@value='bon-kuning'])[1]")
     WebElement selectDocumentBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Search'])[1]")
     WebElement btnSearchIdBonPutihBonKuning;
+
     @FindBy(xpath = "(//option[@value='BP007/02/24'])[1]")
     WebElement selectIdBonPutihBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectIdBonPutihBonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[1]")
     WebElement checklistProfessionalFee1BonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")
     WebElement checklistCourtMoney1BonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[3]")
     WebElement checklistAllowance1BonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[4]")
     WebElement checklistMealAllowance1BonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[5]")
     WebElement checklistProfessionalFee2BonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[6]")
     WebElement checklistCourtMoney2BonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[7]")
     WebElement checklistAllowance2BonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[8]")
     WebElement checklistMealAllowance2BonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmCreateBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadBonKuning;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By JP')])[1]")
     WebElement btnJpApprovalBonKuning;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectJpApprovalBonKuning;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectJpApprovalBonKuning;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNoteJpApprovalBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSaveJpApprovalBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmJpSaveApprovalBonKuning;
+
     @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[1]")
     WebElement btnPartnerApprovalBonKuning;
+
     @FindBy(xpath = "(//select[@id='status'])[1]")
     WebElement btnSelectPartnerApprovalBonKuning;
+
     @FindBy(xpath = "(//option[@value='approve'])[1]")
     WebElement selectPartnerApprovalBonKuning;
+
     @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
     WebElement inputNotePartnerApprovalBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
     WebElement btnSavePartnerApprovalBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmPartnerSaveApprovalBonKuning;
+
     @FindBy(xpath = "(//option[@value='bon-merah'])[1]")
     WebElement selectDocumentBonMerah;
+
     @FindBy(xpath = "(//input[@id='diterima'])[5]")
     WebElement inputDescriptionBonMerah;
+
     @FindBy(xpath = "(//input[@placeholder='Receipt date'])[1]")
     WebElement selectReceiptDateBonMerah;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
     WebElement btnSelectTodayReceiptDateBonMerah;
+
     @FindBy(xpath = "(//input[@id='akun'])[1]")
     WebElement inputAccountNumberBonMerah;
+
     @FindBy(xpath = "(//input[@placeholder='Conversion value'])[1]")
     WebElement inputAmountReceivedBonMerah;
+
     @FindBy(xpath = "(//input[@placeholder='Conversion value'])[2]")
     WebElement inputFinalValueBonMerah;
+
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateBonMerah;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmCreateBonMerah;
+
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadBonMerah;
+
     @FindBy(xpath = "(//a[normalize-space()='004/RKPD/01/2024'])[1]")
     WebElement btnViewRkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewRkpd;
+
     @FindBy(xpath = "(//a[normalize-space()='006/ST/02/2024'])[1]")
     WebElement btnViewSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewSuratTugas;
+
     @FindBy(xpath = "(//a[normalize-space()='BH005/02/24'])[1]")
     WebElement btnViewBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBonHijau;
+
     @FindBy(xpath = "(//a[normalize-space()='003/LKPD/01/2024'])[1]")
     WebElement btnViewLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewLkpd;
+
     @FindBy(xpath = "(//a[normalize-space()='BP003/01/24'])[1]")
     WebElement btnViewBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBonPutih;
+
     @FindBy(xpath = "(//a[normalize-space()='BK002/02/24'])[1]")
     WebElement btnViewBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBonKuning;
+
     @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[4]/td[9]/div[1]/a[1]")
     WebElement btnViewBusinessTripRecap1;
+
     @FindBy(xpath = "//tbody/tr[4]/td[9]/div[1]/a[2]/img[1]")
     WebElement btnViewBusinessTripExpensesRecap;
+
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewBusinessTripExpensesRecap;
+
     @FindBy(xpath = "//button[normalize-space()='Back']")
     WebElement btnBackViewBusinessTripRecap;
+
     @FindBy(xpath = "(//a[contains(text(),'Edit')])[4]")
     WebElement btnEditBonKuning;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[4]")
     WebElement unchecklistMealAllowanceEditBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
     WebElement btnSaveEditBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveEditBonKuning;
+
     @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[4]")
     WebElement btnDeleteBonKuning;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteBonKuning;
+
     @FindBy(xpath = "(//a[contains(text(),'Edit')])[3]")
     WebElement btnEditBonPutih;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[4]")
     WebElement unchecklistMealAllowanceEditBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
     WebElement btnSaveEditBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveEditBonPutih;
+
     @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[3]")
     WebElement btnDeleteBonPutih;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteBonPutih;
+
     @FindBy(xpath = "(//a[contains(text(),'Edit')])[3]")
     WebElement btnEditBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Add'])[1]")
     WebElement btnAddTripExpensesEditBonHijau;
+
     @FindBy(xpath = "(//input[@id='caseName'])[7]")
     WebElement inputListOfExpensesTripExpensesEditBonHijau;
+
     @FindBy(xpath = "(//input[@id='caseName'])[7]")
     WebElement inputAmountTripExpensesEditBonHijau;
+
     @FindBy(xpath = "(//input[@id='caseName'])[9]")
     WebElement inputNoteTripExpensesEditBonHijau;
+
     @FindBy(xpath = "(//input[@type='file'])[3]")
     WebElement btnUploadRecipientTripExpensesEditBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
     WebElement btnSaveEditBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveEditBonHijau;
+
     @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[3]")
     WebElement btnDeleteBonHijau;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteBonHijau;
+
     @FindBy(xpath = "//tbody/tr[1]/td[9]/div[1]/a[1]/img[1]")
     WebElement btnViewBusinessTripRecap;
+
     @FindBy(xpath = "(//a[contains(text(),'Edit')])[3]")
     WebElement btnEditLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Choose Activity'])[1]")
     WebElement btnChooseResultReportEditLkpd;
+
     @FindBy(xpath = "(//option[@value='3'])[1]")
     WebElement selectActivityResultReportEditLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectActivityResultReportEditLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
     WebElement btnSaveEditLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveEditLkpd;
+
     @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[3]")
     WebElement btnDeleteLkpd;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteLkpd;
+
     @FindBy(xpath = "(//a[@class='btn btn-sm variant-filled-primary rounded ms-auto lg:w-[120px] '][normalize-space()='Edit'])[1]")
     WebElement btnEditSuratTugas;
+
     @FindBy(xpath = "(//input[@type='checkbox'])[1]")
     WebElement unchecklistTicketListOfExpensesEditSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
     WebElement btnSaveEditSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveEditSuratTugas;
+
     @FindBy(xpath = "(//button[@type='button'][normalize-space()='Delete'])[2]")
     WebElement btnDeleteSuratTugas;
+
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteSuratTugas;
+
 
 
 
@@ -629,10 +947,17 @@ public class HoPage {
     public String getTxtHoWorkingPlan(){
         return txtHoWorkingPlan.getText();
     }
+    public void BtnDetailCost() { btnDetailCost.click();}
+    public String getTxtDetailCost(){return txtDetailCost.getText();}
+    public void BtnBackDetailCost() { btnBackDetailCost.click();}
+    public void BtnEditHo() { btnEditHo.click();}
+    public void InputCaseSummaryEditHo(String inputCaseSummaryEditHo) { this.inputCaseSummaryEditHo.sendKeys(inputCaseSummaryEditHo);}
+    public void BtnSaveEditHo() { btnSaveEditHo.click();}
+    public void BtnConfirmSaveEditHo() { btnConfirmSaveEditHo.click();}
     public void BtnAddTask() { btnAddTask.click();}
     public void BtnSow() { btnSow.click();}
-    public void SelectSow1() { selectSow1.click();}
-    public void SelectSow2() { selectSow2.click();}
+    public void SelectSowTask() { selectSowTask.click();}
+    public void SelectSowActivity() { selectSowActivity.click();}
     public void BtnSelectSow() { btnSelectSow.click();}
     public void BtnDeadline() { btnDeadline.click();}
     public void BtnSelectTodayDeadline() { btnSelectTodayDeadline.click();}
@@ -663,17 +988,17 @@ public class HoPage {
     public void InputEditNoteTask(String inputEditNoteTask) { this.inputEditNoteTask.sendKeys(inputEditNoteTask);}
     public void BtnViewTask() { btnViewTask.click();}
     public void BtnBackViewTask() { btnBackViewTask.click();}
-    public void BtnKerjakanTask() { btnKerjakanTask.click();}
-    public void BtnStartDateCompleteTask() { btnStartDateCompleteTask.click();}
-    public void BtnSelectTodayStartDateCompleteTask() { btnSelectTodayStartDateCompleteTask.click();}
-    public void BtnEndDateCompleteTask() { btnEndDateCompleteTask.click();}
-    public void BtnSelectTodayEndDateCompleteTask() { btnSelectTodayEndDateCompleteTask.click();}
-    public void BtnUploadActivityPhotosCompleteTheTask(String btnUploadActivityPhotosCompleteTheTask) { this.btnUploadActivityPhotosCompleteTheTask.sendKeys(btnUploadActivityPhotosCompleteTheTask);}
-    public void InputDeleteNoteCompleteTheTask() { inputNoteCompleteTheTask.clear();}
-    public void BtnUploadActivityDocumentsCompleteTheTask(String btnUploadActivityDocumentsCompleteTheTask) { this.btnUploadActivityDocumentsCompleteTheTask.sendKeys(btnUploadActivityDocumentsCompleteTheTask);}
-    public void InputNoteCompleteTheTask(String inputNoteCompleteTheTask) { this.inputNoteCompleteTheTask.sendKeys(inputNoteCompleteTheTask);}
-    public void BtnSaveCompleteTheTask() { btnSaveCompleteTheTask.click();}
-    public void BtnConfirmSaveCompleteTheTask() { btnConfirmSaveCompleteTheTask.click();}
+    public void BtnProceedTheTask() { btnProceedTheTask.click();}
+    public void BtnStartDateProceedTheTask() { btnStartDateProceedTheTask.click();}
+    public void BtnSelectTodayStartDateProceedTheTask() { btnSelectTodayStartDateProceedTheTask.click();}
+    public void BtnEndDateProceedTheTask() { btnEndDateProceedTheTask.click();}
+    public void BtnSelectTodayEndDateProceedTheTask() { btnSelectTodayEndDateProceedTheTask.click();}
+    public void BtnUploadActivityPhotosProceedTheTask(String btnUploadActivityPhotosProceedTheTask) { this.btnUploadActivityPhotosProceedTheTask.sendKeys(btnUploadActivityPhotosProceedTheTask);}
+    public void InputDeleteNoteProceedTheTask() { inputNoteProceedTheTask.clear();}
+    public void BtnUploadActivityDocumentsProceedTheTask(String btnUploadActivityDocumentsProceedTheTask) { this.btnUploadActivityDocumentsProceedTheTask.sendKeys(btnUploadActivityDocumentsProceedTheTask);}
+    public void InputNoteProceedTheTask(String inputNoteProceedTheTask) { this.inputNoteProceedTheTask.sendKeys(inputNoteProceedTheTask);}
+    public void BtnSaveProceedTheTask() { btnSaveProceedTheTask.click();}
+    public void BtnConfirmSaveProceedTheTask() { btnConfirmSaveProceedTheTask.click();}
     public void BtnJpApprovalTask() { btnJpApprovalTask.click();}
     public void BtnSelectJpApprovalTask() { btnSelectJpApprovalTask.click();}
     public void SelectJpApprovalTask() { selectJpApprovalTask.click();}

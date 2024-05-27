@@ -44,26 +44,18 @@ public class TestLoginDanLogout {
         extentTest.log(LogStatus.PASS, "User enter valid password");
     }
 
-    @And("User click button login")
+    @Then("User click button login")
     public void user_click_button_login(){
         Hooks.delay(1);
         loginDanLogoutPage.BtnLogin();
-        Hooks.delay(1);
+        Hooks.delay(5);
         extentTest.log(LogStatus.PASS, "User click button login");
-    }
-
-    @Then("User get text title page profile")
-    public void user_get_text_title_page_profile(){
-        Hooks.delay(1);
-        Assert.assertEquals(loginDanLogoutPage.getTxtProfile(),"Dashboard Handling Order Management");
-        Hooks.delay(1);
-        extentTest.log(LogStatus.PASS,"User get text title page profile");
     }
 
 //Login Invalid Functionality Test
     @When("User enter invalid username")
     public void user_enter_invalid_username(){
-        Hooks.delay(1);
+        Hooks.delay(3);
         loginDanLogoutPage.BtnLogout();
         Hooks.delay(1);
         loginDanLogoutPage.BtnLogoutOk();

@@ -11,10 +11,20 @@ Feature: Ho Page Test
     When User click button ho working plan
     Then User get text title page ho working plan
 
+  Scenario: Edit HO
+    When User click button edit type of contract
+    And User edit case summary data ho
+    Then User save edit ho
+
+  Scenario: Enter Detail Client Balance
+    When User click detail cost ho working plan
+    And User get text title page detail cost
+    Then User close detail cost
+
   Scenario: Add Task
     When User click button add task
     And User select scope of work task
-    And User select deadline
+    And User select deadline task
     And User select pic task
     And User select task photos
     And User select task documents
@@ -40,14 +50,14 @@ Feature: Ho Page Test
   Scenario: View Task
     When User click button view task
 
-  Scenario: Complete The Task
-    When User click button complete the task
-    And User select start date complete the task
-    And User select end date complete the task
-    And User upload activity photos complete the task
-    And User upload activity documents complete the task
-    And User input note complete the task
-    Then User save complete the task
+  Scenario: Proceed The Task
+    When User click button proceed the task
+    And User select start date proceed the task
+    And User select end date proceed the task
+    And User upload activity photos proceed the task
+    And User upload activity documents proceed the task
+    And User input note proceed the task
+    Then User save proceed the task
 
   Scenario: JP Approval Task
     When User click button jp approval task

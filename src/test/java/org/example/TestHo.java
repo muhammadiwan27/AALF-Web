@@ -28,6 +28,7 @@ public class TestHo {
     public void user_click_tab_ho() {
         Hooks.delay(1);
         hoPage.TabHo();
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click tab ho");
     }
 
@@ -35,6 +36,7 @@ public class TestHo {
     public void user_get_text_title_page_ho() {
         Hooks.delay(1);
         Assert.assertEquals(hoPage.getTxtHo(), "Monitoring HO");
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page ho");
     }
 
@@ -51,6 +53,7 @@ public class TestHo {
     public void user_input_valid_id_ho() {
         Hooks.delay(1);
         hoPage.InputSearchHoBerjalan("hodev001");
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User input valid id ho");
     }
 
@@ -59,6 +62,7 @@ public class TestHo {
     public void user_click_button_ho_working_plan() {
         Hooks.delay(1);
         hoPage.BtnHoWorkingPlan();
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button ho working plan");
     }
 
@@ -66,7 +70,60 @@ public class TestHo {
     public void user_get_text_title_page_ho_working_plan() {
         Hooks.delay(1);
         Assert.assertEquals(hoPage.getTxtHoWorkingPlan(), "HO Working Plan");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User get text title page ho working plan");
+    }
+
+//Edit HO
+    @When("User click button edit type of contract")
+    public void user_click_button_edit_type_of_contract() {
+        Hooks.delay(2);
+        hoPage.BtnEditHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "UUser click button edit type of contract");
+    }
+
+    @And("User edit case summary data ho")
+    public void user_edit_case_summary_data_ho() {
+        Hooks.delay(1);
+        hoPage.InputCaseSummaryEditHo("Pengecekan secara keseluruhan untuk hodev");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit case summary data ho");
+    }
+
+    @Then("User save edit ho")
+    public void user_save_edit_ho() {
+        Hooks.delay(1);
+        hoPage.BtnSaveEditHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveEditHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit ho");
+    }
+
+//Enter Detail Client Balance
+    @When("User click detail cost ho working plan")
+    public void user_click_detail_cost_ho_working_plan() {
+        Hooks.delay(1);
+        hoPage.BtnDetailCost();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click detail cost ho working plan");
+    }
+
+    @And("User get text title page detail cost")
+    public void user_get_text_title_page_detail_cost() {
+        Hooks.delay(1);
+        Assert.assertEquals(hoPage.getTxtDetailCost(), "Detail Cost hodev001");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User get text title page detail cost");
+    }
+
+    @Then("User close detail cost")
+    public void user_close_detail_cost() {
+        Hooks.delay(1);
+        hoPage.BtnBackDetailCost();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User close detail cost");
     }
 
 //Add Task
@@ -74,6 +131,7 @@ public class TestHo {
     public void user_click_button_add_task() {
         Hooks.delay(1);
         hoPage.BtnAddTask();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User click button add task");
     }
 
@@ -82,19 +140,21 @@ public class TestHo {
         Hooks.delay(1);
         hoPage.BtnSow();
         Hooks.delay(1);
-        hoPage.SelectSow1();
+        hoPage.SelectSowTask();
         Hooks.delay(1);
         hoPage.BtnSelectSow();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User select scope of work task");
     }
 
-    @And("User select deadline")
-    public void user_select_deadline() {
+    @And("User select deadline task")
+    public void user_select_deadline_task() {
         Hooks.delay(1);
         hoPage.BtnDeadline();
         Hooks.delay(1);
         hoPage.BtnSelectTodayDeadline();
-        extentTest.log(LogStatus.PASS, "User select deadline");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select deadline task");
     }
 
     @And("User select pic task")
@@ -105,6 +165,7 @@ public class TestHo {
         hoPage.SelectPicTask();
         Hooks.delay(1);
         hoPage.BtnSelectPicTask();
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User select pic");
     }
 
@@ -128,6 +189,7 @@ public class TestHo {
     public void user_input_note_task() {
         Hooks.delay(1);
         hoPage.InputNoteTask("Selamat Pagi pemirsa ANTV dimana pun anda berada");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note task");
     }
 
@@ -144,7 +206,7 @@ public class TestHo {
 //Add Activity
     @When("User click button add activity")
     public void user_click_button_add_activity() {
-        Hooks.delay(3);
+        Hooks.delay(2);
         hoPage.BtnAddActivity();
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User click button add activity");
@@ -155,9 +217,10 @@ public class TestHo {
         Hooks.delay(1);
         hoPage.BtnSow();
         Hooks.delay(1);
-        hoPage.SelectSow2();
+        hoPage.SelectSowActivity();
         Hooks.delay(1);
         hoPage.BtnSelectSow();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User select scope of work activity");
     }
 
@@ -167,6 +230,7 @@ public class TestHo {
         hoPage.BtnStartDateActivity();
         Hooks.delay(1);
         hoPage.BtnSelectTodayStartDateActivity();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User select start date activity");
     }
 
@@ -176,6 +240,7 @@ public class TestHo {
         hoPage.BtnEndDateActivity();
         Hooks.delay(1);
         hoPage.BtnSelectTodayEndDateActivity();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User select end date activity");
     }
 
@@ -187,6 +252,7 @@ public class TestHo {
         hoPage.SelectPicActivity();
         Hooks.delay(1);
         hoPage.BtnSelectPicActivity();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User select pic activity");
     }
 
@@ -210,6 +276,7 @@ public class TestHo {
     public void user_input_note_activity() {
         Hooks.delay(1);
         hoPage.InputNoteActivity("Activity telah dikerjakan sesuai dengan prosedur");
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User input note activity");
     }
 
@@ -266,7 +333,7 @@ public class TestHo {
         } catch (AWTException e) {
             throw new RuntimeException(e);
         }
-        Hooks.delay(3);
+        Hooks.delay(2);
         hoPage.BtnBackViewTask();
         Hooks.delay(2);
         try {
@@ -280,17 +347,17 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button view task");
     }
 
-//Complete The task
-    @When("User click button complete the task")
-    public void user_click_button_complete_the_task() {
+//Proceed The Task
+    @When("User click button proceed the task")
+    public void user_click_button_proceed_the_task() {
         Hooks.delay(1);
-        hoPage.BtnKerjakanTask();
+        hoPage.BtnProceedTheTask();
         Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User click button complete the task");
+        extentTest.log(LogStatus.PASS, "User click button proceed the task");
     }
 
-    @And("User select start date complete the task")
-    public void user_select_start_date_complete_the_task() {
+    @And("User select start date proceed the task")
+    public void user_select_start_date_proceed_the_task() {
         Hooks.delay(1);
         try {
             Robot robot = new Robot();
@@ -301,55 +368,57 @@ public class TestHo {
             throw new RuntimeException(e);
         }
         Hooks.delay(2);
-        hoPage.BtnStartDateCompleteTask();
+        hoPage.BtnStartDateProceedTheTask();
         Hooks.delay(2);
-        hoPage.BtnSelectTodayStartDateCompleteTask();
-        extentTest.log(LogStatus.PASS, "User select start date complete the task");
+        hoPage.BtnSelectTodayStartDateProceedTheTask();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select start date proceed the task");
     }
 
-    @And("User select end date complete the task")
-    public void user_select_end_date_complete_the_task() {
+    @And("User select end date proceed the task")
+    public void user_select_end_date_proceed_the_task() {
         Hooks.delay(2);
-        hoPage.BtnEndDateCompleteTask();
+        hoPage.BtnEndDateProceedTheTask();
         Hooks.delay(2);
-        hoPage.BtnSelectTodayEndDateCompleteTask();
-        Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User select end date complete the task");
+        hoPage.BtnSelectTodayEndDateProceedTheTask();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select end date proceed the task");
     }
 
-    @And("User upload activity photos complete the task")
-    public void user_upload_activity_photos_complete_the_task() {
+    @And("User upload activity photos proceed the task")
+    public void user_upload_activity_photos_proceed_the_task() {
         Hooks.delay(1);
-        hoPage.BtnUploadActivityPhotosCompleteTheTask("C:\\Users\\M1403QA\\Downloads\\WhatsApp Image 2023-11-09 at 13.17.15_e44eaf04.jpg");
+        hoPage.BtnUploadActivityPhotosProceedTheTask("C:\\Users\\M1403QA\\Downloads\\WhatsApp Image 2023-11-09 at 13.17.15_e44eaf04.jpg");
         Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User upload activity photos complete the task");
+        extentTest.log(LogStatus.PASS, "User upload activity photos proceed the task");
     }
 
-    @And("User upload activity documents complete the task")
-    public void user_upload_activity_documents_complete_the_task() {
+    @And("User upload activity documents proceed the task")
+    public void user_upload_activity_documents_proceed_the_task() {
         Hooks.delay(1);
-        hoPage.BtnUploadActivityDocumentsCompleteTheTask("C:\\Users\\M1403QA\\Downloads\\Daily Report 2024-01-26.pdf");
-        Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User upload activity documents complete the task");
-    }
-
-    @And("User input note complete the task")
-    public void user_input_note_complete_the_task() {
+        hoPage.BtnUploadActivityDocumentsProceedTheTask("C:\\Users\\M1403QA\\Downloads\\Daily Report 2024-01-26.pdf");
         Hooks.delay(2);
-        hoPage.InputDeleteNoteCompleteTheTask();
+        extentTest.log(LogStatus.PASS, "User upload activity documents proceed the task");
+    }
+
+    @And("User input note proceed the task")
+    public void user_input_note_proceed_the_task() {
+        Hooks.delay(2);
+        hoPage.InputDeleteNoteProceedTheTask();
         Hooks.delay(3);
-        hoPage.InputNoteCompleteTheTask("Task telah selesai dikerjakan,menunggu approval dari JP");
-        extentTest.log(LogStatus.PASS, "User input note complete the task");
+        hoPage.InputNoteProceedTheTask("Task telah selesai dikerjakan,menunggu approval dari JP");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note proceed the task");
     }
 
-    @Then("User save complete the task")
-    public void user_save_complete_the_task() {
+    @Then("User save proceed the task")
+    public void user_save_proceed_the_task() {
         Hooks.delay(3);
-        hoPage.BtnSaveCompleteTheTask();
+        hoPage.BtnSaveProceedTheTask();
         Hooks.delay(2);
-        hoPage.BtnConfirmSaveCompleteTheTask();
+        hoPage.BtnConfirmSaveProceedTheTask();
         Hooks.delay(5);
-        extentTest.log(LogStatus.PASS, "User save complete the task");
+        extentTest.log(LogStatus.PASS, "User save proceed the task");
     }
 
 //JP Approval Task
@@ -367,6 +436,7 @@ public class TestHo {
         hoPage.BtnSelectJpApprovalTask();
         Hooks.delay(2);
         hoPage.SelectJpApprovalTask();
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User select jp approval task");
     }
 
@@ -376,6 +446,7 @@ public class TestHo {
         hoPage.InputDeleteNoteJpApprovalTask();
         Hooks.delay(3);
         hoPage.InputNoteJpApprovalTask("Lanjut untuk Approval ke Partner");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note jp approval task");
     }
 
@@ -414,6 +485,7 @@ public class TestHo {
         hoPage.InputDeleteNotePartnerApprovalTask();
         Hooks.delay(2);
         hoPage.InputNotePartnerApprovalTask("Revisi task yang sudah di submit karena ada data yang tidak sesuai");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note partner for revision task");
     }
 
@@ -438,18 +510,19 @@ public class TestHo {
     @And("User input note revisi complete the task")
     public void user_input_note_revisi_complete_the_task() {
         Hooks.delay(2);
-        hoPage.InputDeleteNoteCompleteTheTask();
+        hoPage.InputDeleteNoteProceedTheTask();
         Hooks.delay(3);
-        hoPage.InputNoteCompleteTheTask("Task telah selesai di revisi,menunggu approval dari JP");
+        hoPage.InputNoteProceedTheTask("Task telah selesai di revisi,menunggu approval dari JP");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note revisi complete the task");
     }
 
     @And("User save revisi complete the task")
     public void user_save_revisi_complete_the_task() {
         Hooks.delay(3);
-        hoPage.BtnSaveCompleteTheTask();
+        hoPage.BtnSaveProceedTheTask();
         Hooks.delay(2);
-        hoPage.BtnConfirmSaveCompleteTheTask();
+        hoPage.BtnConfirmSaveProceedTheTask();
         Hooks.delay(5);
         extentTest.log(LogStatus.PASS, "User save revisi complete the task");
     }
@@ -478,6 +551,7 @@ public class TestHo {
         hoPage.InputDeleteNoteJpApprovalTask();
         Hooks.delay(2);
         hoPage.InputNoteJpApprovalTask("Lanjut untuk Approval ke Partner untuk yang kedua kali");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note jp approval for revision task");
     }
 
@@ -516,6 +590,7 @@ public class TestHo {
         hoPage.InputDeleteNotePartnerApprovalTask();
         Hooks.delay(2);
         hoPage.InputNotePartnerApprovalTask("Kerja bagus untuk semua team yang telah berkontribusi");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note partner approval task");
     }
 
@@ -544,6 +619,7 @@ public class TestHo {
         hoPage.BtnSelectJpApprovalActivity();
         Hooks.delay(2);
         hoPage.SelectJpApprovalActivity();
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User select jp approval activity");
     }
 
@@ -553,6 +629,7 @@ public class TestHo {
         hoPage.InputDeleteNoteJpApprovalActivity();
         Hooks.delay(3);
         hoPage.InputNoteJpApprovalActivity("Lanjut untuk Approval ke Partner");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note jp approval activity");
     }
 
@@ -591,6 +668,7 @@ public class TestHo {
         hoPage.InputDeleteNotePartnerApprovalActivity();
         Hooks.delay(2);
         hoPage.InputNotePartnerApprovalTask("Revisi task yang sudah di submit karena ada data yang tidak sesuai");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note partner for revision activity");
     }
 
@@ -618,6 +696,7 @@ public class TestHo {
         hoPage.InputDeleteNoteActivity();
         Hooks.delay(3);
         hoPage.InputNoteActivity("Activity telah selesai di revisi,menunggu approval dari JP");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User edit activity for revision");
     }
 
@@ -655,6 +734,7 @@ public class TestHo {
         hoPage.InputDeleteNoteJpApprovalActivity();
         Hooks.delay(2);
         hoPage.InputNoteJpApprovalActivity("Lanjut untuk Approval ke Partner untuk yang kedua kali");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note jp approval for revision activity");
     }
 
@@ -693,6 +773,7 @@ public class TestHo {
         hoPage.InputDeleteNotePartnerApprovalActivity();
         Hooks.delay(2);
         hoPage.InputNotePartnerApprovalActivity("Kerja bagus untuk semua team yang telah berkontribusi");
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input note partner approval activity");
     }
 

@@ -24,8 +24,6 @@ public class LoginDanLogoutPage {
     WebElement btnLogout;
     @FindBy(xpath = "//a[normalize-space()='Logout']")
     WebElement btnLogoutOk;
-    @FindBy(xpath = "//h1[normalize-space()='Dashboard Handling Order Management']")
-    WebElement txtProfile;
     @FindBy(xpath = "(//p[@class='text-white w-[300px]'])[1]")
     WebElement txtInvalidCredentials;
 
@@ -39,9 +37,6 @@ public class LoginDanLogoutPage {
     }
     public void BtnLogin(){
         btnLogin.click();
-    }
-    public String getTxtProfile(){
-        return txtProfile.getText();
     }
     public String getTxtInvalidCredentials(){
         return txtInvalidCredentials.getText();

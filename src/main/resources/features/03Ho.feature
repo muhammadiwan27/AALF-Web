@@ -3,6 +3,27 @@ Feature: Ho Page Test
     When User click tab ho
     Then User get text title page ho
 
+  Scenario: Create HO
+    When User click button create ho
+    And User select handling company ho
+    And User upload document quotation client ho
+    And User upload document confirmation letter client ho
+    And User select name of client ho
+    And User input case name client ho
+    And Input address client ho
+    And User select province client ho
+    And User select city client ho
+    And User input postal code client ho
+    And User input recommendation client ho
+    And User input telephone client ho
+    And User input email client ho
+    And User input npwp client ho
+    And User select type of client ho
+    And User input case summary client ho
+    And User input total hours client ho
+    And User add handling team client ho
+    Then User click button create ho
+
   Scenario: User Search Valid Data Based ID HO
     When User click on the search bar under the words ho berjalan
     Then User input valid id ho
@@ -84,6 +105,10 @@ Feature: Ho Page Test
     And User input note partner approval task
     Then User click button save partner approval task
 
+  Scenario: Delete Task
+    When User click icon delete task
+    Then User click button confirm delete task
+
   Scenario: JP Approval Activity
     When User click button jp approval activity
     And User select jp approval activity
@@ -108,6 +133,10 @@ Feature: Ho Page Test
     And User select partner approval activity
     And User input note partner approval activity
     Then User click button save partner approval activity
+
+  Scenario: Delete Activity
+    When User click icon delete activity
+    Then User click button confirm delete activity
 
   Scenario: Create Document RKPD
     When User click button create administrative documents for rkpd
@@ -295,7 +324,7 @@ Feature: Ho Page Test
     And User edit data document lkpd
     Then User save edit document lkpd
 
-  Scenario: Delete Document Bon LKPD
+  Scenario: Delete Document LKPD
     When User click button delete document lkpd
     Then User click button confirm delete document lkpd
 
@@ -307,3 +336,21 @@ Feature: Ho Page Test
   Scenario: Delete Document Surat Tugas
     When User click button delete document surat tugas
     Then User click button confirm delete document surat tugas
+
+  Scenario: Edit Document RKPD
+    When User click button edit document rkpd
+    And User edit data document rkpd
+    Then User save edit document rkpd
+
+  Scenario: Delete Document RKPD
+    When User click button delete document rkpd
+    Then User click button confirm delete document rkpd
+
+  Scenario: Upload Document HO Working Plan
+    When User click button upload document
+    And User attach document for upload
+    Then User click button upload
+
+  Scenario: Delete Upload Document HO Working Plan
+    When User click button delete upload document ho working plan
+    Then User click button confirm delete upload document ho working plan

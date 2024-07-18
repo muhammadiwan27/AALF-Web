@@ -93,10 +93,10 @@ public class DashboardPage {
     @FindBy(xpath = "(//button[contains(text(),'✕')])[1]")
     WebElement buttonCloseActivityFinishedDashboard;
 
-    @FindBy(xpath = "(//small[normalize-space()='hodev001 / Jason Kariatun / Drafting'])[1]")
+    @FindBy(xpath = "(//small[normalize-space()='hodev001 / Jason Kariatun / Meeting Weekly'])[1]")
     WebElement idHoOverdueDeadlineTask;
 
-    @FindBy(xpath = "(//small[normalize-space()='hodev001 / Jason Kariatun / Meeting Weekly'])[1]")
+    @FindBy(xpath = "(//small[contains(text(),'hodev001 / Jason Kariatun / Mediasi Restorative Ju')])[1]")
     WebElement idHoUpcomingDeadlineTask;
 
     @FindBy(xpath = "(//small[normalize-space()='Event - Pergi main bowling'])[1]")

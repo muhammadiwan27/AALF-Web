@@ -20,6 +20,99 @@ public class HoPage {
     @FindBy(xpath = "(//p[@class='text-sm font-bold'])[1]")
     WebElement txtHo;
 
+    @FindBy(xpath = "(//a[normalize-space()='Create HO'])[1]")
+    WebElement btnCreateHo;
+
+    @FindBy(xpath = "(//select[@id='perusahaan'])[1]")
+    WebElement selectHandlingCompanyHo;
+
+    @FindBy(xpath = "(//option[@value='Ariyanto Arnaldo Law Firm'])[1]")
+    WebElement chooseHandlingCompanyHo;
+
+    @FindBy(xpath = "(//input[@id='fQuotation'])[1]")
+    WebElement btnUploadDocumentQuotationHo;
+
+    @FindBy(xpath = "(//input[@id='fConfirmLetter'])[1]")
+    WebElement btnUploadDocumentConfirmationLetterHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Search Client'])[1]")
+    WebElement btnSearchNameOfClientHo;
+
+    @FindBy(xpath = "(//div[contains(text(),'Kingswood Capital Ltd')])[1]")
+    WebElement chooseNameOfClientHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnSelectSearchNameOfClientHo;
+
+    @FindBy(xpath = "(//input[@id='fConfirmLetter'])[2]")
+    WebElement btnUploadDocumentScopeOfWorkHo;
+
+    @FindBy(xpath = "(//input[@id='nmPerkara'])[1]")
+    WebElement inputCaseNameClientHo;
+
+    @FindBy(xpath = "(//textarea[@id='klien_alamat'])[1]")
+    WebElement inputAddressClientHo;
+
+    @FindBy(xpath = "(//select[@id='klien_provinsi'])[1]")
+    WebElement btnSelectClientProvinceHo;
+
+    @FindBy(xpath = "(//option[@value='SUMATERA BARAT'])[1]")
+    WebElement chooseProvinceClientHo;
+
+    @FindBy(xpath = "(//select[@id='kab_kota'])[1]")
+    WebElement btnSelectCityClientHo;
+
+    @FindBy(xpath = "(//option[@value='KOTA PADANG'])[1]")
+    WebElement chooseCityClientHo;
+
+    @FindBy(xpath = "(//input[@id='klien_kdPos'])[1]")
+    WebElement inputPostalCodeClientHo;
+
+    @FindBy(xpath = "(//input[@id='rekomendasi'])[1]")
+    WebElement inputRecommendationClientHo;
+
+    @FindBy(xpath = "(//input[@id='klien_telpon'])[1]")
+    WebElement inputClientTelephoneHo;
+
+    @FindBy(xpath = "(//input[@id='klien_email'])[1]")
+    WebElement inputClientEmailHo;
+
+    @FindBy(xpath = "(//input[@id='klien_npwp'])[1]")
+    WebElement inputClientNpwpHo;
+
+    @FindBy(xpath = "(//select[@id='klien_jenis'])[1]")
+    WebElement btnSelectTypeOfClientHo;
+
+    @FindBy(xpath = "(//option[@value='Ad hoc'])[1]")
+    WebElement chooseTypeOfClientHo;
+
+    @FindBy(xpath = "(//textarea[@id='ringkasan'])[1]")
+    WebElement inputCaseSummaryClientHo;
+
+    @FindBy(xpath = "(//input[@id='jumlahJam'])[1]")
+    WebElement inputTotalHoursClientHo;
+
+    @FindBy(xpath = "(//button[contains(text(),'Add')])[2]")
+    WebElement btnAddHandlingTeamHo;
+
+    @FindBy(xpath = "(//div[contains(@class,'listbox-label-content flex-1')])[3]")
+    WebElement chooseHandlingTeam1Ho;
+
+    @FindBy(xpath = "(//div[contains(@class,'listbox-label-content flex-1')])[42]")
+    WebElement chooseHandlingTeam2Ho;
+
+    @FindBy(xpath = "(//div[contains(@class,'listbox-label-content flex-1')])[1]")
+    WebElement chooseHandlingTeam3Ho;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnSelectHandlingTeamHo;
+
+    @FindBy(xpath = "(//button[contains(@type,'button')][normalize-space()='Create'])[1]")
+    WebElement btnSaveHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveHo;
+
     @FindBy(xpath = "(//input[@placeholder='\uD83D\uDD0D Search'])[1]")
     WebElement inputSearchHoBerjalan;
 
@@ -54,16 +147,34 @@ public class HoPage {
     WebElement btnAddTask;
 
     @FindBy(xpath = "(//button[normalize-space()='Select SOW'])[1]")
-    WebElement btnSow;
+    WebElement btnSowTask;
 
-    @FindBy(xpath = "(//option[@value='Arbitrase'])[1]")
-    WebElement selectSowTask;
+    @FindBy(xpath = "(//option[@value='2_Perdata Umum_0_2'])[1]")
+    WebElement selectSowLevel0Task;
 
-    @FindBy(xpath = "(//option[@value='Meeting Klien'])[1]")
-    WebElement selectSowActivity;
+    @FindBy(xpath = "(//option[@value='2_Pra Litigasi_0_14'])[1]")
+    WebElement selectSowLevel1Task;
+
+    @FindBy(xpath = "(//option[@value='2_Due Diligence_5_0'])[1]")
+    WebElement selectSowLevel2Task;
 
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
-    WebElement btnSelectSow;
+    WebElement btnSelectSowTask;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select SOW'])[1]")
+    WebElement btnSowActivity;
+
+    @FindBy(xpath = "(//option[@value='6_Pidana_0_2'])[1]")
+    WebElement selectSowLevel0Activity;
+
+    @FindBy(xpath = "(//option[@value='1_Corporate_0_16'])[1]")
+    WebElement selectSowLevel1Activity;
+
+    @FindBy(xpath = "(//option[@value='6_Diskusi / Penelitian_7_0'])[1]")
+    WebElement selectSowLevel2Activity;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnSelectSowActivity;
 
     @FindBy(xpath = "(//input[@placeholder='Deadline'])[1]")
     WebElement btnDeadline;
@@ -221,6 +332,12 @@ public class HoPage {
     @FindBy(xpath = "(//a[normalize-space()='Revisi'])[1]")
     WebElement btnRevisiTask;
 
+    @FindBy(xpath = "(//button)[21]")
+    WebElement btnDeleteTask;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteTask;
+
     @FindBy(xpath = "//tbody/tr[1]/td[5]/div[3]/a[1]/img[1]")
     WebElement btnJpApprovalActivity;
 
@@ -265,6 +382,12 @@ public class HoPage {
 
     @FindBy(xpath = "(//a[contains(@class,'btn btn-sm bg-primary-500 text-white text-center flex')][normalize-space()='Revisi'])[1]")
     WebElement btnRevisiActivity;
+
+    @FindBy(xpath = "(//button)[30]")
+    WebElement btnDeleteActivity;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteActivity;
 
     @FindBy(xpath = "(//button[normalize-space()='Create Documents'])[1]")
     WebElement btnCreateAdministrativeDocuments;
@@ -926,6 +1049,46 @@ public class HoPage {
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteSuratTugas;
 
+    @FindBy(xpath = "(//a[@class='btn btn-sm variant-filled-primary rounded ms-auto lg:w-[120px] '][normalize-space()='Edit'])[1]")
+    WebElement btnEditRkpd;
+
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditRkpd;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditRkpd;
+
+    @FindBy(xpath = "(//button[contains(@type,'button')][normalize-space()='Delete'])[1]")
+    WebElement btnDeleteRkpd;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteRkpd;
+
+    @FindBy(xpath = "(//a[normalize-space()='Upload Document'])[1]")
+    WebElement btnUploadDocumentHoWorkingPlan;
+
+    @FindBy(xpath = "(//input[@id='file'])[1]")
+    WebElement btnChooseFileUploadDocumentHoWorkingPlan;
+
+    @FindBy(xpath = "(//button[normalize-space()='Upload'])[1]")
+    WebElement btnUploadDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmUploadDocument;
+
+    @FindBy(xpath = "(//button)[88]")
+    WebElement btnDeleteUploadDocumentHoWorkingPlan;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteUploadDocumentHoWorkingPlan;
+
+
+
+
+
+
+
+
 
 
 
@@ -941,12 +1104,42 @@ public class HoPage {
     public String getTxtHo(){
         return txtHo.getText();
     }
+
+    public void BtnCreateHo() { btnCreateHo.click();}
+    public void SelectHandlingCompanyHo() { selectHandlingCompanyHo.click();}
+    public void ChooseHandlingCompanyHo() { chooseHandlingCompanyHo.click();}
+    public void BtnUploadDocumentQuotationHo(String btnUploadDocumentQuotationHo) { this.btnUploadDocumentQuotationHo.sendKeys(btnUploadDocumentQuotationHo);}
+    public void BtnUploadDocumentConfirmationLetterHo(String btnUploadDocumentConfirmationLetterHo) { this.btnUploadDocumentConfirmationLetterHo.sendKeys(btnUploadDocumentConfirmationLetterHo);}
+    public void BtnSearchNameOfClientHo() { btnSearchNameOfClientHo.click();}
+    public void ChooseNameOfClientHo() { chooseNameOfClientHo.click();}
+    public void BtnSelectSearchNameOfClientHo() { btnSelectSearchNameOfClientHo.click();}
+    public void BtnUploadDocumentScopeOfWorkHo(String btnUploadDocumentScopeOfWorkHo) { this.btnUploadDocumentScopeOfWorkHo.sendKeys(btnUploadDocumentScopeOfWorkHo);}
+    public void InputCaseNameClientHo(String inputCaseNameClientHo) { this.inputCaseNameClientHo.sendKeys(inputCaseNameClientHo);}
+    public void InputAddressClientHo(String inputAddressClientHo) { this.inputAddressClientHo.sendKeys(inputAddressClientHo);}
+    public void BtnSelectClientProvinceHo() { btnSelectClientProvinceHo.click();}
+    public void ChooseProvinceClientHo() { chooseProvinceClientHo.click();}
+    public void BtnSelectCityClientHo() { btnSelectCityClientHo.click();}
+    public void ChooseCityClientHo() { chooseCityClientHo.click();}
+    public void InputPostalCodeClientHo(String inputPostalCodeClientHo) { this.inputPostalCodeClientHo.sendKeys(inputPostalCodeClientHo);}
+    public void InputRecommendationClientHo(String inputRecommendationClientHo) { this.inputRecommendationClientHo.sendKeys(inputRecommendationClientHo);}
+    public void InputClientTelephoneHo(String inputClientTelephoneHo) { this.inputClientTelephoneHo.sendKeys(inputClientTelephoneHo);}
+    public void InputClientEmailHo(String inputClientEmailHo) { this.inputClientEmailHo.sendKeys(inputClientEmailHo);}
+    public void InputClientNpwpHo(String inputClientNpwpHo) { this.inputClientNpwpHo.sendKeys(inputClientNpwpHo);}
+    public void BtnSelectTypeOfClientHo() { btnSelectTypeOfClientHo.click();}
+    public void ChooseTypeOfClientHo() { chooseTypeOfClientHo.click();}
+    public void InputCaseSummaryClientHo(String inputCaseSummaryClientHo) { this.inputCaseSummaryClientHo.sendKeys(inputCaseSummaryClientHo);}
+    public void InputTotalHoursClientHo(String inputTotalHoursClientHo) { this.inputTotalHoursClientHo.sendKeys(inputTotalHoursClientHo);}
+    public void BtnAddHandlingTeamHo() { btnAddHandlingTeamHo.click();}
+    public void ChooseHandlingTeam1Ho() { chooseHandlingTeam1Ho.click();}
+    public void ChooseHandlingTeam2Ho() { chooseHandlingTeam2Ho.click();}
+    public void ChooseHandlingTeam3Ho() { chooseHandlingTeam3Ho.click();}
+    public void BtnSelectHandlingTeamHo() { btnSelectHandlingTeamHo.click();}
+    public void BtnSaveHo() { btnSaveHo.click();}
+    public void BtnConfirmSaveHo() { btnConfirmSaveHo.click();}
     public void InputSearchHoBerjalan(String inputSearchHoBerjalan) { this.inputSearchHoBerjalan.sendKeys(inputSearchHoBerjalan);}
     public void BtnInputSearchHoBerjalan() { inputSearchHoBerjalan.click();}
     public void BtnHoWorkingPlan() { btnHoWorkingPlan.click();}
-    public String getTxtHoWorkingPlan(){
-        return txtHoWorkingPlan.getText();
-    }
+    public String getTxtHoWorkingPlan(){return txtHoWorkingPlan.getText();}
     public void BtnDetailCost() { btnDetailCost.click();}
     public String getTxtDetailCost(){return txtDetailCost.getText();}
     public void BtnBackDetailCost() { btnBackDetailCost.click();}
@@ -955,10 +1148,16 @@ public class HoPage {
     public void BtnSaveEditHo() { btnSaveEditHo.click();}
     public void BtnConfirmSaveEditHo() { btnConfirmSaveEditHo.click();}
     public void BtnAddTask() { btnAddTask.click();}
-    public void BtnSow() { btnSow.click();}
-    public void SelectSowTask() { selectSowTask.click();}
-    public void SelectSowActivity() { selectSowActivity.click();}
-    public void BtnSelectSow() { btnSelectSow.click();}
+    public void BtnSowTask() { btnSowTask.click();}
+    public void BtnSowActivity() { btnSowActivity.click();}
+    public void SelectSowLevel0Task() { selectSowLevel0Task.click();}
+    public void SelectSowLevel1Task() { selectSowLevel1Task.click();}
+    public void SelectSowLevel2Task() { selectSowLevel2Task.click();}
+    public void SelectSowLevel0Activity() { selectSowLevel0Activity.click();}
+    public void SelectSowLevel1Activity() { selectSowLevel1Activity.click();}
+    public void SelectSowLevel2Activity() { selectSowLevel2Activity.click();}
+    public void BtnSelectSowTask() { btnSelectSowTask.click();}
+    public void BtnSelectSowActivity() { btnSelectSowActivity.click();}
     public void BtnDeadline() { btnDeadline.click();}
     public void BtnSelectTodayDeadline() { btnSelectTodayDeadline.click();}
     public void BtnPicTask() { btnPicTask.click();}
@@ -1016,6 +1215,10 @@ public class HoPage {
     public void BtnConfirmSavePartnerApprovalTask() { btnConfirmPartnerSaveApprovalTask.click();}
     public void BtnSelectPartnerRevisionTask() { btnSelectPartnerRevisionTask.click();}
     public void BtnRevisiTask() { btnRevisiTask.click();}
+    public void BtnDeleteTask() { btnDeleteTask.click();}
+    public void BtnConfirmDeleteTask() { btnConfirmDeleteTask.click();}
+    public void BtnDeleteActivity() { btnDeleteActivity.click();}
+    public void BtnConfirmDeleteActivity() { btnConfirmDeleteActivity.click();}
     public void BtnJpApprovalActivity() { btnJpApprovalActivity.click();}
     public void BtnSelectJpApprovalActivity() { btnSelectJpApprovalActivity.click();}
     public void SelectJpApprovalActivity() { selectJpApprovalActivity.click();}
@@ -1253,7 +1456,22 @@ public class HoPage {
     public void BtnConfirmSaveEditSuratTugas() { btnConfirmSaveEditSuratTugas.click();}
     public void BtnDeleteSuratTugas() { btnDeleteSuratTugas.click();}
     public void BtnConfirmDeleteSuratTugas() { btnConfirmDeleteSuratTugas.click();}
+    public void BtnEditRkpd() { btnEditRkpd.click();}
+    public void BtnSaveEditRkpd() { btnSaveEditRkpd.click();}
+    public void BtnConfirmSaveEditRkpd() { btnConfirmSaveEditRkpd.click();}
+    public void BtnDeleteRkpd() { btnDeleteRkpd.click();}
+    public void BtnConfirmDeleteRkpd() { btnConfirmDeleteRkpd.click();}
+    public void BtnUploadDocumentHoWorkingPlan() { btnUploadDocumentHoWorkingPlan.click();}
+    public void BtnChooseFileUploadDocumentHoWorkingPlan(String btnChooseFileUploadDocumentHoWorkingPlan) { this.btnChooseFileUploadDocumentHoWorkingPlan.sendKeys(btnChooseFileUploadDocumentHoWorkingPlan);}
+    public void BtnUploadDocument() { btnUploadDocument.click();}
+    public void BtnConfirmUploadDocument() { btnConfirmUploadDocument.click();}
+    public void BtnDeleteUploadDocumentHoWorkingPlan() { btnDeleteUploadDocumentHoWorkingPlan.click();}
+    public void BtnConfirmDeleteUploadDocumentHoWorkingPlan() { btnConfirmDeleteUploadDocumentHoWorkingPlan.click();}
 }
+
+
+
+
 
 
 

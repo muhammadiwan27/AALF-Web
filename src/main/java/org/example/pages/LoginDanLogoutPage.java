@@ -16,16 +16,25 @@ public class LoginDanLogoutPage {
     }
     @FindBy(xpath = "//input[@placeholder='Username']")
     WebElement username;
+
     @FindBy(xpath = "//input[@placeholder='Password']")
     WebElement password;
+
     @FindBy(xpath = "//button[normalize-space()='Login']")
     WebElement btnLogin;
+
     @FindBy(xpath = "//p[@class='mr-auto']")
     WebElement btnLogout;
+
     @FindBy(xpath = "//a[normalize-space()='Logout']")
     WebElement btnLogoutOk;
+
     @FindBy(xpath = "(//p[@class='text-white w-[300px]'])[1]")
     WebElement txtInvalidCredentials;
+
+
+
+
 
     public void clearUsername() { username.clear();}
     public void clearpassword() { password.clear();}

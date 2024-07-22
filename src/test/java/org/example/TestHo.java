@@ -44,7 +44,7 @@ public class TestHo {
     @When("User click button create ho")
     public void user_click_button_create_ho() {
         Hooks.delay(1);
-        hoPage.TabHo();
+        hoPage.BtnCreateHo();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button create ho");
     }
@@ -52,7 +52,9 @@ public class TestHo {
     @And("User select handling company ho")
     public void user_select_handling_company_ho() {
         Hooks.delay(1);
-        hoPage.TabHo();
+        hoPage.SelectHandlingCompanyHo();
+        Hooks.delay(2);
+        hoPage.ChooseHandlingCompanyHo();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User select handling company ho");
     }
@@ -60,7 +62,7 @@ public class TestHo {
     @And("User upload document quotation client ho")
     public void user_upload_document_quotation_client_ho() {
         Hooks.delay(1);
-        hoPage.TabHo();
+        hoPage.BtnUploadDocumentQuotationHo("C:\\Users\\M1403QA\\Downloads\\Document RKPD 17-07-2024.pdf");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User upload document quotation client ho");
     }
@@ -68,7 +70,7 @@ public class TestHo {
     @And("User upload document confirmation letter client ho")
     public void user_upload_document_confirmation_letter_client_ho() {
         Hooks.delay(1);
-        hoPage.TabHo();
+        hoPage.BtnUploadDocumentConfirmationLetterHo("C:\\Users\\M1403QA\\Downloads\\Daily Report 15-07-2024.xlsx");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User upload document confirmation letter client ho");
     }
@@ -76,15 +78,27 @@ public class TestHo {
     @And("User select name of client ho")
     public void user_select_name_of_client_ho() {
         Hooks.delay(1);
-        hoPage.TabHo();
+        hoPage.BtnSearchNameOfClientHo();
+        Hooks.delay(2);
+        hoPage.ChooseNameOfClientHo();
+        Hooks.delay(2);
+        hoPage.BtnSelectSearchNameOfClientHo();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User select name of client ho");
+    }
+
+    @And("User upload document scope of work client ho")
+    public void user_upload_document_scope_of_work_client_ho() {
+        Hooks.delay(1);
+        hoPage.BtnUploadDocumentScopeOfWorkHo("C:\\Users\\M1403QA\\Downloads\\Daily Report 15-07-2024.xlsx");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User upload document scope of work client ho");
     }
 
     @And("User input case name client ho")
     public void user_input_case_name_client_ho() {
         Hooks.delay(1);
-        hoPage.TabHo();
+        hoPage.InputCaseNameClientHo("Kasus Pencemaran Nama Jahat");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input case name client ho");
     }
@@ -92,12 +106,122 @@ public class TestHo {
     @And("Input address client ho")
     public void input_address_client_ho() {
         Hooks.delay(1);
-        hoPage.TabHo();
+        hoPage.InputAddressClientHo("Jalan Dipenogoro No.5");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "Input address client ho");
     }
 
+    @And("User select province client ho")
+    public void user_select_province_client_ho() {
+        Hooks.delay(1);
+        hoPage.BtnSelectClientProvinceHo();
+        Hooks.delay(2);
+        hoPage.ChooseProvinceClientHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select province client ho");
+    }
 
+    @And("User select city client ho")
+    public void user_select_city_client_ho() {
+        Hooks.delay(1);
+        hoPage.BtnSelectCityClientHo();
+        Hooks.delay(2);
+        hoPage.ChooseCityClientHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select city client ho");
+    }
+
+    @And("User input postal code client ho")
+    public void user_input_postal_code_client_ho() {
+        Hooks.delay(1);
+        hoPage.InputPostalCodeClientHo("25223");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input postal code client ho");
+    }
+
+    @And("User input recommendation client ho")
+    public void user_input_recommendation_client_ho() {
+        Hooks.delay(1);
+        hoPage.InputRecommendationClientHo("Pak Randy");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input recommendation client ho");
+    }
+
+    @And("User input telephone client ho")
+    public void user_input_telephone_client_ho() {
+        Hooks.delay(1);
+        hoPage.InputClientTelephoneHo("082285477825");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input telephone client ho");
+    }
+
+    @And("User input email client ho")
+    public void user_input_email_client_ho() {
+        Hooks.delay(1);
+        hoPage.InputClientEmailHo("kala27@yopmail.com");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input email client ho");
+    }
+
+    @And("User input npwp client ho")
+    public void user_input_npwp_client_ho() {
+        Hooks.delay(1);
+        hoPage.InputClientNpwpHo("99826371893815");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input npwp client ho");
+    }
+
+    @And("User select type of client ho")
+    public void user_select_type_of_client_ho() {
+        Hooks.delay(1);
+        hoPage.BtnSelectTypeOfClientHo();
+        Hooks.delay(2);
+        hoPage.ChooseTypeOfClientHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select type of client ho");
+    }
+
+    @And("User input case summary client ho")
+    public void user_input_case_summary_client_ho() {
+        Hooks.delay(1);
+        hoPage.InputCaseSummaryClientHo("Kasus Pencemaran Nama Jahat oleh Pak Yoyok");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input case summary client ho");
+    }
+
+    @And("User input total hours client ho")
+    public void user_input_total_hours_client_ho() {
+        Hooks.delay(1);
+        hoPage.InputTotalHoursClientHo("213");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input total hours client ho");
+    }
+
+    @And("User add handling team client ho")
+    public void user_add_handling_team_client_ho() {
+        Hooks.delay(1);
+        hoPage.BtnAddHandlingTeamHo();
+        Hooks.delay(2);
+        hoPage.ChooseHandlingTeam1Ho();
+        Hooks.delay(2);
+        hoPage.ChooseHandlingTeam2Ho();
+        Hooks.delay(2);
+        hoPage.ChooseHandlingTeam3Ho();
+        Hooks.delay(2);
+        hoPage.BtnSelectHandlingTeamHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User add handling team client ho");
+    }
+
+    @Then("User save ho")
+    public void user_save_ho() {
+        Hooks.delay(1);
+        hoPage.BtnSaveHo();
+        Hooks.delay(2);
+        hoPage.BtnConfirmSaveHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save ho");
+    }
 
 //User Search Valid Data Based ID HO
     @When("User click on the search bar under the words ho berjalan")
@@ -139,7 +263,7 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnEditHo();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "UUser click button edit type of contract");
+        extentTest.log(LogStatus.PASS, "User click button edit type of contract");
     }
 
     @And("User edit case summary data ho")
@@ -907,6 +1031,26 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User select document rkpd");
     }
 
+    @And("User select start date rkpd")
+    public void user_select_start_date_rkpd() {
+        Hooks.delay(2);
+        hoPage.BtnStartDateRkpd();
+        Hooks.delay(2);
+        hoPage.BtnSelectTodayStartDateRkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select start date rkpd");
+    }
+
+    @And("User select end date rkpd")
+    public void user_select_end_date_rkpd() {
+        Hooks.delay(2);
+        hoPage.BtnEndDateRkpd();
+        Hooks.delay(2);
+        hoPage.BtnSelectTodayEndDateRkpd();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select end date rkpd");
+    }
+
     @And("User select scope of work rkpd")
     public void user_select_scope_of_work_rkpd() {
         Hooks.delay(2);
@@ -931,24 +1075,12 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User select region rkpd");
     }
 
-    @And("User select start date rkpd")
-    public void user_select_start_date_rkpd() {
+    @And("User input location rkpd")
+    public void user_input_location_rkpd() {
         Hooks.delay(2);
-        hoPage.BtnStartDateRkpd();
+        hoPage.InputLocationRkpd("Jakarta Timur");
         Hooks.delay(2);
-        hoPage.BtnSelectTodayStartDateRkpd();
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select start date rkpd");
-    }
-
-    @And("User select end date rkpd")
-    public void user_select_end_date_rkpd() {
-        Hooks.delay(2);
-        hoPage.BtnEndDateRkpd();
-        Hooks.delay(2);
-        hoPage.BtnSelectTodayEndDateRkpd();
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select end date rkpd");
+        extentTest.log(LogStatus.PASS, "User input location rkpd");
     }
 
     @And("User input scope of work details rkpd")
@@ -973,6 +1105,14 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User select assigned member rkpd");
     }
 
+    @And("User upload document rkpd")
+    public void user_upload_document_rkpd() {
+        Hooks.delay(2);
+        hoPage.BtnUploadDocumentRkpd("C:\\Users\\M1403QA\\Downloads\\IAT DS API (Regular Sign Plus) - v3.3 Morfotech revisi16.07.24.xlsx");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User upload document rkpd");
+    }
+
     @Then("User click button create document rkpd")
     public void user_click_button_create_document_rkpd() {
         Hooks.delay(2);
@@ -981,7 +1121,7 @@ public class TestHo {
         hoPage.BtnConfirmCreateRkpd();
         Hooks.delay(3);
         hoPage.BtnCancelDownloadRkpd();
-        Hooks.delay(5);
+        Hooks.delay(4);
         extentTest.log(LogStatus.PASS, "User click button create document rkpd");
     }
 
@@ -2382,5 +2522,187 @@ public class TestHo {
         hoPage.BtnConfirmDeleteUploadDocumentHoWorkingPlan();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button confirm delete upload document ho working plan");
+    }
+
+//Create Notulen HO Working Plan
+    @When("User click button notulen")
+    public void user_click_button_notulen() {
+        Hooks.delay(2);
+        hoPage.BtnNotulenHoworkingPlan();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button notulen");
+    }
+
+    @And("User select name of team notulen")
+    public void user_select_name_of_team_notulen() {
+        Hooks.delay(2);
+        hoPage.BtnSelectTeamNameOfTeamNotulen();
+        Hooks.delay(2);
+        hoPage.NameOfTeam1Notulen();
+        Hooks.delay(2);
+        hoPage.NameofTeam2Notulen();
+        Hooks.delay(2);
+        hoPage.BtnSelectNameOfTeamNotulen();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select name of team notulen");
+    }
+
+    @And("User input meeting leader")
+    public void user_input_meeting_leader() {
+        Hooks.delay(2);
+        hoPage.InputMeetingLeaderNotulen("Wildanu");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input meeting leader");
+    }
+
+    @And("User input address notulen")
+    public void user_input_address_notulen() {
+        Hooks.delay(2);
+        hoPage.InputAddressNotulen("Jalan Bangka No.18");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input address notulen");
+    }
+
+    @And("User input meeting participants notulen")
+    public void user_input_meeting_participants_notulen() {
+        Hooks.delay(2);
+        hoPage.InputMeetingParticipantsNotulen("Rayfil");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input meeting participants notulen");
+    }
+
+    @And("User select date notulen")
+    public void user_select_date_notulen() {
+        Hooks.delay(2);
+        hoPage.BtnDateNotulen();
+        Hooks.delay(2);
+        hoPage.BtnTodayDateNotulen();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select date notulen");
+    }
+
+    @And("User input meeting opened by notulen")
+    public void user_input_meeting_opened_by_notulen() {
+        Hooks.delay(2);
+        hoPage.InputMeetingOpenedByNotulen("Pak Rahmad");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input meeting opened by notulen");
+    }
+
+    @And("User input meeting topic notulen")
+    public void user_input_meeting_topic_notulen() {
+        Hooks.delay(2);
+        hoPage.InputMeetingTopicNotulen("Pembahasan Anggaran Perusahaan");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input meeting topic notulen");
+    }
+
+    @And("User input note notulen")
+    public void user_input_note_notulen() {
+        Hooks.delay(2);
+        hoPage.InputNoteNotulen("Pembahasan untuk anggaran pada tahun 2025");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note notulen");
+    }
+
+    @And("User input meeting results notulen")
+    public void user_input_meeting_results_notulen() {
+        Hooks.delay(2);
+        hoPage.InputMeetingResultNotulen("Anggran untuk tahun 2025 akan dinaikkan sebesar 23 %");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input meeting results notulen");
+    }
+
+    @Then("User click button create notulen")
+    public void user_click_button_create_notulen() {
+        Hooks.delay(2);
+        hoPage.BtnCreateNotulen();
+        Hooks.delay(2);
+        hoPage.BtnConfirmCreateNotulen();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create notulen");
+    }
+
+//Create HO Reimbursement HO Working Plan
+    @When("User click button create reimbursement")
+    public void user_click_button_create_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnCreateReimbursementHoWorkingPlan();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create reimbursement");
+    }
+
+    @And("User select date ho reimbursement")
+    public void user_select_date_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnDateHoReimbursement();
+        Hooks.delay(2);
+        hoPage.BtnTodayDateHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select date ho reimbursement");
+    }
+
+    @And("User input note ho reimbursement")
+    public void User_input_note_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.InputNoteHoReimbursement("Rembes pergi ketemu client");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note ho reimbursement");
+    }
+
+    @And("User select member on duty ho reimbursement")
+    public void user_select_member_on_duty_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnSelectTeamNameOfTeamHoReimbursement();
+        Hooks.delay(2);
+        hoPage.MemberOnDuty1HoReimbursement();
+        Hooks.delay(2);
+        hoPage.MemberOnDuty2HoReimbursement();
+        Hooks.delay(2);
+        hoPage.BtnSelectMemberOnDutyHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select member on duty ho reimbursement");
+    }
+
+    @And("User input list of expenses reimbursement ho reimbursement")
+    public void user_input_list_of_expenses_reimbursement_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.InputListOfExpensesReibursementHoReimbursement("Makan di restoran");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input list of expenses reimbursement ho reimbursement");
+    }
+
+    @And("User input amount reimbursement ho reimbursement")
+    public void user_input_amount_reimbursement_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.InputAmountReibursementHoReimbursement("236000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input amount reimbursement ho reimbursement");
+    }
+
+    @And("User input note reimbursement ho reimbursement")
+    public void user_input_note_reimbursement_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.InputNoteReibursementHoReimbursement("Makan bersama client");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note reimbursement ho reimbursement");
+    }
+
+    @And("User attach receipt reimbursement ho reimbursement")
+    public void user_attach_receipt_reimbursement_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.AttachReceiptReimbursementHoReimbursement("C:\\Users\\M1403QA\\Downloads\\fa1dfc8bc8824147a66b_Rekap TER 2024.pdf");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User attach receipt reimbursement ho reimbursement");
+    }
+
+    @Then("User click button create ho reimbursement")
+    public void user_click_button_create_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnCreateHoReimbursement();
+        Hooks.delay(2);
+        hoPage.BtnConfirmCreateHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create ho reimbursement");
     }
 }

@@ -416,6 +416,9 @@ public class HoPage {
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectRegionRkpd;
 
+    @FindBy(xpath = "(//input[@id='lokasi'])[1]")
+    WebElement inputLocationRkpd;
+
     @FindBy(xpath = "(//input[@placeholder='Start date'])[1]")
     WebElement btnStartDateRkpd;
 
@@ -442,6 +445,9 @@ public class HoPage {
 
     @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
     WebElement btnSelectAssignedMemberRkpd;
+
+    @FindBy(xpath = "(//input[@id='dokumen'])[1]")
+    WebElement btnUploadDocumentRkpd;
 
     @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
     WebElement btnCreateRkpd;
@@ -1082,6 +1088,107 @@ public class HoPage {
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteUploadDocumentHoWorkingPlan;
 
+    @FindBy(xpath = "(//a[normalize-space()='Notulen'])[1]")
+    WebElement btnNotulenHoworkingPlan;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select Team'])[1]")
+    WebElement btnSelectTeamNameOfTeamNotulen;
+
+    @FindBy(xpath = "(//div[contains(@role,'option')])[2]")
+    WebElement nameOfTeam1Notulen;
+
+    @FindBy(xpath = "(//div[contains(@role,'option')])[6]")
+    WebElement nameofTeam2Notulen;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnSelectNameOfTeamNotulen;
+
+    @FindBy(xpath = "(//input[@id='pemp_rapat'])[1]")
+    WebElement inputMeetingLeaderNotulen;
+
+    @FindBy(xpath = "(//input[@id='alamat'])[1]")
+    WebElement inputAddressNotulen;
+
+    @FindBy(xpath = "(//input[@id='peserta'])[1]")
+    WebElement inputMeetingParticipantsNotulen;
+
+    @FindBy(xpath = "(//input[@placeholder='Date'])[1]")
+    WebElement btnDateNotulen;
+
+    @FindBy(xpath = "//button[normalize-space()='Today']")
+    WebElement btnTodayDateNotulen;
+
+    @FindBy(xpath = "(//input[@id='pembuka'])[1]")
+    WebElement inputMeetingOpenedByNotulen;
+
+    @FindBy(xpath = "(//input[@id='materi'])[1]")
+    WebElement inputMeetingTopicNotulen;
+
+    @FindBy(xpath = "(//textarea[@id='hasil_kegiatan'])[1]")
+    WebElement inputNoteNotulen;
+
+    @FindBy(xpath = "(//textarea[@placeholder='Meeting results '])[1]")
+    WebElement inputMeetingResultNotulen;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnCreateNotulen;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmCreateNotulen;
+
+    @FindBy(xpath = "(//a[normalize-space()='Create Reimbursement'])[1]")
+    WebElement btnCreateReimbursementHoWorkingPlan;
+
+    @FindBy(xpath = "(//input[@placeholder='Date'])[1]")
+    WebElement btnDateHoReimbursement;
+
+    @FindBy(xpath = "//button[normalize-space()='Today']")
+    WebElement btnTodayDateHoReimbursement;
+
+    @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
+    WebElement inputNoteHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select Team'])[1]")
+    WebElement btnSelectTeamNameOfTeamHoReimbursement;
+
+    @FindBy(xpath = "(//div[contains(@role,'option')])[9]")
+    WebElement memberOnDuty1HoReimbursement;
+
+    @FindBy(xpath = "(//div[contains(@role,'option')])[10]")
+    WebElement memberOnDuty2HoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnSelectMemberOnDutyHoReimbursement;
+
+    @FindBy(xpath = "(//input[@placeholder='List of Expenses'])[1]")
+    WebElement inputListOfExpensesReibursementHoReimbursement;
+
+    @FindBy(xpath = "(//input[contains(@placeholder,'Amount')])[1]")
+    WebElement inputAmountReibursementHoReimbursement;
+
+    @FindBy(xpath = "(//input[@placeholder='Note'])[1]")
+    WebElement inputNoteReibursementHoReimbursement;
+
+    @FindBy(xpath = "(//input[@id='fBukti'])[1]")
+    WebElement attachReceiptReimbursementHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnCreateHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmCreateHoReimbursement;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1245,6 +1352,7 @@ public class HoPage {
     public void BtnRegionRkpd() { btnRegionRkpd.click();}
     public void SelectRegionRkpd() { selectRegionRkpd.click();}
     public void BtnSelectRegionRkpd() { btnSelectRegionRkpd.click();}
+    public void InputLocationRkpd(String inputLocationRkpd) { this.inputLocationRkpd.sendKeys(inputLocationRkpd);}
     public void BtnStartDateRkpd() { btnStartDateRkpd.click();}
     public void BtnSelectTodayStartDateRkpd() { btnSelectTodayStartDateRkpd.click();}
     public void BtnEndDateRkpd() { btnEndDateRkpd.click();}
@@ -1254,6 +1362,7 @@ public class HoPage {
     public void SelectAssignedMember1Rkpd() { selectAssignedMember1Rkpd.click();}
     public void SelectAssignedMember2Rkpd() { selectAssignedMember2Rkpd.click();}
     public void BtnSelectAssignedMemberRkpd() { btnSelectAssignedMemberRkpd.click();}
+    public void BtnUploadDocumentRkpd(String btnUploadDocumentRkpd) { this.btnUploadDocumentRkpd.sendKeys(btnUploadDocumentRkpd);}
     public void BtnCreateRkpd() { btnCreateRkpd.click();}
     public void BtnConfirmCreateRkpd() { btnConfirmCreateRkpd.click();}
     public void BtnCancelDownloadRkpd() { btnCancelDownloadRkpd.click();}
@@ -1467,7 +1576,43 @@ public class HoPage {
     public void BtnConfirmUploadDocument() { btnConfirmUploadDocument.click();}
     public void BtnDeleteUploadDocumentHoWorkingPlan() { btnDeleteUploadDocumentHoWorkingPlan.click();}
     public void BtnConfirmDeleteUploadDocumentHoWorkingPlan() { btnConfirmDeleteUploadDocumentHoWorkingPlan.click();}
+    public void BtnNotulenHoworkingPlan() { btnNotulenHoworkingPlan.click();}
+    public void BtnSelectTeamNameOfTeamNotulen() { btnSelectTeamNameOfTeamNotulen.click();}
+    public void NameOfTeam1Notulen() { nameOfTeam1Notulen.click();}
+    public void NameofTeam2Notulen() { nameofTeam2Notulen.click();}
+    public void BtnSelectNameOfTeamNotulen() { btnSelectNameOfTeamNotulen.click();}
+    public void InputMeetingLeaderNotulen(String inputMeetingLeaderNotulen) { this.inputMeetingLeaderNotulen.sendKeys(inputMeetingLeaderNotulen);}
+    public void InputAddressNotulen(String inputAddressNotulen) { this.inputAddressNotulen.sendKeys(inputAddressNotulen);}
+    public void InputMeetingParticipantsNotulen(String inputMeetingParticipantsNotulen) { this.inputMeetingParticipantsNotulen.sendKeys(inputMeetingParticipantsNotulen);}
+    public void BtnDateNotulen() { btnDateNotulen.click();}
+    public void BtnTodayDateNotulen() { btnTodayDateNotulen.click();}
+    public void InputMeetingOpenedByNotulen(String inputMeetingOpenedByNotulen) { this.inputMeetingOpenedByNotulen.sendKeys(inputMeetingOpenedByNotulen);}
+    public void InputMeetingTopicNotulen(String inputMeetingTopicNotulen) { this.inputMeetingTopicNotulen.sendKeys(inputMeetingTopicNotulen);}
+    public void InputNoteNotulen(String inputNoteNotulen) { this.inputNoteNotulen.sendKeys(inputNoteNotulen);}
+    public void InputMeetingResultNotulen(String inputMeetingResultNotulen) { this.inputMeetingResultNotulen.sendKeys(inputMeetingResultNotulen);}
+    public void BtnCreateNotulen() { btnCreateNotulen.click();}
+    public void BtnConfirmCreateNotulen() { btnConfirmCreateNotulen.click();}
+    public void BtnCreateReimbursementHoWorkingPlan() { btnCreateReimbursementHoWorkingPlan.click();}
+    public void BtnDateHoReimbursement() { btnDateHoReimbursement.click();}
+    public void BtnTodayDateHoReimbursement() { btnTodayDateHoReimbursement.click();}
+    public void InputNoteHoReimbursement(String inputNoteHoReimbursement) { this.inputNoteHoReimbursement.sendKeys(inputNoteHoReimbursement);}
+    public void BtnSelectTeamNameOfTeamHoReimbursement() { btnSelectTeamNameOfTeamHoReimbursement.click();}
+    public void MemberOnDuty1HoReimbursement() { memberOnDuty1HoReimbursement.click();}
+    public void MemberOnDuty2HoReimbursement() { memberOnDuty2HoReimbursement.click();}
+    public void BtnSelectMemberOnDutyHoReimbursement() { btnSelectMemberOnDutyHoReimbursement.click();}
+    public void InputListOfExpensesReibursementHoReimbursement(String inputListOfExpensesReibursementHoReimbursement) { this.inputListOfExpensesReibursementHoReimbursement.sendKeys(inputListOfExpensesReibursementHoReimbursement);}
+    public void InputAmountReibursementHoReimbursement(String inputAmountReibursementHoReimbursement) { this.inputAmountReibursementHoReimbursement.sendKeys(inputAmountReibursementHoReimbursement);}
+    public void InputNoteReibursementHoReimbursement(String inputNoteReibursementHoReimbursement) { this.inputNoteReibursementHoReimbursement.sendKeys(inputNoteReibursementHoReimbursement);}
+    public void AttachReceiptReimbursementHoReimbursement(String attachReceiptReimbursementHoReimbursement) { this.attachReceiptReimbursementHoReimbursement.sendKeys(attachReceiptReimbursementHoReimbursement);}
+    public void BtnCreateHoReimbursement() { btnCreateHoReimbursement.click();}
+    public void BtnConfirmCreateHoReimbursement() { btnConfirmCreateHoReimbursement.click();}
 }
+
+
+
+
+
+
 
 
 

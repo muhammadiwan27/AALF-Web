@@ -9,6 +9,7 @@ Feature: Ho Page Test
     And User upload document quotation client ho
     And User upload document confirmation letter client ho
     And User select name of client ho
+    And User upload document scope of work client ho
     And User input case name client ho
     And Input address client ho
     And User select province client ho
@@ -22,7 +23,7 @@ Feature: Ho Page Test
     And User input case summary client ho
     And User input total hours client ho
     And User add handling team client ho
-    Then User click button create ho
+    Then User save ho
 
   Scenario: User Search Valid Data Based ID HO
     When User click on the search bar under the words ho berjalan
@@ -141,12 +142,14 @@ Feature: Ho Page Test
   Scenario: Create Document RKPD
     When User click button create administrative documents for rkpd
     And User select document rkpd
-    And User select scope of work rkpd
-    And User select region rkpd
     And User select start date rkpd
     And User select end date rkpd
+    And User select scope of work rkpd
+    And User select region rkpd
+    And User input location rkpd
     And User input scope of work details rkpd
     And User select assigned member rkpd
+    And User upload document rkpd
     Then User click button create document rkpd
 
   Scenario: JP Approval Document RKPD
@@ -354,3 +357,27 @@ Feature: Ho Page Test
   Scenario: Delete Upload Document HO Working Plan
     When User click button delete upload document ho working plan
     Then User click button confirm delete upload document ho working plan
+
+  Scenario: Create Notulen HO Working Plan
+    When User click button notulen
+    And User select name of team notulen
+    And User input meeting leader
+    And User input address notulen
+    And User input meeting participants notulen
+    And User select date notulen
+    And User input meeting opened by notulen
+    And User input meeting topic notulen
+    And User input note notulen
+    And User input meeting results notulen
+    Then User click button create notulen
+
+  Scenario: Create HO Reimbursement HO Working Plan
+    When User click button create reimbursement
+    And User select date ho reimbursement
+    And User input note ho reimbursement
+    And User select member on duty ho reimbursement
+    And User input list of expenses reimbursement ho reimbursement
+    And User input amount reimbursement ho reimbursement
+    And User input note reimbursement ho reimbursement
+    And User attach receipt reimbursement ho reimbursement
+    Then User click button create ho reimbursement

@@ -381,3 +381,25 @@ Feature: Ho Page Test
     And User input note reimbursement ho reimbursement
     And User attach receipt reimbursement ho reimbursement
     Then User click button create ho reimbursement
+
+  Scenario: Edit HO Reimbursement HO Working Plan
+    When User click button edit ho reimbursement
+    And User edit note ho reimbursement
+    Then User click button save edit ho reimbursement
+
+  Scenario: View HO Reimbursement HO Working Plan
+    When User click button view ho reimbursement
+    Then User click button back view ho reimbursement
+
+  Scenario: JP Approval HO Reimbursement HO Working Plan
+    When User click button approval ho reimbursement
+    And User select jp approval ho reimbursement
+    Then User click button save jp approval ho reimbursement
+
+  Scenario: Delete HO Reimbursement HO Working Plan
+    When User click button delete ho reimbursement
+    Then User click button confirm delete ho reimbursement
+
+  Scenario: View HO Activities HO Working Plan
+    When User click button view ho activities
+    Then User click button back view ho activities

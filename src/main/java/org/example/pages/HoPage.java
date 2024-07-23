@@ -1178,6 +1178,50 @@ public class HoPage {
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmCreateHoReimbursement;
 
+    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[5]/div[1]/a[1]/img[1]")
+    WebElement btnEditHoReimbursement;
+
+    @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
+    WebElement inputEditNoteHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditHoReimbursement;
+
+    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[5]/div[1]/a[1]")
+    WebElement btnViewHoReimbursement;
+
+    @FindBy(xpath = "(//a[normalize-space()='Back'])[1]")
+    WebElement btnBackViewHoReimbursement;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalHoReimbursement;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalHoReimbursement;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApproveApprovalHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveJpApprovalHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveJpApprovalHoReimbursement;
+
+    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[5]/div[1]/button[1]/img[1]")
+    WebElement btnDeleteHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteHoReimbursement;
+
+    @FindBy(xpath = "//a[normalize-space()='HO Activities']")
+    WebElement btnHoActivities;
+
+    @FindBy(xpath = "(//a[normalize-space()='Back'])[1]")
+    WebElement btnBackHoActivities;
 
 
 
@@ -1205,13 +1249,9 @@ public class HoPage {
 
 
 
-    public void TabHo() {
-        tabHo.click();
-    }
-    public String getTxtHo(){
-        return txtHo.getText();
-    }
 
+    public void TabHo() { tabHo.click();}
+    public String getTxtHo(){return txtHo.getText();}
     public void BtnCreateHo() { btnCreateHo.click();}
     public void SelectHandlingCompanyHo() { selectHandlingCompanyHo.click();}
     public void ChooseHandlingCompanyHo() { chooseHandlingCompanyHo.click();}
@@ -1606,58 +1646,20 @@ public class HoPage {
     public void AttachReceiptReimbursementHoReimbursement(String attachReceiptReimbursementHoReimbursement) { this.attachReceiptReimbursementHoReimbursement.sendKeys(attachReceiptReimbursementHoReimbursement);}
     public void BtnCreateHoReimbursement() { btnCreateHoReimbursement.click();}
     public void BtnConfirmCreateHoReimbursement() { btnConfirmCreateHoReimbursement.click();}
+    public void BtnEditHoReimbursement() { btnEditHoReimbursement.click();}
+    public void InputDeleteNoteHoReimbursement() { inputNoteHoReimbursement.clear();}
+    public void InputEditNoteHoReimbursement(String inputEditNoteHoReimbursement) { this.inputEditNoteHoReimbursement.sendKeys(inputEditNoteHoReimbursement);}
+    public void BtnSaveEditHoReimbursement() { btnSaveEditHoReimbursement.click();}
+    public void BtnConfirmSaveEditHoReimbursement() { btnConfirmSaveEditHoReimbursement.click();}
+    public void BtnViewHoReimbursement() { btnViewHoReimbursement.click();}
+    public void BtnBackViewHoReimbursement() { btnBackViewHoReimbursement.click();}
+    public void BtnApprovalHoReimbursement() { btnApprovalHoReimbursement.click();}
+    public void BtnSelectJpApprovalHoReimbursement() { btnSelectJpApprovalHoReimbursement.click();}
+    public void SelectJpApproveApprovalHoReimbursement() { selectJpApproveApprovalHoReimbursement.click();}
+    public void BtnSaveJpApprovalHoReimbursement() { btnSaveJpApprovalHoReimbursement.click();}
+    public void BtnConfirmSaveJpApprovalHoReimbursement() { btnConfirmSaveJpApprovalHoReimbursement.click();}
+    public void BtnDeleteHoReimbursement() { btnDeleteHoReimbursement.click();}
+    public void BtnConfirmDeleteHoReimbursement() { btnConfirmDeleteHoReimbursement.click();}
+    public void BtnHoActivities() { btnHoActivities.click();}
+    public void BtnBackHoActivities() { btnBackHoActivities.click();}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

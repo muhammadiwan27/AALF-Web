@@ -2705,4 +2705,121 @@ public class TestHo {
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button create ho reimbursement");
     }
+
+//Edit HO Reimbursement HO Working Plan
+    @When("User click button edit ho reimbursement")
+    public void user_click_button_edit_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnEditHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button edit ho reimbursement");
+    }
+
+    @And("User edit note ho reimbursement")
+    public void user_edit_note_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.InputDeleteNoteHoReimbursement();
+        Hooks.delay(2);
+        hoPage.InputEditNoteHoReimbursement("Untuk makan hari ini");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit note ho reimbursement");
+    }
+
+    @Then("User click button save edit ho reimbursement")
+    public void user_click_button_save_edit_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnSaveEditHoReimbursement();
+        Hooks.delay(2);
+        hoPage.BtnConfirmSaveEditHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save edit ho reimbursement");
+    }
+
+//View HO Reimbursement HO Working Plan
+    @When("User click button view ho reimbursement")
+    public void user_click_button_view_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnViewHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button view ho reimbursement");
+    }
+
+    @Then("User click button back view ho reimbursement")
+    public void user_click_button_back_view_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnBackViewHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button back view ho reimbursement");
+    }
+
+//JP Approval HO Reimbursement HO Working Plan
+    @When("User click button approval ho reimbursement")
+    public void user_click_button_approval_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnApprovalHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approval ho reimbursement");
+    }
+
+    @And("User select jp approval ho reimbursement")
+    public void user_select_jp_approval_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnSelectJpApprovalHoReimbursement();
+        Hooks.delay(2);
+        hoPage.SelectJpApproveApprovalHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select jp approval ho reimbursement");
+    }
+
+    @Then("User click button save jp approval ho reimbursement")
+    public void user_click_button_save_jp_approval_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnSaveJpApprovalHoReimbursement();
+        Hooks.delay(2);
+        hoPage.BtnConfirmSaveJpApprovalHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval ho reimbursement");
+    }
+
+//Delete HO Reimbursement HO Working Plan
+    @When("User click button delete ho reimbursement")
+    public void user_click_button_delete_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnDeleteHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete ho reimbursement");
+    }
+
+    @Then("User click button confirm delete ho reimbursement")
+    public void user_click_button_confirm_delete_ho_reimbursement() {
+        Hooks.delay(2);
+        hoPage.BtnConfirmDeleteHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete ho reimbursement");
+    }
+
+//View HO Activities HO Working Plan
+    @When("User click button view ho activities")
+    public void user_click_button_view_ho_activities() {
+        Hooks.delay(2);
+        hoPage.BtnHoActivities();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        extentTest.log(LogStatus.PASS, "User click button view ho activities");
+    }
+
+    @Then("User click button back view ho activities")
+    public void user_click_button_back_view_ho_activities() {
+        Hooks.delay(2);
+        hoPage.BtnBackHoActivities();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button back view ho activities");
+    }
 }

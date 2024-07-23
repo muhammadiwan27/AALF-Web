@@ -69,7 +69,20 @@ public enum TestScenarios {
     T67("Edit Document LKPD"),
     T68("Delete Document LKPD"),
     T69("Edit Document Surat Tugas"),
-    T70("Delete Document Surat Tugas");
+    T70("Delete Document Surat Tugas"),
+    T71("Edit Document RKPD"),
+    T72("Delete Document RKPD"),
+    T73("Upload Document HO Working Plan"),
+    T74("Delete Upload Document HO Working Plan"),
+    T75("Create Notulen HO Working Plan"),
+    T76("Create HO Reimbursement HO Working Plan"),
+    T77("Edit HO Reimbursement HO Working Plan"),
+    T78("View HO Reimbursement HO Working Plan"),
+    T79("JP Approval HO Reimbursement HO Working Plan"),
+    T80("Delete HO Reimbursement HO Working Plan"),
+    T81("View HO Activities HO Working Plan"),
+    T82("Enter Calendar Page");
+
 
 
     private String testCaseName;

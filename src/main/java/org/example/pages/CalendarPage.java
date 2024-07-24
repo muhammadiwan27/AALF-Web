@@ -22,6 +22,8 @@ public class CalendarPage {
 
 
 
+
+
     public void TabCalendar() { tabCalendar.click();}
     public String getTxtCalendar() { return txtCalendar.getText();}
 }

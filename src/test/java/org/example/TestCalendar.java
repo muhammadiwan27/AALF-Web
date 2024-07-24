@@ -1,6 +1,5 @@
 package org.example;
 
-import io.cucumber.java.en.And;
 import org.example.pages.CalendarPage;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -22,7 +21,7 @@ public class TestCalendar {
 //Enter Calendar Page
     @When("User click tab calendar")
     public void user_click_tab_calendar() {
-        Hooks.delay(1);
+        Hooks.delay(2);
         CalendarPage.TabCalendar();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click tab calendar");
@@ -30,9 +29,9 @@ public class TestCalendar {
 
     @Then("User get text title page calendar")
     public void user_get_text_title_page_calendar() {
-        Hooks.delay(1);
+        Hooks.delay(2);
         Assert.assertEquals(CalendarPage.getTxtCalendar(),"July 2024");
-        Hooks.delay(1);
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User get text title page calendar");
     }
 }

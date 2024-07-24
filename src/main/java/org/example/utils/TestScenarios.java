@@ -81,7 +81,11 @@ public enum TestScenarios {
     T79("JP Approval HO Reimbursement HO Working Plan"),
     T80("Delete HO Reimbursement HO Working Plan"),
     T81("View HO Activities HO Working Plan"),
-    T82("Enter Calendar Page");
+    T82("Enter Calendar Page"),
+    T83("Enter Finance Page"),
+    T84("Enter HO Report Finance Page"),
+    T85("Enter Task & Activity Report Finance Page"),
+    T86("Enter Client Report Finance Page");
 
 
 

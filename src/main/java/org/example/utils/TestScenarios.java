@@ -85,7 +85,11 @@ public enum TestScenarios {
     T83("Enter Finance Page"),
     T84("Enter HO Report Finance Page"),
     T85("Enter Task & Activity Report Finance Page"),
-    T86("Enter Client Report Finance Page");
+    T86("Enter Client Report Finance Page"),
+    T87("Enter Administrative Report Finance Page"),
+    T88("Enter Administrative Approval Report Finance Page"),
+    T89("Enter Client Page"),
+    T90("Add Client");
 
 
 

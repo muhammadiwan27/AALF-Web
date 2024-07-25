@@ -38,6 +38,88 @@ public class FinancePage {
     @FindBy(xpath = "(//li[normalize-space()='Client'])[1]")
     WebElement txtClientReport;
 
+    @FindBy(xpath = "(//button[normalize-space()='Administrative'])[1]")
+    WebElement tabAdminstrativeReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='Administrative'])[1]")
+    WebElement txtAdministrativeReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='Administrative Approval'])[1]")
+    WebElement tabAdminstrativeApprovalReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='Administrative Approval'])[1]")
+    WebElement txtAdministrativeApprovalReport;
+
+    @FindBy(xpath = "(//span[normalize-space()='Client'])[1]")
+    WebElement tabClient;
+
+    @FindBy(xpath = "(//li[normalize-space()='Client'])[1]")
+    WebElement txtClientPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='Add Client'])[1]")
+    WebElement btnAddClient;
+
+    @FindBy(xpath = "(//input[@id='nm_client'])[1]")
+    WebElement inputNameOfClient;
+
+    @FindBy(xpath = "(//input[@id='email'])[1]")
+    WebElement inputEmailClient;
+
+    @FindBy(xpath = "(//input[@id='telp'])[1]")
+    WebElement inputTelephoneClient;
+
+    @FindBy(xpath = "(//input[@id='fax'])[1]")
+    WebElement inputFaxClient;
+
+    @FindBy(xpath = "(//input[@id='npwp'])[1]")
+    WebElement inputNpwpClient;
+
+    @FindBy(xpath = "(//textarea[@placeholder='Address'])[1]")
+    WebElement inputAddressClient;
+
+    @FindBy(xpath = "(//select[@id='provinsi'])[1]")
+    WebElement btnSelectProvinceClient;
+
+    @FindBy(xpath = "(//option[@value='SUMATERA BARAT'])[1]")
+    WebElement selectProvinceClient;
+
+    @FindBy(xpath = "(//select[@id='kota'])[1]")
+    WebElement btnSelectCityClient;
+
+    @FindBy(xpath = "(//option[@value='KOTA PADANG'])[1]")
+    WebElement selectCityClient;
+
+    @FindBy(xpath = "(//select[@id='kecamatan'])[1]")
+    WebElement btnSelectDistrictClient;
+
+    @FindBy(xpath = "(//option[@value='Lubuk Begalung'])[1]")
+    WebElement selectDistrictClient;
+
+    @FindBy(xpath = "(//select[@id='kelurahan'])[1]")
+    WebElement btnSelectSubdistrictClient;
+
+    @FindBy(xpath = "(//option[@value='Lubuk Begalung Nan XX'])[1]")
+    WebElement selectSubdistrictClient;
+
+    @FindBy(xpath = "(//input[@id='nm_pic'])[1]")
+    WebElement inputPicNameClient;
+
+    @FindBy(xpath = "(//input[@id='telp_pic'])[1]")
+    WebElement inputTelephonePicClient;
+
+    @FindBy(xpath = "(//input[@id='email_pic'])[1]")
+    WebElement inputEmailPicClient;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveDataClient;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveDataClient;
+
+
+
+
+
 
 
 
@@ -49,4 +131,45 @@ public class FinancePage {
     public String getTxtTaskActivityReport(){return txtTaskActivityReport.getText();}
     public void TabClientReport() { tabClientReport.click();}
     public String getTxtClientReport(){return txtClientReport.getText();}
+    public void TabAdminstrativeReport() { tabAdminstrativeReport.click();}
+    public String getTxtAdministrativeReport(){return txtAdministrativeReport.getText();}
+    public void TabAdminstrativeApprovalReport() { tabAdminstrativeApprovalReport.click();}
+    public String getTxtAdministrativeApprovalReport(){return txtAdministrativeApprovalReport.getText();}
+    public void TabClient() { tabClient.click();}
+    public String getTxtClientPage(){return txtClientPage.getText();}
+    public void BtnAddClient() { btnAddClient.click();}
+    public void InputNameOfClient(String inputNameOfClient) { this.inputNameOfClient.sendKeys(inputNameOfClient);}
+    public void InputEmailClient(String inputEmailClient) { this.inputEmailClient.sendKeys(inputEmailClient);}
+    public void InputTelephoneClient(String inputTelephoneClient) { this.inputTelephoneClient.sendKeys(inputTelephoneClient);}
+    public void InputFaxClient(String inputFaxClient) { this.inputFaxClient.sendKeys(inputFaxClient);}
+    public void InputNpwpClient(String inputNpwpClient) { this.inputNpwpClient.sendKeys(inputNpwpClient);}
+    public void InputAddressClient(String inputAddressClient) { this.inputAddressClient.sendKeys(inputAddressClient);}
+    public void BtnSelectProvinceClient() { btnSelectProvinceClient.click();}
+    public void SelectProvinceClient() { selectProvinceClient.click();}
+    public void BtnSelectCityClient() { btnSelectCityClient.click();}
+    public void SelectCityClient() { selectCityClient.click();}
+    public void BtnSelectDistrictClient() { btnSelectDistrictClient.click();}
+    public void SelectDistrictClient() { selectDistrictClient.click();}
+    public void BtnSelectSubdistrictClient() { btnSelectSubdistrictClient.click();}
+    public void SelectSubdistrictClient() { selectSubdistrictClient.click();}
+    public void InputPicNameClient(String inputPicNameClient) { this.inputPicNameClient.sendKeys(inputPicNameClient);}
+    public void InputTelephonePicClient(String inputTelephonePicClient) { this.inputTelephonePicClient.sendKeys(inputTelephonePicClient);}
+    public void InputEmailPicClient(String inputEmailPicClient) { this.inputEmailPicClient.sendKeys(inputEmailPicClient);}
+    public void BtnSaveDataClient() { btnSaveDataClient.click();}
+    public void BtnConfirmSaveDataClient() { btnConfirmSaveDataClient.click();}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

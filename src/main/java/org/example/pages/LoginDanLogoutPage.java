@@ -23,7 +23,7 @@ public class LoginDanLogoutPage {
     @FindBy(xpath = "//button[normalize-space()='Login']")
     WebElement btnLogin;
 
-    @FindBy(xpath = "//p[@class='mr-auto']")
+    @FindBy(xpath = "(//p[@class='mr-auto'])[1]")
     WebElement btnLogout;
 
     @FindBy(xpath = "//a[normalize-space()='Logout']")
@@ -31,6 +31,7 @@ public class LoginDanLogoutPage {
 
     @FindBy(xpath = "(//p[@class='text-white w-[300px]'])[1]")
     WebElement txtInvalidCredentials;
+
 
 
 

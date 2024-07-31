@@ -29,7 +29,7 @@ public class TestLoginDanLogout {
     }
 
     @When("User enter valid username")
-    public void user_enter_valid_username(){
+    public void user_enter_valid_username1(){
         Hooks.delay(1);
         loginDanLogoutPage.enterUsername("go");
         Hooks.delay(1);
@@ -48,14 +48,14 @@ public class TestLoginDanLogout {
     public void user_click_button_login(){
         Hooks.delay(1);
         loginDanLogoutPage.BtnLogin();
-        Hooks.delay(5);
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User click button login");
     }
 
-//Login Invalid Functionality Test
+//Login Invalid Functionality Test (Input invalid username & Input invalid password)
     @When("User enter invalid username")
     public void user_enter_invalid_username(){
-        Hooks.delay(3);
+        Hooks.delay(1);
         loginDanLogoutPage.BtnLogout();
         Hooks.delay(1);
         loginDanLogoutPage.BtnLogoutOk();
@@ -69,6 +69,8 @@ public class TestLoginDanLogout {
         Hooks.delay(1);
         loginDanLogoutPage.enterPassword("admin1234");
         Hooks.delay(1);
+        loginDanLogoutPage.BtnLogin();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS,"User enter invalid password");
     }
 
@@ -79,4 +81,5 @@ public class TestLoginDanLogout {
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS,"User get text invalid credentials");
     }
+
 }

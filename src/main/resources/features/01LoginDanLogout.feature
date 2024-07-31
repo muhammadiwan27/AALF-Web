@@ -5,8 +5,7 @@ Feature: Login Dan Logout Page Test
     And User enter valid password
     Then User click button login
 
-  Scenario: Login Invalid Functionality Test
+  Scenario: Login Invalid Functionality Test (Input invalid username & Input invalid password)
     When User enter invalid username
     And User enter invalid password
-    And User click button login
     Then User get text invalid credentials

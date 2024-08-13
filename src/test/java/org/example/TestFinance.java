@@ -9,7 +9,8 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-
+import java.awt.*;
+import java.awt.event.KeyEvent;
 
 
 public class TestFinance {
@@ -270,5 +271,118 @@ public class TestFinance {
         financePage.BtnConfirmSaveDataClient();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User save data client");
+    }
+
+ //Edit Client
+    @When("User click button edit client")
+    public void user_click_button_edit_client() {
+        Hooks.delay(1);
+        financePage.BtnEditClient();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button edit client");
+    }
+
+    @And("User edit email client")
+    public void user_edit_email_client() {
+        Hooks.delay(2);
+        financePage.ClearEmailClient();
+        Hooks.delay(2);
+        financePage.InputEmailClient("pakyoyok@gmail.com");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit email client");
+    }
+
+    @Then("User save edit data client")
+    public void user_save_edit_data_client() {
+        Hooks.delay(1);
+        financePage.BtnSaveDataClient();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveDataClient();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit data client");
+    }
+
+//Delete Client
+    @When("User click button delete client")
+    public void user_click_button_delete_client() {
+        Hooks.delay(1);
+        financePage.BtnDeleteClient();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete client");
+    }
+
+    @Then("User click button confirm delete client")
+    public void user_click_button_confirm_delete_client() {
+        Hooks.delay(2);
+        financePage.BtnConfirmDeleteClient();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete client");
+    }
+
+//Enter HO Completed Page
+    @When("User click tab ho completed")
+    public void user_click_tab_ho_completed() {
+        Hooks.delay(1);
+        financePage.TabHoCompleted();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab ho completed");
+    }
+
+    @Then("User get text title page ho completed")
+    public void user_get_text_title_page_ho_completed() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtHoCompletedPage(), "HO Completed");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page ho completed");
+    }
+
+//View HO Completed Page
+    @When("User click button view ho completed")
+    public void user_click_button_view_ho_completed() {
+        Hooks.delay(1);
+        financePage.BtnViewHoCompletedPage();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button view ho completed");
+    }
+
+    @And("User get text title page view ho completed")
+    public void user_get_text_title_page_view_ho_completed() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtViewHoCompletedPage(), "View Completed HO");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User get text title page view ho completed");
+    }
+
+    @Then("User back to ho completed page")
+    public void user_back_to_ho_completed_page() {
+        Hooks.delay(1);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        financePage.BtnBackHoCompletedPage();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User back to ho completed page");
+    }
+
+//Enter Finance Document Page
+    @When("User click tab finance document")
+    public void user_click_tab_finance_document() {
+        Hooks.delay(1);
+        financePage.TabFinanceDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab finance document");
+    }
+
+    @Then("User get text title page finance document")
+    public void user_get_text_title_page_finance_document() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinanceDocumentPage(), "Document");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance document");
     }
 }

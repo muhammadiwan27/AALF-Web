@@ -47,3 +47,25 @@ Feature: Finance Page Test
     And User input telephone pic client
     And User input email pic client
     Then User save data client
+
+  Scenario: Edit Client
+    When User click button edit client
+    And User edit email client
+    Then User save edit data client
+
+  Scenario: Delete Client
+    When User click button delete client
+    Then User click button confirm delete client
+
+  Scenario: Enter HO Completed Page
+    When User click tab ho completed
+    Then User get text title page ho completed
+
+  Scenario: View HO Completed Page
+    When User click button view ho completed
+    And User get text title page view ho completed
+    Then User back to ho completed page
+
+  Scenario: Enter Finance Document Page
+    When User click tab finance document
+    Then User get text title page finance document

@@ -99,7 +99,12 @@ public enum TestScenarios {
     T96("Enter Finance Document Page"),
     T97("Create Finance Document Number"),
     T98("Edit Finance Document Number"),
-    T99("Delete Finance Document Number");
+    T99("Delete Finance Document Number"),
+    T100("Enter Finance List Document Page"),
+    T101("Create Finance List Document"),
+    T102("Upload document Finance List Document"),
+    T103("Edit Finance List Document"),
+    T104("Delete Finance List Document");
 
 
 

@@ -443,9 +443,9 @@ public class TestFinance {
     @Then("User save edit data finance document number")
     public void user_save_edit_data_finance_document_number() {
         Hooks.delay(1);
-        financePage.BtnSaveFinanceDocumentNumber();
+        financePage.BtnSaveEditFinanceDocumentNumber();
         Hooks.delay(2);
-        financePage.BtnConfirmSaveFinanceDocumentNumber();
+        financePage.BtnConfirmSaveEditFinanceDocumentNumber();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User save edit data finance document number");
     }
@@ -465,6 +465,133 @@ public class TestFinance {
         financePage.BtnConfirmDeleteFinanceFormatDocumentNumber();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button confirm delete finance document number");
+    }
+
+//Enter Finance List Document Page
+    @When("User click tab finance list document")
+    public void user_click_tab_finance_list_document() {
+        Hooks.delay(1);
+        financePage.TabFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab finance list document");
+    }
+
+    @Then("User get text title page finance list document")
+    public void user_get_text_title_page_finance_list_document() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinanceListDocumentPage(), "List Document");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance list document");
+    }
+
+//Create Finance List Document
+    @When("User click button create finance list document")
+    public void user_click_button_create_finance_list_document() {
+        Hooks.delay(1);
+        financePage.BtnCreateFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create finance list document");
+    }
+
+    @And("User select master document name finance list document")
+    public void user_select_master_document_name_finance_list_document() {
+        Hooks.delay(1);
+        financePage.BtnSelectMasterDocumentNameFinanceListDocument();
+        Hooks.delay(2);
+        financePage.SelectMasterDocumentNameFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select master document name finance list document");
+    }
+
+    @And("User input document name finance list document")
+    public void user_input_document_name_finance_list_document() {
+        Hooks.delay(1);
+        financePage.InputDocumentNameFinanceListDocument("Surat Finance untuk atasan");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input document name finance list document");
+    }
+
+    @Then("User save data finance list document")
+    public void user_save_data_finance_list_document() {
+        Hooks.delay(1);
+        financePage.BtnSaveFinanceListDocument();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save data finance list document");
+    }
+
+//Upload document Finance List Document
+    @When("User click button upload document finance list Document")
+    public void user_click_button_upload_document_finance_list_Document() {
+        Hooks.delay(1);
+        financePage.BtnUploadFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button upload document finance list Document");
+    }
+
+    @And("User click button choose file finance list document")
+    public void user_click_button_choose_file_finance_list_document() {
+        Hooks.delay(2);
+        financePage.BtnChooseFileDocumentFinanceListDocument("C:\\Users\\M1403QA\\Downloads\\KPI HO.xlsx");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button choose file finance list document");
+    }
+
+    @Then("User save upload document finance list document")
+    public void user_save_upload_document_finance_list_document() {
+        Hooks.delay(1);
+        financePage.BtnSaveUploadFinanceListDocument();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveUploadFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save upload document finance list document");
+    }
+
+//Edit Finance List Document
+    @When("User click icon edit finance list document")
+    public void user_click_icon_edit_finance_list_document() {
+        Hooks.delay(1);
+        financePage.BtnEditFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click icon edit finance list document");
+    }
+
+    @And("User edit document name finance list document")
+    public void user_edit_document_name_finance_list_document() {
+        Hooks.delay(2);
+        financePage.ClearDocumentNameFinanceListDocument();
+        Hooks.delay(2);
+        financePage.InputDocumentNameFinanceListDocument("Surat Pembayaran kantor");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit document name finance list document");
+    }
+
+    @Then("User save edit data finance list document")
+    public void user_save_edit_data_finance_list_document() {
+        Hooks.delay(1);
+        financePage.BtnSaveEditFinanceListDocument();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveEditFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit data finance list document");
+    }
+
+//Delete Finance List Document
+    @When("User click button delete finance list document")
+    public void user_click_button_delete_finance_list_document() {
+        Hooks.delay(1);
+        financePage.BtnDeleteFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete finance list document");
+    }
+
+    @Then("User click button confirm delete finance list document")
+    public void User_click_button_confirm_delete_finance_list_document() {
+        Hooks.delay(2);
+        financePage.BtnConfirmDeleteFinanceListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete finance list document");
     }
 }
 

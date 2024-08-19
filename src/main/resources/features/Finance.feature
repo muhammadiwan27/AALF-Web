@@ -84,3 +84,27 @@ Feature: Finance Page Test
   Scenario: Delete Finance Document Number
     When User click button delete finance document number
     Then User click button confirm delete finance document number
+
+  Scenario: Enter Finance List Document Page
+    When User click tab finance list document
+    Then User get text title page finance list document
+
+  Scenario: Create Finance List Document
+    When User click button create finance list document
+    And User select master document name finance list document
+    And User input document name finance list document
+    Then User save data finance list document
+
+  Scenario: Upload document Finance List Document
+    When User click button upload document finance list Document
+    And User click button choose file finance list document
+    Then User save upload document finance list document
+
+  Scenario: Edit Finance List Document
+    When User click icon edit finance list document
+    And User edit document name finance list document
+    Then User save edit data finance list document
+
+  Scenario: Delete Finance List Document
+    When User click button delete finance list document
+    Then User click button confirm delete finance list document

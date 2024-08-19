@@ -164,11 +164,68 @@ public class FinancePage {
     @FindBy(xpath = "//tbody/tr[5]/td[4]/div[1]/a[1]/img[1]")
     WebElement btnEditFinanceDocumentNumber;
 
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditFinanceDocumentNumber;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditFinanceDocumentNumber;
+
     @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/main[1]/div[1]/main[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[5]/td[4]/div[1]/button[1]")
     WebElement btnDeleteFinanceFormatDocumentNumber;
 
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteFinanceFormatDocumentNumber;
+
+    @FindBy(xpath = "(//button[normalize-space()='List Document'])[1]")
+    WebElement tabFinanceListDocument;
+
+    @FindBy(xpath = "(//li[normalize-space()='List Document'])[1]")
+    WebElement txtFinanceListDocumentPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='Create'])[1]")
+    WebElement btnCreateFinanceListDocument;
+
+    @FindBy(xpath = "(//select[@class='select select-sm'])[1]")
+    WebElement btnSelectMasterDocumentNameFinanceListDocument;
+
+    @FindBy(xpath = "(//option[@value='Surat Finance'])[1]")
+    WebElement selectMasterDocumentNameFinanceListDocument;
+
+    @FindBy(xpath = "(//input[@id='keterangan'])[1]")
+    WebElement inputDocumentNameFinanceListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnSaveFinanceListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveFinanceListDocument;
+
+    @FindBy(xpath = "(//a[normalize-space()='Upload'])[1]")
+    WebElement btnUploadFinanceListDocument;
+
+    @FindBy(xpath = "(//input[@id='dokumen'])[1]")
+    WebElement btnChooseFileDocumentFinanceListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Upload'])[1]")
+    WebElement btnSaveUploadFinanceListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveUploadFinanceListDocument;
+
+    @FindBy(xpath = "(//a[@class=' btn-icon btn-icon-sm'])[1]")
+    WebElement btnEditFinanceListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditFinanceListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditFinanceListDocument;
+
+    @FindBy(xpath = "(//button[@class='btn-icon btn-icon-sm'])[1]")
+    WebElement btnDeleteFinanceListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteFinanceListDocument;
 
 
 
@@ -230,6 +287,26 @@ public class FinancePage {
     public void BtnConfirmSaveFinanceDocumentNumber() { btnConfirmSaveFinanceDocumentNumber.click();}
     public void BtnEditFinanceDocumentNumber() { btnEditFinanceDocumentNumber.click();}
     public void ClearFinanceMasterDocumentName() { inputFinanceMasterDocumentName.clear();}
+    public void BtnSaveEditFinanceDocumentNumber() { btnSaveEditFinanceDocumentNumber.click();}
+    public void BtnConfirmSaveEditFinanceDocumentNumber() { btnConfirmSaveEditFinanceDocumentNumber.click();}
     public void BtnDeleteFinanceFormatDocumentNumber() { btnDeleteFinanceFormatDocumentNumber.click();}
     public void BtnConfirmDeleteFinanceFormatDocumentNumber() { btnConfirmDeleteFinanceFormatDocumentNumber.click();}
+    public void TabFinanceListDocument() { tabFinanceListDocument.click();}
+    public String getTxtFinanceListDocumentPage(){return txtFinanceListDocumentPage.getText();}
+    public void BtnCreateFinanceListDocument() { btnCreateFinanceListDocument.click();}
+    public void BtnSelectMasterDocumentNameFinanceListDocument() { btnSelectMasterDocumentNameFinanceListDocument.click();}
+    public void SelectMasterDocumentNameFinanceListDocument() { selectMasterDocumentNameFinanceListDocument.click();}
+    public void InputDocumentNameFinanceListDocument(String inputDocumentNameFinanceListDocument) { this.inputDocumentNameFinanceListDocument.sendKeys(inputDocumentNameFinanceListDocument);}
+    public void BtnSaveFinanceListDocument() { btnSaveFinanceListDocument.click();}
+    public void BtnConfirmSaveFinanceListDocument() { btnConfirmSaveFinanceListDocument.click();}
+    public void BtnUploadFinanceListDocument() { btnUploadFinanceListDocument.click();}
+    public void BtnChooseFileDocumentFinanceListDocument(String btnChooseFileDocumentFinanceListDocument) { this.btnChooseFileDocumentFinanceListDocument.sendKeys(btnChooseFileDocumentFinanceListDocument);}
+    public void BtnSaveUploadFinanceListDocument() { btnSaveUploadFinanceListDocument.click();}
+    public void BtnConfirmSaveUploadFinanceListDocument() { btnConfirmSaveUploadFinanceListDocument.click();}
+    public void BtnEditFinanceListDocument() { btnEditFinanceListDocument.click();}
+    public void ClearDocumentNameFinanceListDocument() { inputDocumentNameFinanceListDocument.clear();}
+    public void BtnSaveEditFinanceListDocument() { btnSaveEditFinanceListDocument.click();}
+    public void BtnConfirmSaveEditFinanceListDocument() { btnConfirmSaveEditFinanceListDocument.click();}
+    public void BtnDeleteFinanceListDocument() { btnDeleteFinanceListDocument.click();}
+    public void BtnConfirmDeleteFinanceListDocument() { btnConfirmDeleteFinanceListDocument.click();}
 }

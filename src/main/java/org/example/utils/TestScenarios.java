@@ -96,7 +96,11 @@ public enum TestScenarios {
     T93("Delete Client"),
     T94("Enter HO Completed Page"),
     T95("View HO Completed Page"),
-    T96("Enter Finance Document Page");
+    T96("Enter Finance Document Page"),
+    T97("Create Finance Document Number"),
+    T98("Edit Finance Document Number"),
+    T99("Delete Finance Document Number");
+
 
 
 

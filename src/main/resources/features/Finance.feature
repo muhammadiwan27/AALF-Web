@@ -69,3 +69,18 @@ Feature: Finance Page Test
   Scenario: Enter Finance Document Page
     When User click tab finance document
     Then User get text title page finance document
+
+  Scenario: Create Finance Document Number
+    When User click button create finance document number
+    And User input finance master document name
+    And User input finance format document number
+    Then User save data finance document number
+
+  Scenario: Edit Finance Document Number
+    When User click icon edit finance document number
+    And User edit finance master document name
+    Then User save edit data finance document number
+
+  Scenario: Delete Finance Document Number
+    When User click button delete finance document number
+    Then User click button confirm delete finance document number

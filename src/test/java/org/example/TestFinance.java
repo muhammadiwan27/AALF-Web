@@ -385,4 +385,86 @@ public class TestFinance {
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page finance document");
     }
+
+ //Create Finance Document Number
+    @When("User click button create finance document number")
+    public void user_click_button_create_finance_document_number() {
+        Hooks.delay(1);
+        financePage.BtnCreateFinanceDocumentNumber();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create finance document number");
+    }
+
+    @And("User input finance master document name")
+    public void user_input_finance_master_document_name() {
+        Hooks.delay(1);
+        financePage.InputFinanceMasterDocumentName("Surat Pembelian");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input finance master document name");
+    }
+
+    @And("User input finance format document number")
+    public void user_input_finance_format_document_number() {
+        Hooks.delay(1);
+        financePage.InputFinanceFormatDocumentNumber("xxxx/PMB/MM/YYYY");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input finance format document number");
+    }
+
+    @Then("User save data finance document number")
+    public void user_save_data_finance_document_number() {
+        Hooks.delay(1);
+        financePage.BtnSaveFinanceDocumentNumber();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveFinanceDocumentNumber();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save data finance document number");
+    }
+
+//Edit Finance Document Number
+    @When("User click icon edit finance document number")
+    public void user_click_icon_edit_finance_document_number() {
+        Hooks.delay(1);
+        financePage.BtnEditFinanceDocumentNumber();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click icon edit finance document number");
+    }
+
+    @And("User edit finance master document name")
+    public void user_edit_finance_master_document_name() {
+        Hooks.delay(2);
+        financePage.ClearFinanceMasterDocumentName();
+        Hooks.delay(2);
+        financePage.InputFinanceFormatDocumentNumber("Surat Pembayaran");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit finance master document name");
+    }
+
+    @Then("User save edit data finance document number")
+    public void user_save_edit_data_finance_document_number() {
+        Hooks.delay(1);
+        financePage.BtnSaveFinanceDocumentNumber();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveFinanceDocumentNumber();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit data finance document number");
+    }
+
+//Delete Finance Document Number
+    @When("User click button delete finance document number")
+    public void user_click_button_delete_finance_document_number() {
+        Hooks.delay(1);
+        financePage.BtnDeleteFinanceFormatDocumentNumber();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete finance document number");
+    }
+
+    @Then("User click button confirm delete finance document number")
+    public void User_click_button_confirm_delete_finance_document_number() {
+        Hooks.delay(2);
+        financePage.BtnConfirmDeleteFinanceFormatDocumentNumber();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete finance document number");
+    }
 }
+

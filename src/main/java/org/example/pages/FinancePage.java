@@ -146,6 +146,31 @@ public class FinancePage {
     @FindBy(xpath = "(//h1[normalize-space()='Document'])[1]")
     WebElement txtFinanceDocumentPage;
 
+    @FindBy(xpath = "(//a[normalize-space()='Create'])[1]")
+    WebElement btnCreateFinanceDocumentNumber;
+
+    @FindBy(xpath = "(//input[@id='note'])[1]")
+    WebElement inputFinanceMasterDocumentName;
+
+    @FindBy(xpath = "(//input[@id='number'])[1]")
+    WebElement inputFinanceFormatDocumentNumber;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnSaveFinanceDocumentNumber;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveFinanceDocumentNumber;
+
+    @FindBy(xpath = "//tbody/tr[5]/td[4]/div[1]/a[1]/img[1]")
+    WebElement btnEditFinanceDocumentNumber;
+
+    @FindBy(xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/div[2]/main[1]/div[1]/main[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[5]/td[4]/div[1]/button[1]")
+    WebElement btnDeleteFinanceFormatDocumentNumber;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteFinanceFormatDocumentNumber;
+
+
 
 
 
@@ -189,8 +214,8 @@ public class FinancePage {
     public void BtnConfirmSaveDataClient() { btnConfirmSaveDataClient.click();}
     public void BtnEditClient() { btnEditClient.click();}
     public void ClearEmailClient() { inputEmailClient.clear();}
-    public void BtnDeleteClient() { btnDeleteClient.clear();}
-    public void BtnConfirmDeleteClient() { btnConfirmDeleteClient.clear();}
+    public void BtnDeleteClient() { btnDeleteClient.click();}
+    public void BtnConfirmDeleteClient() { btnConfirmDeleteClient.click();}
     public void TabHoCompleted() { tabHoCompleted.click();}
     public String getTxtHoCompletedPage(){return txtHoCompletedPage.getText();}
     public void BtnViewHoCompletedPage() { btnViewHoCompletedPage.click();}
@@ -198,5 +223,13 @@ public class FinancePage {
     public void BtnBackHoCompletedPage() { btnBackHoCompletedPage.click();}
     public void TabFinanceDocument() { tabFinanceDocument.click();}
     public String getTxtFinanceDocumentPage(){return txtFinanceDocumentPage.getText();}
+    public void BtnCreateFinanceDocumentNumber() { btnCreateFinanceDocumentNumber.click();}
+    public void InputFinanceMasterDocumentName(String inputFinanceMasterDocumentName) { this.inputFinanceMasterDocumentName.sendKeys(inputFinanceMasterDocumentName);}
+    public void InputFinanceFormatDocumentNumber(String inputFinanceFormatDocumentNumber) { this.inputFinanceFormatDocumentNumber.sendKeys(inputFinanceFormatDocumentNumber);}
+    public void BtnSaveFinanceDocumentNumber() { btnSaveFinanceDocumentNumber.click();}
+    public void BtnConfirmSaveFinanceDocumentNumber() { btnConfirmSaveFinanceDocumentNumber.click();}
+    public void BtnEditFinanceDocumentNumber() { btnEditFinanceDocumentNumber.click();}
+    public void ClearFinanceMasterDocumentName() { inputFinanceMasterDocumentName.clear();}
+    public void BtnDeleteFinanceFormatDocumentNumber() { btnDeleteFinanceFormatDocumentNumber.click();}
+    public void BtnConfirmDeleteFinanceFormatDocumentNumber() { btnConfirmDeleteFinanceFormatDocumentNumber.click();}
 }
-

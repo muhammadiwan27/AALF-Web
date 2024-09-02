@@ -593,5 +593,90 @@ public class TestFinance {
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button confirm delete finance list document");
     }
+
+//Enter Finance Payroll Page
+    @When("User click tab finance payroll")
+    public void user_click_tab_finance_payroll() {
+        Hooks.delay(1);
+        financePage.TabFinancePayroll();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab finance payroll");
+    }
+
+    @Then("User get text title page finance payroll")
+    public void user_get_text_title_page_finance_payroll() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinancePayrollPage(), "Payroll");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance payroll");
+    }
+
+//Create Finance Payroll Periode
+    @When("User click button create finance payroll periode")
+    public void user_click_button_create_finance_payroll_periode() {
+        Hooks.delay(1);
+        financePage.BtnCreateFinancePayrollPeriode();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create finance payroll priode");
+    }
+
+    @And("User select month finance payroll periode")
+    public void user_select_month_finance_payroll_periode() {
+        Hooks.delay(1);
+        financePage.InputMonthFinancePayrollPeriode("August");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select month finance payroll periode");
+    }
+
+    @And("User input first date finance payroll periode")
+    public void user_input_first_date_finance_payroll_periode() {
+        Hooks.delay(1);
+        financePage.InputFirstDateFinancePayrollPeriode("2024-08-01");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input first date finance payroll periode");
+    }
+
+    @And("User input end date finance payroll periode")
+    public void user_input_end_date_finance_payroll_periode() {
+        Hooks.delay(1);
+        financePage.InputEndDateFinancePayrollPeriode("2024-08-31");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input end date finance payroll periode");
+    }
+
+    @And("User input work days finance payroll periode")
+    public void user_input_work_days_finance_payroll_periode() {
+        Hooks.delay(1);
+        financePage.InputWorkDaysFinancePayrollPeriode("21");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input work days finance payroll periode");
+    }
+
+    @Then("User save data finance payroll periode")
+    public void user_save_data_finance_payroll_periode() {
+        Hooks.delay(1);
+        financePage.BtnSaveFinancePayrollPeriode();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveFinancePayrollPeriode();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save data finance list document");
+    }
+
+//Enter Finance Detail Periode Payroll
+    @When("User click icon edit payroll periode")
+    public void user_click_icon_edit_payroll_periode() {
+        Hooks.delay(1);
+        financePage.BtnEditFinanceDetailPayrollPeriode();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click icon edit payroll periode");
+    }
+
+    @Then("User get text title page detail periode payroll")
+    public void user_get_text_title_page_detail_periode_payroll() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinanceDetailPayrollPeriode(), "Detail Periode Payroll 2024-08");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page detail periode payroll");
+    }
 }
 

@@ -104,7 +104,10 @@ public enum TestScenarios {
     T101("Create Finance List Document"),
     T102("Upload document Finance List Document"),
     T103("Edit Finance List Document"),
-    T104("Delete Finance List Document");
+    T104("Delete Finance List Document"),
+    T105("Enter Finance Payroll Page"),
+    T106("Create Finance Payroll Periode"),
+    T107("Enter Finance Detail Periode Payroll");
 
 
 

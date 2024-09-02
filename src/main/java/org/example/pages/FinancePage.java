@@ -227,6 +227,39 @@ public class FinancePage {
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteFinanceListDocument;
 
+    @FindBy(xpath = "(//span[normalize-space()='Payroll'])[1]")
+    WebElement tabFinancePayroll;
+
+    @FindBy(xpath = "(//h1[normalize-space()='Payroll'])[1]")
+    WebElement txtFinancePayrollPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='Create Payroll Periode'])[1]")
+    WebElement btnCreateFinancePayrollPeriode;
+
+    @FindBy(xpath = "(//input[@id='month'])[1]")
+    WebElement inputMonthFinancePayrollPeriode;
+
+    @FindBy(xpath = "(//input[@placeholder='Start date'])[1]")
+    WebElement inputFirstDateFinancePayrollPeriode;
+
+    @FindBy(xpath = "(//input[@placeholder='End date'])[1]")
+    WebElement inputEndDateFinancePayrollPeriode;
+
+    @FindBy(xpath = "(//input[@id='workDays'])[1]")
+    WebElement inputWorkDaysFinancePayrollPeriode;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnSaveFinancePayrollPeriode;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveFinancePayrollPeriode;
+
+    @FindBy(xpath = "//tbody/tr[3]/td[5]/div[1]/a[1]/img[1]")
+    WebElement btnEditFinanceDetailPayrollPeriode;
+
+    @FindBy(xpath = "(//h1[normalize-space()='Detail Periode Payroll 2024-08'])[1]")
+    WebElement txtFinanceDetailPayrollPeriode;
+
 
 
 
@@ -309,4 +342,15 @@ public class FinancePage {
     public void BtnConfirmSaveEditFinanceListDocument() { btnConfirmSaveEditFinanceListDocument.click();}
     public void BtnDeleteFinanceListDocument() { btnDeleteFinanceListDocument.click();}
     public void BtnConfirmDeleteFinanceListDocument() { btnConfirmDeleteFinanceListDocument.click();}
+    public void TabFinancePayroll() { tabFinancePayroll.click();}
+    public String getTxtFinancePayrollPage(){return txtFinancePayrollPage.getText();}
+    public void BtnCreateFinancePayrollPeriode() { btnCreateFinancePayrollPeriode.click();}
+    public void InputMonthFinancePayrollPeriode(String inputMonthFinancePayrollPeriode) { this.inputMonthFinancePayrollPeriode.sendKeys(inputMonthFinancePayrollPeriode);}
+    public void InputFirstDateFinancePayrollPeriode(String inputFirstDateFinancePayrollPeriode) { this.inputFirstDateFinancePayrollPeriode.sendKeys(inputFirstDateFinancePayrollPeriode);}
+    public void InputEndDateFinancePayrollPeriode(String inputEndDateFinancePayrollPeriode) { this.inputEndDateFinancePayrollPeriode.sendKeys(inputEndDateFinancePayrollPeriode);}
+    public void InputWorkDaysFinancePayrollPeriode(String inputWorkDaysFinancePayrollPeriode) { this.inputWorkDaysFinancePayrollPeriode.sendKeys(inputWorkDaysFinancePayrollPeriode);}
+    public void BtnSaveFinancePayrollPeriode() { btnSaveFinancePayrollPeriode.click();}
+    public void BtnConfirmSaveFinancePayrollPeriode() { btnConfirmSaveFinancePayrollPeriode.click();}
+    public void BtnEditFinanceDetailPayrollPeriode() { btnEditFinanceDetailPayrollPeriode.click();}
+    public String getTxtFinanceDetailPayrollPeriode(){return txtFinanceDetailPayrollPeriode.getText();}
 }

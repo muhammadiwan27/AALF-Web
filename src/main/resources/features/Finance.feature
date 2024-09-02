@@ -108,3 +108,19 @@ Feature: Finance Page Test
   Scenario: Delete Finance List Document
     When User click button delete finance list document
     Then User click button confirm delete finance list document
+
+  Scenario: Enter Finance Payroll Page
+    When User click tab finance payroll
+    Then User get text title page finance payroll
+
+  Scenario: Create Finance Payroll Periode
+    When User click button create finance payroll periode
+    And User select month finance payroll periode
+    And User input first date finance payroll periode
+    And User input end date finance payroll periode
+    And User input work days finance payroll periode
+    Then User save data finance payroll periode
+
+  Scenario: Enter Finance Detail Periode Payroll
+    When User click icon edit payroll periode
+    Then User get text title page detail periode payroll

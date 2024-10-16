@@ -59,7 +59,7 @@ public class TestFinance {
 
 //Enter Task & Activity Report Finance Page
     @When("User click sub tab task activity report finance")
-    public void User_click_sub_tab_task_activity_report_finance() {
+    public void user_click_sub_tab_task_activity_report_finance() {
         Hooks.delay(1);
         financePage.TabTaskActivityReport();
         Hooks.delay(2);
@@ -72,6 +72,23 @@ public class TestFinance {
         Assert.assertEquals(financePage.getTxtTaskActivityReport(), "Task & Activity");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page task activity report finance");
+    }
+
+//Enter Task & Activity Summary Report Finance Page
+    @When("User click sub tab task activity summary report finance")
+    public void User_click_sub_tab_task_activity_summary_report_finance() {
+        Hooks.delay(1);
+        financePage.TabTaskActivitySummaryReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab task activity summary report finance");
+    }
+
+    @Then("User get text title page task activity summary report finance")
+    public void user_get_text_title_page_task_activity_summary_report_finance() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtTaskActivitySummaryReport(), "Task & Activity Summary");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page task activity summary report finance");
     }
 
 //Enter Client Report Finance Page
@@ -108,6 +125,23 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page administrative report finance");
     }
 
+//Enter Administrative Summary Report Finance Page
+    @When("User click sub tab administrative summary report finance")
+    public void user_click_sub_tab_administrative_summary_report_finance() {
+        Hooks.delay(1);
+        financePage.TabAdminstrativeSummaryReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab administrative summary report finance");
+    }
+
+    @Then("User get text title page administrative summary report finance")
+    public void user_get_text_title_page_administrative_summary_report_finance() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtAdministrativeSummaryReport(), "Administrative Summary");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page administrative summary report finance");
+    }
+
 //Enter Administrative Approval Report Finance Page
     @When("User click sub tab administrative approval report finance")
     public void user_click_sub_tab_administrative_approval_report_finance() {
@@ -123,6 +157,23 @@ public class TestFinance {
         Assert.assertEquals(financePage.getTxtAdministrativeApprovalReport(), "Administrative Approval");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page administrative approval report finance");
+    }
+
+//Enter HO Reimbursement Finance Page
+    @When("User click sub tab ho reimbursement report finance")
+    public void user_click_sub_tab_ho_reimbursement_report_finance() {
+        Hooks.delay(1);
+        financePage.TabHoReimbursementReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab ho reimbursement report finance");
+    }
+
+    @Then("User get text title page ho reimbursement report finance")
+    public void user_get_text_title_page_ho_reimbursement_report_finace() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtHoReimbursementReport(), "Admisnistrative");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page ho reimbursement report finance");
     }
 
 //Enter Client Page
@@ -677,6 +728,50 @@ public class TestFinance {
         Assert.assertEquals(financePage.getTxtFinanceDetailPayrollPeriode(), "Detail Periode Payroll 2024-08");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page detail periode payroll");
+    }
+
+//Edit Finance Payroll Employee
+    @When("User click icon edit finance payroll employee")
+    public void user_click_icon_edit_finance_payroll_employee() {
+        Hooks.delay(1);
+        financePage.BtnEditFinancePayrollEmployee();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click icon edit finance payroll employee");
+    }
+
+    @And("User add document other allowances finance payroll employee")
+    public void user_add_document_other_allowances_finance_payroll_employee() {
+        Hooks.delay(2);
+        financePage.InputOtherAllowancesFinancePayrollEmployee("2310000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User add document other allowances finance payroll employee");
+    }
+
+    @Then("User save edit data finance payroll employee")
+    public void user_save_edit_data_finance_payroll_employee() {
+        Hooks.delay(1);
+        financePage.BtnSaveEditFinancePayrollEmployee();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveEditFinancePayrollEmployee();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit data finance payroll employee");
+    }
+
+//Delete Finance Payroll Periode
+    @When("User click button delete payroll periode")
+    public void user_click_button_delete_payroll_periode() {
+        Hooks.delay(1);
+        financePage.BtnDeletePayrollPeriode();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete payroll periode");
+    }
+
+    @Then("User click button confirm delete payroll periode")
+    public void User_click_button_confirm_delete_payroll_periode() {
+        Hooks.delay(2);
+        financePage.BtnConfirmDeletePayrollPeriode();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete payroll periode");
     }
 }
 

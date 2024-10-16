@@ -90,20 +90,20 @@ public class TestDashboard {
     }
 
 //Check HO Completed Dashboard Aplikasi Sipanda-Unik
-    @When("User click tab ho completed")
-    public void user_click_tab_ho_completed() {
+    @When("User click tab ho on completed")
+    public void user_click_tab_ho_on_completed() {
         Hooks.delay(2);
         dashboardPage.TabHoOnCompletedDashboard();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click tab ho completed");
+        extentTest.log(LogStatus.PASS, "User click tab ho on completed");
     }
 
-    @Then("User close tab ho completed")
-    public void user_close_tab_ho_completed() {
+    @Then("User close tab ho on completed")
+    public void user_close_tab_ho_on_completed() {
         Hooks.delay(2);
         dashboardPage.ButtonCloseHoCompletedDashboard();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User close tab ho completed");
+        extentTest.log(LogStatus.PASS, "User close tab ho on completed");
     }
 
 //Check Total Task Dashboard Aplikasi Sipanda-Unik

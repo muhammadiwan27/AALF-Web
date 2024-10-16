@@ -14,8 +14,8 @@ Feature: Dashboard Page Test
     Then User close tab total ho on progress
 
   Scenario: Check HO Completed Dashboard Aplikasi Sipanda-Unik
-    When User click tab ho completed
-    Then User close tab ho completed
+    When User click tab ho on completed
+    Then User close tab ho on completed
 
   Scenario: Check Total Task Dashboard Aplikasi Sipanda-Unik
     When User click tab total task

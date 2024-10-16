@@ -32,6 +32,12 @@ public class FinancePage {
     @FindBy(xpath = "(//li[normalize-space()='Task & Activity'])[1]")
     WebElement txtTaskActivityReport;
 
+    @FindBy(xpath = "(//button[normalize-space()='Task & Activity Summary'])[1]")
+    WebElement tabTaskActivitySummaryReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='Task & Activity Summary'])[1]")
+    WebElement txtTaskActivitySummaryReport;
+
     @FindBy(xpath = "(//button[normalize-space()='Client'])[1]")
     WebElement tabClientReport;
 
@@ -44,11 +50,23 @@ public class FinancePage {
     @FindBy(xpath = "(//li[normalize-space()='Administrative'])[1]")
     WebElement txtAdministrativeReport;
 
+    @FindBy(xpath = "(//button[normalize-space()='Administrative Summary'])[1]")
+    WebElement tabAdminstrativeSummaryReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='Administrative Summary'])[1]")
+    WebElement txtAdministrativeSummaryReport;
+
     @FindBy(xpath = "(//button[normalize-space()='Administrative Approval'])[1]")
     WebElement tabAdminstrativeApprovalReport;
 
     @FindBy(xpath = "(//li[normalize-space()='Administrative Approval'])[1]")
     WebElement txtAdministrativeApprovalReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='HO Reimbursement'])[1]")
+    WebElement tabHoReimbursementReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='HO Reimbursement'])[1]")
+    WebElement txtHoReimbursementReport;
 
     @FindBy(xpath = "(//span[normalize-space()='Client'])[1]")
     WebElement tabClient;
@@ -260,7 +278,23 @@ public class FinancePage {
     @FindBy(xpath = "(//h1[normalize-space()='Detail Periode Payroll 2024-08'])[1]")
     WebElement txtFinanceDetailPayrollPeriode;
 
+    @FindBy(xpath = "//tbody/tr[29]/td[5]/div[1]/a[1]/img[1]")
+    WebElement btnEditFinancePayrollEmployee;
 
+    @FindBy(xpath = "(//input[@placeholder='Other allowances'])[1]")
+    WebElement inputOtherAllowancesFinancePayrollEmployee;
+
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditFinancePayrollEmployee;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditFinancePayrollEmployee;
+
+    @FindBy(xpath = "(//button)[12]")
+    WebElement btnDeletePayrollPeriode;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeletePayrollPeriode;
 
 
 
@@ -274,12 +308,18 @@ public class FinancePage {
     public String getTxtHoReport(){return txtHoReport.getText();}
     public void TabTaskActivityReport() { tabTaskActivityReport.click();}
     public String getTxtTaskActivityReport(){return txtTaskActivityReport.getText();}
+    public void TabTaskActivitySummaryReport() { tabTaskActivitySummaryReport.click();}
+    public String getTxtTaskActivitySummaryReport(){return txtTaskActivitySummaryReport.getText();}
     public void TabClientReport() { tabClientReport.click();}
     public String getTxtClientReport(){return txtClientReport.getText();}
     public void TabAdminstrativeReport() { tabAdminstrativeReport.click();}
     public String getTxtAdministrativeReport(){return txtAdministrativeReport.getText();}
+    public void TabAdminstrativeSummaryReport() { tabAdminstrativeSummaryReport.click();}
+    public String getTxtAdministrativeSummaryReport(){return txtAdministrativeSummaryReport.getText();}
     public void TabAdminstrativeApprovalReport() { tabAdminstrativeApprovalReport.click();}
     public String getTxtAdministrativeApprovalReport(){return txtAdministrativeApprovalReport.getText();}
+    public void TabHoReimbursementReport() { tabHoReimbursementReport.click();}
+    public String getTxtHoReimbursementReport(){return txtHoReimbursementReport.getText();}
     public void TabClient() { tabClient.click();}
     public String getTxtClientPage(){return txtClientPage.getText();}
     public void BtnAddClient() { btnAddClient.click();}
@@ -353,4 +393,16 @@ public class FinancePage {
     public void BtnConfirmSaveFinancePayrollPeriode() { btnConfirmSaveFinancePayrollPeriode.click();}
     public void BtnEditFinanceDetailPayrollPeriode() { btnEditFinanceDetailPayrollPeriode.click();}
     public String getTxtFinanceDetailPayrollPeriode(){return txtFinanceDetailPayrollPeriode.getText();}
+    public void BtnEditFinancePayrollEmployee() { btnEditFinancePayrollEmployee.click();}
+    public void InputOtherAllowancesFinancePayrollEmployee(String inputOtherAllowancesFinancePayrollEmployee) { this.inputOtherAllowancesFinancePayrollEmployee.sendKeys(inputOtherAllowancesFinancePayrollEmployee);}
+    public void BtnSaveEditFinancePayrollEmployee() { btnSaveEditFinancePayrollEmployee.click();}
+    public void BtnConfirmSaveEditFinancePayrollEmployee() { btnConfirmSaveEditFinancePayrollEmployee.click();}
+    public void BtnDeletePayrollPeriode() { btnDeletePayrollPeriode.click();}
+    public void BtnConfirmDeletePayrollPeriode() { btnConfirmDeletePayrollPeriode.click();}
 }
+
+
+
+
+
+

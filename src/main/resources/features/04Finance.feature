@@ -7,9 +7,13 @@ Feature: Finance Page Test
     When User click tab ho report finance
     Then User get text title page ho report finance
 
-  Scenario: Enter Task & Activity Report Finance Page
+  Scenario: Enter Task Activity Report Finance Page
     When User click sub tab task activity report finance
     Then User get text title page task activity report finance
+
+  Scenario: Enter Task Activity Summary Report Finance Page
+    When User click sub tab task activity summary report finance
+    Then User get text title page task activity summary report finance
 
   Scenario: Enter Client Report Finance Page
     When User click sub tab client report finance
@@ -26,6 +30,10 @@ Feature: Finance Page Test
   Scenario: Enter Administrative Approval Report Finance Page
     When User click sub tab administrative approval report finance
     Then User get text title page administrative approval report finance
+
+  Scenario: Enter HO Reimbursement Finance Page
+    When User click sub tab ho reimbursement report finance
+    Then User get text title page ho reimbursement report finance
 
   Scenario: Enter Client Page
     When User click tab client
@@ -124,3 +132,12 @@ Feature: Finance Page Test
   Scenario: Enter Finance Detail Periode Payroll
     When User click icon edit payroll periode
     Then User get text title page detail periode payroll
+
+  Scenario: Edit Finance Payroll Employee
+    When User click icon edit finance payroll employee
+    And User add document other allowances finance payroll employee
+    Then User save edit data finance payroll employee
+
+  Scenario: Delete Finance Payroll Periode
+    When User click button delete payroll periode
+    Then User click button confirm delete payroll periode

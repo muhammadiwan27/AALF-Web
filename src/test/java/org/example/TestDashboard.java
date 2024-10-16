@@ -55,9 +55,28 @@ public class TestDashboard {
         extentTest.log(LogStatus.PASS, "User get text title page dashboard");
     }
 
+//Enter Dashboard Employee
+    @When("User click tab dashboard employee")
+    public void user_click_tab_dashboard_employee() {
+        Hooks.delay(2);
+        dashboardPage.TabDashboardEmployee();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab dashboard employee");
+    }
+
+    @Then("User get text title page dashboard employee")
+    public void user_get_text_title_page_dashboard_employee() {
+        Hooks.delay(2);
+        dashboardPage.getTxtDashboardEmployee();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User get text title page dashboard employee");
+    }
+
 //Check Total HO Overall Dashboard Aplikasi Sipanda-Unik
     @When("User click tab total ho overall")
     public void user_click_tab_total_ho_overall() {
+        Hooks.delay(2);
+        dashboardPage.TabDashboardHo();
         Hooks.delay(2);
         dashboardPage.TabTotalHoOverallDashboard();
         Hooks.delay(2);

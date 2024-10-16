@@ -15,6 +15,15 @@ public class DashboardPage {
     @FindBy(xpath = "//span[normalize-space()='Dashboard']")
     WebElement txtDashboard;
 
+    @FindBy(xpath = "(//button[normalize-space()='Dashboard'])[1]")
+    WebElement tabDashboardHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Dashboard Employee'])[1]")
+    WebElement tabDashboardEmployee;
+
+    @FindBy(xpath = "(//h1[normalize-space()='Dashboard Employee'])[1]")
+    WebElement txtDashboardEmployee;
+
     @FindBy(xpath = "(//p[normalize-space()='Total HO Overall'])[1]")
     WebElement tabTotalHoOverallDashboard;
 
@@ -146,6 +155,9 @@ public class DashboardPage {
 
 
     public String getTxtDashboard() { return txtDashboard.getText();}
+    public void TabDashboardHo() { tabDashboardHo.click();}
+    public void TabDashboardEmployee() { tabDashboardEmployee.click();}
+    public String getTxtDashboardEmployee() { return txtDashboardEmployee.getText();}
     public void TabTotalHoOverallDashboard() { tabTotalHoOverallDashboard.click();}
     public void ButtonCloseTotalHoOverallDashboard() { buttonCloseTotalHoOverallDashboard.click();}
     public void TabHoOnProgressDashboard() { tabHoOnProgressDashboard.click();}

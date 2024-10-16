@@ -5,6 +5,10 @@ Feature: Dashboard Page Test
     And User enter password
     Then User get text title page dashboard
 
+  Scenario: Enter Dashboard Employee
+    When User click tab dashboard employee
+    Then User get text title page dashboard employee
+
   Scenario: Check Total HO Overall Dashboard Aplikasi Sipanda-Unik
     When User click tab total ho overall
     Then User close tab total ho overall

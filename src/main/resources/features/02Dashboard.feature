@@ -67,7 +67,6 @@ Feature: Dashboard Page Test
     And User input note approval overdue deadline task
     Then User save approval overdue deadline task
 
-
   Scenario: Proceed upcoming deadline task Dashboard Aplikasi Sipanda-Unik
     When User click on id ho upcoming deadline task to proceed
     And User select start date proceed the task upcoming deadline

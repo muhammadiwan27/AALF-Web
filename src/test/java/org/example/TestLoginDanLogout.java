@@ -30,55 +30,55 @@ public class TestLoginDanLogout {
 
     @When("User enter valid username")
     public void user_enter_valid_username1(){
-        Hooks.delay(1);
+        Hooks.delay(2);
         loginDanLogoutPage.enterUsername("go");
-        Hooks.delay(1);
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User enter valid username");
     }
 
     @And("User enter valid password")
     public void user_enter_valid_password(){
-        Hooks.delay(1);
+        Hooks.delay(2);
         loginDanLogoutPage.enterPassword("go");
-        Hooks.delay(1);
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User enter valid password");
     }
 
     @Then("User click button login")
     public void user_click_button_login(){
-        Hooks.delay(1);
+        Hooks.delay(2);
         loginDanLogoutPage.BtnLogin();
-        Hooks.delay(1);
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button login");
     }
 
 //Login Invalid Functionality Test (Input invalid username & Input invalid password)
     @When("User enter invalid username")
     public void user_enter_invalid_username(){
-        Hooks.delay(1);
+        Hooks.delay(2);
         loginDanLogoutPage.BtnLogout();
-        Hooks.delay(1);
+        Hooks.delay(2);
         loginDanLogoutPage.BtnLogoutOk();
-        Hooks.delay(1);
+        Hooks.delay(2);
         loginDanLogoutPage.enterUsername("qa.tester@hadir.con");
         extentTest.log(LogStatus.PASS,"User enter invalid username");
     }
 
     @And("User enter invalid password")
     public void user_enter_invalid_password(){
-        Hooks.delay(1);
+        Hooks.delay(2);
         loginDanLogoutPage.enterPassword("admin1234");
-        Hooks.delay(1);
+        Hooks.delay(2);
         loginDanLogoutPage.BtnLogin();
-        Hooks.delay(1);
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS,"User enter invalid password");
     }
 
     @Then("User get text invalid credentials")
     public void user_get_text_invalid_credentials(){
-        Hooks.delay(1);
+        Hooks.delay(2);
         Assert.assertEquals(loginDanLogoutPage.getTxtInvalidCredentials(),"Username or Password do not match");
-        Hooks.delay(1);
+        Hooks.delay(2);
         extentTest.log(LogStatus.PASS,"User get text invalid credentials");
     }
 

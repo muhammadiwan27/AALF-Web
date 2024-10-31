@@ -400,6 +400,17 @@ Feature: Ho Page Test
     When User click button delete ho reimbursement
     Then User click button confirm delete ho reimbursement
 
+  Scenario: Create HO Overtime HO Working Plan
+    When User click button create reimbursement
+    And User select date ho reimbursement
+    And User input note ho reimbursement
+    And User select member on duty ho reimbursement
+    And User input list of expenses reimbursement ho reimbursement
+    And User input amount reimbursement ho reimbursement
+    And User input note reimbursement ho reimbursement
+    And User attach receipt reimbursement ho reimbursement
+    Then User click button create ho reimbursement
+
   Scenario: View HO Activities HO Working Plan
     When User click button view ho activities
     Then User click button back view ho activities

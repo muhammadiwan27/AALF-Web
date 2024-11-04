@@ -141,3 +141,22 @@ Feature: Finance Page Test
   Scenario: Delete Finance Payroll Periode
     When User click button delete payroll periode
     Then User click button confirm delete payroll periode
+
+  Scenario: Enter Finance Reimbursement Page
+    When User click tab finance reimbursement
+    Then User get text title page finance reimbursement
+
+  Scenario: Create Finance Reimbursement
+    When User click button create finance reimbursement
+    And User select date finance reimbursement
+    And User input note finance reimbursement
+    And User select member on duty finance reimbursement
+    And User input list of expenses finance reimbursement
+    And User input amount finance reimbursement
+    And User add receipt finance reimbursement
+    Then User save data finance reimbursement
+
+  Scenario: Edit Finance Reimbursement
+    When User click icon edit finance payroll employee
+    And User add document other allowances finance payroll employee
+    Then User save edit data finance payroll employee

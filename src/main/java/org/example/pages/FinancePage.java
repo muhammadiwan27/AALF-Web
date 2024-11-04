@@ -296,6 +296,51 @@ public class FinancePage {
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeletePayrollPeriode;
 
+    @FindBy(xpath = "(//span[normalize-space()='Reimbursement'])[1]")
+    WebElement tabFinanceReibursement;
+
+    @FindBy(xpath = "(//li[normalize-space()='Finance Reimbursement'])[1]")
+    WebElement txtFinanceReimbursementPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='Create'])[1]")
+    WebElement btnCreateFinanceReimbursement;
+
+    @FindBy(xpath = "(//input[@placeholder='Date'])[1]")
+    WebElement btnDateFinanceReimbursement;
+
+    @FindBy(xpath = "//button[normalize-space()='Today']")
+    WebElement btnSelectTodayDateFinanceReimbursement;
+
+    @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
+    WebElement inputNoteFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select Team'])[1]")
+    WebElement btnSelectTeamMemberOnDutyFinanceReimbursement;
+
+    @FindBy(xpath = "(//div[contains(text(),'Ekania Salsabila Khairunissa')])[1]")
+    WebElement selectMemberOnDutyFinanceReimbursement1;
+
+    @FindBy(xpath = "(//div[contains(text(),'admin si panda')])[1]")
+    WebElement selectMemberOnDutyFinanceReimbursement2;
+
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnSelectMemberOnDutyFinanceReimbursement;
+
+    @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
+    WebElement inputListOfExpensesFinanceReimbursement;
+
+    @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
+    WebElement inputAmountFinanceReimbursement;
+
+    @FindBy(xpath = "(//input[@id='fBukti'])[1]")
+    WebElement btnUploadReceiptFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnSaveFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveFinanceReimbursement;
+
 
 
 
@@ -399,10 +444,20 @@ public class FinancePage {
     public void BtnConfirmSaveEditFinancePayrollEmployee() { btnConfirmSaveEditFinancePayrollEmployee.click();}
     public void BtnDeletePayrollPeriode() { btnDeletePayrollPeriode.click();}
     public void BtnConfirmDeletePayrollPeriode() { btnConfirmDeletePayrollPeriode.click();}
+    public void TabFinanceReibursement() { tabFinanceReibursement.click();}
+    public String getTxtFinanceReimbursementPage(){return txtFinanceReimbursementPage.getText();}
+    public void BtnCreateFinanceReimbursement() { btnCreateFinanceReimbursement.click();}
+    public void BtnDateFinanceReimbursement() { btnDateFinanceReimbursement.click();}
+    public void BtnSelectTodayDateFinanceReimbursement() { btnSelectTodayDateFinanceReimbursement.click();}
+    public void InputNoteFinanceReimbursement(String inputNoteFinanceReimbursement) { this.inputNoteFinanceReimbursement.sendKeys(inputNoteFinanceReimbursement);}
+    public void BtnSelectTeamMemberOnDutyFinanceReimbursement() { btnSelectTeamMemberOnDutyFinanceReimbursement.click();}
+    public void SelectMemberOnDutyFinanceReimbursement1() { selectMemberOnDutyFinanceReimbursement1.click();}
+    public void SelectMemberOnDutyFinanceReimbursement2() { selectMemberOnDutyFinanceReimbursement2.click();}
+    public void BtnSelectMemberOnDutyFinanceReimbursement() { btnSelectMemberOnDutyFinanceReimbursement.click();}
+    public void InputListOfExpensesFinanceReimbursement(String inputListOfExpensesFinanceReimbursement) { this.inputListOfExpensesFinanceReimbursement.sendKeys(inputListOfExpensesFinanceReimbursement);}
+    public void InputAmountFinanceReimbursement(String inputAmountFinanceReimbursement) { this.inputAmountFinanceReimbursement.sendKeys(inputAmountFinanceReimbursement);}
+    public void BtnUploadReceiptFinanceReimbursement(String btnUploadReceiptFinanceReimbursement) { this.btnUploadReceiptFinanceReimbursement.sendKeys(btnUploadReceiptFinanceReimbursement);}
+    public void BtnSaveFinanceReimbursement() { btnSaveFinanceReimbursement.click();}
+    public void BtnConfirmSaveFinanceReimbursement() { btnConfirmSaveFinanceReimbursement.click();}
 }
-
-
-
-
-
 

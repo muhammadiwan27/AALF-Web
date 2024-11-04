@@ -120,7 +120,10 @@ public enum TestScenarios {
     T119("Create Finance Payroll Periode"),
     T120("Enter Finance Detail Periode Payroll"),
     T121("Edit Finance Payroll Employee"),
-    T122("Delete Finance Payroll Periode");
+    T122("Delete Finance Payroll Periode"),
+    T123("Enter Finance Reimbursement Page"),
+    T124("Create Finance Reimbursement"),
+    T125("Edit Finance Reimbursement");
 
 
     private String testCaseName;

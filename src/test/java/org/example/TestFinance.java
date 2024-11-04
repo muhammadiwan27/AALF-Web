@@ -773,5 +773,97 @@ public class TestFinance {
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button confirm delete payroll periode");
     }
+
+//Enter Finance Reimbursement Page
+    @When("User click tab finance reimbursement")
+    public void user_click_tab_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.TabFinanceReibursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab finance reimbursement");
+    }
+
+    @Then("User get text title page finance reimbursement")
+    public void user_get_text_title_page_finance_reimbursement() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinanceReimbursementPage(), "Finance Reimbursement");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance reimbursement");
+    }
+
+//Create Finance Payroll Reimbursement
+    @When("User click button create finance reimbursement")
+    public void user_click_button_create_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnCreateFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create finance reimbursement");
+    }
+
+    @And("User select date finance reimbursement")
+    public void user_select_date_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnDateFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.BtnSelectTodayDateFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select date finance reimbursement");
+    }
+
+    @And("User input note finance reimbursement")
+    public void user_input_note_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.InputNoteFinanceReimbursement("Pembelian Makanan");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input note finance reimbursement");
+    }
+
+    @And("User select member on duty finance reimbursement")
+    public void user_select_member_on_duty_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnSelectTeamMemberOnDutyFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.SelectMemberOnDutyFinanceReimbursement1();
+        Hooks.delay(2);
+        financePage.SelectMemberOnDutyFinanceReimbursement2();
+        Hooks.delay(2);
+        financePage.BtnSelectMemberOnDutyFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select member on duty finance reimbursement");
+    }
+
+    @And("User input list of expenses finance reimbursement")
+    public void user_input_list_of_expenses_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.InputListOfExpensesFinanceReimbursement("Hoka-Hoka Bento");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input list of expenses finance reimbursement");
+    }
+
+    @And("User input amount finance reimbursement")
+    public void user_input_amount_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.InputAmountFinanceReimbursement("56000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input amount reimbursement");
+    }
+
+    @And("User add receipt finance reimbursement")
+    public void user_add_receipt_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnUploadReceiptFinanceReimbursement("C:\\Users\\M1403QA\\Downloads\\Report Master Document.xlsx");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User add receipt reimbursement");
+    }
+
+    @Then("User save data finance reimbursement")
+    public void user_save_data_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnSaveFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save data finance reimbursement");
+    }
 }
 

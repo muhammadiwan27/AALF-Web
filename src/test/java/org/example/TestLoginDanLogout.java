@@ -31,7 +31,7 @@ public class TestLoginDanLogout {
     @When("User enter valid username")
     public void user_enter_valid_username1(){
         Hooks.delay(2);
-        loginDanLogoutPage.enterUsername("go");
+        loginDanLogoutPage.EnterUsername("go");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User enter valid username");
     }
@@ -39,7 +39,7 @@ public class TestLoginDanLogout {
     @And("User enter valid password")
     public void user_enter_valid_password(){
         Hooks.delay(2);
-        loginDanLogoutPage.enterPassword("go");
+        loginDanLogoutPage.EnterPassword("go");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User enter valid password");
     }
@@ -60,14 +60,14 @@ public class TestLoginDanLogout {
         Hooks.delay(2);
         loginDanLogoutPage.BtnLogoutOk();
         Hooks.delay(2);
-        loginDanLogoutPage.enterUsername("qa.tester@hadir.con");
+        loginDanLogoutPage.EnterUsername("qa.tester@hadir.con");
         extentTest.log(LogStatus.PASS,"User enter invalid username");
     }
 
     @And("User enter invalid password")
     public void user_enter_invalid_password(){
         Hooks.delay(2);
-        loginDanLogoutPage.enterPassword("admin1234");
+        loginDanLogoutPage.EnterPassword("admin1234");
         Hooks.delay(2);
         loginDanLogoutPage.BtnLogin();
         Hooks.delay(2);

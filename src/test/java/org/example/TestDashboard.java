@@ -29,18 +29,18 @@ public class TestDashboard {
     @When("User enter username")
     public void user_enter_username() {
         Hooks.delay(2);
-        loginPage.clearUsername();
+        loginPage.ClearUsername();
         Hooks.delay(2);
-        loginPage.enterUsername("go");
+        loginPage.EnterUsername("go");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User enter username");
     }
 
     @And("User enter password")
     public void user_enter_password() {
-        loginPage.clearpassword();
+        loginPage.Clearpassword();
         Hooks.delay(2);
-        loginPage.enterPassword("go");
+        loginPage.EnterPassword("go");
         Hooks.delay(2);
         loginPage.BtnLogin();
         Hooks.delay(3);

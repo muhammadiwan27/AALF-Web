@@ -37,12 +37,12 @@ public class LoginDanLogoutPage {
 
 
 
-    public void clearUsername() { username.clear();}
-    public void clearpassword() { password.clear();}
+    public void ClearUsername() { username.clear();}
+    public void Clearpassword() { password.clear();}
     public void BtnLogout() { btnLogout.click();}
     public void BtnLogoutOk() { btnLogoutOk.click();}
-    public void enterUsername(String username) {this.username.sendKeys(username);}
-    public void enterPassword(String password){
+    public void EnterUsername(String username) {this.username.sendKeys(username);}
+    public void EnterPassword(String password){
         this.password.sendKeys(password);
     }
     public void BtnLogin(){

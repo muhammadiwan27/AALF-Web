@@ -123,7 +123,10 @@ public enum TestScenarios {
     T122("Delete Finance Payroll Periode"),
     T123("Enter Finance Reimbursement Page"),
     T124("Create Finance Reimbursement"),
-    T125("Edit Finance Reimbursement");
+    T125("Edit Finance Reimbursement"),
+    T126("View Finance Reimbursement"),
+    T127("Approval Finance Reimbursement"),
+    T128("Delete Finance Reimbursement");
 
 
     private String testCaseName;

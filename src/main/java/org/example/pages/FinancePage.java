@@ -341,6 +341,30 @@ public class FinancePage {
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmSaveFinanceReimbursement;
 
+    @FindBy(xpath = "(//img[@src='/img/icon/pen.svg'])[1]")
+    WebElement btnEditFinanceReimbursement;
+
+    @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
+    WebElement inputEditNoteFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnSaveEditFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditFinanceReimbursement;
+
+    @FindBy(xpath = "(//a)[53]")
+    WebElement btnViewFinanceReimbursement;
+
+    @FindBy(xpath = "(//a[normalize-space()='Back'])[1]")
+    WebElement btnBackViewFinanceReimbursement;
+
+    @FindBy(xpath = "(//img[@src='/img/icon/trash.svg'])[1]")
+    WebElement btnDeleteFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteFinanceReimbursement;
+
 
 
 
@@ -459,5 +483,13 @@ public class FinancePage {
     public void BtnUploadReceiptFinanceReimbursement(String btnUploadReceiptFinanceReimbursement) { this.btnUploadReceiptFinanceReimbursement.sendKeys(btnUploadReceiptFinanceReimbursement);}
     public void BtnSaveFinanceReimbursement() { btnSaveFinanceReimbursement.click();}
     public void BtnConfirmSaveFinanceReimbursement() { btnConfirmSaveFinanceReimbursement.click();}
+    public void BtnEditFinanceReimbursement() { btnEditFinanceReimbursement.click();}
+    public void ClearNoteFinanceReimbursement() { inputNoteFinanceReimbursement.clear();}
+    public void InputEditNoteFinanceReimbursement(String inputEditNoteFinanceReimbursement) { this.inputEditNoteFinanceReimbursement.sendKeys(inputEditNoteFinanceReimbursement);}
+    public void BtnSaveEditFinanceReimbursement() { btnSaveEditFinanceReimbursement.click();}
+    public void BtnConfirmSaveEditFinanceReimbursement() { btnConfirmSaveEditFinanceReimbursement.click();}
+    public void BtnViewFinanceReimbursement() { btnViewFinanceReimbursement.click();}
+    public void BtnBackViewFinanceReimbursement() { btnBackViewFinanceReimbursement.click();}
+    public void BtnDeleteFinanceReimbursement() { btnDeleteFinanceReimbursement.click();}
+    public void BtnConfirmDeleteFinanceReimbursement() { btnConfirmDeleteFinanceReimbursement.click();}
 }
-

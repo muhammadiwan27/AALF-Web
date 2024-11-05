@@ -157,6 +157,19 @@ Feature: Finance Page Test
     Then User save data finance reimbursement
 
   Scenario: Edit Finance Reimbursement
-    When User click icon edit finance payroll employee
-    And User add document other allowances finance payroll employee
-    Then User save edit data finance payroll employee
+    When User click icon edit finance reimbursement
+    And User edit note finance reimbursement
+    Then User save edit data finance reimbursement
+
+  Scenario: View Finance Payment
+    When User click button view finance payment
+
+  Scenario: Approval Finance Reimbursement
+    When User click button approval finance reimbursement
+    And User select approval finance reimbursement
+    Then User click button save approval finance reimbursement
+
+  Scenario: Delete Finance Reimbursement
+    When User click button delete finance reimbursement
+    Then User click button confirm delete finance reimbursement
+

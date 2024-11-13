@@ -304,34 +304,14 @@ public class TestDashboard {
         extentTest.log(LogStatus.PASS, "User click on id ho overdue deadline task to proceed");
     }
 
-    @And("User select approval overdue deadline task")
-    public void user_select_approval_overdue_deadline_task() {
+    @Then("User save proceed overdue deadline task")
+    public void user_save_proceed_overdue_deadline_task() {
         Hooks.delay(2);
-        hoPage.BtnSelectJpApprovalTask();
+        hoPage.BtnSaveProceedTheTask();
         Hooks.delay(2);
-        hoPage.SelectJpApprovalTask();
+        hoPage.BtnConfirmSaveProceedTheTask();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select approval overdue deadline task");
-    }
-
-    @And("User input note approval overdue deadline task")
-    public void user_input_note_approval_overdue_deadline_task() {
-        Hooks.delay(2);
-        hoPage.InputDeleteNoteJpApprovalTask();
-        Hooks.delay(2);
-        hoPage.InputNoteJpApprovalTask("Task sudah selesai di kerjakan");
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note approval overdue deadline task");
-    }
-
-    @Then("User save approval overdue deadline task")
-    public void user_save_approval_overdue_deadline_task() {
-        Hooks.delay(2);
-        hoPage.BtnSaveJpApprovalTask();
-        Hooks.delay(2);
-        hoPage.BtnConfirmSaveJpApprovalTask();
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User save approval overdue deadline task");
+        extentTest.log(LogStatus.PASS, "User save proceed overdue deadline task");
     }
 
 //Proceed upcoming deadline task Dashboard Aplikasi Sipanda-Unik
@@ -375,7 +355,7 @@ public class TestDashboard {
     @And("User upload activity photos proceed the task upcoming deadline")
     public void user_upload_activity_photos_proceed_the_task_upcoming_deadline() {
         Hooks.delay(2);
-        hoPage.BtnUploadActivityPhotosProceedTheTask("C:\\Users\\M1403QA\\Downloads\\WhatsApp Image 2023-11-09 at 13.17.15_e44eaf04.jpg");
+        hoPage.BtnUploadActivityPhotosProceedTheTask("C:\\Users\\M1403QA\\Downloads\\MOGI-MAULID-2024.png");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User upload activity photos proceed the task upcoming deadline");
     }
@@ -383,7 +363,7 @@ public class TestDashboard {
     @And("User upload activity documents proceed the task upcoming deadline")
     public void user_upload_activity_documents_proceed_the_task_upcoming_deadline() {
         Hooks.delay(2);
-        hoPage.BtnUploadActivityDocumentsProceedTheTask("C:\\Users\\M1403QA\\Downloads\\Daily Report 2024-01-26.pdf");
+        hoPage.BtnUploadActivityDocumentsProceedTheTask("C:\\Users\\M1403QA\\Downloads\\Resume Daily Report (17).pdf");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User upload activity documents proceed the task upcoming deadline");
     }

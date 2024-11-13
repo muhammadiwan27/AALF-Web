@@ -365,7 +365,113 @@ public class FinancePage {
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteFinanceReimbursement;
 
+    @FindBy(xpath = "(//span[normalize-space()='Payment'])[1]")
+    WebElement tabFinancePayment;
 
+    @FindBy(xpath = "(//li[normalize-space()='Finance Reimbursement'])[1]")
+    WebElement txtFinancePaymentPage;
+
+    @FindBy(xpath = "(//a[@class='btn btn-sm !text-black'][normalize-space()='Payment'])[1]")
+    WebElement btnPaymentNeedToPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Upload'])[1]")
+    WebElement btnUploadDocumentPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//input[@placeholder='0'])[1]")
+    WebElement inputAmountApprovePaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnCreatePaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmCreatePaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[@type='button'][normalize-space()='Payment'])[1]")
+    WebElement tabPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//a[@class='btn-icon btn-icon-sm'])[1]")
+    WebElement btnPencilPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnSaveEditPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//a[@class='btn btn-sm rounded-none bg-primary-01'][normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApprovalPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSavePartnerApprovalPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmPartnerApprovalPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//a)[48]")
+    WebElement btnViewApprovedPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewApprovedPaymentHoReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Finance Reimbursement'])[1]")
+    WebElement tabFinanceReimbursementPayment;
+
+    @FindBy(xpath = "(//li[normalize-space()='Finance Reimbursement'])[1]")
+    WebElement txtFinanceReimbursementPaymentPage;
+
+    @FindBy(xpath = "(//a[@class='btn btn-sm !text-black'][normalize-space()='Payment'])[1]")
+    WebElement btnPaymentNeedToPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Upload'])[1]")
+    WebElement btnUploadDocumentPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//input[@placeholder='0'])[1]")
+    WebElement inputAmountApprovePaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnCreatePaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmCreatePaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[@type='button'][normalize-space()='Payment'])[1]")
+    WebElement tabPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//a[@class='btn-icon btn-icon-sm'])[2]")
+    WebElement btnPencilPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnSaveEditPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//a[@class='btn btn-sm rounded-none bg-primary-01'][normalize-space()='Approval'])[2]")
+    WebElement btnApprovalPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApprovalPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSavePartnerApprovalPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmPartnerApprovalPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//a[@class='btn-icon btn-icon-sm'])[1]")
+    WebElement btnViewApprovedPaymentFinanceReimbursement;
+
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewApprovedPaymentFinanceReimbursement;
 
 
 
@@ -492,4 +598,42 @@ public class FinancePage {
     public void BtnBackViewFinanceReimbursement() { btnBackViewFinanceReimbursement.click();}
     public void BtnDeleteFinanceReimbursement() { btnDeleteFinanceReimbursement.click();}
     public void BtnConfirmDeleteFinanceReimbursement() { btnConfirmDeleteFinanceReimbursement.click();}
+    public void TabFinancePayment() { tabFinancePayment.click();}
+    public String getTxtFinancePaymentPage(){return txtFinancePaymentPage.getText();}
+    public void BtnPaymentNeedToPaymentHoReimbursement() { btnPaymentNeedToPaymentHoReimbursement.click();}
+    public void BtnUploadDocumentPaymentHoReimbursement(String btnUploadDocumentPaymentHoReimbursement) { this.btnUploadDocumentPaymentHoReimbursement.sendKeys(btnUploadDocumentPaymentHoReimbursement);}
+    public void InputAmountApprovePaymentHoReimbursement(String inputAmountApprovePaymentHoReimbursement) { this.inputAmountApprovePaymentHoReimbursement.sendKeys(inputAmountApprovePaymentHoReimbursement);}
+    public void BtnCreatePaymentHoReimbursement() { btnCreatePaymentHoReimbursement.click();}
+    public void BtnConfirmCreatePaymentHoReimbursement() { btnConfirmCreatePaymentHoReimbursement.click();}
+    public void TabPaymentHoReimbursement() { tabPaymentHoReimbursement.click();}
+    public void BtnPencilPaymentHoReimbursement() { btnPencilPaymentHoReimbursement.click();}
+    public void ClearInputAmountApprovePaymentHoReimbursement() { inputAmountApprovePaymentHoReimbursement.clear();}
+    public void BtnSaveEditPaymentHoReimbursement() { btnSaveEditPaymentHoReimbursement.click();}
+    public void BtnConfirmSaveEditPaymentHoReimbursement() { btnConfirmSaveEditPaymentHoReimbursement.click();}
+    public void BtnApprovalPaymentHoReimbursement() { btnApprovalPaymentHoReimbursement.click();}
+    public void BtnSelectPartnerApprovalPaymentHoReimbursement() { btnSelectPartnerApprovalPaymentHoReimbursement.click();}
+    public void SelectPartnerApprovalPaymentHoReimbursement() { selectPartnerApprovalPaymentHoReimbursement.click();}
+    public void BtnSavePartnerApprovalPaymentHoReimbursement() { btnSavePartnerApprovalPaymentHoReimbursement.click();}
+    public void BtnConfirmPartnerApprovalPaymentHoReimbursement() { btnConfirmPartnerApprovalPaymentHoReimbursement.click();}
+    public void BtnViewApprovedPaymentHoReimbursement() { btnViewApprovedPaymentHoReimbursement.click();}
+    public void BtnBackViewApprovedPaymentHoReimbursement() { btnBackViewApprovedPaymentHoReimbursement.click();}
+    public void TabFinanceReimbursementPayment() { tabFinanceReimbursementPayment.click();}
+    public String geTxtFinanceReimbursementPaymentPage(){return txtFinanceReimbursementPaymentPage.getText();}
+    public void BtnPaymentNeedToPaymentFinanceReimbursement() { btnPaymentNeedToPaymentFinanceReimbursement.click();}
+    public void BtnUploadDocumentPaymentFinanceReimbursement(String btnUploadDocumentPaymentFinanceReimbursement) { this.btnUploadDocumentPaymentFinanceReimbursement.sendKeys(btnUploadDocumentPaymentFinanceReimbursement);}
+    public void InputAmountApprovePaymentFinanceReimbursement(String inputAmountApprovePaymentFinanceReimbursement) { this.inputAmountApprovePaymentFinanceReimbursement.sendKeys(inputAmountApprovePaymentFinanceReimbursement);}
+    public void BtnCreatePaymentFinanceReimbursement() { btnCreatePaymentFinanceReimbursement.click();}
+    public void BtnConfirmCreatePaymentFinanceReimbursement() { btnConfirmCreatePaymentFinanceReimbursement.click();}
+    public void TabPaymentFinanceReimbursement() { tabPaymentFinanceReimbursement.click();}
+    public void BtnPencilPaymentFinanceReimbursement() { btnPencilPaymentFinanceReimbursement.click();}
+    public void ClearInputAmountApprovePaymentFinanceReimbursement() { inputAmountApprovePaymentFinanceReimbursement.clear();}
+    public void BtnSaveEditPaymentFinanceReimbursement() { btnSaveEditPaymentFinanceReimbursement.click();}
+    public void BtnConfirmSaveEditPaymentFinanceReimbursement() { btnConfirmSaveEditPaymentFinanceReimbursement.click();}
+    public void BtnApprovalPaymentFinanceReimbursement() { btnApprovalPaymentFinanceReimbursement.click();}
+    public void BtnSelectPartnerApprovalPaymentFinanceReimbursement() { btnSelectPartnerApprovalPaymentFinanceReimbursement.click();}
+    public void SelectPartnerApprovalPaymentFinanceReimbursement() { selectPartnerApprovalPaymentFinanceReimbursement.click();}
+    public void BtnSavePartnerApprovalPaymentFinanceReimbursement() { btnSavePartnerApprovalPaymentFinanceReimbursement.click();}
+    public void BtnConfirmPartnerApprovalPaymentFinanceReimbursement() { btnConfirmPartnerApprovalPaymentFinanceReimbursement.click();}
+    public void BtnViewApprovedPaymentFinanceReimbursement() { btnViewApprovedPaymentFinanceReimbursement.click();}
+    public void BtnBackViewApprovedPaymentFinanceReimbursement() { btnBackViewApprovedPaymentFinanceReimbursement.click();}
 }

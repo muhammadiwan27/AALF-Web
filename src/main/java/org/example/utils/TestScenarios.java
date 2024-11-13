@@ -126,10 +126,56 @@ public enum TestScenarios {
     T125("Edit Finance Reimbursement"),
     T126("View Finance Reimbursement"),
     T127("Approval Finance Reimbursement"),
-    T128("Delete Finance Reimbursement");
+    T128("Delete Finance Reimbursement"),
+    T129("Enter HO Reimbursement Payment Page"),
+    T130("Proceed Payment HO Reimbursement"),
+    T131("Edit Payment HO Reimbursement"),
+    T132("Approval Payment HO Reimbursement"),
+    T133("View Approved Payment HO Reimbursement"),
+    T134("Enter Finance Reimbursement Payment Page"),
+    T135("Proceed Payment Finance Reimbursement"),
+    T136("Edit Payment Finance Reimbursement"),
+    T137("Approval Payment Finance Reimbursement"),
+    T138("View Approved Payment Finance Reimbursement"),
+    T139("Enter HR Page"),
+    T140("Enter Attendance Page"),
+    T141("Search Employee Attendance by Name"),
+    T142("Enter Monitoring Page"),
+    T143("Search Employee Monitoring by Name"),
+    T144("Enter HR Report Page"),
+    T145("Download KPI HO Report"),
+    T146("Download KPI HO Detail Report"),
+    T147("Download Resume Daily Report"),
+    T148("Download HR Master Document Number Report"),
+    T149("Enter Overtime Page"),
+    T150("Create Overtime"),
+    T151("Edit Overtime"),
+    T152("Approval Overtime"),
+    T153("View Approved Overtime Page"),
+    T154("Enter Log User Page"),
+    T155("Search Log User by Employee Name"),
+    T156("Download Excel & PDF Log User Report"),
+    T157("Enter Workload Page"),
+    T158("Download Excel & PDF Workload Report"),
+    T159("Enter Leave Permission Page"),
+    T160("Create Leave Permission"),
+    T161("Edit Leave Permission"),
+    T162("Approval Leave Permission"),
+    T163("View Approved Leave Permission Page"),
+    T164("Enter Joint Holiday Page"),
+    T165("Create Joint Holiday"),
+    T166("Edit Joint Holiday"),
+    T167("Enter Employee Page"),
+    T168("Search Employee by Name");
 
 
-    private String testCaseName;
+
+
+
+
+
+
+    private final String testCaseName;
 
     TestScenarios(String value) {
         testCaseName = value;

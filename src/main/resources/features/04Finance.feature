@@ -173,3 +173,48 @@ Feature: Finance Page Test
     When User click button delete finance reimbursement
     Then User click button confirm delete finance reimbursement
 
+  Scenario: Enter HO Reimbursement Payment Page
+    When User click tab finance payment
+    Then User get text title page ho reimbursement payment
+
+  Scenario: Proceed Payment HO Reimbursement
+    When User click button payment ho reimbursement
+    And User upload document payment ho reimbursement
+    And User input amount approve payment ho reimbursement
+    Then User create payment ho reimbursement
+
+  Scenario: Edit Payment HO Reimbursement
+    When User click icon edit payment ho reimbursement
+    And User edit amount approve payment ho reimbursement
+    Then User save edit data payment ho reimbursement
+
+  Scenario: Approval Payment HO Reimbursement
+    When User click button approval payment ho reimbursement
+    And User select approval payment ho reimbursement
+    Then User click button save approval payment ho reimbursement
+
+  Scenario: View Approved Payment HO Reimbursement
+    When User click button view approved payment ho reimbursement
+
+  Scenario: Enter Finance Reimbursement Payment Page
+    When User click tab finance reimbursement payment
+    Then User get text title page finance reimbursement payment
+
+  Scenario: Proceed Payment Finance Reimbursement
+    When User click button payment finance reimbursement
+    And User upload document payment finance reimbursement
+    And User input amount approve payment finance reimbursement
+    Then User create payment finance reimbursement
+
+  Scenario: Edit Payment Finance Reimbursement
+    When User click icon edit payment finance reimbursement
+    And User edit amount approve payment finance reimbursement
+    Then User save edit data payment finance reimbursement
+
+  Scenario: Approval Payment Finance Reimbursement
+    When User click button approval payment finance reimbursement
+    And User select approval payment finance reimbursement
+    Then User click button save approval payment finance reimbursement
+
+  Scenario: View Approved Payment Finance Reimbursement
+    When User click button view approved payment finance reimbursement

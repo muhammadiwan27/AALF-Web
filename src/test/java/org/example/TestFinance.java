@@ -953,5 +953,251 @@ public class TestFinance {
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button confirm delete finance reimbursement");
     }
+
+//Enter HO Reimbursement Payment Page
+    @When("User click tab finance payment")
+    public void user_click_tab_finance_payment() {
+        Hooks.delay(1);
+        financePage.TabFinancePayment();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab finance payment");
+    }
+
+    @Then("User get text title page ho reimbursement payment")
+    public void user_get_text_title_page_ho_reimbursement_payment() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinancePaymentPage(), "Finance Reimbursement");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page ho reimbursement payment");
+    }
+
+//Proceed Payment HO Reimbursement
+    @When("User click button payment ho reimbursement")
+    public void user_click_button_payment_ho_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnPaymentNeedToPaymentHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button payment ho reimbursement");
+    }
+
+    @And("User upload document payment ho reimbursement")
+    public void user_upload_document_payment_ho_reimbursement() {
+        Hooks.delay(2);
+        financePage.BtnUploadDocumentPaymentHoReimbursement("C:\\Users\\M1403QA\\Downloads\\Document Rekap Sakit User.xlsx");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User upload document payment ho reimbursement");
+    }
+
+    @And("User input amount approve payment ho reimbursement")
+    public void User_input_amount_approve_payment_ho_reimbursement() {
+        Hooks.delay(2);
+        financePage.InputAmountApprovePaymentHoReimbursement("725000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input amount approve payment ho reimbursement");
+    }
+
+    @Then("User create payment ho reimbursement")
+    public void user_create_payment_ho_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnCreatePaymentHoReimbursement();
+        Hooks.delay(1);
+        financePage.BtnConfirmCreatePaymentHoReimbursement();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User create payment ho reimbursement");
+    }
+
+//Edit Payment HO Reimbursement
+    @When("User click icon edit payment ho reimbursement")
+    public void user_click_icon_edit_payment_ho_reimbursement() {
+        Hooks.delay(1);
+        financePage.TabPaymentHoReimbursement();
+        Hooks.delay(2);
+        financePage.BtnPencilPaymentHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click icon edit payment ho reimbursement");
+    }
+
+    @And("User edit amount approve payment ho reimbursement")
+    public void user_edit_amount_approve_payment_ho_reimbursement() {
+        Hooks.delay(2);
+        financePage.ClearInputAmountApprovePaymentHoReimbursement();
+        Hooks.delay(2);
+        financePage.InputAmountApprovePaymentHoReimbursement("62800");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit amount approve payment ho reimbursement");
+    }
+
+    @Then("User save edit data payment ho reimbursement")
+    public void user_save_edit_data_payment_ho_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnSaveEditPaymentHoReimbursement();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveEditPaymentHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit data payment ho reimbursement");
+    }
+
+//Approval Payment HO Reimbursement
+    @When("User click button approval payment ho reimbursement")
+    public void user_click_button_approval_payment_ho_reimbursement() {
+        Hooks.delay(2);
+        financePage.BtnApprovalPaymentHoReimbursement();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval payment ho reimbursement");
+    }
+
+    @And("User select approval payment ho reimbursement")
+    public void user_select_approval_payment_ho_reimbursement() {
+        Hooks.delay(2);
+        financePage.BtnSelectPartnerApprovalPaymentHoReimbursement();
+        Hooks.delay(2);
+        financePage.SelectPartnerApprovalPaymentHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select approval payment ho reimbursement");
+    }
+
+    @Then("User click button save approval payment ho reimbursement")
+    public void user_click_button_save_approval_payment_ho_reimbursement() {
+        Hooks.delay(3);
+        financePage.BtnSavePartnerApprovalPaymentHoReimbursement();
+        Hooks.delay(2);
+        financePage.BtnConfirmPartnerApprovalPaymentHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save approval payment ho reimbursement");
+    }
+
+//View Payment HO Reimbursement
+    @When("User click button view approved payment ho reimbursement")
+    public void user_click_button_view_approved_payment_ho_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnViewApprovedPaymentHoReimbursement();
+        Hooks.delay(2);
+        financePage.BtnBackViewApprovedPaymentHoReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button view approved payment ho reimbursement");
+    }
+
+//Enter Finance Reimbursement Payment Page
+    @When("User click tab finance reimbursement payment")
+    public void user_click_tab_finance_reimbursement_payment() {
+        Hooks.delay(1);
+        financePage.TabFinanceReimbursementPayment();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab finance reimbursement payment");
+    }
+
+    @Then("User get text title page finance reimbursement payment")
+    public void user_get_text_title_page_finance_reimbursement_payment() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.geTxtFinanceReimbursementPaymentPage(), "Finance Reimbursement");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance reimbursement payment");
+    }
+
+//Proceed Payment Finance Reimbursement
+    @When("User click button payment finance reimbursement")
+    public void user_click_button_payment_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnPaymentNeedToPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button payment finance reimbursement");
+    }
+
+    @And("User upload document payment finance reimbursement")
+    public void user_upload_document_payment_finance_reimbursement() {
+        Hooks.delay(2);
+        financePage.BtnUploadDocumentPaymentFinanceReimbursement("C:\\Users\\M1403QA\\Downloads\\Document Rekap Sakit User.xlsx");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User upload document payment finance reimbursement");
+    }
+
+    @And("User input amount approve payment finance reimbursement")
+    public void User_input_amount_approve_payment_finance_reimbursement() {
+        Hooks.delay(2);
+        financePage.InputAmountApprovePaymentFinanceReimbursement("725000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input amount approve payment finance reimbursement");
+    }
+
+    @Then("User create payment finance reimbursement")
+    public void user_create_payment_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnCreatePaymentFinanceReimbursement();
+        Hooks.delay(1);
+        financePage.BtnConfirmCreatePaymentFinanceReimbursement();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User create payment finance reimbursement");
+    }
+
+//Edit Payment Finance Reimbursement
+    @When("User click icon edit payment finance reimbursement")
+    public void user_click_icon_edit_payment_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.TabPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.BtnPencilPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click icon edit payment finance reimbursement");
+    }
+
+    @And("User edit amount approve payment finance reimbursement")
+    public void user_edit_amount_approve_payment_finance_reimbursement() {
+        Hooks.delay(2);
+        financePage.ClearInputAmountApprovePaymentFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.InputAmountApprovePaymentFinanceReimbursement("25000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit amount approve payment finance reimbursement");
+    }
+
+    @Then("User save edit data payment finance reimbursement")
+    public void user_save_edit_data_payment_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnSaveEditPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveEditPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit data payment finance reimbursement");
+    }
+
+//Approval Payment Finance Reimbursement
+    @When("User click button approval payment finance reimbursement")
+    public void user_click_button_approval_payment_finance_reimbursement() {
+        Hooks.delay(2);
+        financePage.BtnApprovalPaymentFinanceReimbursement();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval payment finance reimbursement");
+    }
+
+    @And("User select approval payment finance reimbursement")
+    public void user_select_approval_payment_finance_reimbursement() {
+        Hooks.delay(2);
+        financePage.BtnSelectPartnerApprovalPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.SelectPartnerApprovalPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select approval payment finance reimbursement");
+    }
+
+    @Then("User click button save approval payment finance reimbursement")
+    public void user_click_button_save_approval_payment_finance_reimbursement() {
+        Hooks.delay(3);
+        financePage.BtnSavePartnerApprovalPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.BtnConfirmPartnerApprovalPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save approval payment finance reimbursement");
+    }
+
+//View Payment Finance Reimbursement
+    @When("User click button view approved payment finance reimbursement")
+    public void user_click_button_view_approved_payment_finance_reimbursement() {
+        Hooks.delay(1);
+        financePage.BtnViewApprovedPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        financePage.BtnBackViewApprovedPaymentFinanceReimbursement();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button view approved payment finance reimbursement");
+    }
 }
 

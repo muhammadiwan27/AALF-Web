@@ -7,9 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class DashboardPage {
-    private WebDriver driver;
     public DashboardPage() {
-        this.driver = DriverSingleton.getDriver();
+        WebDriver driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver,this);
     }
     @FindBy(xpath = "//span[normalize-space()='Dashboard']")
@@ -102,13 +101,13 @@ public class DashboardPage {
     @FindBy(xpath = "(//button[contains(text(),'✕')])[1]")
     WebElement buttonCloseActivityFinishedDashboard;
 
-    @FindBy(xpath = "(//small[normalize-space()='HO/014/11/2023 / PT Musim Mas / Tanggapan'])[1]")
+    @FindBy(xpath = "(//small[contains(text(),'HO/048/11/2023 / PT Wilmar Padi Indonesia / Final ')])[1]")
     WebElement idHoOverdueDeadlineTask;
 
     @FindBy(xpath = "(//small[contains(text(),'hodev001 / Jason Kariatun / Corporate,Drafting Per')])[1]")
     WebElement idHoUpcomingDeadlineTask;
 
-    @FindBy(xpath = "(//div[@class='bg-form dtHO mt-4'])[3]")
+    @FindBy(xpath = "(//div[@class='bg-form dtHO mt-4'])[2]")
     WebElement eventCardOnCalendar;
 
     @FindBy(xpath = "(//a[normalize-space()='Add Event'])[1]")

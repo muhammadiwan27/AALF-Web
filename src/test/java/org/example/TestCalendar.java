@@ -12,7 +12,7 @@ import org.testng.Assert;
 public class TestCalendar {
     static WebDriver driver;
     static ExtentTest extentTest;
-    static CalendarPage CalendarPage = new CalendarPage();
+    static CalendarPage calendarPage = new CalendarPage();
     public TestCalendar() {
         driver = Hooks.driver;
         extentTest = Hooks.extentTest;
@@ -22,7 +22,7 @@ public class TestCalendar {
     @When("User click tab calendar")
     public void user_click_tab_calendar() {
         Hooks.delay(2);
-        CalendarPage.TabCalendar();
+        calendarPage.TabCalendar();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click tab calendar");
     }
@@ -30,7 +30,7 @@ public class TestCalendar {
     @Then("User get text title page calendar")
     public void user_get_text_title_page_calendar() {
         Hooks.delay(2);
-        Assert.assertEquals(CalendarPage.getTxtCalendar(),"July 2024");
+        Assert.assertEquals(calendarPage.getTxtCalendar(),"July 2024");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User get text title page calendar");
     }

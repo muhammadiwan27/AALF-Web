@@ -7,10 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HoPage {
-    private WebDriver driver;
-
     public HoPage() {
-        this.driver = DriverSingleton.getDriver();
+        WebDriver driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
 
@@ -1642,7 +1640,8 @@ public class HoPage {
     public void BtnSelectMemberOnDutyHoReimbursement() { btnSelectMemberOnDutyHoReimbursement.click();}
     public void InputListOfExpensesReibursementHoReimbursement(String inputListOfExpensesReibursementHoReimbursement) { this.inputListOfExpensesReibursementHoReimbursement.sendKeys(inputListOfExpensesReibursementHoReimbursement);}
     public void InputAmountReibursementHoReimbursement(String inputAmountReibursementHoReimbursement) { this.inputAmountReibursementHoReimbursement.sendKeys(inputAmountReibursementHoReimbursement);}
-    public void InputNoteReibursementHoReimbursement(String inputNoteReibursementHoReimbursement) { this.inputNoteReibursementHoReimbursement.sendKeys(inputNoteReibursementHoReimbursement);}
+    public void InputNoteReibursementHoReimbursement(String inputNoteReibursementHoReimbursement) {
+        this.inputNoteReibursementHoReimbursement.sendKeys(inputNoteReibursementHoReimbursement);}
     public void AttachReceiptReimbursementHoReimbursement(String attachReceiptReimbursementHoReimbursement) { this.attachReceiptReimbursementHoReimbursement.sendKeys(attachReceiptReimbursementHoReimbursement);}
     public void BtnCreateHoReimbursement() { btnCreateHoReimbursement.click();}
     public void BtnConfirmCreateHoReimbursement() { btnConfirmCreateHoReimbursement.click();}

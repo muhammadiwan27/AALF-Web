@@ -63,6 +63,10 @@ Feature: Dashboard Page Test
 
   Scenario: Proceed overdue deadline task Dashboard Aplikasi Sipanda-Unik
     When User click on id ho overdue deadline task to proceed
+    And User select start date proceed the task overdue deadline
+    And User select end date proceed the task overdue deadline
+    And User upload activity photos proceed the task overdue deadline
+    And User upload activity documents proceed the task overdue deadline
     Then User save proceed overdue deadline task
 
   Scenario: Proceed upcoming deadline task Dashboard Aplikasi Sipanda-Unik

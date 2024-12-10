@@ -276,7 +276,36 @@ public enum TestScenarios {
     T275("Create GA List Document"),
     T276("Upload document GA List Document"),
     T277("Edit GA List Document"),
-    T278("Delete GA List Document");
+    T278("Delete GA List Document"),
+    T279("Enter Document Dashboard Page"),
+    T280("Enter Document Report Page"),
+    T281("Download Document Master Document Number Report"),
+    T282("Enter Document Number Page"),
+    T283("Create Document Number"),
+    T284("Edit Document Number Data"),
+    T285("Delete Document Number"),
+    T286("Enter List Document Page"),
+    T287("Create List Document"),
+    T288("Upload document List Document"),
+    T289("Edit List Document Data"),
+    T290("Delete List Document"),
+    T291("Enter Procurement Dashboard Page"),
+    T292("Enter Procurement Report Page"),
+    T293("Download Request Order Report"),
+    T294("Download Request Order Complete Report"),
+    T295("Enter Request Order Page"),
+    T296("Create Request Order"),
+    T297("Edit Request Order Data"),
+    T298("Approval Financial Director Request Order"),
+    T299("Approval Director Request Order"),
+    T300("Upload Receipt Payment Request Order"),
+    T301("Upload Receipt Paid Payment Request Order"),
+    T302("Complete Request Order"),
+    T303("Enter Request Order Complete Page"),
+    T304("View Request Order Completed"),
+    T305("Logout Sipanda Unik");
+
+
 
 
 

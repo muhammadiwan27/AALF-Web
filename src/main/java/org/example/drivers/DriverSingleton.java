@@ -14,8 +14,8 @@ public class DriverSingleton {
         instantiate(driver);
     }
 
-    public WebDriver instantiate(String stategy){
-        DriverStrategy driverStrategy = DriverStrategyImplementer.chooseStrategy(stategy);
+    public WebDriver instantiate(String strategy){
+        DriverStrategy driverStrategy = DriverStrategyImplementer.chooseStrategy(strategy);
         driver = driverStrategy.setStrategy();
         driver.manage().timeouts().implicitlyWait(Constants.TIMEOUT, TimeUnit.SECONDS);
         driver.manage().window().maximize();

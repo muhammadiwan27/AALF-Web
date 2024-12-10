@@ -167,7 +167,7 @@ public class TestGa {
         Hooks.delay(1);
         gaPage.TabGaMasterDocumentNumber();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click tab hr master document number report");
+        extentTest.log(LogStatus.PASS, "User click tab GA master document number report");
     }
 
     @And("User select month ga master document number report")
@@ -175,7 +175,7 @@ public class TestGa {
         Hooks.delay(1);
         gaPage.InputMonthGaMasterDocumentNumber("September 2024");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select month hr master document number report");
+        extentTest.log(LogStatus.PASS, "User select month GA master document number report");
     }
 
     @Then("User click button excel ga master document number report")
@@ -510,7 +510,7 @@ public class TestGa {
         Hooks.delay(1);
         gaPage.BtnBackMasterGaPage();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User back to master ga page");
+        extentTest.log(LogStatus.PASS, "User back to master ga page three");
     }
 
 //Delete Master GA Brand
@@ -632,15 +632,15 @@ public class TestGa {
 
     @And("User select user asset data")
     public void user_select_user_asset_data() {
-        Hooks.delay(1);
+       Hooks.delay(1);
         try {
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
-            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
-            robot.delay(200);
-        } catch (AWTException e) {
-            throw new RuntimeException(e);
-        }
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+        robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+        robot.delay(200);
+    } catch (AWTException e) {
+        throw new RuntimeException(e);
+    }
         gaPage.BtnSearchUserAssetData();
         Hooks.delay(2);
         gaPage.BtnSelectUserAssetData();
@@ -699,15 +699,15 @@ public class TestGa {
 
     @Then("User save edit asset data")
     public void user_save_edit_asset_data() {
-        Hooks.delay(1);
+       Hooks.delay(1);
         try {
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
-            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
-            robot.delay(200);
-        } catch (AWTException e) {
-            throw new RuntimeException(e);
-        }
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+        robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+        robot.delay(200);
+    } catch (AWTException e) {
+        throw new RuntimeException(e);
+    }
         gaPage.BtnSaveEditAssetData();
         Hooks.delay(2);
         gaPage.BtnConfirmSaveEditAssetData();
@@ -734,15 +734,15 @@ public class TestGa {
 
     @Then("User back to asset data page")
     public void user_back_to_asset_data_page() {
-        Hooks.delay(1);
+       Hooks.delay(1);
         try {
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
-            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
-            robot.delay(200);
-        } catch (AWTException e) {
-            throw new RuntimeException(e);
-        }
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+        robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+        robot.delay(200);
+    } catch (AWTException e) {
+        throw new RuntimeException(e);
+    }
         gaPage.BtnBackViewAssetData();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User back to asset data page");
@@ -996,15 +996,15 @@ public class TestGa {
 
     @Then("User back to master consumable page")
     public void user_back_to_master_consumable_page() {
-        Hooks.delay(1);
+       Hooks.delay(1);
         try {
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
-            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
-            robot.delay(200);
-        } catch (AWTException e) {
-            throw new RuntimeException(e);
-        }
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+        robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+        robot.delay(200);
+    } catch (AWTException e) {
+        throw new RuntimeException(e);
+    }
         gaPage.BtnBackViewMasterConsumable();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User back to master consumable page");
@@ -1369,5 +1369,132 @@ public class TestGa {
         gaPage.BtnConfirmDeleteGaDocumentNumber();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button confirm delete ga document number");
+    }
+
+//Enter GA List Document Page
+    @When("User click tab ga list document")
+    public void user_click_tab_ga_list_document() {
+        Hooks.delay(1);
+        gaPage.TabGaListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab ga list document");
+    }
+
+    @Then("User get text title page ga list document page")
+    public void user_get_text_title_page_ga_list_document_page() {
+        Hooks.delay(1);
+        Assert.assertEquals(gaPage.getTxtGaListDocumentPage(), "List Document");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page ga list document page");
+    }
+
+//Create GA List Document
+    @When("User click button create ga list document")
+    public void user_click_button_create_ga_list_document() {
+        Hooks.delay(1);
+        gaPage.BtnCreateGaListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button create ga list document");
+    }
+
+    @And("User choose master document name ga list document")
+    public void user_choose_master_document_name_ga_list_document() {
+        Hooks.delay(1);
+        gaPage.BtnSelectMasterDocumentNameGaListDocument();
+        Hooks.delay(2);
+        gaPage.SelectMasterDocumentNameGaListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User choose master document name ga list document");
+    }
+
+    @And("User input document name ga list document")
+    public void user_input_document_name_ga_list_document() {
+        Hooks.delay(1);
+        gaPage.InputDocumentNameGaListDocument("Surat Keputusan MK");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input document name ga list document");
+    }
+
+    @Then("User save ga list document data")
+    public void user_save_ga_list_document_data() {
+        Hooks.delay(1);
+        gaPage.BtnSaveGaListDocument();
+        Hooks.delay(2);
+        gaPage.BtnConfirmSaveGaListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save ga list document data");
+    }
+
+//Upload document GA List Document
+    @When("User click button upload ga list document")
+    public void user_click_button_upload_ga_list_document() {
+        Hooks.delay(1);
+        gaPage.BtnUploadGaListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button upload ga list document");
+    }
+
+    @And("User choose file upload document ga list document")
+    public void user_choose_file_upload_document_GA_list_document() {
+        Hooks.delay(1);
+        gaPage.BtnChooseFileGaListDocument("C:\\Users\\M1403QA\\Downloads\\Document RKPD 17-07-2024.pdf");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User choose file upload document ga list document");
+    }
+
+    @Then("User upload document ga list document")
+    public void user_upload_document_ga_list_document() {
+        Hooks.delay(1);
+        gaPage.BtnSaveUploadGaListDocument();
+        Hooks.delay(1);
+        gaPage.BtnConfirmSaveUploadGaListDocument();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User upload document ga list document");
+    }
+
+//Edit GA List Document Data
+    @When("User click button edit ga list document")
+    public void user_click_button_edit_ga_list_document() {
+        Hooks.delay(2);
+        gaPage.BtnEditGaListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button edit ga list document");
+    }
+
+    @And("User edit document name ga list document")
+    public void user_edit_document_name_ga_list_document() {
+        Hooks.delay(2);
+        gaPage.ClearInputDocumentNameGaListDocument();
+        Hooks.delay(2);
+        gaPage.InputDocumentNameGaListDocument("Test bung");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit document name ga list document");
+    }
+
+    @Then("User save edit ga list document data")
+    public void user_save_edit_ga_list_document_data() {
+        Hooks.delay(2);
+        gaPage.BtnSaveEditGaListDocumentData();
+        Hooks.delay(2);
+        gaPage.BtnConfirmSaveEditGaListDocumentData();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit ga list document data");
+    }
+
+//Delete GA List Document
+    @When("User click button delete ga list document")
+    public void user_click_button_delete_ga_list_document() {
+        Hooks.delay(2);
+        gaPage.BtnDeleteGaListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete ga list document");
+    }
+
+    @Then("User click button confirm delete ga list document")
+    public void user_click_button_confirm_delete_ga_list_document() {
+        Hooks.delay(2);
+        gaPage.BtnConfirmDeleteGaListDocument();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete ga list document");
     }
 }

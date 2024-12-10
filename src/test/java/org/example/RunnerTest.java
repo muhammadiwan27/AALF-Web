@@ -5,6 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src/main/resources/features",
         glue = "org.example",
+        tags = "not @skip",
         plugin = {"pretty","html:target/cucumber-report.html","json:target/cucumber.json"}
 )
 

@@ -553,6 +553,57 @@ public class GaPage {
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement btnConfirmDeleteGaDocumentNumber;
 
+    @FindBy(xpath = "(//button[normalize-space()='List Document'])[1]")
+    WebElement tabGaListDocument;
+
+    @FindBy(xpath = "(//li[normalize-space()='List Document'])[1]")
+    WebElement txtGaListDocumentPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='Create'])[1]")
+    WebElement btnCreateGaListDocument;
+
+    @FindBy(xpath = "(//select[@class='select select-sm'])[1]")
+    WebElement btnSelectMasterDocumentNameGaListDocument;
+
+    @FindBy(xpath = "(//option[@value='Purchase Request'])[1]")
+    WebElement selectMasterDocumentNameGaListDocument;
+
+    @FindBy(xpath = "(//input[@id='keterangan'])[1]")
+    WebElement inputDocumentNameGaListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Create'])[1]")
+    WebElement btnSaveGaListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveGaListDocument;
+
+    @FindBy(xpath = "(//a[contains(text(),'Upload')])[5]")
+    WebElement btnUploadGaListDocument;
+
+    @FindBy(xpath = "(//input[@id='dokumen'])[1]")
+    WebElement btnChooseFileGaListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Upload'])[1]")
+    WebElement btnSaveUploadGaListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveUploadGaListDocument;
+
+    @FindBy(xpath = "(//a)[60]")
+    WebElement btnEditGaListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditGaListDocumentData;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditGaListDocumentData;
+
+    @FindBy(xpath = "(//button)[19]")
+    WebElement btnDeleteGaListDocument;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmDeleteGaListDocument;
+
 
 
 
@@ -753,4 +804,22 @@ public class GaPage {
     public void BtnConfirmSaveEditGaDocumentNumberData() { btnConfirmSaveEditGaDocumentNumberData.click();}
     public void BtnDeleteGaDocumentNumber() { btnDeleteGaDocumentNumber.click();}
     public void BtnConfirmDeleteGaDocumentNumber() { btnConfirmDeleteGaDocumentNumber.click();}
+    public void TabGaListDocument() { tabGaListDocument.click();}
+    public String getTxtGaListDocumentPage(){return txtGaListDocumentPage.getText();}
+    public void BtnCreateGaListDocument() { btnCreateGaListDocument.click();}
+    public void BtnSelectMasterDocumentNameGaListDocument() { btnSelectMasterDocumentNameGaListDocument.click();}
+    public void SelectMasterDocumentNameGaListDocument() { selectMasterDocumentNameGaListDocument.click();}
+    public void InputDocumentNameGaListDocument(String inputDocumentNameGaListDocument) { this.inputDocumentNameGaListDocument.sendKeys(inputDocumentNameGaListDocument);}
+    public void BtnSaveGaListDocument() { btnSaveGaListDocument.click();}
+    public void BtnConfirmSaveGaListDocument() { btnConfirmSaveGaListDocument.click();}
+    public void BtnUploadGaListDocument() { btnUploadGaListDocument.click();}
+    public void BtnChooseFileGaListDocument(String btnChooseFileGaListDocument) { this.btnChooseFileGaListDocument.sendKeys(btnChooseFileGaListDocument);}
+    public void BtnSaveUploadGaListDocument() { btnSaveUploadGaListDocument.click();}
+    public void BtnConfirmSaveUploadGaListDocument() { btnConfirmSaveUploadGaListDocument.click();}
+    public void BtnEditGaListDocument() { btnEditGaListDocument.click();}
+    public void ClearInputDocumentNameGaListDocument() { inputDocumentNameGaListDocument.clear();}
+    public void BtnSaveEditGaListDocumentData() { btnSaveEditGaListDocumentData.click();}
+    public void BtnConfirmSaveEditGaListDocumentData() { btnConfirmSaveEditGaListDocumentData.click();}
+    public void BtnDeleteGaListDocument() { btnDeleteGaListDocument.click();}
+    public void BtnConfirmDeleteGaListDocument() { btnConfirmDeleteGaListDocument.click();}
 }

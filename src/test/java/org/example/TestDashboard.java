@@ -43,7 +43,7 @@ public class TestDashboard {
         loginPage.EnterPassword("go");
         Hooks.delay(1);
         loginPage.BtnLogin();
-        Hooks.delay(3);
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User enter password");
     }
 
@@ -417,7 +417,7 @@ public class TestDashboard {
     public void user_input_note_proceed_the_task_upcoming_deadline() {
         Hooks.delay(1);
         hoPage.InputDeleteNoteProceedTheTask();
-        Hooks.delay(3);
+        Hooks.delay(1);
         hoPage.InputNoteProceedTheTask("Task telah selesai dikerjakan,menunggu approval dari JP");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User input note proceed the task upcoming deadline");
@@ -425,7 +425,7 @@ public class TestDashboard {
 
     @Then("User save proceed the task upcoming deadline")
     public void user_save_proceed_the_task_upcoming_deadline() {
-        Hooks.delay(3);
+        Hooks.delay(1);
         hoPage.BtnSaveProceedTheTask();
         Hooks.delay(1);
         hoPage.BtnConfirmSaveProceedTheTask();
@@ -511,7 +511,7 @@ public class TestDashboard {
     public void user_edit_data_event() {
         Hooks.delay(1);
         dashboardPage.InputDeleteNoteEvent();
-        Hooks.delay(3);
+        Hooks.delay(1);
         dashboardPage.InputNoteEvent("Pergi shopping ke Paris");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User edit data event");
@@ -519,7 +519,7 @@ public class TestDashboard {
 
     @Then("User save edit event")
     public void user_save_edit_event() {
-        Hooks.delay(3);
+        Hooks.delay(1);
         dashboardPage.ButtonEditEvent();
         Hooks.delay(1);
         dashboardPage.ButtonConfirmEditEvent();

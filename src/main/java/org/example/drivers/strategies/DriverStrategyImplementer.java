@@ -4,13 +4,10 @@ import org.example.utils.Constants;
 
 public class DriverStrategyImplementer {
     public static DriverStrategy chooseStrategy(String strategy){
-        switch (strategy){
-            case Constants.CHROME:
-                return new Chrome();
-            case Constants.FIREFOX:
-                return new Firefox();
-            default:
-                return null;
-        }
+        return switch (strategy) {
+            case Constants.CHROME -> new Chrome();
+            case Constants.FIREFOX -> new Firefox();
+            default -> null;
+        };
     }
 }

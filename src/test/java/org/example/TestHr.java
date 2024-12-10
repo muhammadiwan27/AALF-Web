@@ -358,7 +358,7 @@ public class TestHr {
 
 //Approval Overtime
     @When("User click button approval overtime")
-    public void user_click_button_approval_overime() {
+    public void user_click_button_approval_overtime() {
         Hooks.delay(2);
         hrPage.BtnApprovalOvertime();
         Hooks.delay(1);

@@ -261,6 +261,9 @@ public class HoPage {
     @FindBy(xpath = "(//input[@placeholder='Start date'])[1]")
     WebElement btnStartDateProceedTheTask;
 
+    @FindBy(xpath = "//button[normalize-space()='Clear']")
+    WebElement btnClearDate;
+
     @FindBy(xpath = "//button[normalize-space()='Today']")
     WebElement btnSelectTodayStartDateProceedTheTask;
 
@@ -518,24 +521,6 @@ public class HoPage {
 
     @FindBy(xpath = "(//button[normalize-space()='Cancel'])[1]")
     WebElement btnCancelDownloadSuratTugas;
-
-    @FindBy(xpath = "(//a[contains(text(),'Need Approve By Partner')])[2]")
-    WebElement btnPartnerApprovalSuratTugas;
-
-    @FindBy(xpath = "(//select[@id='status'])[1]")
-    WebElement btnSelectPartnerApprovalSuratTugas;
-
-    @FindBy(xpath = "(//option[@value='approve'])[1]")
-    WebElement selectPartnerApprovalSuratTugas;
-
-    @FindBy(xpath = "(//textarea[@placeholder='Type here'])[1]")
-    WebElement inputNotePartnerApprovalSuratTugas;
-
-    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
-    WebElement btnSavePartnerApprovalSuratTugas;
-
-    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
-    WebElement btnConfirmPartnerSaveApprovalSuratTugas;
 
     @FindBy(xpath = "(//option[@value='lkpd'])[1]")
     WebElement selectDocumentLkpd;
@@ -1290,6 +1275,7 @@ public class HoPage {
     public void BtnBackDetailCost() { btnBackDetailCost.click();}
     public void BtnEditHo() { btnEditHo.click();}
     public void InputCaseSummaryEditHo(String inputCaseSummaryEditHo) { this.inputCaseSummaryEditHo.sendKeys(inputCaseSummaryEditHo);}
+    public void InputDeleteCaseSummaryEditHo() { inputCaseSummaryEditHo.clear();}
     public void BtnSaveEditHo() { btnSaveEditHo.click();}
     public void BtnConfirmSaveEditHo() { btnConfirmSaveEditHo.click();}
     public void BtnAddTask() { btnAddTask.click();}
@@ -1334,6 +1320,7 @@ public class HoPage {
     public void BtnBackViewTask() { btnBackViewTask.click();}
     public void BtnProceedTheTask() { btnProceedTheTask.click();}
     public void BtnStartDateProceedTheTask() { btnStartDateProceedTheTask.click();}
+    public void BtnClearDate() { btnClearDate.click();}
     public void BtnSelectTodayStartDateProceedTheTask() { btnSelectTodayStartDateProceedTheTask.click();}
     public void BtnEndDateProceedTheTask() { btnEndDateProceedTheTask.click();}
     public void BtnSelectTodayEndDateProceedTheTask() { btnSelectTodayEndDateProceedTheTask.click();}
@@ -1425,12 +1412,6 @@ public class HoPage {
     public void BtnCreateSuratTugas() { btnCreateSuratTugas.click();}
     public void BtnConfirmCreateSuratTugas() { btnConfirmCreateSuratTugas.click();}
     public void BtnCancelDownloadSuratTugas() { btnCancelDownloadSuratTugas.click();}
-    public void BtnPartnerApprovalSuratTugas() { btnPartnerApprovalSuratTugas.click();}
-    public void BtnSelectPartnerApprovalSuratTugas() { btnSelectPartnerApprovalSuratTugas.click();}
-    public void SelectPartnerApprovalSuratTugas() { selectPartnerApprovalSuratTugas.click();}
-    public void InputNotePartnerApprovalSuratTugas(String inputNotePartnerApprovalSuratTugas) { this.inputNotePartnerApprovalSuratTugas.sendKeys(inputNotePartnerApprovalSuratTugas);}
-    public void BtnSavePartnerApprovalSuratTugas() { btnSavePartnerApprovalSuratTugas.click();}
-    public void BtnConfirmPartnerSaveApprovalSuratTugas() { btnConfirmPartnerSaveApprovalSuratTugas.click();}
     public void SelectDocumentLkpd() { selectDocumentLkpd.click();}
     public void BtnSearchIdSt() { btnSearchIdSt.click();}
     public void SelectIdSt() { selectIdSt.click();}
@@ -1640,8 +1621,7 @@ public class HoPage {
     public void BtnSelectMemberOnDutyHoReimbursement() { btnSelectMemberOnDutyHoReimbursement.click();}
     public void InputListOfExpensesReibursementHoReimbursement(String inputListOfExpensesReibursementHoReimbursement) { this.inputListOfExpensesReibursementHoReimbursement.sendKeys(inputListOfExpensesReibursementHoReimbursement);}
     public void InputAmountReibursementHoReimbursement(String inputAmountReibursementHoReimbursement) { this.inputAmountReibursementHoReimbursement.sendKeys(inputAmountReibursementHoReimbursement);}
-    public void InputNoteReibursementHoReimbursement(String inputNoteReibursementHoReimbursement) {
-        this.inputNoteReibursementHoReimbursement.sendKeys(inputNoteReibursementHoReimbursement);}
+    public void InputNoteReibursementHoReimbursement(String inputNoteReibursementHoReimbursement) {this.inputNoteReibursementHoReimbursement.sendKeys(inputNoteReibursementHoReimbursement);}
     public void AttachReceiptReimbursementHoReimbursement(String attachReceiptReimbursementHoReimbursement) { this.attachReceiptReimbursementHoReimbursement.sendKeys(attachReceiptReimbursementHoReimbursement);}
     public void BtnCreateHoReimbursement() { btnCreateHoReimbursement.click();}
     public void BtnConfirmCreateHoReimbursement() { btnConfirmCreateHoReimbursement.click();}

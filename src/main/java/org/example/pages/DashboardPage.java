@@ -101,14 +101,11 @@ public class DashboardPage {
     @FindBy(xpath = "(//button[contains(text(),'✕')])[1]")
     WebElement buttonCloseActivityFinishedDashboard;
 
-    @FindBy(xpath = "(//small[contains(text(),'HO/048/11/2023 / PT Wilmar Padi Indonesia / Final ')])[1]")
+    @FindBy(xpath = "(//small[normalize-space()='HO/014/11/2023 / PT Musim Mas / Tanggapan'])[1]")
     WebElement idHoOverdueDeadlineTask;
 
-    @FindBy(xpath = "(//small[contains(text(),'hodev001 / Jason Kariatun / Corporate,Drafting Per')])[1]")
+    @FindBy(xpath = "(//small[contains(text(),'HO/002/02/2024 / PT Serati Mas Kencana / Litigasi,')])[1]")
     WebElement idHoUpcomingDeadlineTask;
-
-    @FindBy(xpath = "(//div[@class='bg-form dtHO mt-4'])[2]")
-    WebElement eventCardOnCalendar;
 
     @FindBy(xpath = "(//a[normalize-space()='Add Event'])[1]")
     WebElement btnAddEvent;
@@ -142,6 +139,12 @@ public class DashboardPage {
 
     @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
     WebElement buttonConfirmCreateEvent;
+
+    @FindBy(xpath = "(//a[@class='fc-event fc-event-start fc-event-end fc-event-past bg-[#EFDC6E] fc-daygrid-event fc-daygrid-dot-event'])[2]")
+    WebElement buttonEventOnCalendar;
+
+    @FindBy(xpath = "(//a[@id='6'])[1]")
+    WebElement cardEventForEdit;
 
     @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
     WebElement buttonEditEvent;
@@ -185,7 +188,6 @@ public class DashboardPage {
     public void ButtonCloseActivityFinishedDashboard() { buttonCloseActivityFinishedDashboard.click();}
     public void IdHoOverdueDeadlineTask() { idHoOverdueDeadlineTask.click();}
     public void IdHoUpcomingDeadlineTask() { idHoUpcomingDeadlineTask.click();}
-    public void EventCardOnCalendar() { eventCardOnCalendar.click();}
     public void BtnAddEvent() { btnAddEvent.click();}
     public void InputTitleEvent(String inputTitleEvent) { this.inputTitleEvent.sendKeys(inputTitleEvent);}
     public void BtnStartDateEvent() { btnStartDateEvent.click();}
@@ -198,6 +200,8 @@ public class DashboardPage {
     public void ButtonCreateEvent() { buttonCreateEvent.click();}
     public void ButtonConfirmCreateEvent() { buttonConfirmCreateEvent.click();}
     public void InputDeleteNoteEvent() { inputNoteEvent.clear();}
+    public void ButtonEventOnCalendar() { buttonEventOnCalendar.click();}
+    public void CardEventForEdit() { cardEventForEdit.click();}
     public void ButtonEditEvent() { buttonEditEvent.click();}
     public void ButtonConfirmEditEvent() { buttonConfirmEditEvent.click();}
 }

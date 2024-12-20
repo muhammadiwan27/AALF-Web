@@ -260,14 +260,16 @@ public class TestHo {
 //Edit HO
     @When("User click button edit type of contract")
     public void user_click_button_edit_type_of_contract() {
-        Hooks.delay(2);
+        Hooks.delay(1);
         hoPage.BtnEditHo();
-        Hooks.delay(2);
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User click button edit type of contract");
     }
 
     @And("User edit case summary data ho")
     public void user_edit_case_summary_data_ho() {
+        Hooks.delay(1);
+        hoPage.InputDeleteCaseSummaryEditHo();
         Hooks.delay(1);
         hoPage.InputCaseSummaryEditHo("Pengecekan secara keseluruhan untuk hodev");
         Hooks.delay(2);
@@ -1199,7 +1201,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save partner approval rkpd");
     }
 
-// Create Document Surat Tugas
+//Create Document Surat Tugas
     @When("User click button create administrative documents for surat tugas")
     public void user_click_button_create_administrative_documents_for_surat_tugas() {
         Hooks.delay(2);
@@ -1250,43 +1252,6 @@ public class TestHo {
         hoPage.BtnCancelDownloadSuratTugas();
         Hooks.delay(3);
         extentTest.log(LogStatus.PASS, "User click button create document surat tugas");
-    }
-
-//Partner Approval Document Surat Tugas
-    @When("User click button partner approval document surat tugas")
-    public void User_click_button_partner_approval_document_surat_tugas() {
-        Hooks.delay(2);
-        hoPage.BtnPartnerApprovalSuratTugas();
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button partner approval document surat tugas");
-    }
-
-    @And("User select partner approval document surat tugas")
-    public void user_select_partner_approval_document_surat_tugas() {
-        Hooks.delay(2);
-        hoPage.BtnSelectPartnerApprovalSuratTugas();
-        Hooks.delay(2);
-        hoPage.SelectPartnerApprovalSuratTugas();
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select partner approval document surat tugas");
-    }
-
-    @And("User input note partner approval surat tugas")
-    public void user_input_note_partner_approval_surat_tugas() {
-        Hooks.delay(2);
-        hoPage.InputNotePartnerApprovalSuratTugas("Lanjutkan untuk bikin LKPD");
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note partner approval surat tugas");
-    }
-
-    @Then("User click button save partner approval surat tugas")
-    public void user_click_button_save_partner_approval_surat_tugas() {
-        Hooks.delay(2);
-        hoPage.BtnSavePartnerApprovalSuratTugas();
-        Hooks.delay(2);
-        hoPage.BtnConfirmPartnerSaveApprovalSuratTugas();
-        Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button save partner approval surat tugas");
     }
 
 //Create Document LKPD

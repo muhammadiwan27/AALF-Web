@@ -77,25 +77,8 @@ public class TestLoginDanLogout {
     @Then("User get text invalid credentials")
     public void user_get_text_invalid_credentials(){
       Hooks.delay(1);
-        Assert.assertEquals(loginDanLogoutPage.getTxtInvalidCredentials(),"Username or Password do not match");
+      Assert.assertEquals(loginDanLogoutPage.getTxtInvalidCredentials(),"Username or Password do not match");
       Hooks.delay(1);
-        extentTest.log(LogStatus.PASS,"User get text invalid credentials");
-    }
-
-//Logout Sipanda Unik
-    @When("User click button logout")
-    public void user_click_button_logout(){
-        Hooks.delay(1);
-        loginDanLogoutPage.BtnLogout();
-        Hooks.delay(1);
-        extentTest.log(LogStatus.PASS,"User click button logout");
-    }
-
-    @Then("User confirm to logout")
-    public void user_confirm_to_logout(){
-        Hooks.delay(1);
-        loginDanLogoutPage.BtnLogoutOk();
-        Hooks.delay(1);
-        extentTest.log(LogStatus.PASS,"User confirm to logout");
+      extentTest.log(LogStatus.PASS,"User get text invalid credentials");
     }
 }

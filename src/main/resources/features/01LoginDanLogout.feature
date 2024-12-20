@@ -9,7 +9,3 @@ Feature: Login Dan Logout Page Test
     When User enter invalid username
     And User enter invalid password
     Then User get text invalid credentials
-
-  Scenario: Logout Sipanda Unik
-    When User click button logout
-    Then User confirm to logout

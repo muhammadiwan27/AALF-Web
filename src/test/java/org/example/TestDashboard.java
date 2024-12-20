@@ -67,7 +67,7 @@ public class TestDashboard {
     @Then("User get text title page dashboard employee")
     public void user_get_text_title_page_dashboard_employee() {
         Hooks.delay(1);
-        Assert.assertEquals(dashboardPage.getTxtDashboardEmployee(),"Dashboard");
+        Assert.assertEquals(dashboardPage.getTxtDashboardEmployee(),"Dashboard Employee");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page dashboard employee");
     }
@@ -316,7 +316,10 @@ public class TestDashboard {
             throw new RuntimeException(e);
         }
         Hooks.delay(1);
+
         hoPage.BtnStartDateProceedTheTask();
+        Hooks.delay(1);
+        hoPage.BtnClearDate();
         Hooks.delay(1);
         hoPage.BtnSelectTodayStartDateProceedTheTask();
         Hooks.delay(1);
@@ -327,6 +330,8 @@ public class TestDashboard {
     public void user_select_end_date_proceed_the_task_overdue_deadline() {
         Hooks.delay(1);
         hoPage.BtnEndDateProceedTheTask();
+        Hooks.delay(1);
+        hoPage.BtnClearDate();
         Hooks.delay(1);
         hoPage.BtnSelectTodayEndDateProceedTheTask();
         Hooks.delay(1);
@@ -483,7 +488,7 @@ public class TestDashboard {
     @And("User input note event")
     public void user_input_note_event() {
         Hooks.delay(1);
-        dashboardPage.InputNoteEvent("Jalan jalan ke Singapore");
+        dashboardPage.InputNoteEvent("Jalan jalan ke Belanda");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User input note event");
     }
@@ -502,7 +507,9 @@ public class TestDashboard {
     @When("User click card event dashboard")
     public void user_click_card_event_dashboard() {
         Hooks.delay(1);
-        dashboardPage.EventCardOnCalendar();
+        dashboardPage.ButtonEventOnCalendar();
+        Hooks.delay(1);
+        dashboardPage.CardEventForEdit();
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User click card event dashboard");
     }
@@ -512,7 +519,7 @@ public class TestDashboard {
         Hooks.delay(1);
         dashboardPage.InputDeleteNoteEvent();
         Hooks.delay(1);
-        dashboardPage.InputNoteEvent("Pergi shopping ke Paris");
+        dashboardPage.InputNoteEvent("Pergi main softball");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User edit data event");
     }

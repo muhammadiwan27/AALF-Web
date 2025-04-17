@@ -885,6 +885,68 @@ public class TestHr {
         extentTest.log(LogStatus.PASS, "User save edit joint holiday");
     }
 
+    //Delete Joint Holiday
+    @When("User click button delete joint holiday")
+    public void user_click_button_delete_joint_holiday() {
+        Hooks.delay(2);
+        hrPage.BtnDeleteJointHoliday();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button delete joint holiday");
+    }
+
+    @Then("User click button confirm delete joint holiday")
+    public void user_click_button_confirm_delete_joint_holiday() {
+        Hooks.delay(2);
+        hrPage.BtnConfirmDeleteJointHoliday();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm delete joint holiday");
+    }
+
+    //Enter Master Holiday Page
+    @When("User click tab master holiday")
+    public void user_click_tab_master_holiday() {
+        Hooks.delay(1);
+        hrPage.TabMasterHoliday();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab master holiday");
+    }
+
+    @Then("User get text title page master holiday")
+    public void user_get_text_title_page_master_holiday() {
+        Hooks.delay(1);
+        Assert.assertEquals(hrPage.getTxtMasterHoliday(), "Document Number");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page master holiday");
+    }
+
+    //Edit Master Holiday
+    @When("User click button edit master holiday")
+    public void user_click_button_edit_master_holiday() {
+        Hooks.delay(2);
+        hrPage.BtnEditJointMasterHoliday();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button edit master holiday");
+    }
+
+    @And("User edit overtime multiplier master holiday")
+    public void user_edit_overtime_multiplier_master_holiday() {
+        Hooks.delay(2);
+        hrPage.ClearOvertimeMultiplierMasterHoliday();
+        Hooks.delay(3);
+        hrPage.InputOvertimeMultiplierMasterHoliday("3");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User edit overtime multiplier master holiday");
+    }
+
+    @Then("User save edit master holiday")
+    public void user_save_edit_master_holiday() {
+        Hooks.delay(3);
+        hrPage.BtnSaveEditMasterHoliday();
+        Hooks.delay(2);
+        hrPage.BtnConfirmSaveEditMasterHoliday();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit master holiday");
+    }
 
 //Enter Employee Page
     @When("User click tab employee")

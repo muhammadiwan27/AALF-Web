@@ -31,16 +31,16 @@ public class TestDashboard {
         Hooks.delay(1);
         loginPage.ClearUsername();
         Hooks.delay(1);
-        loginPage.EnterUsername("adminMTI");
+        loginPage.EnterUsername("go");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User enter username");
     }
 
     @And("User enter password")
     public void user_enter_password() {
-        loginPage.ClearPassword();
+        loginPage.Clearpassword();
         Hooks.delay(1);
-        loginPage.EnterPassword("adminMTI");
+        loginPage.EnterPassword("go");
         Hooks.delay(1);
         loginPage.BtnLogin();
         Hooks.delay(1);

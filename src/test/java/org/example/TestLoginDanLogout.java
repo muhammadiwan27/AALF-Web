@@ -28,10 +28,20 @@ public class TestLoginDanLogout {
         extentTest.log(LogStatus.PASS, "User enter url AALF");
     }
 
-    @When("User enter valid username")
+    @When("User enter valid company")
+    public void user_enter_valid_company(){
+        Hooks.delay(1);
+        loginDanLogoutPage.EnterCompany("MTI");
+        Hooks.delay(1);
+        loginDanLogoutPage.BtnNextCompany();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User enter valid company");
+    }
+
+    @And("User enter valid username")
     public void user_enter_valid_username1(){
        Hooks.delay(1);
-       loginDanLogoutPage.EnterUsername("go");
+       loginDanLogoutPage.EnterUsername("adminMTI");
        Hooks.delay(1);
        extentTest.log(LogStatus.PASS, "User enter valid username");
     }
@@ -39,7 +49,7 @@ public class TestLoginDanLogout {
     @And("User enter valid password")
     public void user_enter_valid_password(){
       Hooks.delay(1);
-        loginDanLogoutPage.EnterPassword("go");
+        loginDanLogoutPage.EnterPassword("adminMTI");
       Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User enter valid password");
     }
@@ -48,30 +58,41 @@ public class TestLoginDanLogout {
     public void user_click_button_login(){
       Hooks.delay(1);
         loginDanLogoutPage.BtnLogin();
-      Hooks.delay(1);
+      Hooks.delay(3);
         extentTest.log(LogStatus.PASS, "User click button login");
     }
 
 //Login Invalid Functionality Test (Input invalid username & Input invalid password)
-    @When("User enter invalid username")
-    public void user_enter_invalid_username(){
-      Hooks.delay(1);
+    @When("User enter valid company1")
+    public void user_enter_valid_company1(){
+        Hooks.delay(1);
         loginDanLogoutPage.BtnLogout();
-      Hooks.delay(1);
+        Hooks.delay(1);
         loginDanLogoutPage.BtnLogoutOk();
-      Hooks.delay(1);
+        Hooks.delay(2);
+        loginDanLogoutPage.EnterCompany("MTI");
+        Hooks.delay(1);
+        loginDanLogoutPage.BtnNextCompany();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User enter valid company1");
+    }
+
+    @And("User enter invalid username")
+    public void user_enter_invalid_username(){
+        Hooks.delay(1);
         loginDanLogoutPage.EnterUsername("qa.tester@hadir.con");
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS,"User enter invalid username");
     }
 
     @And("User enter invalid password")
     public void user_enter_invalid_password(){
-      Hooks.delay(1);
-        loginDanLogoutPage.EnterPassword("admin1234");
-      Hooks.delay(1);
-        loginDanLogoutPage.BtnLogin();
-      Hooks.delay(1);
-        extentTest.log(LogStatus.PASS,"User enter invalid password");
+         Hooks.delay(1);
+         loginDanLogoutPage.EnterPassword("admin1234");
+         Hooks.delay(1);
+         loginDanLogoutPage.BtnLogin();
+         Hooks.delay(1);
+         extentTest.log(LogStatus.PASS,"User enter invalid password");
     }
 
     @Then("User get text invalid credentials")

@@ -1206,27 +1206,236 @@ public class HoPage {
     @FindBy(xpath = "(//a[normalize-space()='Back'])[1]")
     WebElement btnBackHoActivities;
 
+    @FindBy(xpath = "(//button[@class='btn-icon btn-icon-sm'])[1]")
+    WebElement btnCompleteHo;
 
+    @FindBy(xpath = "(//textarea[@placeholder='Note'])[1]")
+    WebElement inputNoteCompleteHo;
 
+    @FindBy(xpath = "(//button[normalize-space()='Select'])[1]")
+    WebElement btnConfirmCompleteHo;
 
+    @FindBy(xpath = "(//span[normalize-space()='List Approval'])[1]")
+    WebElement tabListApprovalHo;
 
+    @FindBy(xpath = "(//h1[normalize-space()='List Approval'])[1]")
+    WebElement txtListApprovalHo;
 
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalJpTaskActivityListApprovalHo;
 
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalTaskActivityListApprovalHo;
 
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApproveApprovalTaskActivityListApprovalHo;
 
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveApprovalTaskActivityListApprovalHo;
 
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveApprovalTaskActivityListApprovalHo;
 
+    @FindBy(xpath = "(//select[contains(@class,'cursor-pointer rounded-xl')])[1]")
+    WebElement btnFilterApprovalListApprovalHo;
 
+    @FindBy(xpath = "(//option[normalize-space()='Need Approval Partner'])[1]")
+    WebElement selectPartnerApprovalListApprovalHo;
 
+    @FindBy(xpath = "(//option[normalize-space()='Need Approval JP'])[1]")
+    WebElement selectJpApprovalListApprovalHo;
 
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPartnerTaskActivityListApprovalHo;
 
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalTaskActivityListApprovalHo;
 
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApproveApprovalTaskActivityListApprovalHo;
 
+    @FindBy(xpath = "(//select[contains(@class,'cursor-pointer rounded-xl')])[2]")
+    WebElement btnSortByApprovalListApprovalHo;
 
+    @FindBy(xpath = "(//option[contains(@value,'rkpd')])[1]")
+    WebElement selectSortByRkpdApprovalListApprovalHo;
 
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalJpRkpdListApprovalHo;
 
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalRkpdListApprovalHo;
 
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApproveApprovalRkpdListApprovalHo;
 
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveApprovalRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveApprovalRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPartnerRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApproveApprovalRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//option[contains(@value,'lkpd')])[1]")
+    WebElement selectSortByLkpdApprovalListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalJpLkpdListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalLkpdListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApproveApprovalLkpdListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveApprovalLkpdListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveApprovalLkpdListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPartnerLkpdListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalLkpdListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApproveApprovalLkpdListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='bonPutih'])[1]")
+    WebElement selectSortByReimbursementRkpdApprovalListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalJpReimbursementRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalReimbursementRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApproveApprovalReimbursementRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveApprovalReimbursementRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveApprovalReimbursementRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPartnerReimbursementRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalReimbursementRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApproveApprovalReimbursementRkpdListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='bonKuning'])[1]")
+    WebElement selectSortByDisbursementTripApprovalListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalJpDisbursementTripListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalDisbursementTripListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApproveApprovalDisbursementTripListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveApprovalDisbursementTripListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveApprovalDisbursementTripListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPartnerDisbursementTripListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalDisbursementTripListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApproveApprovalDisbursementTripListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='bonHijau'])[1]")
+    WebElement selectSortByTripAccommodationApprovalListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalJpTripAccommodationListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalTripAccommodationListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApproveApprovalTripAccommodationListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveApprovalTripAccommodationListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveApprovalTripAccommodationListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPartnerTripAccommodationListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalTripAccommodationListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApproveApprovalTripAccommodationListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='reimburse'])[1]")
+    WebElement selectSortByHoReimbursementApprovalListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalJpHoReimbursementListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectJpApprovalHoReimbursementListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectJpApproveApprovalHoReimbursementListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveApprovalHoReimbursementListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveApprovalHoReimbursementListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPartnerHoReimbursementListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalHoReimbursementListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApproveApprovalHoReimbursementListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='overtime'])[1]")
+    WebElement selectSortByHoOvertimeApprovalListApprovalHo;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPartnerHoOvertimeListApprovalHo;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalHoOvertimeListApprovalHo;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApproveApprovalHoOvertimeListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSaveApprovalHoOvertimeListApprovalHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveApprovalHoOvertimeListApprovalHo;
 
 
 
@@ -1641,4 +1850,82 @@ public class HoPage {
     public void BtnConfirmDeleteHoReimbursement() { btnConfirmDeleteHoReimbursement.click();}
     public void BtnHoActivities() { btnHoActivities.click();}
     public void BtnBackHoActivities() { btnBackHoActivities.click();}
+    public void BtnCompleteHo() { btnCompleteHo.click();}
+    public void InputNoteCompleteHo(String inputNoteCompleteHo) { this.inputNoteCompleteHo.sendKeys(inputNoteCompleteHo);}
+    public void BtnConfirmCompleteHo() { btnConfirmCompleteHo.click();}
+    public void TabListApprovalHo() { tabListApprovalHo.click();}
+    public String getTxtListApprovalHo(){return txtListApprovalHo.getText();}
+    public void BtnApprovalJpTaskActivityListApprovalHo() { btnApprovalJpTaskActivityListApprovalHo.click();}
+    public void BtnSelectJpApprovalTaskActivityListApprovalHo() { btnSelectJpApprovalTaskActivityListApprovalHo.click();}
+    public void SelectJpApproveApprovalTaskActivityListApprovalHo() { selectJpApproveApprovalTaskActivityListApprovalHo.click();}
+    public void BtnSaveApprovalTaskActivityListApprovalHo() { btnSaveApprovalTaskActivityListApprovalHo.click();}
+    public void BtnConfirmSaveApprovalTaskActivityListApprovalHo() { btnConfirmSaveApprovalTaskActivityListApprovalHo.click();}
+    public void BtnFilterApprovalListApprovalHo() { btnFilterApprovalListApprovalHo.click();}
+    public void SelectPartnerApprovalListApprovalHo() { selectPartnerApprovalListApprovalHo.click();}
+    public void BtnApprovalPartnerTaskActivityListApprovalHo() { btnApprovalPartnerTaskActivityListApprovalHo.click();}
+    public void BtnSelectPartnerApprovalTaskActivityListApprovalHo() { btnSelectPartnerApprovalTaskActivityListApprovalHo.click();}
+    public void SelectPartnerApproveApprovalTaskActivityListApprovalHo() { selectPartnerApproveApprovalTaskActivityListApprovalHo.click();}
+    public void SelectJpApprovalListApprovalHo() { selectJpApprovalListApprovalHo.click();}
+    public void BtnSortByApprovalListApprovalHo() { btnSortByApprovalListApprovalHo.click();}
+    public void SelectSortByRkpdApprovalListApprovalHo() { selectSortByRkpdApprovalListApprovalHo.click();}
+    public void BtnApprovalJpRkpdListApprovalHo() { btnApprovalJpRkpdListApprovalHo.click();}
+    public void BtnSelectJpApprovalRkpdListApprovalHo() { btnSelectJpApprovalRkpdListApprovalHo.click();}
+    public void SelectJpApproveApprovalRkpdListApprovalHo() { selectJpApproveApprovalRkpdListApprovalHo.click();}
+    public void BtnSaveApprovalRkpdListApprovalHo() { btnSaveApprovalRkpdListApprovalHo.click();}
+    public void BtnConfirmSaveApprovalRkpdListApprovalHo() { btnConfirmSaveApprovalRkpdListApprovalHo.click();}
+    public void BtnApprovalPartnerRkpdListApprovalHo() { btnApprovalPartnerRkpdListApprovalHo.click();}
+    public void BtnSelectPartnerApprovalRkpdListApprovalHo() { btnSelectPartnerApprovalRkpdListApprovalHo.click();}
+    public void SelectPartnerApproveApprovalRkpdListApprovalHo() { selectPartnerApproveApprovalRkpdListApprovalHo.click();}
+    public void SelectSortByLkpdApprovalListApprovalHo() { selectSortByLkpdApprovalListApprovalHo.click();}
+    public void BtnApprovalJpLkpdListApprovalHo() { btnApprovalJpLkpdListApprovalHo.click();}
+    public void BtnSelectJpApprovalLkpdListApprovalHo() { btnSelectJpApprovalLkpdListApprovalHo.click();}
+    public void SelectJpApproveApprovalLkpdListApprovalHo() { selectJpApproveApprovalLkpdListApprovalHo.click();}
+    public void BtnSaveApprovalLkpdListApprovalHo() { btnSaveApprovalLkpdListApprovalHo.click();}
+    public void BtnConfirmSaveApprovalLkpdListApprovalHo() { btnConfirmSaveApprovalLkpdListApprovalHo.click();}
+    public void BtnApprovalPartnerLkpdListApprovalHo() { btnApprovalPartnerLkpdListApprovalHo.click();}
+    public void BtnSelectPartnerApprovalLkpdListApprovalHo() { btnSelectPartnerApprovalLkpdListApprovalHo.click();}
+    public void SelectPartnerApproveApprovalLkpdListApprovalHo() { selectPartnerApproveApprovalLkpdListApprovalHo.click();}
+    public void SelectSortByReimbursementRkpdApprovalListApprovalHo() { selectSortByReimbursementRkpdApprovalListApprovalHo.click();}
+    public void BtnApprovalJpReimbursementRkpdListApprovalHo() { btnApprovalJpReimbursementRkpdListApprovalHo.click();}
+    public void BtnSelectJpApprovalReimbursementRkpdListApprovalHo() { btnSelectJpApprovalReimbursementRkpdListApprovalHo.click();}
+    public void SelectJpApproveApprovalReimbursementRkpdListApprovalHo() { selectJpApproveApprovalReimbursementRkpdListApprovalHo.click();}
+    public void BtnSaveApprovalReimbursementRkpdListApprovalHo() { btnSaveApprovalReimbursementRkpdListApprovalHo.click();}
+    public void BtnConfirmSaveApprovalReimbursementRkpdListApprovalHo() { btnConfirmSaveApprovalReimbursementRkpdListApprovalHo.click();}
+    public void BtnApprovalPartnerReimbursementRkpdListApprovalHo() { btnApprovalPartnerReimbursementRkpdListApprovalHo.click();}
+    public void BtnSelectPartnerApprovalReimbursementRkpdListApprovalHo() { btnSelectPartnerApprovalReimbursementRkpdListApprovalHo.click();}
+    public void SelectPartnerApproveApprovalReimbursementRkpdListApprovalHo() { selectPartnerApproveApprovalReimbursementRkpdListApprovalHo.click();}
+    public void SelectSortByDisbursementTripApprovalListApprovalHo() { selectSortByDisbursementTripApprovalListApprovalHo.click();}
+    public void BtnApprovalJpDisbursementTripListApprovalHo() { btnApprovalJpDisbursementTripListApprovalHo.click();}
+    public void BtnSelectJpApprovalDisbursementTripListApprovalHo() { btnSelectJpApprovalDisbursementTripListApprovalHo.click();}
+    public void SelectJpApproveApprovalDisbursementTripListApprovalHo() { selectJpApproveApprovalDisbursementTripListApprovalHo.click();}
+    public void BtnSaveApprovalDisbursementTripListApprovalHo() { btnSaveApprovalDisbursementTripListApprovalHo.click();}
+    public void BtnConfirmSaveApprovalDisbursementTripListApprovalHo() { btnConfirmSaveApprovalDisbursementTripListApprovalHo.click();}
+    public void BtnApprovalPartnerDisbursementTripListApprovalHo() { btnApprovalPartnerDisbursementTripListApprovalHo.click();}
+    public void BtnSelectPartnerApprovalDisbursementTripListApprovalHo() { btnSelectPartnerApprovalDisbursementTripListApprovalHo.click();}
+    public void SelectPartnerApproveApprovalDisbursementTripListApprovalHo() { selectPartnerApproveApprovalDisbursementTripListApprovalHo.click();}
+    public void SelectSortByTripAccommodationApprovalListApprovalHo() { selectSortByTripAccommodationApprovalListApprovalHo.click();}
+    public void BtnApprovalJpTripAccommodationListApprovalHo() { btnApprovalJpTripAccommodationListApprovalHo.click();}
+    public void BtnSelectJpApprovalTripAccommodationListApprovalHo() { btnSelectJpApprovalTripAccommodationListApprovalHo.click();}
+    public void SelectJpApproveApprovalTripAccommodationListApprovalHo() { selectJpApproveApprovalTripAccommodationListApprovalHo.click();}
+    public void BtnSaveApprovalTripAccommodationListApprovalHo() { btnSaveApprovalTripAccommodationListApprovalHo.click();}
+    public void BtnConfirmSaveApprovalTripAccommodationListApprovalHo() { btnConfirmSaveApprovalTripAccommodationListApprovalHo.click();}
+    public void BtnApprovalPartnerTripAccommodationListApprovalHo() { btnApprovalPartnerTripAccommodationListApprovalHo.click();}
+    public void BtnSelectPartnerApprovalTripAccommodationListApprovalHo() { btnSelectPartnerApprovalTripAccommodationListApprovalHo.click();}
+    public void SelectPartnerApproveApprovalTripAccommodationListApprovalHo() { selectPartnerApproveApprovalTripAccommodationListApprovalHo.click();}
+    public void SelectSortByHoReimbursementApprovalListApprovalHo() { selectSortByHoReimbursementApprovalListApprovalHo.click();}
+    public void BtnApprovalJpHoReimbursementListApprovalHo() { btnApprovalJpHoReimbursementListApprovalHo.click();}
+    public void BtnSelectJpApprovalHoReimbursementListApprovalHo() { btnSelectJpApprovalHoReimbursementListApprovalHo.click();}
+    public void SelectJpApproveApprovalHoReimbursementListApprovalHo() { selectJpApproveApprovalHoReimbursementListApprovalHo.click();}
+    public void BtnSaveApprovalHoReimbursementListApprovalHo() { btnSaveApprovalHoReimbursementListApprovalHo.click();}
+    public void BtnConfirmSaveApprovalHoReimbursementListApprovalHo() { btnConfirmSaveApprovalHoReimbursementListApprovalHo.click();}
+    public void BtnApprovalPartnerHoReimbursementListApprovalHo() { btnApprovalPartnerHoReimbursementListApprovalHo.click();}
+    public void BtnSelectPartnerApprovalHoReimbursementListApprovalHo() { btnSelectPartnerApprovalHoReimbursementListApprovalHo.click();}
+    public void SelectPartnerApproveApprovalHoReimbursementListApprovalHo() { selectPartnerApproveApprovalHoReimbursementListApprovalHo.click();}
+    public void SelectSortByHoOvertimeApprovalListApprovalHo() { selectSortByHoOvertimeApprovalListApprovalHo.click();}
+    public void BtnApprovalPartnerHoOvertimeListApprovalHo() { btnApprovalPartnerHoOvertimeListApprovalHo.click();}
+    public void BtnSelectPartnerApprovalHoOvertimeListApprovalHo() { btnSelectPartnerApprovalHoOvertimeListApprovalHo.click();}
+    public void SelectPartnerApproveApprovalHoOvertimeListApprovalHo() { selectPartnerApproveApprovalHoOvertimeListApprovalHo.click();}
+    public void BtnSaveApprovalHoOvertimeListApprovalHo() { btnSaveApprovalHoOvertimeListApprovalHo.click();}
+    public void BtnConfirmSaveApprovalHoOvertimeListApprovalHo() { btnConfirmSaveApprovalHoOvertimeListApprovalHo.click();}
+
 }

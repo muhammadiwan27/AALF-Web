@@ -7,33 +7,113 @@ Feature: Finance Page Test
     When User click tab ho report finance
     Then User get text title page ho report finance
 
-  Scenario: Enter Task Activity Report Finance Page
+  Scenario: Download Excel & PDF HO Report Finance
+    When User click button download excel ho report
+    Then User click button download pdf ho report
+
+  Scenario: Enter Task & Activity Report Finance Page
     When User click sub tab task activity report finance
     Then User get text title page task activity report finance
 
-  Scenario: Enter Task Activity Summary Report Finance Page
+  Scenario: Download Excel & PDF Task & Activity Report Finance
+    When User click button download excel task activity report finance
+    Then User click button download pdf task activity report finance
+
+  Scenario: Enter Task & Activity Summary Report Finance Page
     When User click sub tab task activity summary report finance
     Then User get text title page task activity summary report finance
+
+  Scenario: Download Excel & PDF Task Activity Summary Report Finance
+    When User click button download excel task activity summary report finance
+    Then User click button download pdf task activity summary report finance
 
   Scenario: Enter Client Report Finance Page
     When User click sub tab client report finance
     Then User get text title page client report finance
 
+  Scenario: Download Excel & PDF Client Report Finance
+    When User click button download excel client report finance
+    Then User click button download pdf client report finance
+
   Scenario: Enter Administrative Report Finance Page
     When User click sub tab administrative report finance
     Then User get text title page administrative report finance
 
-  Scenario: Enter Administrative Approval Report Finance Page
-    When User click sub tab administrative approval report finance
-    Then User get text title page administrative approval report finance
+  Scenario: Download Excel & PDF Administrative Report Finance
+    When User click button download excel administrative report finance
+    Then User click button download pdf administrative report finance
+
+  Scenario: Enter Administrative Summary Report Finance Page
+    When User click sub tab administrative summary report finance
+    Then User get text title page administrative summary report finance
+
+  Scenario: Download Excel & PDF Administrative Summary Report Finance
+    When User click button download excel administrative summary report finance
+    Then User click button download pdf administrative summary report finance
 
   Scenario: Enter Administrative Approval Report Finance Page
     When User click sub tab administrative approval report finance
     Then User get text title page administrative approval report finance
 
-  Scenario: Enter HO Reimbursement Finance Page
+  Scenario: Download Excel & PDF Administrative Approval Report Finance
+    When User click button download excel administrative approval report finance
+    Then User click button download pdf administrative approval report finance
+
+  Scenario: Enter HO Reimbursement Report Finance Page
     When User click sub tab ho reimbursement report finance
     Then User get text title page ho reimbursement report finance
+
+  Scenario: Download Excel HO Reimbursement Finance
+    When User click button download excel ho reimbursement report finance
+
+  Scenario: Enter Finance Report Page
+    When User click tab finance report
+    Then User get text title page finance report
+
+  Scenario: Download Excel Finance Reimbursement Report
+    When User click button download excel finance reimbursement report
+
+  Scenario: Enter Finance Master Document Number Report Page
+    When User click sub tab finance master document number report
+    Then User get text title page finance master document number report
+
+  Scenario: Download Excel Finance Master Document Number Report
+    When User click button download excel finance master document number report
+
+  Scenario: Enter Finance Payroll Report Page
+    When User click sub tab finance payroll report
+    Then User get text title page finance payroll report
+
+  Scenario: Download Excel Finance Payroll Report
+    When User click button download excel finance payroll report
+
+  Scenario: Enter HO Deposit Report Page
+    When User click sub tab ho deposit report
+    Then User get text title page ho deposit report
+
+  Scenario: Download Excel HO Deposit Report
+    When User click button download excel ho deposit report
+
+  Scenario: Enter HO Deposit Receipt Report Page
+    When User click sub tab ho deposit receipt report
+    Then User get text title page ho deposit receipt report
+
+  Scenario: Download Excel HO Deposit Receipt Report
+    When User click button download excel ho deposit receipt report
+
+  Scenario: Enter HO Business Trip Reimbursement Report Page
+    When User click sub tab ho business trip reimbursement report
+    Then User get text title page ho business trip reimbursement report
+
+  Scenario: Download Excel HO Business Trip Reimbursement Report
+    When User click button download excel ho business trip reimbursement report
+
+  Scenario: Enter Finance General Ledger Report Page
+    When User click sub tab finance general ledger report
+    Then User get text title page finance general ledger report
+
+  Scenario: Download Excel Finance General Ledger Report
+    When User click button download excel finance general ledger report
 
   Scenario: Enter Client Page
     When User click tab client
@@ -73,6 +153,10 @@ Feature: Finance Page Test
     When User click button view ho completed
     And User get text title page view ho completed
     Then User back to ho completed page
+
+  Scenario: Restore Completed HO
+    When User click button restore completed ho
+    Then User click button confirm restore completed ho
 
   Scenario: Enter Finance Document Page
     When User click tab finance document
@@ -161,8 +245,8 @@ Feature: Finance Page Test
     And User edit note finance reimbursement
     Then User save edit data finance reimbursement
 
-  Scenario: View Finance Payment
-    When User click button view finance payment
+  Scenario: View Finance Reimbursement
+    When User click button view finance reimbursement
 
   Scenario: Approval Finance Reimbursement
     When User click button approval finance reimbursement
@@ -218,3 +302,26 @@ Feature: Finance Page Test
 
   Scenario: View Approved Payment Finance Reimbursement
     When User click button view approved payment finance reimbursement
+
+  Scenario: Enter Disbursement Trip Payment Page
+    When User click tab disbursement trip payment
+    Then User get text title page finance disbursement trip payment
+
+  Scenario: Proceed Payment Disbursement Trip
+    When User click button payment disbursement trip
+    And User input amount approve payment disbursement trip
+    And User upload document payment disbursement trip
+    Then User create payment disbursement trip
+
+  Scenario: Edit Payment Disbursement Trip
+    When User click icon edit payment disbursement trip
+    And User re upload document payment disbursement trip
+    Then User save edit data payment disbursement trip
+
+  Scenario: Approval Payment Disbursement Trip
+    When User click button approval payment disbursement trip
+    And User select approval payment disbursement trip
+    Then User click button save approval payment disbursement trip
+
+  Scenario: View Approved Payment Disbursement Trip
+    When User click button view approved payment disbursement trip

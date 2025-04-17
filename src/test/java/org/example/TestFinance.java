@@ -57,6 +57,41 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page ho report finance");
     }
 
+//Download Excel & PDF HO Report Finance
+    @When("User click button download excel ho report")
+    public void user_click_button_download_excel_ho_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelHoReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel ho report");
+    }
+
+    @Then("User click button download pdf ho report")
+    public void user_click_button_download_pdf_ho_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadPdfHoReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download pdf ho report");
+    }
+
 //Enter Task & Activity Report Finance Page
     @When("User click sub tab task activity report finance")
     public void user_click_sub_tab_task_activity_report_finance() {
@@ -72,6 +107,41 @@ public class TestFinance {
         Assert.assertEquals(financePage.getTxtTaskActivityReport(), "Task & Activity");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page task activity report finance");
+    }
+
+//Download Excel & PDF Task & Activity Report Finance
+    @When("User click button download excel task activity report finance")
+    public void user_click_button_download_excel_task_activity_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelTaskActivityReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel task activity report finance");
+    }
+
+    @Then("User click button download pdf task activity report finance")
+    public void user_click_button_download_pdf_task_activity_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadPdfTaskActivityReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download pdf task activity report finance");
     }
 
 //Enter Task & Activity Summary Report Finance Page
@@ -91,6 +161,41 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page task activity summary report finance");
     }
 
+//Download Excel & PDF Task Activity Summary Report Finance
+    @When("User click button download excel task activity summary report finance")
+    public void user_click_button_download_excel_task_activity_summary_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelTaskActivitySummaryReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel task activity summary report finance");
+    }
+
+    @Then("User click button download pdf task activity summary report finance")
+    public void user_click_button_download_pdf_task_activity_summary_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadPdfTaskActivitySummaryReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download pdf task activity summary report finance");
+    }
+
 //Enter Client Report Finance Page
     @When("User click sub tab client report finance")
     public void user_click_sub_tab_client_report_finance() {
@@ -108,11 +213,46 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page client report finance");
     }
 
+//Download Excel & PDF Client Report Finance
+    @When("User click button download excel client report finance")
+    public void user_click_button_download_excel_client_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelClientReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel client report finance");
+    }
+
+    @Then("User click button download pdf client report finance")
+    public void user_click_button_download_pdf_client_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadPdfClientReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download pdf client report finance");
+    }
+
 //Enter Administrative Report Finance Page
     @When("User click sub tab administrative report finance")
     public void user_click_sub_tab_administrative_report_finance() {
         Hooks.delay(1);
-        financePage.TabAdminstrativeReport();
+        financePage.TabAdministrativeReport();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click sub tab administrative report finance");
     }
@@ -125,11 +265,46 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page administrative report finance");
     }
 
-//Enter Administrative Summary Report Finance Page
+//Download Excel & PDF Administrative Report Finance
+    @When("User click button download excel administrative report finance")
+    public void user_click_button_download_excel_administrative_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelAdministrativeReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel administrative report finance");
+    }
+
+    @Then("User click button download pdf administrative report finance")
+    public void user_click_button_download_pdf_administrative_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadPdfAdministrativeReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download pdf administrative report finance");
+    }
+
+    //Enter Administrative Summary Report Finance Page
     @When("User click sub tab administrative summary report finance")
     public void user_click_sub_tab_administrative_summary_report_finance() {
         Hooks.delay(1);
-        financePage.TabAdminstrativeSummaryReport();
+        financePage.TabAdministrativeSummaryReport();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click sub tab administrative summary report finance");
     }
@@ -142,11 +317,46 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page administrative summary report finance");
     }
 
-//Enter Administrative Approval Report Finance Page
+    //Download Excel & PDF Administrative Summary Report Finance
+    @When("User click button download excel administrative summary report finance")
+    public void user_click_button_download_excel_administrative_summary_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelAdministrativeSummaryReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel administrative summary report finance");
+    }
+
+    @Then("User click button download pdf administrative summary report finance")
+    public void user_click_button_download_pdf_administrative_summary_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadPdfAdministrativeSummaryReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download pdf administrative summary report finance");
+    }
+
+    //Enter Administrative Approval Report Finance Page
     @When("User click sub tab administrative approval report finance")
     public void user_click_sub_tab_administrative_approval_report_finance() {
         Hooks.delay(1);
-        financePage.TabAdminstrativeApprovalReport();
+        financePage.TabAdministrativeApprovalReport();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click sub tab administrative approval report finance");
     }
@@ -159,7 +369,42 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page administrative approval report finance");
     }
 
-//Enter HO Reimbursement Finance Page
+    //Download Excel & PDF Administrative Approval Report Finance
+    @When("User click button download excel administrative approval report finance")
+    public void user_click_button_download_excel_administrative_approval_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelAdministrativeApprovalReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel administrative approval report finance");
+    }
+
+    @Then("User click button download pdf administrative approval report finance")
+    public void user_click_button_download_pdf_administrative_approval_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadPdfAdministrativeApprovalReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download pdf administrative approval report finance");
+    }
+
+    //Enter HO Reimbursement Finance Page
     @When("User click sub tab ho reimbursement report finance")
     public void user_click_sub_tab_ho_reimbursement_report_finance() {
         Hooks.delay(1);
@@ -169,14 +414,277 @@ public class TestFinance {
     }
 
     @Then("User get text title page ho reimbursement report finance")
-    public void user_get_text_title_page_ho_reimbursement_report_finace() {
+    public void user_get_text_title_page_ho_reimbursement_report_finance() {
         Hooks.delay(1);
-        Assert.assertEquals(financePage.getTxtHoReimbursementReport(), "Admisnistrative");
+        Assert.assertEquals(financePage.getTxtHoReimbursementReport(), "HO Reimbursement");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page ho reimbursement report finance");
     }
 
-//Enter Client Page
+    //Download Excel HO Reimbursement Report Finance
+    @When("User click button download excel ho reimbursement report finance")
+    public void user_click_button_download_excel_ho_reimbursement_report_finance() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelHoReimbursementReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel ho reimbursement report finance");
+    }
+
+    //Enter Finance Report Page
+    @When("User click tab finance report")
+    public void user_click_tab_finance_report() {
+        Hooks.delay(1);
+        financePage.TabFinanceReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab finance report");
+    }
+
+    @Then("User get text title page finance report")
+    public void user_get_text_title_page_finance_report() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinanceReportPage(), "Finance Report");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance report");
+    }
+
+    //Download Excel Finance Reimbursement Report
+    @When("User click button download excel finance reimbursement report")
+    public void user_click_button_download_excel_finance_reimbursement_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelFinanceReimbursementReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel finance reimbursement report");
+    }
+
+    //Enter Finance Master Document Number Report Page
+    @When("User click sub tab finance master document number report")
+    public void user_click_sub_tab_finance_master_document_number_report() {
+        Hooks.delay(1);
+        financePage.TabFinanceMasterDocumentNumberReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab finance master document number report");
+    }
+
+    @Then("User get text title page finance master document number report")
+    public void user_get_text_title_page_finance_master_document_number_report() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinanceMasterDocumentNumberReportPage(), "Finance Report");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance master document number report");
+    }
+
+    //Download Excel Finance Master Document Number Report
+    @When("User click button download excel finance master document number report")
+    public void user_click_button_download_excel_finance_master_document_number_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelFinanceMasterDocumentNumberReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel finance master document number report");
+    }
+
+    //Enter Finance Payroll Report Page
+    @When("User click sub tab finance payroll report")
+    public void user_click_sub_tab_finance_payroll_report() {
+        Hooks.delay(1);
+        financePage.TabFinancePayrollReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab finance payroll report");
+    }
+
+    @Then("User get text title page finance payroll report")
+    public void user_get_text_title_page_finance_payroll_report() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinancePayrollReportPage(), "Payroll");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance payroll report");
+    }
+
+    //Download Excel Finance Payroll Report
+    @When("User click button download excel finance payroll report")
+    public void user_click_button_download_excel_finance_payroll_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelFinancePayrollReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel finance payroll report");
+    }
+
+    //Enter HO Deposit Report Page
+    @When("User click sub tab ho deposit report")
+    public void user_click_sub_tab_ho_deposit_report() {
+        Hooks.delay(1);
+        financePage.TabHoDepositReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab ho deposit report");
+    }
+
+    @Then("User get text title page ho deposit report")
+    public void user_get_text_title_page_ho_deposit_report() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtHoDepositReportPage(), "Deposit");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page ho deposit report");
+    }
+
+    //Download Excel HO Deposit Report
+    @When("User click button download excel ho deposit report")
+    public void user_click_button_download_excel_ho_deposit_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelHoDepositReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel ho deposit report");
+    }
+
+    //Enter HO Deposit Receipt Report Page
+    @When("User click sub tab ho deposit receipt report")
+    public void user_click_sub_tab_ho_deposit_receipt_report() {
+        Hooks.delay(1);
+        financePage.TabHoDepositReceiptReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab ho deposit receipt report");
+    }
+
+    @Then("User get text title page ho deposit receipt report")
+    public void user_get_text_title_page_ho_deposit_receipt_report() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtHoDepositReceiptReportPage(), "Deposit Receipt");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page ho deposit receipt report");
+    }
+
+    //Download Excel HO Deposit Receipt Report
+    @When("User click button download excel ho deposit receipt report")
+    public void user_click_button_download_excel_ho_deposit_receipt_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelHoDepositReceiptReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel ho deposit receipt report");
+    }
+
+    //Enter HO Business Trip Reimbursement Report Page
+    @When("User click sub tab ho business trip reimbursement report")
+    public void user_click_sub_tab_ho_business_trip_reimbursement_report() {
+        Hooks.delay(1);
+        financePage.TabHoBusinessTripReimbursementReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab ho business trip reimbursement report");
+    }
+
+    @Then("User get text title page ho business trip reimbursement report")
+    public void user_get_text_title_page_ho_business_trip_reimbursement_report() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtHoBusinessTripReimbursementReportPage(), "Business Trip Reimburst");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page ho business trip reimbursement report");
+    }
+
+    //Download Excel HO Business Trip Reimbursement Report
+    @When("User click button download excel ho business trip reimbursement report")
+    public void user_click_button_download_excel_ho_business_trip_reimbursement_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelHoBusinessTripReimbursementReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel ho business trip reimbursement report");
+    }
+
+    //Enter Finance General Ledger Report Page
+    @When("User click sub tab finance general ledger report")
+    public void user_click_sub_tab_finance_general_ledger_report() {
+        Hooks.delay(1);
+        financePage.TabFinanceGeneralLedgerReport();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click sub tab finance general ledger report");
+    }
+
+    @Then("User get text title page finance general ledger report")
+    public void user_get_text_title_page_finance_general_ledger_report() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinanceGeneralLedgerReportPage(), "Business Trip Reimburst");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance general ledger report");
+    }
+
+    //Download Excel Finance General Ledger Report
+    @When("User click button download excel finance general ledger report")
+    public void user_click_button_download_excel_finance_general_ledger_report() {
+        Hooks.delay(1);
+        financePage.BtnDownloadExcelFinanceGeneralLedgerReport();
+        Hooks.delay(3);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button download excel finance general ledger report");
+    }
+
+    //Enter Client Page
     @When("User click tab client")
     public void user_click_tab_client() {
         Hooks.delay(1);
@@ -193,7 +701,7 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page client");
     }
 
-//Add Client
+    //Add Client
     @When("User click button add client")
     public void user_click_button_add_client() {
         Hooks.delay(1);
@@ -418,6 +926,23 @@ public class TestFinance {
         financePage.BtnBackHoCompletedPage();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User back to ho completed page");
+    }
+
+    //Restore Completed HO
+    @When("User click button restore completed ho")
+    public void user_click_button_restore_completed_ho() {
+        Hooks.delay(1);
+        financePage.BtnRestoreHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button restore completed ho");
+    }
+
+    @Then("User click button confirm restore completed ho")
+    public void user_click_button_confirm_restore_completed_ho() {
+        Hooks.delay(1);
+        financePage.BtnConfirmRestoreHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button confirm restore completed ho");
     }
 
 //Enter Finance Document Page
@@ -791,7 +1316,7 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User get text title page finance reimbursement");
     }
 
-//Create Finance Payroll Reimbursement
+//Create Finance Reimbursement
     @When("User click button create finance reimbursement")
     public void user_click_button_create_finance_reimbursement() {
         Hooks.delay(1);
@@ -895,15 +1420,15 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User save edit data finance reimbursement");
     }
 
-//View Finance Payment
-    @When("User click button view finance payment")
-    public void user_click_button_view_finance_payment() {
+//View Finance Reimbursement
+    @When("User click button view finance reimbursement")
+    public void user_click_button_view_finance_reimbursement() {
         Hooks.delay(2);
         financePage.BtnViewFinanceReimbursement();
         Hooks.delay(2);
         financePage.BtnBackViewFinanceReimbursement();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button view finance payment");
+        extentTest.log(LogStatus.PASS, "User click button view finance reimbursement");
     }
 
 //Approval Finance Reimbursement
@@ -966,7 +1491,7 @@ public class TestFinance {
     @Then("User get text title page ho reimbursement payment")
     public void user_get_text_title_page_ho_reimbursement_payment() {
         Hooks.delay(1);
-        Assert.assertEquals(financePage.getTxtFinancePaymentPage(), "Finance Reimbursement");
+        Assert.assertEquals(financePage.getTxtFinancePaymentPage(), "HO Reimbursement");
         Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "User get text title page ho reimbursement payment");
     }
@@ -991,7 +1516,7 @@ public class TestFinance {
     @And("User input amount approve payment ho reimbursement")
     public void User_input_amount_approve_payment_ho_reimbursement() {
         Hooks.delay(2);
-        financePage.InputAmountApprovePaymentHoReimbursement("725000");
+        financePage.InputAmountApprovePaymentHoReimbursement("25000");
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User input amount approve payment ho reimbursement");
     }
@@ -1066,7 +1591,7 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User click button save approval payment ho reimbursement");
     }
 
-//View Payment HO Reimbursement
+//View Approved Payment HO Reimbursement
     @When("User click button view approved payment ho reimbursement")
     public void user_click_button_view_approved_payment_ho_reimbursement() {
         Hooks.delay(1);
@@ -1189,7 +1714,7 @@ public class TestFinance {
         extentTest.log(LogStatus.PASS, "User click button save approval payment finance reimbursement");
     }
 
-//View Payment Finance Reimbursement
+//View Approved Payment Finance Reimbursement
     @When("User click button view approved payment finance reimbursement")
     public void user_click_button_view_approved_payment_finance_reimbursement() {
         Hooks.delay(1);
@@ -1198,6 +1723,138 @@ public class TestFinance {
         financePage.BtnBackViewApprovedPaymentFinanceReimbursement();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button view approved payment finance reimbursement");
+    }
+
+//Enter Disbursement Trip Payment Page
+    @When("User click tab disbursement trip payment")
+    public void user_click_tab_finance_disbursement_trip_payment() {
+        Hooks.delay(1);
+        financePage.TabFinanceDisbursementTripPayment();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab finance disbursement trip payment");
+    }
+
+    @Then("User get text title page finance disbursement trip payment")
+    public void user_get_text_title_page_finance_disbursement_trip_payment() {
+        Hooks.delay(1);
+        Assert.assertEquals(financePage.getTxtFinanceDisbursementTripPaymentPage(), "Disbursement Trip");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page finance disbursement trip payment");
+    }
+
+//Proceed Payment Disbursement Trip
+    @When("User click button payment disbursement trip")
+    public void user_click_button_payment_disbursement_trip() {
+        Hooks.delay(1);
+        financePage.BtnPaymentNeedToPaymentDisbursementTrip();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button payment disbursement trip");
+    }
+
+    @And("User input amount approve payment disbursement trip")
+    public void User_input_amount_approve_payment_disbursement_trip() {
+        Hooks.delay(2);
+        financePage.ClearInputAmountApprovePaymentDisbursementTrip();
+        Hooks.delay(2);
+        financePage.InputAmountApprovePaymentDisbursementTrip("1725000");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User input amount approve payment disbursement trip");
+    }
+
+    @And("User upload document payment disbursement trip")
+    public void user_upload_document_payment_disbursement_trip() {
+        Hooks.delay(2);
+        financePage.BtnUploadDocumentPaymentDisbursementTrip("C:\\Users\\M1403QA\\Downloads\\Document Rekap Sakit User.xlsx");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User upload document payment disbursement trip");
+    }
+
+    @Then("User create payment disbursement trip")
+    public void user_create_payment_disbursement_trip() {
+        Hooks.delay(1);
+        financePage.BtnCreatePaymentDisbursementTrip();
+        Hooks.delay(1);
+        financePage.BtnConfirmCreatePaymentDisbursementTrip();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User create payment disbursement trip");
+    }
+
+//Edit Payment Disbursement Trip
+    @When("User click icon edit payment disbursement trip")
+    public void user_click_icon_edit_payment_disbursement_trip() {
+        Hooks.delay(1);
+        financePage.TabPaymentDisbursementTrip();
+        Hooks.delay(2);
+        financePage.BtnPencilPaymentDisbursementTrip();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click icon edit payment disbursement trip");
+    }
+
+    @And("User re upload document payment disbursement trip")
+    public void user_re_upload_document_payment_disbursement_trip() {
+        Hooks.delay(2);
+        financePage.BtnEditUploadDocumentPaymentDisbursementTrip("C:\\Users\\M1403QA\\Downloads\\Document Rekap Sakit User.xlsx");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User re upload document payment disbursement trip");
+    }
+
+    @Then("User save edit data payment disbursement trip")
+    public void user_save_edit_data_payment_disbursement_trip() {
+        Hooks.delay(1);
+        financePage.BtnSaveEditPaymentDisbursementTrip();
+        Hooks.delay(2);
+        financePage.BtnConfirmSaveEditPaymentDisbursementTrip();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User save edit data payment disbursement trip");
+    }
+
+//Approval Payment Disbursement Trip
+    @When("User click button approval payment disbursement trip")
+    public void user_click_button_approval_payment_disbursement_trip() {
+        Hooks.delay(2);
+        financePage.BtnApprovalPaymentDisbursementTrip();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval payment disbursement trip");
+    }
+
+    @And("User select approval payment disbursement trip")
+    public void user_select_approval_payment_disbursement_trip() {
+        Hooks.delay(2);
+        financePage.BtnSelectPartnerApprovalPaymentDisbursementTrip();
+        Hooks.delay(2);
+        financePage.SelectPartnerApprovalPaymentDisbursementTrip();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select approval payment disbursement trip");
+    }
+
+    @Then("User click button save approval payment disbursement trip")
+    public void user_click_button_save_approval_payment_disbursement_trip() {
+        Hooks.delay(3);
+        financePage.BtnSavePartnerApprovalPaymentDisbursementTrip();
+        Hooks.delay(2);
+        financePage.BtnConfirmPartnerApprovalPaymentDisbursementTrip();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button save approval payment disbursement trip");
+    }
+
+//View Approved Payment Disbursement Trip
+    @When("User click button view approved payment disbursement trip")
+    public void user_click_button_view_approved_payment_disbursement_trip() {
+        Hooks.delay(1);
+        financePage.BtnViewApprovedPaymentDisbursementTrip();
+        Hooks.delay(2);
+        try {
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+            robot.delay(200);
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
+        }
+        Hooks.delay(2);
+        financePage.BtnBackViewApprovedPaymentDisbursementTrip();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button view approved payment disbursement trip");
     }
 }
 

@@ -170,13 +170,7 @@ Feature: Ho Page Test
     And User select id rkpd surat tugas
     And User checklist list of expenses surat tugas
     Then User click button create document surat tugas
-
-  Scenario: Partner Approval Document Surat Tugas
-    When User click button partner approval document surat tugas
-    And User select partner approval document surat tugas
-    And User input note partner approval surat tugas
-    Then User click button save partner approval surat tugas
-
+    
   Scenario: Create Document LKPD
     When User click button create administrative documents for lkpd
     And User select document lkpd
@@ -200,74 +194,74 @@ Feature: Ho Page Test
     And User input note partner approval lkpd
     Then User click button save partner approval lkpd
 
-  Scenario: Create Document Bon Putih
-    When User click button create administrative documents for bon putih
-    And User select document bon putih
-    And User select id lkpd bon putih
-    And User checklist reimbursement bon putih
-    Then User click button create document bon putih
+  Scenario: Create Document Reimbursement RKPD
+    When User click button create administrative documents for reimbursement rkpd
+    And User select document reimbursement rkpd
+    And User select id lkpd reimbursement rkpd
+    And User checklist reimbursement reimbursement rkpd
+    Then User click button create document reimbursement rkpd
 
-  Scenario: JP Approval Document Bon Putih
-    When User click button jp approval document bon putih
-    And User select jp approval document bon putih
-    And User input note jp approval bon putih
-    Then User click button save jp approval bon putih
+  Scenario: JP Approval Document Reimbursement RKPD
+    When User click button jp approval document reimbursement rkpd
+    And User select jp approval document reimbursement rkpd
+    And User input note jp approval reimbursement rkpd
+    Then User click button save jp approval reimbursement rkpd
 
-  Scenario: Partner Approval Document Bon Putih
-    When User click button partner approval document bon putih
-    And User select partner approval document bon putih
-    And User input note partner approval bon putih
-    Then User click button save partner approval bon putih
+  Scenario: Partner Approval Document Reimbursement RKPD
+    When User click button partner approval document reimbursement rkpd
+    And User select partner approval document reimbursement rkpd
+    And User input note partner approval reimbursement rkpd
+    Then User click button save partner approval reimbursement rkpd
 
-  Scenario: Create Document Bon Hijau
-    When User click button create finance documents for bon hijau
-    And User select document bon hijau
-    And User select id st bon hijau
-    And User input amount trip expenses bon hijau
-    And User input note trip expenses bon hijau
-    And User upload recipient trip expenses bon hijau
-    Then User click button create document bon hijau
+  Scenario: Create Document Trip Accomodation
+    When User click button create finance documents for trip accomodation
+    And User select document trip accomodation
+    And User select id st trip accomodation
+    And User input amount trip expenses trip accomodation
+    And User input note trip expenses trip accomodation
+    And User upload recipient trip expenses trip accomodation
+    Then User click button create document trip accomodation
 
-  Scenario: JP Approval Document Bon Hijau
-    When User click button jp approval document bon hijau
-    And User select jp approval document bon hijau
-    And User input note jp approval bon hijau
-    Then User click button save jp approval bon hijau
+  Scenario: JP Approval Document Trip Accomodation
+    When User click button jp approval document trip accomodation
+    And User select jp approval document trip accomodation
+    And User input note jp approval trip accomodation
+    Then User click button save jp approval trip accomodation
 
-  Scenario: Partner Approval Document Bon Hijau
-    When User click button partner approval document bon hijau
-    And User select partner approval document bon hijau
-    And User input note partner approval bon hijau
-    Then User click button save partner approval bon hijau
+  Scenario: Partner Approval Document Trip Accomodation
+    When User click button partner approval document trip accomodation
+    And User select partner approval document trip accomodation
+    And User input note partner approval trip accomodation
+    Then User click button save partner approval trip accomodation
 
-  Scenario: Create Document Bon Kuning
-    When User click button create finance documents for bon kuning
-    And User select document bon kuning
-    And User select id bon putih bon kuning
-    And User checklist team incurred expenses reimbursement bon kuning
-    Then User click button create document bon kuning
+  Scenario: Create Document Disbursement Trip
+    When User click button create finance documents for disbursement trip
+    And User select document disbursement trip
+    And User select id reimbursement rkpd disbursement trip
+    And User checklist team incurred expenses reimbursement disbursement trip
+    Then User click button create document disbursement trip
 
-  Scenario: JP Approval Document Bon Kuning
-    When User click button jp approval document bon kuning
-    And User select jp approval document bon kuning
-    And User input note jp approval bon kuning
-    Then User click button save jp approval bon kuning
+  Scenario: JP Approval Document Disbursement Trip
+    When User click button jp approval document disbursement trip
+    And User select jp approval document disbursement trip
+    And User input note jp approval disbursement trip
+    Then User click button save jp approval disbursement trip
 
-  Scenario: Partner Approval Document Bon Kuning
-    When User click button partner approval document bon kuning
-    And User select partner approval document bon kuning
-    And User input note partner approval bon kuning
-    Then User click button save partner approval bon kuning
+  Scenario: Partner Approval Document Disbursement Trip
+    When User click button partner approval document disbursement trip
+    And User select partner approval document disbursement trip
+    And User input note partner approval disbursement trip
+    Then User click button save partner approval disbursement trip
 
-  Scenario: Create Document Bon Merah
-    When User click button create finance documents for bon merah
-    And User select document bon merah
-    And User input description bon merah
-    And User select receipt date bon merah
-    And User input account number bon merah
-    And User input amount received bon merah
-    And User input final value bon merah
-    Then User click button create document bon merah
+  Scenario: Create Document Deposit Receipt
+    When User click button create finance documents for deposit receipt
+    And User select document deposit receipt
+    And User input description deposit receipt
+    And User select receipt date deposit receipt
+    And User input account number deposit receipt
+    And User input amount received deposit receipt
+    And User input final value deposit receipt
+    Then User click button create document deposit receipt
 
   Scenario: View Document RKPD
     When User click id rkpd
@@ -275,17 +269,17 @@ Feature: Ho Page Test
   Scenario: View Document Surat Tugas
     When User click id surat tugas
 
-  Scenario: View Document Bon Hijau
-    When User click id bon hijau
+  Scenario: View Document Trip Accomodation
+    When User click id trip accomodation
 
   Scenario: View Document LKPD
     When User click id lkpd
 
-  Scenario: View Document Bon Putih
-    When User click id bon putih
+  Scenario: View Document reimbursement rkpd
+    When User click id reimbursement rkpd
 
-  Scenario: View Document Bon Kuning
-    When User click id bon kuning
+  Scenario: View Document Disbursement Trip
+    When User click id disbursement trip
 
   Scenario: View Business Trip Recap
     When User click button view business trip recap 1
@@ -293,33 +287,33 @@ Feature: Ho Page Test
   Scenario: View Business Trip Expenses Recap
     When User click button view business trip expenses recap
 
-  Scenario: Edit Document Bon Kuning
-    When User click button view business trip expenses recap for edit bon kuning
-    And User click button edit document bon kuning
-    And User edit data document bon kuning
-    Then User save edit document bon kuning
+  Scenario: Edit Document Disbursement Trip
+    When User click button view business trip expenses recap for edit disbursement trip
+    And User click button edit document disbursement trip
+    And User edit data document disbursement trip
+    Then User save edit document disbursement trip
 
-  Scenario: Delete Document Bon Kuning
-    When User click button delete document bon kuning
-    Then User click button confirm delete document bon kuning
+  Scenario: Delete Document Disbursement Trip
+    When User click button delete document disbursement trip
+    Then User click button confirm delete document disbursement trip
 
-  Scenario: Edit Document Bon Putih
-    When User click button edit document bon putih
-    And User edit data document bon putih
-    Then User save edit document bon putih
+  Scenario: Edit Document reimbursement rkpd
+    When User click button edit document reimbursement rkpd
+    And User edit data document reimbursement rkpd
+    Then User save edit document reimbursement rkpd
 
-  Scenario: Delete Document Bon Putih
-    When User click button delete document bon putih
-    Then User click button confirm delete document bon putih
+  Scenario: Delete Document reimbursement rkpd
+    When User click button delete document reimbursement rkpd
+    Then User click button confirm delete document reimbursement rkpd
 
-  Scenario: Edit Document Bon Hijau
-    When User click button edit document bon hijau
-    And User edit data document bon hijau
-    Then User save edit document bon hijau
+  Scenario: Edit Document Trip Accomodation
+    When User click button edit document trip accomodation
+    And User edit data document trip accomodation
+    Then User save edit document trip accomodation
 
-  Scenario: Delete Document Bon Hijau
-    When User click button delete document bon hijau
-    Then User click button confirm delete document bon hijau
+  Scenario: Delete Document Trip Accomodation
+    When User click button delete document trip accomodation
+    Then User click button confirm delete document trip accomodation
 
   Scenario: Edit Document LKPD
     When User click button view business trip recap for edit administrative document
@@ -414,3 +408,109 @@ Feature: Ho Page Test
   Scenario: View HO Activities HO Working Plan
     When User click button view ho activities
     Then User click button back view ho activities
+
+  Scenario: Complete HO
+    When User click button tab dashboard ho
+    And User search valid data based id ho
+    And User click button complete ho
+    Then User click confirm complete ho
+
+  Scenario: Enter List Approval Page
+    When User click tab list approval
+    Then User get text title page list approval
+
+  Scenario: JP Approval Task List Approval
+    When User click button approval jp task list approval
+    And User click button approve jp document task list approval
+    Then User click button save jp approval task list approval
+
+  Scenario: Partner Approval Task List Approval
+    When User select filter partner approval task list approval
+    And User click button approval partner task list approval
+    And User click button approve partner approval document task list approval
+    Then User click button save partner approval task list approval
+
+  Scenario: JP Approval RKPD List Approval
+    When User select filter jp approval rkpd list approval
+    And User select sort by rkpd list approval
+    And User click button approval jp rkpd list approval
+    And User click button approve jp document rkpd list approval
+    Then User click button save jp approval rkpd list approval
+
+  Scenario: Partner Approval RKPD List Approval
+    When User select filter partner approval rkpd list approval
+    And User click button approval partner rkpd list approval
+    And User click button approve partner document rkpd list approval
+    Then User click button save partner approval rkpd list approval
+
+  Scenario: JP Approval LKPD List Approval
+    When User select filter jp approval lkpd list approval
+    And User select sort by lkpd list approval
+    And User click button approval jp lkpd list approval
+    And User click button approve jp document lkpd list approval
+    Then User click button save jp approval lkpd list approval
+
+  Scenario: Partner Approval LKPD List Approval
+    When User select filter partner approval lkpd list approval
+    And User click button approval partner lkpd list approval
+    And User click button approve partner document lkpd list approval
+    Then User click button save partner approval lkpd list approval
+
+  Scenario: JP Approval Reimbursement RKPD List Approval
+    When User select filter jp approval reimbursement rkpd list approval
+    And User select sort by reimbursement rkpd list approval
+    And User click button approval jp reimbursement rkpd list approval
+    And User click button approve jp document reimbursement rkpd list approval
+    Then User click button save jp approval reimbursement rkpd list approval
+
+  Scenario: Partner Approval Reimbursement RKPD List Approval
+    When User select filter partner approval reimbursement rkpd list approval
+    And User click button approval partner reimbursement rkpd list approval
+    And User click button approve partner document reimbursement rkpd list approval
+    Then User click button save partner approval reimbursement rkpd list approval
+
+  Scenario: JP Approval Disbursement Trip List Approval
+    When User select filter jp approval disbursement trip list approval
+    And User select sort by disbursement trip list approval
+    And User click button approval jp disbursement trip list approval
+    And User click button approve jp document disbursement trip list approval
+    Then User click button save jp approval disbursement trip list approval
+
+
+  Scenario: Partner Approval Disbursement Trip List Approval
+    When User select filter partner approval disbursement trip list approval
+    And User click button approval partner disbursement trip list approval
+    And User click button approve partner document disbursement trip list approval
+    Then User click button save partner approval disbursement trip list approval
+
+  Scenario: JP Approval Trip Accommodation List Approval
+    When User select filter jp approval trip accommodation list approval
+    And User select sort by trip accommodation list approval
+    And User click button approval jp trip accommodation list approval
+    And User click button approve jp document trip accommodation list approval
+    Then User click button save jp approval trip accommodation list approval
+
+  Scenario: Partner Approval Trip Accommodation List Approval
+    When User select filter partner approval trip accommodation list approval
+    And User click button partner approval trip accommodation list approval
+    And User click button approve partner document trip accommodation list approval
+    Then User click button save partner approval trip accommodation list approval
+
+  Scenario: JP Approval HO Reimbursement List Approval
+    When User select filter jp approval ho reimbursement list approval
+    And User select sort by ho reimbursement list approval
+    And User click button approval jp ho reimbursement list approval
+    And User click button approve jp document ho reimbursement list approval
+    Then User click button save jp approval ho reimbursement list approval
+
+  Scenario: FD Approval HO Reimbursement List Approval
+    When User select filter fd approval ho reimbursement list approval
+    And User click button approval fd ho reimbursement list approval
+    And User click button approve fd document ho reimbursement list approval
+    Then User click button save fd approval ho reimbursement list approval
+
+  Scenario: Partner Approval HO Overtime List Approval
+    When User select sort by ho overtime list approval
+    And User click button partner approval ho overtime list approval
+    And User click button approve partner document ho overtime list approval
+    Then User click button save partner approval ho overtime list approval

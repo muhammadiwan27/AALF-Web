@@ -18,12 +18,13 @@ public class TestHo {
     static WebDriver driver;
     static ExtentTest extentTest;
     static HoPage hoPage = new HoPage();
+
     public TestHo() {
         driver = Hooks.driver;
         extentTest = Hooks.extentTest;
     }
 
-//Enter HO Page
+    //Enter HO Page
     @When("User click tab ho")
     public void user_click_tab_ho() {
         Hooks.delay(1);
@@ -40,7 +41,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User get text title page ho");
     }
 
-//Create HO
+    //Create HO
     @When("User click button create ho")
     public void user_click_button_create_ho() {
         Hooks.delay(1);
@@ -223,7 +224,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save ho");
     }
 
-//User Search Valid Data Based ID HO
+    //User Search Valid Data Based ID HO
     @When("User click on the search bar under the words ho berjalan")
     public void user_click_on_the_search_bar_under_the_words_ho_berjalan() {
         Hooks.delay(2);
@@ -240,7 +241,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User input valid id ho");
     }
 
-//Enter HO Working Plan Page
+    //Enter HO Working Plan Page
     @When("User click button ho working plan")
     public void user_click_button_ho_working_plan() {
         Hooks.delay(1);
@@ -257,7 +258,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User get text title page ho working plan");
     }
 
-//Edit HO
+    //Edit HO
     @When("User click button edit type of contract")
     public void user_click_button_edit_type_of_contract() {
         Hooks.delay(1);
@@ -286,7 +287,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save edit ho");
     }
 
-//Enter Detail Client Balance
+    //Enter Detail Client Balance
     @When("User click detail cost ho working plan")
     public void user_click_detail_cost_ho_working_plan() {
         Hooks.delay(1);
@@ -311,7 +312,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User close detail cost");
     }
 
-//Add Task
+    //Add Task
     @When("User click button add task")
     public void user_click_button_add_task() {
         Hooks.delay(1);
@@ -392,7 +393,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save task");
     }
 
-//Add Activity
+    //Add Activity
     @When("User click button add activity")
     public void user_click_button_add_activity() {
         Hooks.delay(2);
@@ -483,7 +484,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save activity");
     }
 
-//Edit Task
+    //Edit Task
     @When("User click button edit task")
     public void user_click_button_edit_task() {
         Hooks.delay(2);
@@ -512,7 +513,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save edit task");
     }
 
-//View Task
+    //View Task
     @When("User click button view task")
     public void user_click_button_view_task() {
         Hooks.delay(2);
@@ -540,7 +541,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button view task");
     }
 
-//Proceed The Task
+    //Proceed The Task
     @When("User click button proceed the task")
     public void user_click_button_proceed_the_task() {
         Hooks.delay(1);
@@ -614,7 +615,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save proceed the task");
     }
 
-//JP Approval Task
+    //JP Approval Task
     @When("User click button jp approval task")
     public void user_click_button_jp_approval_task() {
         Hooks.delay(2);
@@ -653,7 +654,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save jp approval task");
     }
 
-//Revision Task
+    //Revision Task
     @When("User click button partner for revision task")
     public void user_click_button_partner_for_revision_task() {
         Hooks.delay(2);
@@ -758,7 +759,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save jp approval for revision task");
     }
 
-//Partner Approval Task
+    //Partner Approval Task
     @When("User click button partner approval task")
     public void user_click_button_partner_approval_task() {
         Hooks.delay(2);
@@ -797,7 +798,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save partner approval task");
     }
 
-//Delete Task
+    //Delete Task
     @When("User click icon delete task")
     public void user_click_icon_delete_task() {
         Hooks.delay(2);
@@ -814,7 +815,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button confirm delete task");
     }
 
-//JP Approval Activity
+    //JP Approval Activity
     @When("User click button jp approval activity")
     public void user_click_button_jp_approval_activity() {
         Hooks.delay(2);
@@ -853,7 +854,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save jp approval activity");
     }
 
-//Revision Activity
+    //Revision Activity
     @When("User click button partner for revision activity")
     public void user_click_button_partner_for_revision_activity() {
         Hooks.delay(2);
@@ -958,7 +959,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save jp approval for revision activity");
     }
 
-//Partner Approval Activity
+    //Partner Approval Activity
     @When("User click button partner approval activity")
     public void user_click_button_partner_approval_activity() {
         Hooks.delay(2);
@@ -997,7 +998,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save partner approval activity");
     }
 
-//Delete Activity
+    //Delete Activity
     @When("User click icon delete activity")
     public void user_click_icon_delete_activity() {
         Hooks.delay(2);
@@ -1014,7 +1015,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button confirm delete activity");
     }
 
-//Create Document RKPD
+    //Create Document RKPD
     @When("User click button create administrative documents for rkpd")
     public void user_click_button_create_administrative_documents_for_rkpd() {
         Hooks.delay(2);
@@ -1127,7 +1128,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button create document rkpd");
     }
 
-//JP Approval Document RKPD
+    //JP Approval Document RKPD
     @When("User click button jp approval document rkpd")
     public void User_click_button_jp_approval_document_rkpd() {
         Hooks.delay(2);
@@ -1164,7 +1165,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save jp approval rkpd");
     }
 
-//Partner Approval Document RKPD
+    //Partner Approval Document RKPD
     @When("User click button partner approval document rkpd")
     public void User_click_button_partner_approval_document_rkpd() {
         Hooks.delay(2);
@@ -1201,7 +1202,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save partner approval rkpd");
     }
 
-//Create Document Surat Tugas
+    //Create Document Surat Tugas
     @When("User click button create administrative documents for surat tugas")
     public void user_click_button_create_administrative_documents_for_surat_tugas() {
         Hooks.delay(2);
@@ -1254,7 +1255,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button create document surat tugas");
     }
 
-//Create Document LKPD
+    //Create Document LKPD
     @When("User click button create administrative documents for lkpd")
     public void user_click_button_create_administrative_documents_for_lkpd() {
         Hooks.delay(2);
@@ -1353,7 +1354,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button create document lkpd");
     }
 
-//JP Approval Document LKPD
+    //JP Approval Document LKPD
     @When("User click button jp approval document lkpd")
     public void User_click_button_jp_approval_document_lkpd() {
         Hooks.delay(2);
@@ -1390,7 +1391,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save jp approval lkpd");
     }
 
-//Partner Approval Document LKPD
+    //Partner Approval Document LKPD
     @When("User click button partner approval document lkpd")
     public void User_click_button_partner_approval_document_lkpd() {
         Hooks.delay(2);
@@ -1427,27 +1428,27 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save partner approval lkpd");
     }
 
-//Create Document Bon Putih
-    @When("User click button create administrative documents for bon putih")
-    public void user_click_button_create_administrative_documents_for_bon_putih() {
+    //Create Document Reimbursement RKPD
+    @When("User click button create administrative documents for reimbursement rkpd")
+    public void user_click_button_create_administrative_documents_for_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnCreateAdministrativeDocuments();
         Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User click button create administrative documents for bon putih");
+        extentTest.log(LogStatus.PASS, "User click button create administrative documents for reimbursement rkpd");
     }
 
-    @And("User select document bon putih")
-    public void user_select_document_bon_putih() {
+    @And("User select document reimbursement rkpd")
+    public void user_select_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.SelectDocumentBonPutih();
         Hooks.delay(2);
         hoPage.BtnSelectAdministrativeDocuments();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select document bon putih");
+        extentTest.log(LogStatus.PASS, "User select document reimbursement rkpd");
     }
 
-    @And("User select id lkpd bon putih")
-    public void user_select_id_lkpd_bon_putih() {
+    @And("User select id lkpd reimbursement rkpd")
+    public void user_select_id_lkpd_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnSearchIdLkpdBonPutih();
         Hooks.delay(2);
@@ -1455,11 +1456,11 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnSelectIdLkpdBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select id lkpd bon putih");
+        extentTest.log(LogStatus.PASS, "User select id lkpd reimbursement rkpd");
     }
 
-    @And("User checklist reimbursement bon putih")
-    public void user_checklist_reimbursement_bon_putih() {
+    @And("User checklist reimbursement reimbursement rkpd")
+    public void user_checklist_reimbursement_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.ChecklistReimbursement1BonPutih();
         Hooks.delay(2);
@@ -1469,11 +1470,11 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.ChecklistReimbursement4BonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User checklist reimbursement bon putih");
+        extentTest.log(LogStatus.PASS, "User checklist reimbursement reimbursement rkpd");
     }
 
-    @Then("User click button create document bon putih")
-    public void user_click_button_create_document_bon_putih() {
+    @Then("User click button create document reimbursement rkpd")
+    public void user_click_button_create_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnCreateBonPutih();
         Hooks.delay(2);
@@ -1481,104 +1482,104 @@ public class TestHo {
         Hooks.delay(3);
         hoPage.BtnCancelDownloadBonPutih();
         Hooks.delay(3);
-        extentTest.log(LogStatus.PASS, "User click button create document bon putih");
+        extentTest.log(LogStatus.PASS, "User click button create document reimbursement rkpd");
     }
 
-//JP Approval Document Bon Putih
-    @When("User click button jp approval document bon putih")
-    public void User_click_button_jp_approval_document_bon_putih() {
+    //JP Approval Document reimbursement rkpd
+    @When("User click button jp approval document reimbursement rkpd")
+    public void User_click_button_jp_approval_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnJpApprovalBonPutih();
         Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User click button jp approval document bon putih");
+        extentTest.log(LogStatus.PASS, "User click button jp approval document reimbursement rkpd");
     }
 
-    @And("User select jp approval document bon putih")
-    public void user_select_jp_approval_document_bon_putih() {
+    @And("User select jp approval document reimbursement rkpd")
+    public void user_select_jp_approval_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnSelectJpApprovalBonPutih();
         Hooks.delay(2);
         hoPage.SelectJpApprovalBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select jp approval document bon putih");
+        extentTest.log(LogStatus.PASS, "User select jp approval document reimbursement rkpd");
     }
 
-    @And("User input note jp approval bon putih")
-    public void user_input_note_jp_approval_bon_putih() {
+    @And("User input note jp approval reimbursement rkpd")
+    public void user_input_note_jp_approval_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.InputNoteJpApprovalBonPutih("Lanjutkan untuk approval partner");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note jp approval bon putih");
+        extentTest.log(LogStatus.PASS, "User input note jp approval reimbursement rkpd");
     }
 
-    @Then("User click button save jp approval bon putih")
-    public void user_click_button_save_jp_approval_bon_putih() {
+    @Then("User click button save jp approval reimbursement rkpd")
+    public void user_click_button_save_jp_approval_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnSaveJpApprovalBonPutih();
         Hooks.delay(2);
         hoPage.BtnConfirmJpSaveApprovalBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button save jp approval bon putih");
+        extentTest.log(LogStatus.PASS, "User click button save jp approval reimbursement rkpd");
     }
 
-//Partner Approval Document Bon Putih
-    @When("User click button partner approval document bon putih")
-    public void User_click_button_partner_approval_document_bon_putih() {
+    //Partner Approval Document reimbursement rkpd
+    @When("User click button partner approval document reimbursement rkpd")
+    public void User_click_button_partner_approval_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnPartnerApprovalBonPutih();
         Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User click button partner approval document bon putih");
+        extentTest.log(LogStatus.PASS, "User click button partner approval document reimbursement rkpd");
     }
 
-    @And("User select partner approval document bon putih")
-    public void user_select_partner_approval_document_bon_putih() {
+    @And("User select partner approval document reimbursement rkpd")
+    public void user_select_partner_approval_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnSelectPartnerApprovalBonPutih();
         Hooks.delay(2);
         hoPage.SelectPartnerApprovalBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select partner approval document bon putih");
+        extentTest.log(LogStatus.PASS, "User select partner approval document reimbursement rkpd");
     }
 
-    @And("User input note partner approval bon putih")
-    public void user_input_note_partner_approval_bon_putih() {
+    @And("User input note partner approval reimbursement rkpd")
+    public void user_input_note_partner_approval_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.InputNotePartnerApprovalBonPutih("Mantap Ganku");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note partner approval bon putih");
+        extentTest.log(LogStatus.PASS, "User input note partner approval reimbursement rkpd");
     }
 
-    @Then("User click button save partner approval bon putih")
-    public void user_click_button_save_partner_approval_bon_putih() {
+    @Then("User click button save partner approval reimbursement rkpd")
+    public void user_click_button_save_partner_approval_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnSavePartnerApprovalBonPutih();
         Hooks.delay(2);
         hoPage.BtnConfirmPartnerSaveApprovalBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button save partner approval bon putih");
+        extentTest.log(LogStatus.PASS, "User click button save partner approval reimbursement rkpd");
     }
 
-//Create Document Bon Hijau
-    @When("User click button create finance documents for bon hijau")
-    public void user_click_button_create_finance_documents_for_bon_hijau() {
+    //Create Document
+    @When("User click button create finance documents for trip accomodation")
+    public void user_click_button_create_finance_documents_for_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnCreateFinanceDocuments();
         Hooks.delay(1);
-        extentTest.log(LogStatus.PASS, "User click button create finance documents for bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button create finance documents for trip accomodation");
     }
 
-    @And("User select document bon hijau")
-    public void user_select_document_bon_hijau() {
+    @And("User select document trip accomodation")
+    public void user_select_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.SelectDocumentBonHijau();
         Hooks.delay(2);
         hoPage.BtnSelectFinanceDocuments();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select document bon hijau");
+        extentTest.log(LogStatus.PASS, "User select document trip accomodation");
     }
 
-    @And("User select id st bon hijau")
-    public void user_select_id_st_bon_hijau() {
+    @And("User select id st trip accomodation")
+    public void user_select_id_st_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnSearchIdStBonHijau();
         Hooks.delay(2);
@@ -1586,41 +1587,41 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnSelectIdStBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select id st bon hijau");
+        extentTest.log(LogStatus.PASS, "User select id st trip accomodation");
     }
 
-    @And("User input amount trip expenses bon hijau")
-    public void user_input_amount_trip_expenses_bon_hijau() {
+    @And("User input amount trip expenses trip accomodation")
+    public void user_input_amount_trip_expenses_trip_accomodation() {
         Hooks.delay(2);
         hoPage.InputAmountTripExpensesBonHijau1("2500000");
         Hooks.delay(2);
         hoPage.InputAmountTripExpensesBonHijau2("1525000");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input amount trip expenses bon hijau");
+        extentTest.log(LogStatus.PASS, "User input amount trip expenses trip accomodation");
     }
 
-    @And("User input note trip expenses bon hijau")
-    public void user_input_note_trip_expenses_bon_hijau() {
+    @And("User input note trip expenses trip accomodation")
+    public void user_input_note_trip_expenses_trip_accomodation() {
         Hooks.delay(2);
         hoPage.InputNoteTripExpensesBonHijau1("Ticket penerbangan pesawat");
         Hooks.delay(2);
         hoPage.InputNoteTripExpensesBonHijau2("Untuk penginapan");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note trip expenses bon hijau");
+        extentTest.log(LogStatus.PASS, "User input note trip expenses trip accomodation");
     }
 
-    @And("User upload recipient trip expenses bon hijau")
-    public void user_upload_recipient_trip_expenses_bon_hijau() {
+    @And("User upload recipient trip expenses trip accomodation")
+    public void user_upload_recipient_trip_expenses_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnUploadRecipientTripExpensesBonHijau1("C:\\Users\\M1403QA\\Downloads\\ENFP - Bingo.png");
         Hooks.delay(2);
-        hoPage.BtnUploadRecipientTripExpensesBonHijau2("C:\\Users\\M1403QA\\Downloads\\Proses kerja HO - Bon Kuning.png");
+        hoPage.BtnUploadRecipientTripExpensesBonHijau2("C:\\Users\\M1403QA\\Downloads\\Proses kerja HO - disbursement trip.png");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User upload recipient trip expenses bon hijau");
+        extentTest.log(LogStatus.PASS, "User upload recipient trip expenses trip accomodation");
     }
 
-    @Then("User click button create document bon hijau")
-    public void user_click_button_create_document_bon_hijau() {
+    @Then("User click button create document trip accomodation")
+    public void user_click_button_create_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnCreateBonHijau();
         Hooks.delay(2);
@@ -1628,104 +1629,104 @@ public class TestHo {
         Hooks.delay(3);
         hoPage.BtnCancelDownloadBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button create document bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button create document trip accomodation");
     }
 
-//JP Approval Document Bon Hijau
-    @When("User click button jp approval document bon hijau")
-    public void User_click_button_jp_approval_document_bon_hijau() {
+    //JP Approval Document trip accomodation
+    @When("User click button jp approval document trip accomodation")
+    public void User_click_button_jp_approval_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnJpApprovalBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button jp approval document bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button jp approval document trip accomodation");
     }
 
-    @And("User select jp approval document bon hijau")
-    public void user_select_jp_approval_document_bon_hijau() {
+    @And("User select jp approval document trip accomodation")
+    public void user_select_jp_approval_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnSelectJpApprovalBonHijau();
         Hooks.delay(2);
         hoPage.SelectJpApprovalBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select jp approval document bon hijau");
+        extentTest.log(LogStatus.PASS, "User select jp approval document trip accomodation");
     }
 
-    @And("User input note jp approval bon hijau")
-    public void user_input_note_jp_approval_bon_hijau() {
+    @And("User input note jp approval trip accomodation")
+    public void user_input_note_jp_approval_trip_accomodation() {
         Hooks.delay(2);
         hoPage.InputNoteJpApprovalBonHijau("Lanjutkan untuk approval partner");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note jp approval bon hijau");
+        extentTest.log(LogStatus.PASS, "User input note jp approval trip accomodation");
     }
 
-    @Then("User click button save jp approval bon hijau")
-    public void user_click_button_save_jp_approval_bon_hijau() {
+    @Then("User click button save jp approval trip accomodation")
+    public void user_click_button_save_jp_approval_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnSaveJpApprovalBonHijau();
         Hooks.delay(2);
         hoPage.BtnConfirmJpSaveApprovalBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button save jp approval bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button save jp approval trip accomodation");
     }
 
-//Partner Approval Document Bon Hijau
-    @When("User click button partner approval document bon hijau")
-    public void User_click_button_partner_approval_document_bon_hijau() {
+    //Partner Approval Document trip accomodation
+    @When("User click button partner approval document trip accomodation")
+    public void User_click_button_partner_approval_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnPartnerApprovalBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button partner approval document bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button partner approval document trip accomodation");
     }
 
-    @And("User select partner approval document bon hijau")
-    public void user_select_partner_approval_document_bon_hijau() {
+    @And("User select partner approval document trip accomodation")
+    public void user_select_partner_approval_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnSelectPartnerApprovalBonHijau();
         Hooks.delay(2);
         hoPage.SelectPartnerApprovalBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select partner approval document bon hijau");
+        extentTest.log(LogStatus.PASS, "User select partner approval document trip accomodation");
     }
 
-    @And("User input note partner approval bon hijau")
-    public void user_input_note_partner_approval_bon_hijau() {
+    @And("User input note partner approval trip accomodation")
+    public void user_input_note_partner_approval_trip_accomodation() {
         Hooks.delay(2);
         hoPage.InputNotePartnerApprovalBonHijau("Mantap Ganku");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note partner approval bon hijau");
+        extentTest.log(LogStatus.PASS, "User input note partner approval trip accomodation");
     }
 
-    @Then("User click button save partner approval bon hijau")
-    public void user_click_button_save_partner_approval_bon_hijau() {
+    @Then("User click button save partner approval trip accomodation")
+    public void user_click_button_save_partner_approval_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnSavePartnerApprovalBonHijau();
         Hooks.delay(2);
         hoPage.BtnConfirmPartnerSaveApprovalBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button save partner approval bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button save partner approval trip accomodation");
     }
 
-//Create Document Bon Kuning
-    @When("User click button create finance documents for bon kuning")
-    public void user_click_button_create_finance_documents_for_bon_kuning() {
+    //Create Document disbursement trip
+    @When("User click button create finance documents for disbursement trip")
+    public void user_click_button_create_finance_documents_for_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnCreateFinanceDocuments();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button create finance documents for bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button create finance documents for disbursement trip");
     }
 
-    @And("User select document bon kuning")
-    public void user_select_document_bon_kuning() {
+    @And("User select document disbursement trip")
+    public void user_select_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.SelectDocumentBonKuning();
         Hooks.delay(2);
         hoPage.BtnSelectFinanceDocuments();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select document bon kuning");
+        extentTest.log(LogStatus.PASS, "User select document disbursement trip");
     }
 
-    @And("User select id bon putih bon kuning")
-    public void user_select_id_bon_putih_bon_kuning() {
+    @And("User select id reimbursement rkpd disbursement trip")
+    public void user_select_id_reimbursement_rkpd_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnSearchIdBonPutihBonKuning();
         Hooks.delay(2);
@@ -1733,11 +1734,11 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnSelectIdBonPutihBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select id bon putih bon kuning");
+        extentTest.log(LogStatus.PASS, "User select id reimbursement rkpd disbursement trip");
     }
 
-    @And("User checklist team incurred expenses reimbursement bon kuning")
-    public void user_checklist_team_incurred_expenses_reimbursement_bon_kuning() {
+    @And("User checklist team incurred expenses reimbursement disbursement trip")
+    public void user_checklist_team_incurred_expenses_reimbursement_disbursement_trip() {
         Hooks.delay(2);
         hoPage.ChecklistProfessionalFee1BonKuning();
         Hooks.delay(2);
@@ -1755,11 +1756,11 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.ChecklistMealAllowance2BonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User checklist team incurred expenses reimbursement bon kuning");
+        extentTest.log(LogStatus.PASS, "User checklist team incurred expenses reimbursement disbursement trip");
     }
 
-    @Then("User click button create document bon kuning")
-    public void user_click_button_create_document_bon_kuning() {
+    @Then("User click button create document disbursement trip")
+    public void user_click_button_create_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnCreateBonKuning();
         Hooks.delay(2);
@@ -1767,146 +1768,146 @@ public class TestHo {
         Hooks.delay(3);
         hoPage.BtnCancelDownloadBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button create document bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button create document disbursement trip");
     }
 
-//JP Approval Document Bon Kuning
-    @When("User click button jp approval document bon kuning")
-    public void User_click_button_jp_approval_document_bon_kuning() {
+    //JP Approval Document disbursement trip
+    @When("User click button jp approval document disbursement trip")
+    public void User_click_button_jp_approval_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnJpApprovalBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button jp approval document bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button jp approval document disbursement trip");
     }
 
-    @And("User select jp approval document bon kuning")
-    public void user_select_jp_approval_document_bon_kuning() {
+    @And("User select jp approval document disbursement trip")
+    public void user_select_jp_approval_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnSelectJpApprovalBonKuning();
         Hooks.delay(2);
         hoPage.SelectJpApprovalBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select jp approval document bon kuning");
+        extentTest.log(LogStatus.PASS, "User select jp approval document disbursement trip");
     }
 
-    @And("User input note jp approval bon kuning")
-    public void user_input_note_jp_approval_bon_kuning() {
+    @And("User input note jp approval disbursement trip")
+    public void user_input_note_jp_approval_disbursement_trip() {
         Hooks.delay(2);
         hoPage.InputNoteJpApprovalBonKuning("Lanjutkan untuk approval partner");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note jp approval bon kuning");
+        extentTest.log(LogStatus.PASS, "User input note jp approval disbursement trip");
     }
 
-    @Then("User click button save jp approval bon kuning")
-    public void user_click_button_save_jp_approval_bon_kuning() {
+    @Then("User click button save jp approval disbursement trip")
+    public void user_click_button_save_jp_approval_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnSaveJpApprovalBonKuning();
         Hooks.delay(2);
         hoPage.BtnConfirmJpSaveApprovalBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button save jp approval bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button save jp approval disbursement trip");
     }
 
-//Partner Approval Document Bon Kuning
-    @When("User click button partner approval document bon kuning")
-    public void User_click_button_partner_approval_document_bon_kuning() {
+    //Partner Approval Document disbursement trip
+    @When("User click button partner approval document disbursement trip")
+    public void User_click_button_partner_approval_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnPartnerApprovalBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button partner approval document bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button partner approval document disbursement trip");
     }
 
-    @And("User select partner approval document bon kuning")
-    public void user_select_partner_approval_document_bon_kuning() {
+    @And("User select partner approval document disbursement trip")
+    public void user_select_partner_approval_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnSelectPartnerApprovalBonKuning();
         Hooks.delay(2);
         hoPage.SelectPartnerApprovalBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select partner approval document bon kuning");
+        extentTest.log(LogStatus.PASS, "User select partner approval document disbursement trip");
     }
 
-    @And("User input note partner approval bon kuning")
-    public void user_input_note_partner_approval_bon_kuning() {
+    @And("User input note partner approval disbursement trip")
+    public void user_input_note_partner_approval_disbursement_trip() {
         Hooks.delay(2);
         hoPage.InputNotePartnerApprovalBonKuning("Mantap semuanya");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input note partner approval bon kuning");
+        extentTest.log(LogStatus.PASS, "User input note partner approval disbursement trip");
     }
 
-    @Then("User click button save partner approval bon kuning")
-    public void user_click_button_save_partner_approval_bon_kuning() {
+    @Then("User click button save partner approval disbursement trip")
+    public void user_click_button_save_partner_approval_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnSavePartnerApprovalBonKuning();
         Hooks.delay(2);
         hoPage.BtnConfirmPartnerSaveApprovalBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button save partner approval bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button save partner approval disbursement trip");
     }
 
-//Create Document Bon Merah
-    @When("User click button create finance documents for bon merah")
-    public void user_click_button_create_finance_documents_for_bon_merah() {
+    //Create Document deposit receipt
+    @When("User click button create finance documents for deposit receipt")
+    public void user_click_button_create_finance_documents_for_deposit_receipt() {
         Hooks.delay(2);
         hoPage.BtnCreateFinanceDocuments();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button create finance documents for bon merah");
+        extentTest.log(LogStatus.PASS, "User click button create finance documents for deposit receipt");
     }
 
-    @And("User select document bon merah")
-    public void user_select_document_bon_merah() {
+    @And("User select document deposit receipt")
+    public void user_select_document_deposit_receipt() {
         Hooks.delay(2);
         hoPage.SelectDocumentBonMerah();
         Hooks.delay(2);
         hoPage.BtnSelectFinanceDocuments();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select document bon merah");
+        extentTest.log(LogStatus.PASS, "User select document deposit receipt");
     }
 
-    @And("User input description bon merah")
-    public void user_input_description_bon_merah() {
+    @And("User input description deposit receipt")
+    public void user_input_description_deposit_receipt() {
         Hooks.delay(2);
         hoPage.InputDescriptionBonMerah("Setoran untuk biaya jasa penanganan kasus");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input description bon merah");
+        extentTest.log(LogStatus.PASS, "User input description deposit receipt");
     }
 
-    @And("User select receipt date bon merah")
-    public void user_select_receipt_date_bon_merah() {
+    @And("User select receipt date deposit receipt")
+    public void user_select_receipt_date_deposit_receipt() {
         Hooks.delay(2);
         hoPage.SelectReceiptDateBonMerah();
         Hooks.delay(2);
         hoPage.BtnSelectTodayReceiptDateBonMerah();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User select receipt date bon merah");
+        extentTest.log(LogStatus.PASS, "User select receipt date deposit receipt");
     }
 
-    @And("User input account number bon merah")
-    public void user_input_account_number_bon_merah() {
+    @And("User input account number deposit receipt")
+    public void user_input_account_number_deposit_receipt() {
         Hooks.delay(2);
         hoPage.InputAccountNumberBonMerah("27384967382");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input account number bon merah");
+        extentTest.log(LogStatus.PASS, "User input account number deposit receipt");
     }
 
-    @And("User input amount received bon merah")
-    public void user_input_amount_received_bon_merah() {
+    @And("User input amount received deposit receipt")
+    public void user_input_amount_received_deposit_receipt() {
         Hooks.delay(2);
         hoPage.InputAmountReceivedBonMerah("52000000");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input amount received bon merah");
+        extentTest.log(LogStatus.PASS, "User input amount received deposit receipt");
     }
 
-    @And("User input final value bon merah")
-    public void user_input_final_value_bon_merah() {
+    @And("User input final value deposit receipt")
+    public void user_input_final_value_deposit_receipt() {
         Hooks.delay(2);
         hoPage.InputFinalValueBonMerah("52000000");
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User input final value bon merah");
+        extentTest.log(LogStatus.PASS, "User input final value deposit receipt");
     }
 
-    @Then("User click button create document bon merah")
-    public void user_click_button_create_document_bon_merah() {
+    @Then("User click button create document deposit receipt")
+    public void user_click_button_create_document_deposit_receipt() {
         Hooks.delay(2);
         hoPage.BtnCreateBonMerah();
         Hooks.delay(2);
@@ -1914,10 +1915,10 @@ public class TestHo {
         Hooks.delay(3);
         hoPage.BtnCancelDownloadBonMerah();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button create document bon merah");
+        extentTest.log(LogStatus.PASS, "User click button create document deposit receipt");
     }
 
-//View RKPD
+    //View RKPD
     @When("User click id rkpd")
     public void user_click_id_rkpd() {
         Hooks.delay(2);
@@ -1945,7 +1946,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click id rkpd");
     }
 
-//View Surat Tugas
+    //View Surat Tugas
     @When("User click id surat tugas")
     public void user_click_id_surat_tugas() {
         Hooks.delay(2);
@@ -1973,9 +1974,9 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click id surat tugas");
     }
 
-//View Bon Hijau
-    @When("User click id bon hijau")
-    public void user_click_id_bon_hijau() {
+    //View trip accomodation
+    @When("User click id trip accomodation")
+    public void user_click_id_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnViewBonHijau();
         Hooks.delay(2);
@@ -1998,10 +1999,10 @@ public class TestHo {
         } catch (AWTException e) {
             throw new RuntimeException(e);
         }
-        extentTest.log(LogStatus.PASS, "User click id bon hijau");
+        extentTest.log(LogStatus.PASS, "User click id trip accomodation");
     }
 
-//View LKPD
+    //View LKPD
     @When("User click id lkpd")
     public void user_click_id_lkpd() {
         Hooks.delay(2);
@@ -2029,9 +2030,9 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click id lkpd");
     }
 
-//View Bon Putih
-    @When("User click id bon putih")
-    public void user_click_id_bon_putih() {
+    //View reimbursement rkpd
+    @When("User click id reimbursement rkpd")
+    public void user_click_id_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnViewBonPutih();
         Hooks.delay(2);
@@ -2054,12 +2055,12 @@ public class TestHo {
         } catch (AWTException e) {
             throw new RuntimeException(e);
         }
-        extentTest.log(LogStatus.PASS, "User click id bon putih");
+        extentTest.log(LogStatus.PASS, "User click id reimbursement rkpd");
     }
 
-//View Bon Kuning
-    @When("User click id bon kuning")
-    public void user_click_id_bon_kuning() {
+    //View disbursement trip
+    @When("User click id disbursement trip")
+    public void user_click_id_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnViewBonKuning();
         Hooks.delay(2);
@@ -2082,10 +2083,10 @@ public class TestHo {
         } catch (AWTException e) {
             throw new RuntimeException(e);
         }
-        extentTest.log(LogStatus.PASS, "User click id bon kuning");
+        extentTest.log(LogStatus.PASS, "User click id disbursement trip");
     }
 
-//View Business Trip Recap
+    //View Business Trip Recap
     @When("User click button view business trip recap 1")
     public void user_click_button_view_business_trip_recap_1() {
         Hooks.delay(2);
@@ -2113,7 +2114,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button view business trip recap 1");
     }
 
-//View Business Trip Expenses Recap
+    //View Business Trip Expenses Recap
     @When("User click button view business trip expenses recap")
     public void user_click_button_view_business_trip_expenses_recap() {
         Hooks.delay(2);
@@ -2141,33 +2142,33 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button view business trip expenses recap");
     }
 
-//Edit Document Bon Kuning
-    @When("User click button view business trip expenses recap for edit bon kuning")
-    public void user_click_button_view_business_trip_expenses_recap_for_edit_bon_kuning() {
+    //Edit Document disbursement trip
+    @When("User click button view business trip expenses recap for edit disbursement trip")
+    public void user_click_button_view_business_trip_expenses_recap_for_edit_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnViewBusinessTripExpensesRecap();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button view business trip expenses recap for edit bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button view business trip expenses recap for edit disbursement trip");
     }
 
-    @And("User click button edit document bon kuning")
-    public void user_click_button_edit_document_bon_kuning() {
+    @And("User click button edit document disbursement trip")
+    public void user_click_button_edit_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnEditBonKuning();
         Hooks.delay(3);
-        extentTest.log(LogStatus.PASS, "User click button edit document bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button edit document disbursement trip");
     }
 
-    @And("User edit data document bon kuning")
-    public void user_edit_data_document_bon_kuning() {
+    @And("User edit data document disbursement trip")
+    public void user_edit_data_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.UnchecklistMealAllowanceEditBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User edit data document bon kuning");
+        extentTest.log(LogStatus.PASS, "User edit data document disbursement trip");
     }
 
-    @Then("User save edit document bon kuning")
-    public void user_save_edit_document_bon_kuning() {
+    @Then("User save edit document disbursement trip")
+    public void user_save_edit_document_disbursement_trip() {
         Hooks.delay(3);
         hoPage.BtnSaveEditBonKuning();
         Hooks.delay(2);
@@ -2175,45 +2176,45 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnCancelDownloadBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User save edit document bon kuning");
+        extentTest.log(LogStatus.PASS, "User save edit document disbursement trip");
     }
 
-//Delete Document Bon Kuning
-    @When("User click button delete document bon kuning")
-    public void user_click_button_delete_document_bon_kuning() {
+    //Delete Document disbursement trip
+    @When("User click button delete document disbursement trip")
+    public void user_click_button_delete_document_disbursement_trip() {
         Hooks.delay(2);
         hoPage.BtnDeleteBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button delete document bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button delete document disbursement trip");
     }
 
-    @Then("User click button confirm delete document bon kuning")
-    public void user_click_button_confirm_delete_document_bon_kuning() {
+    @Then("User click button confirm delete document disbursement trip")
+    public void user_click_button_confirm_delete_document_disbursement_trip() {
         Hooks.delay(3);
         hoPage.BtnConfirmDeleteBonKuning();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button confirm delete document bon kuning");
+        extentTest.log(LogStatus.PASS, "User click button confirm delete document disbursement trip");
     }
 
-//Edit Document Bon Putih
-    @When("User click button edit document bon putih")
-    public void user_click_button_edit_document_bon_putih() {
+    //Edit Document reimbursement rkpd
+    @When("User click button edit document reimbursement rkpd")
+    public void user_click_button_edit_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnEditBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button edit document bon putih");
+        extentTest.log(LogStatus.PASS, "User click button edit document reimbursement rkpd");
     }
 
-    @And("User edit data document bon putih")
-    public void user_edit_data_document_bon_putih() {
+    @And("User edit data document reimbursement rkpd")
+    public void user_edit_data_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.UnchecklistMealAllowanceEditBonPutih();
         Hooks.delay(3);
-        extentTest.log(LogStatus.PASS, "User edit data document bon putih");
+        extentTest.log(LogStatus.PASS, "User edit data document reimbursement rkpd");
     }
 
-    @Then("User save edit document bon putih")
-    public void user_save_edit_document_bon_putih() {
+    @Then("User save edit document reimbursement rkpd")
+    public void user_save_edit_document_reimbursement_rkpd() {
         Hooks.delay(3);
         hoPage.BtnSaveEditBonPutih();
         Hooks.delay(2);
@@ -2221,37 +2222,37 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnCancelDownloadBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User save edit document bon putih");
+        extentTest.log(LogStatus.PASS, "User save edit document reimbursement rkpd");
     }
 
-//Delete Document Bon Putih
-    @When("User click button delete document bon putih")
-    public void user_click_button_delete_document_bon_putih() {
+    //Delete Document reimbursement rkpd
+    @When("User click button delete document reimbursement rkpd")
+    public void user_click_button_delete_document_reimbursement_rkpd() {
         Hooks.delay(2);
         hoPage.BtnDeleteBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button delete document bon putih");
+        extentTest.log(LogStatus.PASS, "User click button delete document reimbursement rkpd");
     }
 
-    @Then("User click button confirm delete document bon putih")
-    public void user_click_button_confirm_delete_document_bon_putih() {
+    @Then("User click button confirm delete document reimbursement rkpd")
+    public void user_click_button_confirm_delete_document_reimbursement_rkpd() {
         Hooks.delay(3);
         hoPage.BtnConfirmDeleteBonPutih();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button confirm delete document bon putih");
+        extentTest.log(LogStatus.PASS, "User click button confirm delete document reimbursement rkpd");
     }
 
-//Edit Document Bon Hijau
-    @When("User click button edit document bon hijau")
-    public void user_click_button_edit_document_bon_hijau() {
+    //Edit Document trip accomodation
+    @When("User click button edit document trip accomodation")
+    public void user_click_button_edit_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnEditBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button edit document bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button edit document trip accomodation");
     }
 
-    @And("User edit data document bon hijau")
-    public void user_edit_data_document_bon_hijau() {
+    @And("User edit data document trip accomodation")
+    public void user_edit_data_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnAddTripExpensesEditBonHijau();
         Hooks.delay(3);
@@ -2263,11 +2264,11 @@ public class TestHo {
         Hooks.delay(3);
         hoPage.BtnUploadRecipientTripExpensesEditBonHijau("C:\\Users\\M1403QA\\Downloads\\WhatsApp Image 2024-02-20 at 17.26.10_42cde6da.jpg");
         Hooks.delay(3);
-        extentTest.log(LogStatus.PASS, "User edit data document bon hijau");
+        extentTest.log(LogStatus.PASS, "User edit data document trip accomodation");
     }
 
-    @Then("User save edit document bon hijau")
-    public void user_save_edit_document_bon_hijau() {
+    @Then("User save edit document trip accomodation")
+    public void user_save_edit_document_trip_accomodation() {
         Hooks.delay(3);
         hoPage.BtnSaveEditBonHijau();
         Hooks.delay(2);
@@ -2275,27 +2276,27 @@ public class TestHo {
         Hooks.delay(2);
         hoPage.BtnCancelDownloadBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User save edit document bon hijau");
+        extentTest.log(LogStatus.PASS, "User save edit document trip accomodation");
     }
 
-//Delete Document Bon Hijau
-    @When("User click button delete document bon hijau")
-    public void user_click_button_delete_document_bon_hijau() {
+    //Delete Document trip accomodation
+    @When("User click button delete document trip accomodation")
+    public void user_click_button_delete_document_trip_accomodation() {
         Hooks.delay(2);
         hoPage.BtnDeleteBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button delete document bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button delete document trip accomodation");
     }
 
-    @Then("User click button confirm delete document bon hijau")
-    public void user_click_button_confirm_delete_document_bon_hijau() {
+    @Then("User click button confirm delete document trip accomodation")
+    public void user_click_button_confirm_delete_document_trip_accomodation() {
         Hooks.delay(3);
         hoPage.BtnConfirmDeleteBonHijau();
         Hooks.delay(2);
-        extentTest.log(LogStatus.PASS, "User click button confirm delete document bon hijau");
+        extentTest.log(LogStatus.PASS, "User click button confirm delete document trip accomodation");
     }
 
-//Edit Document LKPD
+    //Edit Document LKPD
     @When("User click button view business trip recap for edit administrative document")
     public void user_click_button_view_business_trip_recap_for_edit_administrative_document() {
         Hooks.delay(2);
@@ -2336,7 +2337,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save edit document lkpd");
     }
 
-//Delete Document LKPD
+    //Delete Document LKPD
     @When("User click button delete document lkpd")
     public void user_click_button_delete_document_lkpd() {
         Hooks.delay(2);
@@ -2353,7 +2354,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button confirm delete document lkpd");
     }
 
-//Edit Document Surat Tugas
+    //Edit Document Surat Tugas
     @When("User click button edit document surat tugas")
     public void user_click_button_edit_document_surat_tugas() {
         Hooks.delay(2);
@@ -2382,7 +2383,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save edit document surat tugas");
     }
 
-//Delete Document Surat Tugas
+    //Delete Document Surat Tugas
     @When("User click button delete document surat tugas")
     public void user_click_button_delete_document_surat_tugas() {
         Hooks.delay(2);
@@ -2399,7 +2400,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button confirm delete document surat tugas");
     }
 
-//Edit Document RKPD
+    //Edit Document RKPD
     @When("User click button edit document rkpd")
     public void user_click_button_edit_document_rkpd() {
         Hooks.delay(2);
@@ -2428,7 +2429,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User save edit document rkpd");
     }
 
-//Delete Document RKPD
+    //Delete Document RKPD
     @When("User click button delete document rkpd")
     public void user_click_button_delete_document_rkpd() {
         Hooks.delay(2);
@@ -2445,7 +2446,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button confirm delete document rkpd");
     }
 
-//Upload Document HO Working Plan
+    //Upload Document HO Working Plan
     @When("User click button upload document")
     public void user_click_button_upload_document() {
         Hooks.delay(2);
@@ -2472,7 +2473,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button upload");
     }
 
- //Delete Upload Document HO Working Plan
+    //Delete Upload Document HO Working Plan
     @When("User click button delete upload document ho working plan")
     public void user_click_button_delete_upload_document_ho_working_plan() {
         Hooks.delay(2);
@@ -2489,7 +2490,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button confirm delete upload document ho working plan");
     }
 
-//Create Notulen HO Working Plan
+    //Create Notulen HO Working Plan
     @When("User click button notulen")
     public void user_click_button_notulen() {
         Hooks.delay(2);
@@ -2588,7 +2589,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button create notulen");
     }
 
-//Create HO Reimbursement HO Working Plan
+    //Create HO Reimbursement HO Working Plan
     @When("User click button create reimbursement")
     public void user_click_button_create_reimbursement() {
         Hooks.delay(2);
@@ -2671,7 +2672,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button create ho reimbursement");
     }
 
-//Edit HO Reimbursement HO Working Plan
+    //Edit HO Reimbursement HO Working Plan
     @When("User click button edit ho reimbursement")
     public void user_click_button_edit_ho_reimbursement() {
         Hooks.delay(2);
@@ -2700,7 +2701,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save edit ho reimbursement");
     }
 
-//View HO Reimbursement HO Working Plan
+    //View HO Reimbursement HO Working Plan
     @When("User click button view ho reimbursement")
     public void user_click_button_view_ho_reimbursement() {
         Hooks.delay(2);
@@ -2717,7 +2718,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button back view ho reimbursement");
     }
 
-//JP Approval HO Reimbursement HO Working Plan
+    //JP Approval HO Reimbursement HO Working Plan
     @When("User click button approval ho reimbursement")
     public void user_click_button_approval_ho_reimbursement() {
         Hooks.delay(2);
@@ -2746,7 +2747,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button save jp approval ho reimbursement");
     }
 
-//Delete HO Reimbursement HO Working Plan
+    //Delete HO Reimbursement HO Working Plan
     @When("User click button delete ho reimbursement")
     public void user_click_button_delete_ho_reimbursement() {
         Hooks.delay(2);
@@ -2763,7 +2764,7 @@ public class TestHo {
         extentTest.log(LogStatus.PASS, "User click button confirm delete ho reimbursement");
     }
 
-//View HO Activities HO Working Plan
+    //View HO Activities HO Working Plan
     @When("User click button view ho activities")
     public void user_click_button_view_ho_activities() {
         Hooks.delay(2);
@@ -2786,5 +2787,692 @@ public class TestHo {
         hoPage.BtnBackHoActivities();
         Hooks.delay(2);
         extentTest.log(LogStatus.PASS, "User click button back view ho activities");
+    }
+
+    //Complete HO
+    @When("User click button tab dashboard ho")
+    public void user_click_button_tab_dashboard_ho() {
+        Hooks.delay(2);
+        hoPage.TabHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button tab dashboard ho");
+    }
+
+    @And("User search valid data based id ho")
+    public void user_search_valid_data_based_id_ho() {
+        Hooks.delay(2);
+        hoPage.InputSearchHoBerjalan("hodev004");
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User search valid data based id ho");
+    }
+
+    @And("User click button complete ho")
+    public void user_click_button_complete_ho() {
+        Hooks.delay(2);
+        hoPage.BtnCompleteHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button complete ho");
+    }
+
+    @Then("User click confirm complete ho")
+    public void user_click_button_confirm_complete_ho() {
+        Hooks.delay(2);
+        hoPage.InputNoteCompleteHo("HO ini telah selesai dikerjakan");
+        Hooks.delay(2);
+        hoPage.BtnConfirmCompleteHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click confirm complete ho");
+    }
+
+    //Enter List Approval Page
+    @When("User click tab list approval")
+    public void user_click_list_approval() {
+        Hooks.delay(1);
+        hoPage.TabListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click tab list approval");
+    }
+
+    @Then("User get text title page list approval")
+    public void user_get_text_title_page_list_approval() {
+        Hooks.delay(1);
+        Assert.assertEquals(hoPage.getTxtListApprovalHo(), "List Approval");
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User get text title page list approval");
+    }
+
+    //JP Approval Task List Approval
+    @When("User click button approval jp task list approval")
+    public void user_click_button_approval_jp_task_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalJpTaskActivityListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approval jp task list approval");
+    }
+
+    @And("User click button approve jp document task list approval")
+    public void user_click_button_approve_jp_document_task_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectJpApprovalTaskActivityListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectJpApproveApprovalTaskActivityListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve jp document task list approval");
+    }
+
+    @Then("User click button save jp approval task list approval")
+    public void user_click_button_save_jp_approval_task_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalTaskActivityListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalTaskActivityListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval task list approval");
+    }
+
+    //Partner Approval Task List Approval
+    @When("User select filter partner approval task list approval")
+    public void user_select_filter_partner_approval_task_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter partner approval task list approval");
+    }
+
+    @And("User click button approval partner task list approval")
+    public void user_click_button_approval_partner_task_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalPartnerTaskActivityListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approval partner task list approval");
+    }
+
+    @And("User click button approve partner approval document task list approval")
+    public void user_click_button_approve_partner_approval_document_task_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectPartnerApprovalTaskActivityListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectPartnerApproveApprovalTaskActivityListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve partner approval document task list approval");
+    }
+
+    @Then("User click button save partner approval task list approval")
+    public void user_click_button_save_partner_approval_task_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalTaskActivityListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalTaskActivityListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval task list approval");
+    }
+
+    //JP Approval RKPD List Approval
+    @When("User select filter jp approval rkpd list approval")
+    public void user_select_filter_jp_approval_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter jp approval rkpd list approval");
+    }
+
+    @And("User select sort by rkpd list approval")
+    public void user_select_sort_by_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSortByApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectSortByRkpdApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select sort by rkpd list approval");
+    }
+
+    @And("User click button approval jp rkpd list approval")
+    public void user_click_button_jp_approval_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalJpRkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval jp rkpd list approval");
+    }
+
+    @And("User click button approve jp document rkpd list approval")
+    public void user_click_button_approve_jp_document_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectJpApprovalRkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectJpApproveApprovalRkpdListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve jp document rkpd list approval");
+    }
+
+    @Then("User click button save jp approval rkpd list approval")
+    public void user_click_button_save_jp_approval_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalRkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalRkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval rkpd list approval");
+    }
+
+    //Partner Approval RKPD List Approval
+    @When("User select filter partner approval rkpd list approval")
+    public void user_select_filter_partner_approval_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter partner approval rkpd list approval");
+    }
+
+    @And("User click button approval partner rkpd list approval")
+    public void user_click_button_approval_partner_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalPartnerRkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval partner rkpd list approval");
+    }
+
+    @And("User click button approve partner document rkpd list approval")
+    public void user_click_button_approve_partner_document_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectPartnerApprovalRkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectPartnerApproveApprovalRkpdListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve partner document rkpd list approval");
+    }
+
+    @Then("User click button save partner approval rkpd list approval")
+    public void user_click_button_save_partner_approval_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalRkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalRkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval rkpd list approval");
+    }
+
+    //JP Approval LKPD List Approval
+    @When("User select filter jp approval lkpd list approval")
+    public void user_select_filter_jp_approval_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter jp approval lkpd list approval");
+    }
+
+    @And("User select sort by lkpd list approval")
+    public void user_select_sort_by_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSortByApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectSortByLkpdApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select sort by lkpd list approval");
+    }
+
+    @And("User click button approval jp lkpd list approval")
+    public void user_click_button_jp_approval_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalJpLkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval jp lkpd list approval");
+    }
+
+    @And("User click button approve jp document lkpd list approval")
+    public void user_click_button_approve_jp_document_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectJpApprovalLkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectJpApproveApprovalLkpdListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve jp document lkpd list approval");
+    }
+
+    @Then("User click button save jp approval lkpd list approval")
+    public void user_click_button_save_jp_approval_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalLkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalLkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval lkpd list approval");
+    }
+
+    //Partner Approval LKPD List Approval
+    @When("User select filter partner approval lkpd list approval")
+    public void user_select_filter_partner_approval_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter partner approval lkpd list approval");
+    }
+
+    @And("User click button approval partner lkpd list approval")
+    public void user_click_button_approval_partner_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalPartnerLkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval partner lkpd list approval");
+    }
+
+    @And("User click button approve partner document lkpd list approval")
+    public void user_click_button_approve_partner_document_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectPartnerApprovalLkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectPartnerApproveApprovalLkpdListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve partner document lkpd list approval");
+    }
+
+    @Then("User click button save partner approval lkpd list approval")
+    public void user_click_button_save_partner_approval_lkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalLkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalLkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval lkpd list approval");
+    }
+
+    //JP Approval Reimbursement RKPD List Approval
+    @When("User select filter jp approval reimbursement rkpd list approval")
+    public void user_select_filter_jp_approval_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter jp approval reimbursement rkpd list approval");
+    }
+
+    @And("User select sort by reimbursement rkpd list approval")
+    public void user_select_sort_by_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSortByApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectSortByReimbursementRkpdApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select sort by reimbursement rkpd list approval");
+    }
+
+    @And("User click button approval jp reimbursement rkpd list approval")
+    public void user_click_button_jp_approval_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalJpReimbursementRkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval jp reimbursement rkpd list approval");
+    }
+
+    @And("User click button approve jp document reimbursement rkpd list approval")
+    public void user_click_button_approve_jp_document_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectJpApprovalReimbursementRkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectJpApproveApprovalReimbursementRkpdListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve jp document reimbursement rkpd list approval");
+    }
+
+    @Then("User click button save jp approval reimbursement rkpd list approval")
+    public void user_click_button_save_jp_approval_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalReimbursementRkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalReimbursementRkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval reimbursement rkpd list approval");
+    }
+
+    //Partner Approval Reimbursement RKPD List Approval
+    @When("User select filter partner approval reimbursement rkpd list approval")
+    public void user_select_filter_partner_approval_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter partner approval reimbursement rkpd list approval");
+    }
+
+    @And("User click button approval partner reimbursement rkpd list approval")
+    public void user_click_button_approval_partner_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalPartnerReimbursementRkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval partner reimbursement rkpd list approval");
+    }
+
+    @And("User click button approve partner document reimbursement rkpd list approval")
+    public void user_click_button_approve_partner_document_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectPartnerApprovalReimbursementRkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectPartnerApproveApprovalReimbursementRkpdListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve partner document reimbursement rkpd list approval");
+    }
+
+    @Then("User click button save partner approval reimbursement rkpd list approval")
+    public void user_click_button_save_partner_approval_reimbursement_rkpd_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalReimbursementRkpdListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalReimbursementRkpdListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval reimbursement rkpd list approval");
+    }
+
+    //JP Approval Disbursement Trip List Approval
+    @When("User select filter jp approval disbursement trip list approval")
+    public void user_select_filter_jp_approval_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter jp approval disbursement trip list approval");
+    }
+
+    @And("User select sort by disbursement trip list approval")
+    public void user_select_sort_by_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSortByApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectSortByDisbursementTripApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select sort by disbursement trip list approval");
+    }
+
+    @And("User click button approval jp disbursement trip list approval")
+    public void user_click_button_approval_jp_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalJpDisbursementTripListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval jp disbursement trip list approval");
+    }
+
+    @And("User click button approve jp document disbursement trip list approval")
+    public void user_click_button_approve_jp_document_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectJpApprovalDisbursementTripListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectJpApproveApprovalDisbursementTripListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve jp document disbursement trip list approval");
+    }
+
+    @Then("User click button save jp approval disbursement trip list approval")
+    public void user_click_button_save_jp_approval_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalDisbursementTripListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalDisbursementTripListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval disbursement trip list approval");
+    }
+
+    //Partner Approval Disbursement Trip List Approval
+    @When("User select filter partner approval disbursement trip list approval")
+    public void user_select_filter_partner_approval_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter partner approval disbursement trip list approval");
+    }
+
+    @And("User click button approval partner disbursement trip list approval")
+    public void user_click_button_approval_partner_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalPartnerDisbursementTripListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval partner disbursement trip list approval");
+    }
+
+    @And("User click button approve partner document disbursement trip list approval")
+    public void user_click_button_approve_partner_document_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectPartnerApprovalDisbursementTripListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectPartnerApproveApprovalDisbursementTripListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve partner document disbursement trip list approval");
+    }
+
+    @Then("User click button save partner approval disbursement trip list approval")
+    public void user_click_button_save_partner_approval_disbursement_trip_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalDisbursementTripListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalDisbursementTripListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval disbursement trip list approval");
+    }
+
+    //JP Approval Trip Accommodation List Approval
+    @When("User select filter jp approval trip accommodation list approval")
+    public void user_select_filter_jp_approval_trip_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter jp approval trip accommodation list approval");
+    }
+
+    @And("User select sort by trip accommodation list approval")
+    public void user_select_sort_by_trip_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSortByApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectSortByTripAccommodationApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select sort by trip accommodation list approval");
+    }
+
+    @And("User click button approval jp trip accommodation list approval")
+    public void user_click_button_approval_jp_trip_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalJpTripAccommodationListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval jp trip accommodation list approval");
+    }
+
+    @And("User click button approve jp document trip accommodation list approval")
+    public void user_click_button_approve_jp_document_trip_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectJpApprovalTripAccommodationListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectJpApproveApprovalTripAccommodationListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve jp document trip accommodation list approval");
+    }
+
+    @Then("User click button save jp approval trip accommodation list approval")
+    public void user_click_button_save_jp_approval_trip_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalTripAccommodationListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalTripAccommodationListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval trip accommodation list approval");
+    }
+
+    //Partner Approval Trip Accommodation List Approval
+    @When("User select filter partner approval trip accommodation list approval")
+    public void user_select_filter_partner_approval_trip_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter partner approval trip accommodation list approval");
+    }
+
+    @And("User click button partner approval trip accommodation list approval")
+    public void user_click_button_approval_partner_tri_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalPartnerTripAccommodationListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button partner approval trip accommodation list approval");
+    }
+
+    @And("User click button approve partner document trip accommodation list approval")
+    public void user_click_button_approve_partner_document_trip_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectPartnerApprovalTripAccommodationListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectPartnerApproveApprovalTripAccommodationListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve partner document trip accommodation list approval");
+    }
+
+    @Then("User click button save partner approval trip accommodation list approval")
+    public void user_click_button_save_partner_approval_trip_accommodation_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalTripAccommodationListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalTripAccommodationListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval trip accommodation list approval");
+    }
+
+    //JP Approval HO Reimbursement List Approval
+    @When("User select filter jp approval ho reimbursement list approval")
+    public void user_select_filter_jp_approval_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectJpApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter jp approval ho reimbursement list approval");
+    }
+
+    @And("User select sort by ho reimbursement list approval")
+    public void user_select_sort_by_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSortByApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectSortByHoReimbursementApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select sort by ho reimbursement list approval");
+    }
+
+    @And("User click button approval jp ho reimbursement list approval")
+    public void user_click_button_approval_jp_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalJpHoReimbursementListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval jp ho reimbursement list approval");
+    }
+
+    @And("User click button approve jp document ho reimbursement list approval")
+    public void user_click_button_approve_jp_document_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectJpApprovalHoReimbursementListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectJpApproveApprovalHoReimbursementListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve jp document ho reimbursement list approval");
+    }
+
+    @Then("User click button save jp approval ho reimbursement list approval")
+    public void user_click_button_save_jp_approval_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalHoReimbursementListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalHoReimbursementListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save jp approval ho reimbursement list approval");
+    }
+
+    //FD Approval HO Reimbursement List Approval
+    @When("User select filter fd approval ho reimbursement list approval")
+    public void user_select_filter_fd_approval_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnFilterApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectPartnerApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select filter fd approval ho reimbursement list approval");
+    }
+
+    @And("User click button approval fd ho reimbursement list approval")
+    public void user_click_button_approval_fd_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalPartnerHoReimbursementListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button approval fd ho reimbursement list approval");
+    }
+
+    @And("User click button approve fd document ho reimbursement list approval")
+    public void user_click_button_approve_fd_document_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectPartnerApprovalHoReimbursementListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectPartnerApproveApprovalHoReimbursementListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve fd document ho reimbursement list approval");
+    }
+
+    @Then("User click button save fd approval ho reimbursement list approval")
+    public void user_click_button_save_fd_approval_ho_reimbursement_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalHoReimbursementListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalHoReimbursementListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save fd approval ho reimbursement list approval");
+    }
+
+    //Partner Approval HO Overtime List Approval
+    @When("User select sort by ho overtime list approval")
+    public void user_select_sort_by_ho_overtime_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSortByApprovalListApprovalHo();
+        Hooks.delay(2);
+        hoPage.SelectSortByHoOvertimeApprovalListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User select sort by ho overtime list approval");
+    }
+
+    @And("User click button partner approval ho overtime list approval")
+    public void user_click_button_partner_approval_ho_overtime_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnApprovalPartnerHoOvertimeListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button partner approval ho overtime list approval");
+    }
+
+    @And("User click button approve partner document ho overtime list approval")
+    public void user_click_button_approve_partner_document_ho_overtime_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSelectPartnerApprovalHoOvertimeListApprovalHo();
+        Hooks.delay(1);
+        hoPage.SelectPartnerApproveApprovalHoOvertimeListApprovalHo();
+        Hooks.delay(2);
+        extentTest.log(LogStatus.PASS, "User click button approve partner document ho overtime list approval");
+    }
+
+    @Then("User click button save partner approval ho overtime list approval")
+    public void user_click_button_save_partner_approval_ho_overtime_list_approval() {
+        Hooks.delay(1);
+        hoPage.BtnSaveApprovalHoOvertimeListApprovalHo();
+        Hooks.delay(1);
+        hoPage.BtnConfirmSaveApprovalHoOvertimeListApprovalHo();
+        Hooks.delay(1);
+        extentTest.log(LogStatus.PASS, "User click button save partner approval ho overtime list approval");
     }
 }

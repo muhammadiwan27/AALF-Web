@@ -7,10 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class FinancePage {
-    private WebDriver driver;
-
     public FinancePage() {
-        this.driver = DriverSingleton.getDriver();
+        WebDriver driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
 
@@ -26,11 +24,23 @@ public class FinancePage {
     @FindBy(xpath = "(//h1[normalize-space()='HO Report'])[1]")
     WebElement txtHoReport;
 
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelHoReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='PDF'])[1]")
+    WebElement btnDownloadPdfHoReport;
+
     @FindBy(xpath = "(//button[normalize-space()='Task & Activity'])[1]")
     WebElement tabTaskActivityReport;
 
     @FindBy(xpath = "(//li[normalize-space()='Task & Activity'])[1]")
     WebElement txtTaskActivityReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelTaskActivityReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='PDF'])[1]")
+    WebElement btnDownloadPdfTaskActivityReport;
 
     @FindBy(xpath = "(//button[normalize-space()='Task & Activity Summary'])[1]")
     WebElement tabTaskActivitySummaryReport;
@@ -38,35 +48,141 @@ public class FinancePage {
     @FindBy(xpath = "(//li[normalize-space()='Task & Activity Summary'])[1]")
     WebElement txtTaskActivitySummaryReport;
 
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelTaskActivitySummaryReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='PDF'])[1]")
+    WebElement btnDownloadPdfTaskActivitySummaryReport;
+
     @FindBy(xpath = "(//button[normalize-space()='Client'])[1]")
     WebElement tabClientReport;
 
     @FindBy(xpath = "(//li[normalize-space()='Client'])[1]")
     WebElement txtClientReport;
 
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelClientReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='PDF'])[1]")
+    WebElement btnDownloadPdfClientReport;
+
     @FindBy(xpath = "(//button[normalize-space()='Administrative'])[1]")
-    WebElement tabAdminstrativeReport;
+    WebElement tabAdministrativeReport;
 
     @FindBy(xpath = "(//li[normalize-space()='Administrative'])[1]")
     WebElement txtAdministrativeReport;
 
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelAdministrativeReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='PDF'])[1]")
+    WebElement btnDownloadPdfAdministrativeReport;
+
     @FindBy(xpath = "(//button[normalize-space()='Administrative Summary'])[1]")
-    WebElement tabAdminstrativeSummaryReport;
+    WebElement tabAdministrativeSummaryReport;
 
     @FindBy(xpath = "(//li[normalize-space()='Administrative Summary'])[1]")
     WebElement txtAdministrativeSummaryReport;
 
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelAdministrativeSummaryReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='PDF'])[1]")
+    WebElement btnDownloadPdfAdministrativeSummaryReport;
+
     @FindBy(xpath = "(//button[normalize-space()='Administrative Approval'])[1]")
-    WebElement tabAdminstrativeApprovalReport;
+    WebElement tabAdministrativeApprovalReport;
 
     @FindBy(xpath = "(//li[normalize-space()='Administrative Approval'])[1]")
     WebElement txtAdministrativeApprovalReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelAdministrativeApprovalReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='PDF'])[1]")
+    WebElement btnDownloadPdfAdministrativeApprovalReport;
 
     @FindBy(xpath = "(//button[normalize-space()='HO Reimbursement'])[1]")
     WebElement tabHoReimbursementReport;
 
     @FindBy(xpath = "(//li[normalize-space()='HO Reimbursement'])[1]")
     WebElement txtHoReimbursementReport;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelHoReimbursementReport;
+
+    @FindBy(xpath = "(//span[normalize-space()='Finance Report'])[1]")
+    WebElement tabFinanceReport;
+
+    @FindBy(xpath = "(//h1[normalize-space()='Finance Report'])[1]")
+    WebElement txtFinanceReportPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelFinanceReimbursementReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='Master Document Number'])[1]")
+    WebElement tabFinanceMasterDocumentNumberReport;
+
+    @FindBy(xpath = "(//h1[normalize-space()='Master Document Number'])[1]")
+    WebElement txtFinanceMasterDocumentNumberReportPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelFinanceMasterDocumentNumberReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='Payroll'])[1]")
+    WebElement tabFinancePayrollReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='Payroll'])[1]")
+    WebElement txtFinancePayrollReportPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelFinancePayrollReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='Deposit'])[1]")
+    WebElement TabHoDepositReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='Deposit'])[1]")
+    WebElement txtHoDepositReportPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelHoDepositReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='Deposit Receipt'])[1]")
+    WebElement tabHoDepositReceiptReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='Deposit Receipt'])[1]")
+    WebElement txtHoDepositReceiptReportPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelHoDepositReceiptReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='Business Trip Reimburst'])[1]")
+    WebElement tabHoBusinessTripReimbursementReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='Business Trip Reimburst'])[1]")
+    WebElement txtHoBusinessTripReimbursementReportPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelHoBusinessTripReimbursementReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='General Ledger'])[1]")
+    WebElement tabFinanceGeneralLedgerReport;
+
+    @FindBy(xpath = "(//li[normalize-space()='General Ledger'])[1]")
+    WebElement txtFinanceGeneralLedgerReportPage;
+
+    @FindBy(xpath = "(//a[normalize-space()='EXCEL'])[1]")
+    WebElement btnDownloadExcelFinanceGeneralLedgerReport;
+
+    @FindBy(xpath = "(//button[normalize-space()='Disbursement Trip'])[1]")
+    WebElement tabFinanceDisbursementTrip;
+
+    @FindBy(xpath = "(//li[normalize-space()='Disbursement Trip'])[1]")
+    WebElement txtFinanceDisbursementTripPage;
+
+
+
+
 
     @FindBy(xpath = "(//span[normalize-space()='Client'])[1]")
     WebElement tabClient;
@@ -157,6 +273,12 @@ public class FinancePage {
 
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackHoCompletedPage;
+
+    @FindBy(xpath = "(//button[@class='btn btn-sm bg-button'][normalize-space()='Restore HO'])[1]")
+    WebElement btnRestoreHo;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmRestoreHo;
 
     @FindBy(xpath = "(//a[contains(@class,'lg:w-[196px] w-[220px] nav-active duration-500 bg-secondary-01 svelte-24n6es')])[1]")
     WebElement tabFinanceDocument;
@@ -473,6 +595,72 @@ public class FinancePage {
     @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
     WebElement btnBackViewApprovedPaymentFinanceReimbursement;
 
+    @FindBy(xpath = "(//button[normalize-space()='Disbursement Trip'])[1]")
+    WebElement tabFinanceDisbursementTripPayment;
+
+    @FindBy(xpath = "(//li[normalize-space()='Disbursement Trip'])[1]")
+    WebElement txtFinanceDisbursementTripPaymentPage;
+
+    @FindBy(xpath = "(//a[@class='btn btn-sm !text-black'])[1]")
+    WebElement btnPaymentNeedToPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//input[@placeholder='0'])[1]")
+    WebElement inputAmountApprovePaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Upload'])[1]")
+    WebElement btnUploadDocumentPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnCreatePaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmCreatePaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Payment'])[1]")
+    WebElement tabPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//img[@src='/img/icon/pen.svg'])[1]")
+    WebElement btnPencilPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Upload'])[1]")
+    WebElement btnEditUploadDocumentPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Edit'])[1]")
+    WebElement btnSaveEditPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmSaveEditPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//a[normalize-space()='Approval'])[1]")
+    WebElement btnApprovalPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//select[@id='status'])[1]")
+    WebElement btnSelectPartnerApprovalPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//option[@value='approve'])[1]")
+    WebElement selectPartnerApprovalPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement btnSavePartnerApprovalPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Confirm'])[1]")
+    WebElement btnConfirmPartnerApprovalPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//img)[26]")
+    WebElement btnViewApprovedPaymentDisbursementTrip;
+
+    @FindBy(xpath = "(//button[normalize-space()='Back'])[1]")
+    WebElement btnBackViewApprovedPaymentDisbursementTrip;
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -487,14 +675,28 @@ public class FinancePage {
     public String getTxtTaskActivitySummaryReport(){return txtTaskActivitySummaryReport.getText();}
     public void TabClientReport() { tabClientReport.click();}
     public String getTxtClientReport(){return txtClientReport.getText();}
-    public void TabAdminstrativeReport() { tabAdminstrativeReport.click();}
+    public void TabAdministrativeReport() { tabAdministrativeReport.click();}
     public String getTxtAdministrativeReport(){return txtAdministrativeReport.getText();}
-    public void TabAdminstrativeSummaryReport() { tabAdminstrativeSummaryReport.click();}
+    public void TabAdministrativeSummaryReport() { tabAdministrativeSummaryReport.click();}
     public String getTxtAdministrativeSummaryReport(){return txtAdministrativeSummaryReport.getText();}
-    public void TabAdminstrativeApprovalReport() { tabAdminstrativeApprovalReport.click();}
+    public void TabAdministrativeApprovalReport() { tabAdministrativeApprovalReport.click();}
     public String getTxtAdministrativeApprovalReport(){return txtAdministrativeApprovalReport.getText();}
     public void TabHoReimbursementReport() { tabHoReimbursementReport.click();}
     public String getTxtHoReimbursementReport(){return txtHoReimbursementReport.getText();}
+    public void TabFinanceReport() { tabFinanceReport.click();}
+    public String getTxtFinanceReportPage(){return txtFinanceReportPage.getText();}
+    public void TabFinanceMasterDocumentNumberReport() { tabFinanceMasterDocumentNumberReport.click();}
+    public String getTxtFinanceMasterDocumentNumberReportPage(){return txtFinanceMasterDocumentNumberReportPage.getText();}
+    public void TabFinancePayrollReport() { tabFinancePayrollReport.click();}
+    public String getTxtFinancePayrollReportPage(){return txtFinancePayrollReportPage.getText();}
+    public void TabHoDepositReport() { TabHoDepositReport.click();}
+    public String getTxtHoDepositReportPage(){return txtHoDepositReportPage.getText();}
+    public void TabHoDepositReceiptReport() { tabHoDepositReceiptReport.click();}
+    public String getTxtHoDepositReceiptReportPage(){return txtHoDepositReceiptReportPage.getText();}
+    public void TabHoBusinessTripReimbursementReport() { tabHoBusinessTripReimbursementReport.click();}
+    public String getTxtHoBusinessTripReimbursementReportPage(){return txtHoBusinessTripReimbursementReportPage.getText();}
+    public void TabFinanceGeneralLedgerReport() { tabFinanceGeneralLedgerReport.click();}
+    public String getTxtFinanceGeneralLedgerReportPage(){return txtFinanceGeneralLedgerReportPage.getText();}
     public void TabClient() { tabClient.click();}
     public String getTxtClientPage(){return txtClientPage.getText();}
     public void BtnAddClient() { btnAddClient.click();}
@@ -526,6 +728,8 @@ public class FinancePage {
     public void BtnViewHoCompletedPage() { btnViewHoCompletedPage.click();}
     public String getTxtViewHoCompletedPage(){return txtViewHoCompletedPage.getText();}
     public void BtnBackHoCompletedPage() { btnBackHoCompletedPage.click();}
+    public void BtnRestoreHo() { btnRestoreHo.click();}
+    public void BtnConfirmRestoreHo() { btnConfirmRestoreHo.click();}
     public void TabFinanceDocument() { tabFinanceDocument.click();}
     public String getTxtFinanceDocumentPage(){return txtFinanceDocumentPage.getText();}
     public void BtnCreateFinanceDocumentNumber() { btnCreateFinanceDocumentNumber.click();}
@@ -636,4 +840,47 @@ public class FinancePage {
     public void BtnConfirmPartnerApprovalPaymentFinanceReimbursement() { btnConfirmPartnerApprovalPaymentFinanceReimbursement.click();}
     public void BtnViewApprovedPaymentFinanceReimbursement() { btnViewApprovedPaymentFinanceReimbursement.click();}
     public void BtnBackViewApprovedPaymentFinanceReimbursement() { btnBackViewApprovedPaymentFinanceReimbursement.click();}
+    public void BtnDownloadExcelHoReport() { btnDownloadExcelHoReport.click();}
+    public void BtnDownloadPdfHoReport() { btnDownloadPdfHoReport.click();}
+    public void BtnDownloadExcelTaskActivityReport() { btnDownloadExcelTaskActivityReport.click();}
+    public void BtnDownloadPdfTaskActivityReport() { btnDownloadPdfTaskActivityReport.click();}
+    public void BtnDownloadExcelTaskActivitySummaryReport() { btnDownloadExcelTaskActivitySummaryReport.click();}
+    public void BtnDownloadPdfTaskActivitySummaryReport() { btnDownloadPdfTaskActivitySummaryReport.click();}
+    public void BtnDownloadExcelClientReport() { btnDownloadExcelClientReport.click();}
+    public void BtnDownloadPdfClientReport() { btnDownloadPdfClientReport.click();}
+    public void BtnDownloadExcelAdministrativeReport() { btnDownloadExcelAdministrativeReport.click();}
+    public void BtnDownloadPdfAdministrativeReport() { btnDownloadPdfAdministrativeReport.click();}
+    public void BtnDownloadExcelAdministrativeSummaryReport() { btnDownloadExcelAdministrativeSummaryReport.click();}
+    public void BtnDownloadPdfAdministrativeSummaryReport() { btnDownloadPdfAdministrativeSummaryReport.click();}
+    public void BtnDownloadExcelAdministrativeApprovalReport() { btnDownloadExcelAdministrativeApprovalReport.click();}
+    public void BtnDownloadPdfAdministrativeApprovalReport() { btnDownloadPdfAdministrativeApprovalReport.click();}
+    public void BtnDownloadExcelHoReimbursementReport() { btnDownloadExcelHoReimbursementReport.click();}
+    public void BtnDownloadExcelFinanceReimbursementReport() { btnDownloadExcelFinanceReimbursementReport.click();}
+    public void BtnDownloadExcelFinanceMasterDocumentNumberReport() { btnDownloadExcelFinanceMasterDocumentNumberReport.click();}
+    public void BtnDownloadExcelFinancePayrollReport() { btnDownloadExcelFinancePayrollReport.click();}
+    public void BtnDownloadExcelHoDepositReport() { btnDownloadExcelHoDepositReport.click();}
+    public void BtnDownloadExcelHoDepositReceiptReport() { btnDownloadExcelHoDepositReceiptReport.click();}
+    public void BtnDownloadExcelHoBusinessTripReimbursementReport() { btnDownloadExcelHoBusinessTripReimbursementReport.click();}
+    public void BtnDownloadExcelFinanceGeneralLedgerReport() { btnDownloadExcelFinanceGeneralLedgerReport.click();}
+    public void TabFinanceDisbursementTripPayment() { tabFinanceDisbursementTripPayment.click();}
+    public String getTxtFinanceDisbursementTripPaymentPage(){return txtFinanceDisbursementTripPaymentPage.getText();}
+    public void BtnPaymentNeedToPaymentDisbursementTrip() { btnPaymentNeedToPaymentDisbursementTrip.click();}
+    public void ClearInputAmountApprovePaymentDisbursementTrip() { inputAmountApprovePaymentDisbursementTrip.clear();}
+    public void InputAmountApprovePaymentDisbursementTrip(String inputAmountApprovePaymentDisbursementTrip) { this.inputAmountApprovePaymentDisbursementTrip.sendKeys(inputAmountApprovePaymentDisbursementTrip);}
+    public void BtnUploadDocumentPaymentDisbursementTrip(String btnUploadDocumentPaymentDisbursementTrip) { this.btnUploadDocumentPaymentDisbursementTrip.sendKeys(btnUploadDocumentPaymentDisbursementTrip);}
+    public void BtnCreatePaymentDisbursementTrip() { btnCreatePaymentDisbursementTrip.click();}
+    public void BtnConfirmCreatePaymentDisbursementTrip() { btnConfirmCreatePaymentDisbursementTrip.click();}
+    public void TabPaymentDisbursementTrip() { tabPaymentDisbursementTrip.click();}
+    public void BtnPencilPaymentDisbursementTrip() { btnPencilPaymentDisbursementTrip.click();}
+    public void BtnEditUploadDocumentPaymentDisbursementTrip(String btnEditUploadDocumentPaymentDisbursementTrip) { this.btnEditUploadDocumentPaymentDisbursementTrip.sendKeys(btnEditUploadDocumentPaymentDisbursementTrip);}
+    public void BtnSaveEditPaymentDisbursementTrip() { btnSaveEditPaymentDisbursementTrip.click();}
+    public void BtnConfirmSaveEditPaymentDisbursementTrip() { btnConfirmSaveEditPaymentDisbursementTrip.click();}
+    public void BtnApprovalPaymentDisbursementTrip() { btnApprovalPaymentDisbursementTrip.click();}
+    public void BtnSelectPartnerApprovalPaymentDisbursementTrip() { btnSelectPartnerApprovalPaymentDisbursementTrip.click();}
+    public void SelectPartnerApprovalPaymentDisbursementTrip() { selectPartnerApprovalPaymentDisbursementTrip.click();}
+    public void BtnSavePartnerApprovalPaymentDisbursementTrip() { btnSavePartnerApprovalPaymentDisbursementTrip.click();}
+    public void BtnConfirmPartnerApprovalPaymentDisbursementTrip() { btnConfirmPartnerApprovalPaymentDisbursementTrip.click();}
+    public void BtnViewApprovedPaymentDisbursementTrip() { btnViewApprovedPaymentDisbursementTrip.click();}
+    public void BtnBackViewApprovedPaymentDisbursementTrip() { btnBackViewApprovedPaymentDisbursementTrip.click();}
+
 }

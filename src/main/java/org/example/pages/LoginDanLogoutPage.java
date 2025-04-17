@@ -9,11 +9,17 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginDanLogoutPage {
 
-    private WebDriver driver;
     public LoginDanLogoutPage(){
-        this.driver = DriverSingleton.getDriver();
+        WebDriver driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
+
+    @FindBy(xpath = "(//input[@placeholder='Company'])[1]")
+    WebElement company;
+
+    @FindBy(xpath = "(//button[normalize-space()='Next'])[1]")
+    WebElement btnNextCompany;
+
     @FindBy(xpath = "//input[@placeholder='Username']")
     WebElement username;
 
@@ -29,30 +35,23 @@ public class LoginDanLogoutPage {
     @FindBy(xpath = "//a[normalize-space()='Logout']")
     WebElement btnLogoutOk;
 
-    @FindBy(xpath = "(//p[@class='text-white w-[300px]'])[1]")
+    @FindBy(xpath = "(//p[@class='text-primary w-[300px]'])[1]")
     WebElement txtInvalidCredentials;
 
 
 
 
 
-
+    public void EnterCompany(String company) {this.company.sendKeys(company);}
+    public void BtnNextCompany() { btnNextCompany.click();}
     public void ClearUsername() { username.clear();}
-    public void Clearpassword() { password.clear();}
+    public void ClearPassword() { password.clear();}
     public void BtnLogout() { btnLogout.click();}
     public void BtnLogoutOk() { btnLogoutOk.click();}
     public void EnterUsername(String username) {this.username.sendKeys(username);}
-    public void EnterPassword(String password){
-        this.password.sendKeys(password);
+    public void EnterPassword(String password){this.password.sendKeys(password);}
+    public void BtnLogin(){btnLogin.click();}
+    public String getTxtInvalidCredentials(){return txtInvalidCredentials.getText();}
+    public String getAttributeUsername(){return username.getAttribute("required"); // return true, value dari required
     }
-    public void BtnLogin(){
-        btnLogin.click();
-    }
-    public String getTxtInvalidCredentials(){
-        return txtInvalidCredentials.getText();
-    }
-    public String getAtributUsername(){
-        return username.getAttribute("required"); // return true, value dari required
-    }
-
 }
